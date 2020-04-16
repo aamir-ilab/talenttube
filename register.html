@@ -1,0 +1,2915 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TalentTube</title>
+    
+    <meta name="viewport" content="width=973">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="description" content="TalentTube">
+    <meta name="keywords" content="">
+    
+   
+
+  
+    <link rel="shortcut icon" href="./_files/favicon_impact.ico?v=1583280658" type="image/x-icon">
+
+    <script type="text/javascript" src="_server/jquery/jquery-1.11.2.min.js?v=4"></script>
+    <script type="text/javascript" src="_server/jquery/jquery-ui-1.11.4.min.js?v=4"></script>
+
+    <script type="text/javascript" src="_server/jquery/jquery.formstyler.js?v=4"></script>
+    <link rel="stylesheet" type="text/css" href="css/jquery.formstyler.css?v=4"/>
+
+    
+    <link rel="stylesheet" type="text/css" href="css/jquery.jscrollpane.css?v=4"/>
+    <script type="text/javascript" src="_server/jquery/jquery.jscrollpane.js?v=4"></script>
+    <script type="text/javascript" src="_server/jquery/jquery.mousewheel.js?v=4"></script>
+    
+
+    <script type="text/javascript" src="_server/jquery/modernizr.js?v=4"></script>
+    <script type="text/javascript" src="_server/lib.js?v=4"></script>
+    <script language="javascript" type="text/javascript">
+        setOptionsSite({"options":{"number_of_columns_in_language_selector":"5","message_notifications_not_show_when_3d_city":"N","forced_open_chat_with_new_message":"N","photo_approval":"N"}});
+    </script>
+
+    <script type="text/javascript" src="js/lib.js?v=4"></script>
+    <script type="text/javascript" src="js/script.js?v=4"></script>
+    <script type="text/javascript" src="_server/jquery/jquery.form.js?v=4"></script>
+    
+   <link rel="stylesheet" type="text/css" href="css/index_page.css?v=4"/>
+    
+    
+    
+    
+     <script type="text/javascript" src="js/index.js?v=4"></script>
+    <script type="text/javascript" src="js/login_form.js?v=4"></script>
+
+    <script language="javascript" type="text/javascript">
+        var siteLangParts = {
+            signIn : 'Sign in',
+			incorrectEmail : 'The E-mail is incorrect.',
+            send_again : 'Send Again',
+            send_password : 'Send Password',
+            link_password_send : 'The link for changing the password has been sent!'
+        };
+    </script>
+    
+    
+
+    
+
+     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css?v=4"/>
+
+    
+
+    <script type="text/javascript" src="_server/jquery/jquery.popup.js?v=4"></script>
+    <script type="text/javascript" src="_server/jquery/prettyCheckable.js?v=4"></script>
+
+    <link rel="stylesheet" type="text/css" href="./css.php?v=4&set_template_runtime=impact&page=join.php&demo_version=" />
+
+    <style type="text/css">
+        button.btn.pink{ background: #ff6d85; color: #FFFFFF; }
+        button.btn.pink:hover { background: #e7495c; }
+    </style>
+    
+
+    
+    <style type="text/css">
+        body, .footer, .content{ background-color: #FFFFFF }
+        .bl_main_info .item p, .footer, .footer .nav li, .footer .nav li a { color: #000000 }
+
+        .header, .main.above .wrapper {
+            background: #5b0079;
+        }
+
+        
+
+        
+        .header { min-height: 100vh !important; }
+        .main.above .header .cover img{ min-height: 100vh; }
+        .main.above .wrapper { margin-bottom: 0px; }
+        
+
+        .main.above .bg_shadow { background: rgba(0, 0, 0, 0.55)}
+    </style>
+    
+
+    
+
+    
+
+    <!--<style>body,.header{background-color: transparent;}</style>-->
+
+    <script type="text/javascript" src="./js.php?v=4&file=tmpl.js&set_template_runtime=impact&set_language_runtime=default"></script>
+    <script type="text/javascript" src="./js.php?v=4&get_lang=1&file=set_language.js&set_template_runtime=impact&set_language_runtime=default"></script>
+    <script type="text/javascript" src="./js.php?v=4&get_lang=1&file=set_language.js&set_template_runtime=impact&set_language_runtime=default&page=join.php"></script>
+
+	<script type="text/javascript" src="js/device.min.js?v=4"></script>
+    <script type="text/javascript" src="_server/jquery/jquery.cookie.js?v=4"></script>
+    <link href="css/video-js.css?v=4" rel="stylesheet">
+    <!-- If you'd like to support IE8 -->
+    <script src="_server/jquery/videojs-ie8.min.js?v=4"></script>
+
+    <link href="css/videojs.css?v=4" rel="stylesheet">
+
+	
+
+    <link rel="stylesheet" type="text/css" href="css/cookiepopup.css?v=4" />
+    <script type="text/javascript" src="js/cookiepopup.js?v=4"></script>
+
+    <script language="javascript" type="text/javascript">
+        
+        initSmoothScroll();
+        
+        var ajax_login_status=false;
+        var siteTitle='TalentTube';
+        var siteTitleTemp='TalentTube';
+
+        var urlMain=url_main='./';
+        var urlFiles='./_files/';
+        var url_tmpl_main='./_frameworks/main/impact/';
+        var url_tmpl_images=url_tmpl_main+'images/';
+        var url_ajax='./ajax.php';
+        var dirTmplMain='.'+'./_frameworks/main/impact/';
+        var urlPageLogin='login';
+        var urlPageUpgrade='upgrade';
+        var urlPageProfile='profile_view';
+        var currentPage='join.php';
+        var activePage='join.php';
+
+        var isPlayerNative='0'*1;
+        var isPageProfile=false;
+		var isCurUserSuperPowers=''*1;
+
+        // Server
+        var requestUserId='0'*1;
+        var userAllowedFeature=[];
+
+        var user_profile_bg='';
+        var user_profile_bg_video = {};
+        var is_bg_video_all_page = 1;
+        var profile_bg_video_quality = 'default';
+
+        var profile_bg_video_play_disabled = 1;
+
+        
+        
+        setGeoPointData();
+    </script>
+    
+</head>
+<body  >
+<!-- main -->
+<div class="main above ">
+    
+	
+    <!-- wrapper -->
+    <div class="wrapper">
+        <!-- header_top  -->
+        <div class="head_top absolute">
+            <div class="bl">
+					<div class="fl_right">
+                    
+                    <span class="link">Have an account?</span>
+                    <a id="pp_sign_in_open" class="btn_sign" href="">Sign in</a>
+                    
+                    
+                    </div>
+                <div class="cl"></div>
+            </div>
+            
+            <div class="cl"></div>
+        </div>
+        <!-- /header_top  -->
+        <!-- header_cont  -->
+        <div class="wrap_header_cont absolute">
+            <!-- header_cont_bl -->
+            <div class="bl">
+            <div class="bl_logo">
+                <img id="logo_main_page" src="images/logo.png?v=1583280665" style="height:44px;" alt="" />>
+                <script>goToIndexForLogo();</script>
+            </div>
+    
+
+    <script type="text/javascript" src="http://182.180.54.194/talenttube/_frameworks/main/impact/js/join.js?v=6"></script>
+
+    
+    
+<script type="text/javascript" src="_server/join.js?v=4"></script>
+<script>
+var joinLangParts = {
+    incorrect_date : 'Incorect Date of Birthday.',
+    incorrect_email : 'The E-mail is incorrect.',
+    incorrect_city : 'We need a city',
+    next : 'Next',
+    done : 'Done!',
+    incorrect_password_contain : 'The Password can not contain \'.',
+    incorrect_password_length : 'The password needs to be between 4 and 30 symbols in length.',
+    incorrect_name : 'The Username can not contain %, \\, /, #, &, \' or \".',
+    incorrect_name_length : 'The username needs to be between 3 and 20 symbols in length.',
+    choose_a_city : 'Choose a City',
+    choose_a_state : 'Choose a Region'
+    // choose_a_state : 'Choose a Region'
+};
+usersAge=18;
+passwordLengthMin='4'*1;
+passwordLengthMax='30'*1;
+nameLengthMin='3'*1;
+nameLengthMax='20'*1;
+</script>
+<style>
+    select{ opacity: 0; height: 34px; width: 50px; }
+    .header{ min-height: 110vh; }
+    .header .cover{ min-height: 110vh; }
+    .wrap_header_cont{ height: 100vh; }
+    .wrap_header_cont .bl{ padding: 174px 0 0; }
+</style>
+        <div id="step-1" class="hide1">
+        <div class="slogan">Almost there! Just a little more to go.</div>
+        <div class="bl_form_registration bl_form_registration_step_1">
+                
+                <div class="part br" >
+                    <p>Sign up faster.</p>
+                    <ul class="bl_social_buttons bl_social_buttons_register">
+                    
+                        <li class="login_facebook"><a href="https://www.facebook.com/v2.2/dialog/oauth?client_id=1&state=d011f99a4fc6308a3ff3ca630888c216&response_type=code&sdk=php-sdk-5.6.2&redirect_uri=http%3A%2F%2Flocalhost%2Ftalenttube%2Fjoin_facebook.php%3Fcmd%3Dfb_login&scope=email">&nbsp;</a></li>
+                    
+                        <li class="login_google_plus"><a href="social_login.php?module=google_plus">&nbsp;</a></li>
+                    
+                        <li class="login_linkedin"><a href="social_login.php?module=linkedin">&nbsp;</a></li>
+                    
+                        <li class="login_twitter"><a href="social_login.php?module=twitter">&nbsp;</a></li>
+                    
+                        <li class="login_vk"><a href="social_login.php?module=vk">&nbsp;</a></li>
+                    
+                    </ul>
+                    <div class="line_or">
+                        <div class="line_top"></div>
+                        <div class="or">or</div>
+                        <div class="line_bottom"></div>
+                    </div>
+                </div>
+                
+
+                <div id="bl_frm_register" class="part">
+                    <div class="bl">
+                        <label>Birthdate</label>
+                        <form name="frm_date" action="" autocomplete="off">
+                           <div class="col-sm-12 " style="display: flex;">
+                                <input type="text" name="firstname" class="inp" placeholder="First Name"/>
+
+                                <input type="text" name="surname"  class="inp" placeholder="Sur Name" style="margin-left: 15px;" / >
+                            <!--<div id="day_check" class="icon_check to_hide"></div>-->
+                            </div> 
+                            
+                        </form>
+                        <div id="birth_error" class="error to_hide">&nbsp;</div>
+                        <div class="cl"></div>
+                    </div>
+
+                    
+
+                    <div class="bl">
+                        <label>I am from
+                        </label>
+                        <div id="css_loader_location" class="css_loader css_loader_location hidden">
+                            <div class="spinner spinnerw center">
+                                <div class="spinner-blade"></div>
+                                <div class="spinner-blade"></div>
+                                <div class="spinner-blade"></div>
+                                <div class="spinner-blade"></div>
+                                <div class="spinner-blade"></div>
+                                <div class="spinner-blade"></div>
+                                <div class="spinner-blade"></div>
+                                <div class="spinner-blade"></div>
+                                <div class="spinner-blade"></div>
+                                <div class="spinner-blade"></div>
+                                <div class="spinner-blade"></div>
+                                <div class="spinner-blade"></div>
+                            </div>
+                        </div>
+                        <div class="bl_location">
+                        <select name="country" data-search-unique-id="true" data-location="geo_states" id="country" class="location country geo" data-search="true" data-search-placeholder="Enter manually..." data-search-not-found="No matches...">
+                            <option  id="option_country_230"  value="230" selected="selected">United States</option>
+<option  id="option_country_229"  value="229" >United Kingdom</option>
+<option  id="option_country_40"  value="40" >Canada</option>
+<option  id="option_country_1"  value="1" >Afghanistan</option>
+<option  id="option_country_2"  value="2" >Aland Islands</option>
+<option  id="option_country_3"  value="3" >Albania</option>
+<option  id="option_country_4"  value="4" >Algeria</option>
+<option  id="option_country_5"  value="5" >American Samoa</option>
+<option  id="option_country_6"  value="6" >Andorra</option>
+<option  id="option_country_7"  value="7" >Angola</option>
+<option  id="option_country_8"  value="8" >Anguilla</option>
+<option  id="option_country_10"  value="10" >Antigua and Barbuda</option>
+<option  id="option_country_11"  value="11" >Argentina</option>
+<option  id="option_country_12"  value="12" >Armenia</option>
+<option  id="option_country_13"  value="13" >Aruba</option>
+<option  id="option_country_14"  value="14" >Australia</option>
+<option  id="option_country_15"  value="15" >Austria</option>
+<option  id="option_country_16"  value="16" >Azerbaijan</option>
+<option  id="option_country_17"  value="17" >Bahamas</option>
+<option  id="option_country_18"  value="18" >Bahrain</option>
+<option  id="option_country_19"  value="19" >Bangladesh</option>
+<option  id="option_country_20"  value="20" >Barbados</option>
+<option  id="option_country_21"  value="21" >Belarus</option>
+<option  id="option_country_22"  value="22" >Belgium</option>
+<option  id="option_country_23"  value="23" >Belize</option>
+<option  id="option_country_24"  value="24" >Benin</option>
+<option  id="option_country_25"  value="25" >Bermuda</option>
+<option  id="option_country_26"  value="26" >Bhutan</option>
+<option  id="option_country_27"  value="27" >Bolivia, Plurinational State of</option>
+<option  id="option_country_29"  value="29" >Bosnia and Herzegovina</option>
+<option  id="option_country_30"  value="30" >Botswana</option>
+<option  id="option_country_31"  value="31" >Brazil</option>
+<option  id="option_country_32"  value="32" >British Indian Ocean Territory</option>
+<option  id="option_country_33"  value="33" >Brunei Darussalam</option>
+<option  id="option_country_34"  value="34" >Bulgaria</option>
+<option  id="option_country_35"  value="35" >Burkina Faso</option>
+<option  id="option_country_36"  value="36" >Burundi</option>
+<option  id="option_country_37"  value="37" >Cabo Verde</option>
+<option  id="option_country_38"  value="38" >Cambodia</option>
+<option  id="option_country_39"  value="39" >Cameroon</option>
+<option  id="option_country_40"  value="40" >Canada</option>
+<option  id="option_country_41"  value="41" >Cayman Islands</option>
+<option  id="option_country_42"  value="42" >Central African Republic</option>
+<option  id="option_country_43"  value="43" >Chad</option>
+<option  id="option_country_44"  value="44" >Chile</option>
+<option  id="option_country_45"  value="45" >China</option>
+<option  id="option_country_46"  value="46" >Christmas Island</option>
+<option  id="option_country_47"  value="47" >Colombia</option>
+<option  id="option_country_48"  value="48" >Comoros</option>
+<option  id="option_country_49"  value="49" >Congo</option>
+<option  id="option_country_50"  value="50" >Congo, The Democratic Republic of The</option>
+<option  id="option_country_51"  value="51" >Cook Islands</option>
+<option  id="option_country_52"  value="52" >Costa Rica</option>
+<option  id="option_country_53"  value="53" >Cote D'ivoire</option>
+<option  id="option_country_54"  value="54" >Croatia</option>
+<option  id="option_country_55"  value="55" >Cuba</option>
+<option  id="option_country_57"  value="57" >Cyprus</option>
+<option  id="option_country_58"  value="58" >Czech Republic</option>
+<option  id="option_country_59"  value="59" >Denmark</option>
+<option  id="option_country_60"  value="60" >Djibouti</option>
+<option  id="option_country_61"  value="61" >Dominica</option>
+<option  id="option_country_62"  value="62" >Dominican Republic</option>
+<option  id="option_country_63"  value="63" >Ecuador</option>
+<option  id="option_country_64"  value="64" >Egypt</option>
+<option  id="option_country_65"  value="65" >El Salvador</option>
+<option  id="option_country_66"  value="66" >Equatorial Guinea</option>
+<option  id="option_country_67"  value="67" >Eritrea</option>
+<option  id="option_country_68"  value="68" >Estonia</option>
+<option  id="option_country_69"  value="69" >Ethiopia</option>
+<option  id="option_country_70"  value="70" >Falkland Islands (Malvinas)</option>
+<option  id="option_country_71"  value="71" >Faroe Islands</option>
+<option  id="option_country_72"  value="72" >Fiji</option>
+<option  id="option_country_73"  value="73" >Finland</option>
+<option  id="option_country_74"  value="74" >France</option>
+<option  id="option_country_75"  value="75" >French Guiana</option>
+<option  id="option_country_76"  value="76" >French Polynesia</option>
+<option  id="option_country_77"  value="77" >French Southern Territories</option>
+<option  id="option_country_78"  value="78" >Gabon</option>
+<option  id="option_country_79"  value="79" >Gambia</option>
+<option  id="option_country_80"  value="80" >Georgia</option>
+<option  id="option_country_81"  value="81" >Germany</option>
+<option  id="option_country_82"  value="82" >Ghana</option>
+<option  id="option_country_83"  value="83" >Gibraltar</option>
+<option  id="option_country_84"  value="84" >Greece</option>
+<option  id="option_country_85"  value="85" >Greenland</option>
+<option  id="option_country_86"  value="86" >Grenada</option>
+<option  id="option_country_87"  value="87" >Guadeloupe</option>
+<option  id="option_country_88"  value="88" >Guam</option>
+<option  id="option_country_89"  value="89" >Guatemala</option>
+<option  id="option_country_90"  value="90" >Guernsey</option>
+<option  id="option_country_91"  value="91" >Guinea</option>
+<option  id="option_country_92"  value="92" >Guinea-Bissau</option>
+<option  id="option_country_93"  value="93" >Guyana</option>
+<option  id="option_country_94"  value="94" >Haiti</option>
+<option  id="option_country_95"  value="95" >Holy See</option>
+<option  id="option_country_96"  value="96" >Honduras</option>
+<option  id="option_country_97"  value="97" >Hong Kong</option>
+<option  id="option_country_98"  value="98" >Hungary</option>
+<option  id="option_country_99"  value="99" >Iceland</option>
+<option  id="option_country_100"  value="100" >India</option>
+<option  id="option_country_101"  value="101" >Indonesia</option>
+<option  id="option_country_102"  value="102" >Iran, Islamic Republic of</option>
+<option  id="option_country_103"  value="103" >Iraq</option>
+<option  id="option_country_104"  value="104" >Ireland</option>
+<option  id="option_country_105"  value="105" >Isle of Man</option>
+<option  id="option_country_106"  value="106" >Israel</option>
+<option  id="option_country_107"  value="107" >Italy</option>
+<option  id="option_country_108"  value="108" >Jamaica</option>
+<option  id="option_country_109"  value="109" >Japan</option>
+<option  id="option_country_110"  value="110" >Jersey</option>
+<option  id="option_country_111"  value="111" >Jordan</option>
+<option  id="option_country_112"  value="112" >Kazakhstan</option>
+<option  id="option_country_113"  value="113" >Kenya</option>
+<option  id="option_country_114"  value="114" >Kiribati</option>
+<option  id="option_country_115"  value="115" >Korea, Democratic People's Republic of</option>
+<option  id="option_country_116"  value="116" >Korea, Republic of</option>
+<option  id="option_country_117"  value="117" >Kuwait</option>
+<option  id="option_country_118"  value="118" >Kyrgyzstan</option>
+<option  id="option_country_119"  value="119" >Lao People's Democratic Republic</option>
+<option  id="option_country_120"  value="120" >Latvia</option>
+<option  id="option_country_121"  value="121" >Lebanon</option>
+<option  id="option_country_122"  value="122" >Lesotho</option>
+<option  id="option_country_123"  value="123" >Liberia</option>
+<option  id="option_country_124"  value="124" >Libya</option>
+<option  id="option_country_125"  value="125" >Liechtenstein</option>
+<option  id="option_country_126"  value="126" >Lithuania</option>
+<option  id="option_country_127"  value="127" >Luxembourg</option>
+<option  id="option_country_128"  value="128" >Macao</option>
+<option  id="option_country_129"  value="129" >Macedonia, The Former Yugoslav Republic of</option>
+<option  id="option_country_130"  value="130" >Madagascar</option>
+<option  id="option_country_131"  value="131" >Malawi</option>
+<option  id="option_country_132"  value="132" >Malaysia</option>
+<option  id="option_country_133"  value="133" >Maldives</option>
+<option  id="option_country_134"  value="134" >Mali</option>
+<option  id="option_country_135"  value="135" >Malta</option>
+<option  id="option_country_136"  value="136" >Marshall Islands</option>
+<option  id="option_country_137"  value="137" >Martinique</option>
+<option  id="option_country_138"  value="138" >Mauritania</option>
+<option  id="option_country_139"  value="139" >Mauritius</option>
+<option  id="option_country_140"  value="140" >Mayotte</option>
+<option  id="option_country_141"  value="141" >Mexico</option>
+<option  id="option_country_142"  value="142" >Micronesia, Federated States of</option>
+<option  id="option_country_143"  value="143" >Moldova, Republic of</option>
+<option  id="option_country_144"  value="144" >Monaco</option>
+<option  id="option_country_145"  value="145" >Mongolia</option>
+<option  id="option_country_146"  value="146" >Montenegro</option>
+<option  id="option_country_147"  value="147" >Montserrat</option>
+<option  id="option_country_148"  value="148" >Morocco</option>
+<option  id="option_country_149"  value="149" >Mozambique</option>
+<option  id="option_country_150"  value="150" >Myanmar</option>
+<option  id="option_country_151"  value="151" >Namibia</option>
+<option  id="option_country_152"  value="152" >Nauru</option>
+<option  id="option_country_153"  value="153" >Nepal</option>
+<option  id="option_country_154"  value="154" >Netherlands</option>
+<option  id="option_country_155"  value="155" >New Caledonia</option>
+<option  id="option_country_156"  value="156" >New Zealand</option>
+<option  id="option_country_157"  value="157" >Nicaragua</option>
+<option  id="option_country_158"  value="158" >Niger</option>
+<option  id="option_country_159"  value="159" >Nigeria</option>
+<option  id="option_country_160"  value="160" >Niue</option>
+<option  id="option_country_161"  value="161" >Norfolk Island</option>
+<option  id="option_country_162"  value="162" >Northern Mariana Islands</option>
+<option  id="option_country_163"  value="163" >Norway</option>
+<option  id="option_country_164"  value="164" >Oman</option>
+<option  id="option_country_165"  value="165" >Pakistan</option>
+<option  id="option_country_166"  value="166" >Palau</option>
+<option  id="option_country_167"  value="167" >Palestine, State of</option>
+<option  id="option_country_168"  value="168" >Panama</option>
+<option  id="option_country_169"  value="169" >Papua New Guinea</option>
+<option  id="option_country_170"  value="170" >Paraguay</option>
+<option  id="option_country_171"  value="171" >Peru</option>
+<option  id="option_country_172"  value="172" >Philippines</option>
+<option  id="option_country_173"  value="173" >Poland</option>
+<option  id="option_country_174"  value="174" >Portugal</option>
+<option  id="option_country_175"  value="175" >Puerto Rico</option>
+<option  id="option_country_176"  value="176" >Qatar</option>
+<option  id="option_country_177"  value="177" >Reunion</option>
+<option  id="option_country_178"  value="178" >Romania</option>
+<option  id="option_country_179"  value="179" >Russian Federation</option>
+<option  id="option_country_180"  value="180" >Rwanda</option>
+<option  id="option_country_181"  value="181" >Saint Barthelemy</option>
+<option  id="option_country_182"  value="182" >Saint Helena, Ascension and Tristan Da Cunha</option>
+<option  id="option_country_183"  value="183" >Saint Kitts and Nevis</option>
+<option  id="option_country_184"  value="184" >Saint Lucia</option>
+<option  id="option_country_185"  value="185" >Saint Martin (French Part)</option>
+<option  id="option_country_186"  value="186" >Saint Pierre and Miquelon</option>
+<option  id="option_country_187"  value="187" >Saint Vincent and The Grenadines</option>
+<option  id="option_country_188"  value="188" >Samoa</option>
+<option  id="option_country_189"  value="189" >San Marino</option>
+<option  id="option_country_190"  value="190" >Sao Tome and Principe</option>
+<option  id="option_country_191"  value="191" >Saudi Arabia</option>
+<option  id="option_country_192"  value="192" >Senegal</option>
+<option  id="option_country_193"  value="193" >Serbia</option>
+<option  id="option_country_194"  value="194" >Seychelles</option>
+<option  id="option_country_195"  value="195" >Sierra Leone</option>
+<option  id="option_country_196"  value="196" >Singapore</option>
+<option  id="option_country_198"  value="198" >Slovakia</option>
+<option  id="option_country_199"  value="199" >Slovenia</option>
+<option  id="option_country_200"  value="200" >Solomon Islands</option>
+<option  id="option_country_201"  value="201" >Somalia</option>
+<option  id="option_country_202"  value="202" >South Africa</option>
+<option  id="option_country_204"  value="204" >Spain</option>
+<option  id="option_country_205"  value="205" >Sri Lanka</option>
+<option  id="option_country_206"  value="206" >Sudan</option>
+<option  id="option_country_207"  value="207" >Suriname</option>
+<option  id="option_country_208"  value="208" >Swaziland</option>
+<option  id="option_country_209"  value="209" >Sweden</option>
+<option  id="option_country_210"  value="210" >Switzerland</option>
+<option  id="option_country_211"  value="211" >Syrian Arab Republic</option>
+<option  id="option_country_212"  value="212" >Taiwan, Province of China</option>
+<option  id="option_country_213"  value="213" >Tajikistan</option>
+<option  id="option_country_214"  value="214" >Tanzania, United Republic of</option>
+<option  id="option_country_215"  value="215" >Thailand</option>
+<option  id="option_country_216"  value="216" >Timor-Leste</option>
+<option  id="option_country_217"  value="217" >Togo</option>
+<option  id="option_country_218"  value="218" >Tokelau</option>
+<option  id="option_country_219"  value="219" >Tonga</option>
+<option  id="option_country_220"  value="220" >Trinidad and Tobago</option>
+<option  id="option_country_221"  value="221" >Tunisia</option>
+<option  id="option_country_222"  value="222" >Turkey</option>
+<option  id="option_country_223"  value="223" >Turkmenistan</option>
+<option  id="option_country_224"  value="224" >Turks and Caicos Islands</option>
+<option  id="option_country_225"  value="225" >Tuvalu</option>
+<option  id="option_country_226"  value="226" >Uganda</option>
+<option  id="option_country_227"  value="227" >Ukraine</option>
+<option  id="option_country_228"  value="228" >United Arab Emirates</option>
+<option  id="option_country_229"  value="229" >United Kingdom</option>
+<option  id="option_country_230"  value="230" >United States</option>
+<option  id="option_country_231"  value="231" >United States Minor Outlying Islands</option>
+<option  id="option_country_232"  value="232" >Uruguay</option>
+<option  id="option_country_233"  value="233" >Uzbekistan</option>
+<option  id="option_country_234"  value="234" >Vanuatu</option>
+<option  id="option_country_235"  value="235" >Venezuela, Bolivarian Republic of</option>
+<option  id="option_country_236"  value="236" >Viet Nam</option>
+<option  id="option_country_237"  value="237" >Virgin Islands, British</option>
+<option  id="option_country_238"  value="238" >Virgin Islands, U.S.</option>
+<option  id="option_country_239"  value="239" >Wallis and Futuna</option>
+<option  id="option_country_241"  value="241" >Yemen</option>
+<option  id="option_country_242"  value="242" >Zambia</option>
+<option  id="option_country_243"  value="243" >Zimbabwe</option>
+
+                        </select>
+                        <select name="state" id="state" data-location="geo_cities" class="location state geo" data-search="true" data-search-placeholder="Enter manually..." data-search-not-found="No matches...">
+                            <option  value="2527" >Alabama</option>
+<option  value="2528" >Alaska</option>
+<option  value="2529" >Arizona</option>
+<option  value="2530" >Arkansas</option>
+<option  value="2531" >California</option>
+<option  value="2532" >Colorado</option>
+<option  value="2533" >Connecticut</option>
+<option  value="2534" >Delaware</option>
+<option  value="2535" >District Of Columbia</option>
+<option  value="2536" >Florida</option>
+<option  value="2537" >Georgia</option>
+<option  value="2538" >Hawaii</option>
+<option  value="2539" >Idaho</option>
+<option  value="2540" >Illinois</option>
+<option  value="2541" >Indiana</option>
+<option  value="2542" >Iowa</option>
+<option  value="2543" >Kansas</option>
+<option  value="2544" >Kentucky</option>
+<option  value="2545" >Louisiana</option>
+<option  value="2546" >Maine</option>
+<option  value="2547" >Maryland</option>
+<option  value="2548" >Massachusetts</option>
+<option  value="2549" >Michigan</option>
+<option  value="2550" >Minnesota</option>
+<option  value="2551" >Mississippi</option>
+<option  value="2552" >Missouri</option>
+<option  value="2553" >Montana</option>
+<option  value="2554" >Nebraska</option>
+<option  value="2555" >Nevada</option>
+<option  value="2556" >New Hampshire</option>
+<option  value="2557" >New Jersey</option>
+<option  value="2558" >New Mexico</option>
+<option  value="2559" selected="selected">New York</option>
+<option  value="2560" >North Carolina</option>
+<option  value="2561" >North Dakota</option>
+<option  value="2562" >Ohio</option>
+<option  value="2563" >Oklahoma</option>
+<option  value="2564" >Oregon</option>
+<option  value="2565" >Pennsylvania</option>
+<option  value="2566" >Rhode Island</option>
+<option  value="2567" >South Carolina</option>
+<option  value="2568" >South Dakota</option>
+<option  value="2569" >Tennessee</option>
+<option  value="2570" >Texas</option>
+<option  value="2571" >Utah</option>
+<option  value="2572" >Vermont</option>
+<option  value="2573" >Virginia</option>
+<option  value="2574" >Washington</option>
+<option  value="2575" >West Virginia</option>
+<option  value="2576" >Wisconsin</option>
+<option  value="2577" >Wyoming</option>
+
+                        </select>
+                        <div class="separator"></div>
+                        <select name="city" id="city" class="location city" data-search="true" data-search-placeholder="Enter manually..." data-search-not-found="No matches...">
+                            <option  value="55420" >Accord</option>
+<option  value="96200" >Acra</option>
+<option  value="55421" >Adams</option>
+<option  value="135165" >Adams Basin</option>
+<option  value="96201" >Adams Center</option>
+<option  value="55422" >Addison</option>
+<option  value="55423" >Adirondack</option>
+<option  value="55424" >Afton</option>
+<option  value="55425" >Airmont</option>
+<option  value="55426" >Akron</option>
+<option  value="55427" >Alabama</option>
+<option  value="55428" >Albany</option>
+<option  value="55429" >Albertson</option>
+<option  value="55430" >Albion</option>
+<option  value="135166" >Alcove</option>
+<option  value="55431" >Alden</option>
+<option  value="55432" >Alder Creek</option>
+<option  value="96202" >Alexander</option>
+<option  value="55433" >Alexandria Bay</option>
+<option  value="55434" >Alfred</option>
+<option  value="55435" >Alfred Station</option>
+<option  value="55436" >Allegany</option>
+<option  value="135167" >Allentown</option>
+<option  value="55437" >Alma</option>
+<option  value="55438" >Almond</option>
+<option  value="55439" >Alpine</option>
+<option  value="55440" >Alplaus</option>
+<option  value="55441" >Altamont</option>
+<option  value="55442" >Altmar</option>
+<option  value="55443" >Altona</option>
+<option  value="55444" >Amagansett</option>
+<option  value="55445" >Amawalk</option>
+<option  value="55446" >Amenia</option>
+<option  value="55447" >Amityville</option>
+<option  value="55448" >Amsterdam</option>
+<option  value="55449" >Ancram</option>
+<option  value="96203" >Ancramdale</option>
+<option  value="55450" >Andes</option>
+<option  value="55451" >Andover</option>
+<option  value="55452" >Angelica</option>
+<option  value="55453" >Angola</option>
+<option  value="55454" >Angola on the Lake</option>
+<option  value="55455" >Annandale On Hudson</option>
+<option  value="135168" >Antwerp</option>
+<option  value="55456" >Apalachin</option>
+<option  value="55457" >Appleton</option>
+<option  value="135169" >Apulia Station</option>
+<option  value="55458" >Aquebogue</option>
+<option  value="55459" >Arcade</option>
+<option  value="135170" >Arcadia</option>
+<option  value="55460" >Ardsley</option>
+<option  value="55461" >Ardsley-on-Hudson</option>
+<option  value="96204" >Argyle</option>
+<option  value="55462" >Arkport</option>
+<option  value="55463" >Arkville</option>
+<option  value="55464" >Arlington</option>
+<option  value="55465" >Armonk</option>
+<option  value="55466" >Arverne</option>
+<option  value="96205" >Ashland</option>
+<option  value="55467" >Ashville</option>
+<option  value="55468" >Astoria</option>
+<option  value="55469" >Athens</option>
+<option  value="55470" >Athol</option>
+<option  value="55471" >Athol Springs</option>
+<option  value="55472" >Atlanta</option>
+<option  value="55473" >Atlantic Beach</option>
+<option  value="55474" >Attica</option>
+<option  value="55475" >Au Sable Forks</option>
+<option  value="55476" >Auburn</option>
+<option  value="55477" >Aurora</option>
+<option  value="55478" >Austerlitz</option>
+<option  value="55479" >Ava</option>
+<option  value="55480" >Averill Park</option>
+<option  value="55481" >Avoca</option>
+<option  value="55482" >Avon</option>
+<option  value="55483" >Babylon</option>
+<option  value="55484" >Bainbridge</option>
+<option  value="55485" >Baiting Hollow</option>
+<option  value="135171" >Bakers Mills</option>
+<option  value="55486" >Baldwin</option>
+<option  value="55487" >Baldwin Harbor</option>
+<option  value="55488" >Baldwin Place</option>
+<option  value="55489" >Baldwinsville</option>
+<option  value="55490" >Ballston Lake</option>
+<option  value="55491" >Ballston Spa</option>
+<option  value="55492" >Balmville</option>
+<option  value="55493" >Bangall</option>
+<option  value="96206" >Bardonia</option>
+<option  value="55494" >Barker</option>
+<option  value="96207" >Barneveld</option>
+<option  value="135172" >Barnum Island</option>
+<option  value="135173" >Barryville</option>
+<option  value="55495" >Barton</option>
+<option  value="55496" >Basom</option>
+<option  value="55497" >Batavia</option>
+<option  value="55498" >Bath</option>
+<option  value="55499" >Bay Shore</option>
+<option  value="96208" >Bay Wood</option>
+<option  value="55500" >Bayport</option>
+<option  value="55501" >Bayside</option>
+<option  value="55502" >Bayville</option>
+<option  value="55503" >Baywood</option>
+<option  value="55504" >Beacon</option>
+<option  value="55505" >Bear Mountain</option>
+<option  value="55506" >Bearsville</option>
+<option  value="55507" >Beaver Dams</option>
+<option  value="55508" >Beaver Falls</option>
+<option  value="135174" >Beaverdam Lake-Salisbury Mills</option>
+<option  value="55509" >Bedford</option>
+<option  value="55510" >Bedford Hills</option>
+<option  value="55511" >Belfast</option>
+<option  value="55512" >Bellerose</option>
+<option  value="55513" >Bellerose Terrace</option>
+<option  value="96209" >Belleville</option>
+<option  value="55514" >Bellmore</option>
+<option  value="135175" >Bellona</option>
+<option  value="55515" >Bellport</option>
+<option  value="55516" >Belmont</option>
+<option  value="55517" >Bemus Point</option>
+<option  value="55518" >Bensonhurst</option>
+<option  value="96210" >Bergen</option>
+<option  value="55519" >Berkshire</option>
+<option  value="96211" >Berlin</option>
+<option  value="55520" >Berne</option>
+<option  value="55521" >Bernhards Bay</option>
+<option  value="96212" >Bethel</option>
+<option  value="55522" >Bethpage</option>
+<option  value="135176" >Bible School Park</option>
+<option  value="55523" >Big Flats</option>
+<option  value="135177" >Big Indian</option>
+<option  value="55524" >Billings</option>
+<option  value="55525" >Billington Heights</option>
+<option  value="55526" >Binghamton</option>
+<option  value="135178" >Black Creek</option>
+<option  value="55527" >Black River</option>
+<option  value="55528" >Blasdell</option>
+<option  value="55529" >Blauvelt</option>
+<option  value="135179" >Bliss</option>
+<option  value="135180" >Blodgett Mills</option>
+<option  value="55530" >Bloomfield</option>
+<option  value="55531" >Blooming Grove</option>
+<option  value="96213" >Bloomingburg</option>
+<option  value="135181" >Bloomingdale</option>
+<option  value="96214" >Bloomington</option>
+<option  value="55532" >Bloomville</option>
+<option  value="55533" >Blossvale</option>
+<option  value="55534" >Blue Mountain Lake</option>
+<option  value="55535" >Blue Point</option>
+<option  value="55536" >Bohemia</option>
+<option  value="55537" >Boiceville</option>
+<option  value="96215" >Bolivar</option>
+<option  value="55538" >Bolton Landing</option>
+<option  value="55539" >Boonville</option>
+<option  value="55540" >Boston</option>
+<option  value="96216" >Bouckville</option>
+<option  value="55541" >Bovina Center</option>
+<option  value="55542" >Bowmansville</option>
+<option  value="135182" >Bradford</option>
+<option  value="55543" >Brainardsville</option>
+<option  value="96217" >Branchport</option>
+<option  value="96218" >Brant</option>
+<option  value="96219" >Brant Lake</option>
+<option  value="96220" >Brantingham</option>
+<option  value="55544" >Brasher Falls</option>
+<option  value="55545" >Breesport</option>
+<option  value="55546" >Breezy Point</option>
+<option  value="55547" >Brentwood</option>
+<option  value="55548" >Brewerton</option>
+<option  value="55549" >Brewster</option>
+<option  value="55550" >Brewster Hill</option>
+<option  value="55551" >Briarcliff Manor</option>
+<option  value="55552" >Bridgehampton</option>
+<option  value="55553" >Bridgeport</option>
+<option  value="55554" >Bridgewater</option>
+<option  value="135183" >Brier Hill</option>
+<option  value="55555" >Brighton</option>
+<option  value="55556" >Brightwaters</option>
+<option  value="55557" >Broadalbin</option>
+<option  value="55558" >Brockport</option>
+<option  value="55559" >Brocton</option>
+<option  value="55560" >Bronx</option>
+<option  value="55561" >Bronxville</option>
+<option  value="135184" >Brookfield</option>
+<option  value="96221" >Brookhaven</option>
+<option  value="55562" >Brooklyn</option>
+<option  value="55563" >Brooktondale</option>
+<option  value="55564" >Brookville</option>
+<option  value="55565" >Brownville</option>
+<option  value="55566" >Brushton</option>
+<option  value="55567" >Buchanan</option>
+<option  value="55568" >Buffalo</option>
+<option  value="55569" >Burdett</option>
+<option  value="55570" >Burke</option>
+<option  value="135185" >Burlingham</option>
+<option  value="55571" >Burlington Flats</option>
+<option  value="55572" >Burnt Hills</option>
+<option  value="55573" >Burt</option>
+<option  value="96222" >Buskirk</option>
+<option  value="55574" >Byron</option>
+<option  value="96223" >Cadyville</option>
+<option  value="55575" >Cairo</option>
+<option  value="55576" >Calcium</option>
+<option  value="55577" >Caledonia</option>
+<option  value="55578" >Callicoon</option>
+<option  value="55579" >Calverton</option>
+<option  value="55580" >Cambria Heights</option>
+<option  value="55581" >Cambridge</option>
+<option  value="55582" >Camden</option>
+<option  value="96224" >Cameron</option>
+<option  value="55583" >Cameron Mills</option>
+<option  value="55584" >Camillus</option>
+<option  value="55585" >Campbell</option>
+<option  value="55586" >Campbell Hall</option>
+<option  value="96225" >Canaan</option>
+<option  value="96226" >Canajoharie</option>
+<option  value="55587" >Canandaigua</option>
+<option  value="135186" >Canaseraga</option>
+<option  value="55588" >Canastota</option>
+<option  value="55589" >Candor</option>
+<option  value="55590" >Caneadea</option>
+<option  value="55591" >Canisteo</option>
+<option  value="55592" >Canton</option>
+<option  value="55593" >Cape Vincent</option>
+<option  value="55594" >Carle Place</option>
+<option  value="55595" >Carlisle</option>
+<option  value="55596" >Carmel</option>
+<option  value="135187" >Carmel Hamlet</option>
+<option  value="96227" >Caroga Lake</option>
+<option  value="55597" >Carthage</option>
+<option  value="96228" >Cassadaga</option>
+<option  value="55598" >Cassville</option>
+<option  value="55599" >Castile</option>
+<option  value="135188" >Castle Creek</option>
+<option  value="96229" >Castle Point</option>
+<option  value="55600" >Castleton-on-Hudson</option>
+<option  value="96230" >Castorland</option>
+<option  value="55601" >Cato</option>
+<option  value="55602" >Catskill</option>
+<option  value="55603" >Cattaraugus</option>
+<option  value="96231" >Cayuga</option>
+<option  value="55604" >Cayuga Heights</option>
+<option  value="135189" >Cayuta</option>
+<option  value="55605" >Cazenovia</option>
+<option  value="55606" >Cedarhurst</option>
+<option  value="55607" >Celoron</option>
+<option  value="55608" >Center Moriches</option>
+<option  value="55609" >Centereach</option>
+<option  value="55610" >Centerport</option>
+<option  value="96232" >Central Bridge</option>
+<option  value="55611" >Central Islip</option>
+<option  value="55612" >Central Square</option>
+<option  value="55613" >Central Valley</option>
+<option  value="135190" >Ceres</option>
+<option  value="55614" >Chadwicks</option>
+<option  value="96233" >Chaffee</option>
+<option  value="55615" >Champlain</option>
+<option  value="55616" >Chappaqua</option>
+<option  value="135191" >Charlotteville</option>
+<option  value="135192" >Chase Mills</option>
+<option  value="55617" >Chateaugay</option>
+<option  value="55618" >Chatham</option>
+<option  value="55619" >Chaumont</option>
+<option  value="55620" >Chautauqua</option>
+<option  value="55621" >Chazy</option>
+<option  value="55622" >Cheektowaga</option>
+<option  value="96234" >Chelsea</option>
+<option  value="96235" >Chemung</option>
+<option  value="55623" >Chenango Bridge</option>
+<option  value="55624" >Chenango Forks</option>
+<option  value="96236" >Cherry Creek</option>
+<option  value="96237" >Cherry Plain</option>
+<option  value="55625" >Cherry Valley</option>
+<option  value="55626" >Chester</option>
+<option  value="55627" >Chestertown</option>
+<option  value="55628" >Chestnut Ridge</option>
+<option  value="135193" >Chichester</option>
+<option  value="96238" >Childwold</option>
+<option  value="55629" >Chittenango</option>
+<option  value="55630" >Churchville</option>
+<option  value="96239" >Churubusco</option>
+<option  value="55631" >Cicero</option>
+<option  value="55632" >Cincinnatus</option>
+<option  value="55633" >Circleville</option>
+<option  value="55634" >Clarence</option>
+<option  value="55635" >Clarence Center</option>
+<option  value="55636" >Clarendon</option>
+<option  value="135194" >Clark Mills</option>
+<option  value="55637" >Clarkson</option>
+<option  value="55638" >Clarksville</option>
+<option  value="96240" >Claryville</option>
+<option  value="96241" >Claverack</option>
+<option  value="55639" >Clay</option>
+<option  value="55640" >Clayton</option>
+<option  value="55641" >Clayville</option>
+<option  value="96242" >Clemons</option>
+<option  value="55642" >Cleveland</option>
+<option  value="135195" >Cleverdale</option>
+<option  value="55643" >Clifton Park</option>
+<option  value="55644" >Clifton Springs</option>
+<option  value="55645" >Clinton</option>
+<option  value="55646" >Clinton Corners</option>
+<option  value="55647" >Clintondale</option>
+<option  value="96243" >Clyde</option>
+<option  value="55648" >Clymer</option>
+<option  value="55649" >Cobleskill</option>
+<option  value="96244" >Cochecton</option>
+<option  value="96245" >Coeymans</option>
+<option  value="96246" >Coeymans Hollow</option>
+<option  value="55650" >Cohocton</option>
+<option  value="55651" >Cohoes</option>
+<option  value="55652" >Cold Brook</option>
+<option  value="55653" >Cold Spring</option>
+<option  value="55654" >Cold Spring Harbor</option>
+<option  value="55655" >Colden</option>
+<option  value="55656" >College Point</option>
+<option  value="55657" >Colliersville</option>
+<option  value="96247" >Collins</option>
+<option  value="96248" >Collins Center</option>
+<option  value="55658" >Colonie</option>
+<option  value="55659" >Colton</option>
+<option  value="55660" >Columbiaville</option>
+<option  value="55661" >Commack</option>
+<option  value="96249" >Comstock</option>
+<option  value="55662" >Conesus</option>
+<option  value="96250" >Conewango Valley</option>
+<option  value="55663" >Coney Island</option>
+<option  value="55664" >Congers</option>
+<option  value="55665" >Conklin</option>
+<option  value="96251" >Connelly</option>
+<option  value="55666" >Constable</option>
+<option  value="96252" >Constableville</option>
+<option  value="55667" >Constantia</option>
+<option  value="55668" >Cooperstown</option>
+<option  value="96253" >Copake</option>
+<option  value="55669" >Copake Falls</option>
+<option  value="96254" >Copenhagen</option>
+<option  value="55670" >Copiague</option>
+<option  value="55671" >Coram</option>
+<option  value="96255" >Corbettsville</option>
+<option  value="96256" >Corfu</option>
+<option  value="55672" >Corinth</option>
+<option  value="55673" >Corning</option>
+<option  value="55674" >Cornwall</option>
+<option  value="55675" >Cornwall-on-Hudson</option>
+<option  value="135196" >Cornwallville</option>
+<option  value="55676" >Corona</option>
+<option  value="55677" >Cortland</option>
+<option  value="135197" >Cortland West</option>
+<option  value="55678" >Cortlandt Manor</option>
+<option  value="55679" >Cossayuna</option>
+<option  value="55680" >Cottekill</option>
+<option  value="55681" >Country Knolls</option>
+<option  value="96257" >Cowlesville</option>
+<option  value="55682" >Coxsackie</option>
+<option  value="55683" >Cragsmoor</option>
+<option  value="55684" >Craryville</option>
+<option  value="135198" >Crittenden</option>
+<option  value="55685" >Croghan</option>
+<option  value="55686" >Crompond</option>
+<option  value="55687" >Cropseyville</option>
+<option  value="55688" >Cross River</option>
+<option  value="96258" >Croton Falls</option>
+<option  value="55689" >Croton-on-Hudson</option>
+<option  value="55690" >Crown Heights</option>
+<option  value="55691" >Crown Point</option>
+<option  value="96259" >Crugers</option>
+<option  value="55692" >Cuba</option>
+<option  value="96260" >Cuddebackville</option>
+<option  value="96261" >Cumberland Head</option>
+<option  value="55693" >Cutchogue</option>
+<option  value="55694" >Dale</option>
+<option  value="96262" >Dalton</option>
+<option  value="55695" >Dannemora</option>
+<option  value="55696" >Dansville</option>
+<option  value="96263" >Darien Center</option>
+<option  value="135199" >Davenport</option>
+<option  value="96264" >Davenport Center</option>
+<option  value="135200" >Dayton</option>
+<option  value="55697" >De Kalb Junction</option>
+<option  value="96265" >De Ruyter</option>
+<option  value="135201" >Deansboro</option>
+<option  value="55698" >Deer Park</option>
+<option  value="135202" >Deer River</option>
+<option  value="96266" >Deerfield</option>
+<option  value="55699" >Delancey</option>
+<option  value="55700" >Delanson</option>
+<option  value="55701" >Delevan</option>
+<option  value="55702" >Delhi</option>
+<option  value="55703" >Delmar</option>
+<option  value="135203" >Delphi Falls</option>
+<option  value="135204" >Denmark</option>
+<option  value="96267" >Denver</option>
+<option  value="135205" >Depauville</option>
+<option  value="55704" >Depew</option>
+<option  value="55705" >Deposit</option>
+<option  value="55706" >Derby</option>
+<option  value="96268" >Dewittville</option>
+<option  value="55707" >Dexter</option>
+<option  value="96269" >Diamond Point</option>
+<option  value="55708" >Dix Hills</option>
+<option  value="55709" >Dobbs Ferry</option>
+<option  value="55710" >Dolgeville</option>
+<option  value="55711" >Dover Plains</option>
+<option  value="55712" >Downsville</option>
+<option  value="55713" >Dresden</option>
+<option  value="55714" >Dryden</option>
+<option  value="55715" >Duanesburg</option>
+<option  value="55716" >Dundee</option>
+<option  value="55717" >Dunkirk</option>
+<option  value="55718" >Durham</option>
+<option  value="96270" >Durhamville</option>
+<option  value="55719" >Eagle Bay</option>
+<option  value="55720" >Eagle Bridge</option>
+<option  value="96271" >Earlton</option>
+<option  value="55721" >Earlville</option>
+<option  value="55722" >East Amherst</option>
+<option  value="96272" >East Atlantic Beach</option>
+<option  value="55723" >East Aurora</option>
+<option  value="55724" >East Berne</option>
+<option  value="55725" >East Bethany</option>
+<option  value="96273" >East Bloomfield</option>
+<option  value="96274" >East Branch</option>
+<option  value="55726" >East Chatham</option>
+<option  value="55727" >East Concord</option>
+<option  value="55728" >East Durham</option>
+<option  value="55729" >East Elmhurst</option>
+<option  value="55730" >East Farmingdale</option>
+<option  value="55731" >East Garden City</option>
+<option  value="55732" >East Glenville</option>
+<option  value="55733" >East Greenbush</option>
+<option  value="55734" >East Hampton</option>
+<option  value="55735" >East Hampton North</option>
+<option  value="96275" >East Hills</option>
+<option  value="55736" >East Islip</option>
+<option  value="55737" >East Ithaca</option>
+<option  value="55738" >East Marion</option>
+<option  value="55739" >East Massapequa</option>
+<option  value="55740" >East Meadow</option>
+<option  value="96276" >East Meredith</option>
+<option  value="55741" >East Moriches</option>
+<option  value="55742" >East Nassau</option>
+<option  value="55743" >East New York</option>
+<option  value="55744" >East Northport</option>
+<option  value="55745" >East Norwich</option>
+<option  value="96277" >East Otto</option>
+<option  value="55746" >East Patchogue</option>
+<option  value="55747" >East Pembroke</option>
+<option  value="55748" >East Quogue</option>
+<option  value="55749" >East Rochester</option>
+<option  value="55750" >East Rockaway</option>
+<option  value="55751" >East Schodack</option>
+<option  value="55752" >East Setauket</option>
+<option  value="135206" >East Springfield</option>
+<option  value="55753" >East Syracuse</option>
+<option  value="55754" >East Williamson</option>
+<option  value="135207" >East Williston</option>
+<option  value="135208" >East Worcester</option>
+<option  value="55755" >Eastchester</option>
+<option  value="55756" >Eastport</option>
+<option  value="135209" >Eaton</option>
+<option  value="135210" >Eatons Neck</option>
+<option  value="55757" >Eden</option>
+<option  value="55758" >Edmeston</option>
+<option  value="55759" >Edwards</option>
+<option  value="55760" >Eggertsville</option>
+<option  value="55761" >Elba</option>
+<option  value="55762" >Elbridge</option>
+<option  value="135211" >Eldred</option>
+<option  value="55763" >Elizabethtown</option>
+<option  value="55764" >Elizaville</option>
+<option  value="135212" >Elka Park</option>
+<option  value="55765" >Ellenburg</option>
+<option  value="55766" >Ellenburg Center</option>
+<option  value="55767" >Ellenburg Depot</option>
+<option  value="55768" >Ellenville</option>
+<option  value="55769" >Ellicottville</option>
+<option  value="55770" >Ellington</option>
+<option  value="96278" >Ellisburg</option>
+<option  value="55771" >Elma</option>
+<option  value="96279" >Elma Center</option>
+<option  value="55772" >Elmhurst</option>
+<option  value="55773" >Elmira</option>
+<option  value="96280" >Elmira Heights</option>
+<option  value="55774" >Elmont</option>
+<option  value="55775" >Elmsford</option>
+<option  value="55776" >Elwood</option>
+<option  value="55777" >Endicott</option>
+<option  value="55778" >Endwell</option>
+<option  value="55779" >Erieville</option>
+<option  value="55780" >Erin</option>
+<option  value="96281" >Esopus</option>
+<option  value="55781" >Esperance</option>
+<option  value="135213" >Essex</option>
+<option  value="135214" >Etna</option>
+<option  value="55782" >Evans Mills</option>
+<option  value="96282" >Fabius</option>
+<option  value="55783" >Fair Haven</option>
+<option  value="135215" >Fairmount</option>
+<option  value="55784" >Fairport</option>
+<option  value="55785" >Fairview</option>
+<option  value="55786" >Falconer</option>
+<option  value="55787" >Fallsburg</option>
+<option  value="135216" >Fancher</option>
+<option  value="55788" >Far Rockaway</option>
+<option  value="96283" >Farmersville Station</option>
+<option  value="55789" >Farmingdale</option>
+<option  value="55790" >Farmington</option>
+<option  value="55791" >Farmingville</option>
+<option  value="135217" >Farnham</option>
+<option  value="55792" >Fayetteville</option>
+<option  value="135218" >Felts Mills</option>
+<option  value="55793" >Ferndale</option>
+<option  value="55794" >Feura Bush</option>
+<option  value="55795" >Fillmore</option>
+<option  value="55796" >Findley Lake</option>
+<option  value="135219" >Fine</option>
+<option  value="55797" >Firthcliffe</option>
+<option  value="55798" >Fishers</option>
+<option  value="55799" >Fishers Island</option>
+<option  value="96284" >Fishers Landing</option>
+<option  value="55800" >Fishkill</option>
+<option  value="55801" >Flanders</option>
+<option  value="96285" >Fleischmanns</option>
+<option  value="55802" >Floral Park</option>
+<option  value="55803" >Florida</option>
+<option  value="96286" >Flower Hill</option>
+<option  value="55804" >Flushing</option>
+<option  value="55805" >Fly Creek</option>
+<option  value="55806" >Fonda</option>
+<option  value="55807" >Forest Hills</option>
+<option  value="55808" >Forestburgh</option>
+<option  value="96287" >Forestport</option>
+<option  value="55809" >Forestville</option>
+<option  value="55810" >Fort Ann</option>
+<option  value="96288" >Fort Covington</option>
+<option  value="55811" >Fort Drum</option>
+<option  value="55812" >Fort Edward</option>
+<option  value="135220" >Fort Hunter</option>
+<option  value="96289" >Fort Johnson</option>
+<option  value="96290" >Fort Montgomery</option>
+<option  value="55813" >Fort Plain</option>
+<option  value="55814" >Fort Salonga</option>
+<option  value="55815" >Frankfort</option>
+<option  value="55816" >Franklin</option>
+<option  value="135221" >Franklin Springs</option>
+<option  value="55817" >Franklin Square</option>
+<option  value="55818" >Franklinville</option>
+<option  value="55819" >Fredonia</option>
+<option  value="96291" >Freedom</option>
+<option  value="55820" >Freehold</option>
+<option  value="55821" >Freeport</option>
+<option  value="55822" >Freeville</option>
+<option  value="135222" >Fremont Center</option>
+<option  value="55823" >Fresh Meadows</option>
+<option  value="55824" >Frewsburg</option>
+<option  value="96292" >Friendship</option>
+<option  value="55825" >Fulton</option>
+<option  value="135223" >Fultonham</option>
+<option  value="55826" >Fultonville</option>
+<option  value="135224" >Gabriels</option>
+<option  value="55827" >Gainesville</option>
+<option  value="55828" >Galeville</option>
+<option  value="55829" >Galway</option>
+<option  value="55830" >Gang Mills</option>
+<option  value="55831" >Gansevoort</option>
+<option  value="55832" >Garden City</option>
+<option  value="55833" >Garden City Park</option>
+<option  value="96293" >Garden City South</option>
+<option  value="55834" >Gardiner</option>
+<option  value="55835" >Gardnertown</option>
+<option  value="55836" >Garnerville</option>
+<option  value="55837" >Garrison</option>
+<option  value="55838" >Gasport</option>
+<option  value="55839" >Geneseo</option>
+<option  value="55840" >Geneva</option>
+<option  value="55841" >Genoa</option>
+<option  value="55842" >Georgetown</option>
+<option  value="55843" >Germantown</option>
+<option  value="135225" >Gerry</option>
+<option  value="55844" >Getzville</option>
+<option  value="55845" >Ghent</option>
+<option  value="55846" >Gilbertsville</option>
+<option  value="55847" >Gilboa</option>
+<option  value="135226" >Glasco</option>
+<option  value="55848" >Glen Aubrey</option>
+<option  value="55849" >Glen Cove</option>
+<option  value="55850" >Glen Head</option>
+<option  value="55851" >Glen Oaks</option>
+<option  value="55852" >Glen Spey</option>
+<option  value="135227" >Glen Wild</option>
+<option  value="55853" >Glenfield</option>
+<option  value="96294" >Glenham</option>
+<option  value="55854" >Glenmont</option>
+<option  value="55855" >Glens Falls</option>
+<option  value="55856" >Glens Falls North</option>
+<option  value="55857" >Glenwood</option>
+<option  value="96295" >Glenwood Landing</option>
+<option  value="55858" >Gloversville</option>
+<option  value="55859" >Goldens Bridge</option>
+<option  value="135228" >Gordon Heights</option>
+<option  value="55860" >Gorham</option>
+<option  value="55861" >Goshen</option>
+<option  value="55862" >Gouverneur</option>
+<option  value="55863" >Gowanda</option>
+<option  value="55864" >Grafton</option>
+<option  value="55865" >Grahamsville</option>
+<option  value="96296" >Grand Gorge</option>
+<option  value="55866" >Grand Island</option>
+<option  value="135229" >Grandyle Village</option>
+<option  value="96297" >Granite Springs</option>
+<option  value="55867" >Granville</option>
+<option  value="55868" >Great Bend</option>
+<option  value="55869" >Great Neck</option>
+<option  value="55870" >Great Neck Estates</option>
+<option  value="55871" >Great Neck Gardens</option>
+<option  value="55872" >Great Neck Plaza</option>
+<option  value="55873" >Great River</option>
+<option  value="96298" >Great Valley</option>
+<option  value="55874" >Greece</option>
+<option  value="96299" >Green Island</option>
+<option  value="55875" >Greenburgh</option>
+<option  value="55876" >Greene</option>
+<option  value="55877" >Greenfield Center</option>
+<option  value="55878" >Greenfield Park</option>
+<option  value="55879" >Greenhurst</option>
+<option  value="55880" >Greenlawn</option>
+<option  value="55881" >Greenport</option>
+<option  value="135230" >Greenport West</option>
+<option  value="55882" >Greenvale</option>
+<option  value="55883" >Greenville</option>
+<option  value="55884" >Greenwich</option>
+<option  value="96300" >Greenwood</option>
+<option  value="55885" >Greenwood Lake</option>
+<option  value="135231" >Greig</option>
+<option  value="55886" >Groton</option>
+<option  value="96301" >Groveland</option>
+<option  value="55887" >Guilderland</option>
+<option  value="96302" >Guilderland Center</option>
+<option  value="55888" >Guilford</option>
+<option  value="55889" >Hadley</option>
+<option  value="55890" >Hagaman</option>
+<option  value="96303" >Hague</option>
+<option  value="96304" >Hailesboro</option>
+<option  value="96305" >Haines Falls</option>
+<option  value="55891" >Halcottsville</option>
+<option  value="55892" >Halesite</option>
+<option  value="96306" >Hall</option>
+<option  value="55893" >Hamburg</option>
+<option  value="135232" >Hamden</option>
+<option  value="55894" >Hamilton</option>
+<option  value="55895" >Hamlin</option>
+<option  value="55896" >Hammond</option>
+<option  value="55897" >Hammondsport</option>
+<option  value="96307" >Hampton</option>
+<option  value="55898" >Hampton Bays</option>
+<option  value="135233" >Hampton Manor</option>
+<option  value="55899" >Hancock</option>
+<option  value="135234" >Hankins</option>
+<option  value="96308" >Hannacroix</option>
+<option  value="55900" >Hannawa Falls</option>
+<option  value="55901" >Hannibal</option>
+<option  value="55902" >Harbor Isle</option>
+<option  value="96309" >Harford</option>
+<option  value="55903" >Harpersfield</option>
+<option  value="55904" >Harpursville</option>
+<option  value="55905" >Harriman</option>
+<option  value="96310" >Harris</option>
+<option  value="55906" >Harris Hill</option>
+<option  value="55907" >Harrison</option>
+<option  value="55908" >Harrisville</option>
+<option  value="96311" >Hartford</option>
+<option  value="55909" >Hartsdale</option>
+<option  value="55910" >Hartwick</option>
+<option  value="55911" >Hastings</option>
+<option  value="55912" >Hastings-on-Hudson</option>
+<option  value="55913" >Hauppauge</option>
+<option  value="55914" >Haverstraw</option>
+<option  value="96312" >Haviland</option>
+<option  value="55915" >Hawthorne</option>
+<option  value="55916" >Head of the Harbor</option>
+<option  value="55917" >Hemlock</option>
+<option  value="55918" >Hempstead</option>
+<option  value="55919" >Henderson</option>
+<option  value="96313" >Henderson Harbor</option>
+<option  value="55920" >Henrietta</option>
+<option  value="55921" >Hensonville</option>
+<option  value="135235" >Heritage Hills</option>
+<option  value="55922" >Herkimer</option>
+<option  value="55923" >Hermon</option>
+<option  value="55924" >Herricks</option>
+<option  value="55925" >Heuvelton</option>
+<option  value="55926" >Hewlett</option>
+<option  value="135236" >Hewlett Harbor</option>
+<option  value="55927" >Hicksville</option>
+<option  value="55928" >High Falls</option>
+<option  value="55929" >Highland</option>
+<option  value="55930" >Highland Falls</option>
+<option  value="135237" >Highland Lake</option>
+<option  value="55931" >Highland Mills</option>
+<option  value="55932" >Highmount</option>
+<option  value="96314" >Hillburn</option>
+<option  value="96315" >Hillcrest</option>
+<option  value="96316" >Hillsdale</option>
+<option  value="135238" >Hillside Lake</option>
+<option  value="55933" >Hilton</option>
+<option  value="55934" >Himrod</option>
+<option  value="135239" >Hinckley</option>
+<option  value="96317" >Hinsdale</option>
+<option  value="135240" >Hobart</option>
+<option  value="55935" >Hogansburg</option>
+<option  value="55936" >Holbrook</option>
+<option  value="55937" >Holcomb</option>
+<option  value="55938" >Holland</option>
+<option  value="55939" >Holland Patent</option>
+<option  value="55940" >Holley</option>
+<option  value="55941" >Hollis</option>
+<option  value="55942" >Hollis Hills</option>
+<option  value="55943" >Hollowville</option>
+<option  value="55944" >Holmes</option>
+<option  value="55945" >Holtsville</option>
+<option  value="55946" >Homer</option>
+<option  value="55947" >Honeoye</option>
+<option  value="55948" >Honeoye Falls</option>
+<option  value="55949" >Hoosick</option>
+<option  value="55950" >Hoosick Falls</option>
+<option  value="55951" >Hopewell Junction</option>
+<option  value="55952" >Hornell</option>
+<option  value="55953" >Horseheads</option>
+<option  value="55954" >Horseheads North</option>
+<option  value="55955" >Hortonville</option>
+<option  value="55956" >Houghton</option>
+<option  value="55957" >Howard Beach</option>
+<option  value="55958" >Howells</option>
+<option  value="135241" >Howes Cave</option>
+<option  value="96318" >Hubbardsville</option>
+<option  value="55959" >Hudson</option>
+<option  value="55960" >Hudson Falls</option>
+<option  value="55961" >Hughsonville</option>
+<option  value="55962" >Huguenot</option>
+<option  value="96319" >Hunt</option>
+<option  value="55963" >Hunter</option>
+<option  value="55964" >Huntington</option>
+<option  value="96320" >Huntington Bay</option>
+<option  value="55965" >Huntington Station</option>
+<option  value="55966" >Hurley</option>
+<option  value="55967" >Hurleyville</option>
+<option  value="55968" >Hyde Park</option>
+<option  value="55969" >Ilion</option>
+<option  value="55970" >Indian Lake</option>
+<option  value="55971" >Inlet</option>
+<option  value="55972" >Interlaken</option>
+<option  value="55973" >Inwood</option>
+<option  value="96321" >Ionia</option>
+<option  value="55974" >Irondequoit</option>
+<option  value="55975" >Irving</option>
+<option  value="55976" >Irvington</option>
+<option  value="55977" >Island Park</option>
+<option  value="55978" >Islandia</option>
+<option  value="55979" >Islip</option>
+<option  value="55980" >Islip Terrace</option>
+<option  value="55981" >Ithaca</option>
+<option  value="55982" >Jackson Heights</option>
+<option  value="55983" >Jacksonville</option>
+<option  value="55984" >Jamaica</option>
+<option  value="55985" >Jamesport</option>
+<option  value="55986" >Jamestown</option>
+<option  value="55987" >Jamestown West</option>
+<option  value="55988" >Jamesville</option>
+<option  value="55989" >Jasper</option>
+<option  value="135242" >Java Center</option>
+<option  value="96322" >Jay</option>
+<option  value="96323" >Jefferson</option>
+<option  value="96324" >Jefferson Heights</option>
+<option  value="55990" >Jefferson Valley</option>
+<option  value="135243" >Jefferson Valley-Yorktown</option>
+<option  value="55991" >Jeffersonville</option>
+<option  value="55992" >Jericho</option>
+<option  value="96325" >Jewett</option>
+<option  value="96326" >Johnsburg</option>
+<option  value="55993" >Johnson</option>
+<option  value="55994" >Johnson City</option>
+<option  value="55995" >Johnsonville</option>
+<option  value="55996" >Johnstown</option>
+<option  value="55997" >Jordan</option>
+<option  value="135244" >Jordanville</option>
+<option  value="55998" >Kanona</option>
+<option  value="135245" >Kaser</option>
+<option  value="55999" >Katonah</option>
+<option  value="56000" >Kattskill Bay</option>
+<option  value="96327" >Kauneonga Lake</option>
+<option  value="135246" >Keene</option>
+<option  value="56001" >Keene Valley</option>
+<option  value="56002" >Keeseville</option>
+<option  value="56003" >Kendall</option>
+<option  value="56004" >Kenmore</option>
+<option  value="96328" >Kennedy</option>
+<option  value="135247" >Kenoza Lake</option>
+<option  value="56005" >Kensington</option>
+<option  value="56006" >Kent</option>
+<option  value="56007" >Kerhonkson</option>
+<option  value="96329" >Keuka Park</option>
+<option  value="56008" >Kew Gardens</option>
+<option  value="56009" >Kiamesha Lake</option>
+<option  value="56010" >Kinderhook</option>
+<option  value="56011" >King Ferry</option>
+<option  value="56012" >Kings Park</option>
+<option  value="56013" >Kings Point</option>
+<option  value="56014" >Kingston</option>
+<option  value="56015" >Kirkville</option>
+<option  value="56016" >Kirkwood</option>
+<option  value="56017" >Kiryas Joel</option>
+<option  value="135248" >Knowlesville</option>
+<option  value="96330" >Knoxboro</option>
+<option  value="96331" >La Fargeville</option>
+<option  value="56018" >Lackawanna</option>
+<option  value="96332" >Lacona</option>
+<option  value="56019" >Lafayette</option>
+<option  value="56020" >Lagrangeville</option>
+<option  value="56021" >Lake Carmel</option>
+<option  value="96333" >Lake Clear</option>
+<option  value="56022" >Lake George</option>
+<option  value="56023" >Lake Grove</option>
+<option  value="56024" >Lake Katrine</option>
+<option  value="56025" >Lake Luzerne</option>
+<option  value="135249" >Lake Mohegan</option>
+<option  value="56026" >Lake Peekskill</option>
+<option  value="56027" >Lake Placid</option>
+<option  value="56028" >Lake Pleasant</option>
+<option  value="56029" >Lake Ronkonkoma</option>
+<option  value="56030" >Lake Success</option>
+<option  value="56031" >Lake View</option>
+<option  value="56032" >Lakeland</option>
+<option  value="56033" >Lakemont</option>
+<option  value="56034" >Lakeview</option>
+<option  value="56035" >Lakeville</option>
+<option  value="56036" >Lakewood</option>
+<option  value="56037" >Lancaster</option>
+<option  value="135250" >Lanesville</option>
+<option  value="56038" >Lansing</option>
+<option  value="56039" >Larchmont</option>
+<option  value="56040" >Latham</option>
+<option  value="56041" >Lattingtown</option>
+<option  value="96334" >Laurel</option>
+<option  value="135251" >Laurel Hollow</option>
+<option  value="56042" >Laurens</option>
+<option  value="56043" >Lawrence</option>
+<option  value="56044" >Lawtons</option>
+<option  value="56045" >Le Roy</option>
+<option  value="96335" >Lee Center</option>
+<option  value="56046" >Leeds</option>
+<option  value="56047" >Leicester</option>
+<option  value="135252" >Leon</option>
+<option  value="96336" >Leonardsville</option>
+<option  value="56048" >Levittown</option>
+<option  value="96337" >Lewis</option>
+<option  value="56049" >Lewiston</option>
+<option  value="56050" >Lexington</option>
+<option  value="56051" >Liberty</option>
+<option  value="56052" >Lido Beach</option>
+<option  value="56053" >Lily Dale</option>
+<option  value="56054" >Lima</option>
+<option  value="56055" >Limestone</option>
+<option  value="56056" >Lincoln Park</option>
+<option  value="56057" >Lincolndale</option>
+<option  value="56058" >Lindenhurst</option>
+<option  value="56059" >Lindley</option>
+<option  value="56060" >Linwood</option>
+<option  value="56061" >Lisbon</option>
+<option  value="56062" >Lisle</option>
+<option  value="56063" >Little Falls</option>
+<option  value="56064" >Little Genesee</option>
+<option  value="56065" >Little Neck</option>
+<option  value="56066" >Little Valley</option>
+<option  value="135253" >Little York</option>
+<option  value="56067" >Liverpool</option>
+<option  value="135254" >Livingston</option>
+<option  value="56068" >Livingston Manor</option>
+<option  value="56069" >Livonia</option>
+<option  value="135255" >Livonia Center</option>
+<option  value="56070" >Lloyd Harbor</option>
+<option  value="56071" >Loch Sheldrake</option>
+<option  value="96338" >Locke</option>
+<option  value="56072" >Lockport</option>
+<option  value="56073" >Lockwood</option>
+<option  value="56074" >Locust Valley</option>
+<option  value="96339" >Lodi</option>
+<option  value="56075" >Long Beach</option>
+<option  value="96340" >Long Eddy</option>
+<option  value="56076" >Long Island City</option>
+<option  value="56077" >Long Lake</option>
+<option  value="135256" >Lorenz Park</option>
+<option  value="135257" >Lorraine</option>
+<option  value="96341" >Lowman</option>
+<option  value="56078" >Lowville</option>
+<option  value="56079" >Lycoming</option>
+<option  value="96342" >Lyme</option>
+<option  value="56080" >Lynbrook</option>
+<option  value="56081" >Lyncourt</option>
+<option  value="96343" >Lyndonville</option>
+<option  value="56082" >Lyon Mountain</option>
+<option  value="56083" >Lyons</option>
+<option  value="56084" >Lyons Falls</option>
+<option  value="56085" >Macedon</option>
+<option  value="56086" >Machias</option>
+<option  value="56087" >Madison</option>
+<option  value="56088" >Madrid</option>
+<option  value="56089" >Mahopac</option>
+<option  value="56090" >Mahopac Falls</option>
+<option  value="96344" >Maine</option>
+<option  value="96345" >Malden-on-Hudson</option>
+<option  value="56091" >Mallory</option>
+<option  value="56092" >Malone</option>
+<option  value="56093" >Malverne</option>
+<option  value="56094" >Mamaroneck</option>
+<option  value="96346" >Manchester</option>
+<option  value="56095" >Manhasset</option>
+<option  value="56096" >Manhasset Hills</option>
+<option  value="56097" >Manhattan</option>
+<option  value="56098" >Manlius</option>
+<option  value="56099" >Mannsville</option>
+<option  value="56100" >Manorhaven</option>
+<option  value="56101" >Manorville</option>
+<option  value="56102" >Maple Springs</option>
+<option  value="56103" >Maple View</option>
+<option  value="135258" >Maplecrest</option>
+<option  value="56104" >Marathon</option>
+<option  value="56105" >Marcellus</option>
+<option  value="56106" >Marcy</option>
+<option  value="56107" >Margaretville</option>
+<option  value="56108" >Marietta</option>
+<option  value="56109" >Marilla</option>
+<option  value="56110" >Marion</option>
+<option  value="56111" >Marlboro</option>
+<option  value="135259" >Martinsburg</option>
+<option  value="135260" >Martville</option>
+<option  value="56112" >Maryknoll</option>
+<option  value="56113" >Maryland</option>
+<option  value="56114" >Masonville</option>
+<option  value="56115" >Maspeth</option>
+<option  value="56116" >Massapequa</option>
+<option  value="56117" >Massapequa Park</option>
+<option  value="56118" >Massena</option>
+<option  value="56119" >Mastic</option>
+<option  value="56120" >Mastic Beach</option>
+<option  value="56121" >Mattituck</option>
+<option  value="56122" >Mattydale</option>
+<option  value="56123" >Maybrook</option>
+<option  value="56124" >Mayfield</option>
+<option  value="56125" >Mayville</option>
+<option  value="56126" >McConnellsville</option>
+<option  value="96347" >McDonough</option>
+<option  value="56127" >McGraw</option>
+<option  value="56128" >McLean</option>
+<option  value="56129" >Mechanicstown</option>
+<option  value="56130" >Mechanicville</option>
+<option  value="56131" >Medford</option>
+<option  value="56132" >Medina</option>
+<option  value="96348" >Medusa</option>
+<option  value="135261" >Mellenville</option>
+<option  value="56133" >Melrose</option>
+<option  value="135262" >Melrose Park</option>
+<option  value="56134" >Melville</option>
+<option  value="56135" >Memphis</option>
+<option  value="96349" >Menands</option>
+<option  value="56136" >Mendon</option>
+<option  value="96350" >Meridian</option>
+<option  value="56137" >Merrick</option>
+<option  value="56138" >Mexico</option>
+<option  value="56139" >Middle Granville</option>
+<option  value="96351" >Middle Grove</option>
+<option  value="56140" >Middle Island</option>
+<option  value="56141" >Middle Village</option>
+<option  value="56142" >Middleburgh</option>
+<option  value="56143" >Middleport</option>
+<option  value="56144" >Middlesex</option>
+<option  value="56145" >Middletown</option>
+<option  value="56146" >Milford</option>
+<option  value="56147" >Mill Neck</option>
+<option  value="56148" >Millbrook</option>
+<option  value="56149" >Miller Place</option>
+<option  value="56150" >Millerton</option>
+<option  value="56151" >Millport</option>
+<option  value="56152" >Millwood</option>
+<option  value="96352" >Milton</option>
+<option  value="56153" >Mineola</option>
+<option  value="135263" >Minerva</option>
+<option  value="56154" >Minetto</option>
+<option  value="56155" >Mineville</option>
+<option  value="56156" >Minoa</option>
+<option  value="96353" >Model City</option>
+<option  value="56157" >Modena</option>
+<option  value="56158" >Mohawk</option>
+<option  value="56159" >Mohegan Lake</option>
+<option  value="96354" >Moira</option>
+<option  value="56160" >Mongaup Valley</option>
+<option  value="56161" >Monroe</option>
+<option  value="56162" >Monsey</option>
+<option  value="56163" >Montauk</option>
+<option  value="56164" >Montebello</option>
+<option  value="96355" >Montezuma</option>
+<option  value="56165" >Montgomery</option>
+<option  value="56166" >Monticello</option>
+<option  value="56167" >Montour Falls</option>
+<option  value="56168" >Montrose</option>
+<option  value="56169" >Mooers</option>
+<option  value="56170" >Mooers Forks</option>
+<option  value="56171" >Moravia</option>
+<option  value="135264" >Moriah</option>
+<option  value="56172" >Moriches</option>
+<option  value="135265" >Morris</option>
+<option  value="56173" >Morrisonville</option>
+<option  value="56174" >Morristown</option>
+<option  value="56175" >Morrisville</option>
+<option  value="56176" >Morton</option>
+<option  value="135266" >Mottville</option>
+<option  value="56177" >Mount Ivy</option>
+<option  value="56178" >Mount Kisco</option>
+<option  value="135267" >Mount Marion</option>
+<option  value="56179" >Mount Morris</option>
+<option  value="56180" >Mount Sinai</option>
+<option  value="96356" >Mount Tremper</option>
+<option  value="96357" >Mount Upton</option>
+<option  value="56181" >Mount Vernon</option>
+<option  value="56182" >Mount Vision</option>
+<option  value="56183" >Mountain Dale</option>
+<option  value="135268" >Mountain Lodge Park</option>
+<option  value="56184" >Mountainville</option>
+<option  value="96358" >Mumford</option>
+<option  value="56185" >Munnsville</option>
+<option  value="56186" >Munsey Park</option>
+<option  value="135269" >Munsons Corners</option>
+<option  value="56187" >Muttontown</option>
+<option  value="56188" >Myers Corner</option>
+<option  value="56189" >Nanuet</option>
+<option  value="56190" >Napanoch</option>
+<option  value="56191" >Naples</option>
+<option  value="56192" >Narrowsburg</option>
+<option  value="56193" >Nassau</option>
+<option  value="135270" >Natural Bridge</option>
+<option  value="56194" >Nedrow</option>
+<option  value="135271" >Nelliston</option>
+<option  value="56195" >Nesconset</option>
+<option  value="135272" >Neversink</option>
+<option  value="96359" >New Baltimore</option>
+<option  value="56196" >New Berlin</option>
+<option  value="56197" >New Cassel</option>
+<option  value="56198" >New City</option>
+<option  value="56199" >New Hampton</option>
+<option  value="56200" >New Hartford</option>
+<option  value="56201" >New Haven</option>
+<option  value="56202" >New Hempstead</option>
+<option  value="56203" >New Hyde Park</option>
+<option  value="56204" >New Kingston</option>
+<option  value="56205" >New Lebanon</option>
+<option  value="135273" >New Lisbon</option>
+<option  value="135274" >New Milford</option>
+<option  value="56206" >New Paltz</option>
+<option  value="56207" >New Rochelle</option>
+<option  value="56208" >New Square</option>
+<option  value="96360" >New Suffolk</option>
+<option  value="56209" >New Windsor</option>
+<option  value="56210" >New Woodstock</option>
+<option  value="56211" selected="selected">New York</option>
+<option  value="96361" >New York City</option>
+<option  value="56212" >New York Mills</option>
+<option  value="56213" >Newark</option>
+<option  value="56214" >Newark Valley</option>
+<option  value="56215" >Newburgh</option>
+<option  value="96362" >Newcomb</option>
+<option  value="56216" >Newfane</option>
+<option  value="56217" >Newfield</option>
+<option  value="56218" >Newport</option>
+<option  value="135275" >Newton Falls</option>
+<option  value="96363" >Newtonville</option>
+<option  value="56219" >Niagara Falls</option>
+<option  value="56220" >Niagara University</option>
+<option  value="96364" >Nichols</option>
+<option  value="96365" >Nicholville</option>
+<option  value="96366" >Nineveh</option>
+<option  value="56221" >Niobe</option>
+<option  value="56222" >Niskayuna</option>
+<option  value="135276" >Nissequogue</option>
+<option  value="96367" >Niverville</option>
+<option  value="56223" >Norfolk</option>
+<option  value="56224" >North Amityville</option>
+<option  value="56225" >North Babylon</option>
+<option  value="56226" >North Ballston Spa</option>
+<option  value="96368" >North Bangor</option>
+<option  value="56227" >North Bay Shore</option>
+<option  value="56228" >North Bellmore</option>
+<option  value="56229" >North Bellport</option>
+<option  value="56230" >North Blenheim</option>
+<option  value="56231" >North Boston</option>
+<option  value="56232" >North Branch</option>
+<option  value="96369" >North Brookfield</option>
+<option  value="135277" >North Chatham</option>
+<option  value="56233" >North Chili</option>
+<option  value="56234" >North Collins</option>
+<option  value="56235" >North Creek</option>
+<option  value="135278" >North Evans</option>
+<option  value="56236" >North Gates</option>
+<option  value="56237" >North Great River</option>
+<option  value="56238" >North Greece</option>
+<option  value="56239" >North Hills</option>
+<option  value="135279" >North Hoosick</option>
+<option  value="96370" >North Hudson</option>
+<option  value="56240" >North Java</option>
+<option  value="96371" >North Lawrence</option>
+<option  value="56241" >North Lindenhurst</option>
+<option  value="56242" >North Massapequa</option>
+<option  value="56243" >North Merrick</option>
+<option  value="56244" >North New Hyde Park</option>
+<option  value="96372" >North Norwich</option>
+<option  value="135280" >North Patchogue</option>
+<option  value="56245" >North Pitcher</option>
+<option  value="96373" >North Rose</option>
+<option  value="56246" >North Salem</option>
+<option  value="56247" >North Syracuse</option>
+<option  value="56248" >North Tonawanda</option>
+<option  value="56249" >North Valley Stream</option>
+<option  value="56250" >North Wantagh</option>
+<option  value="56251" >Northeast Ithaca</option>
+<option  value="56252" >Northport</option>
+<option  value="56253" >Northville</option>
+<option  value="56254" >Norwich</option>
+<option  value="56255" >Norwood</option>
+<option  value="56256" >Noyack</option>
+<option  value="56257" >Nunda</option>
+<option  value="56258" >Nyack</option>
+<option  value="96374" >Oak Hill</option>
+<option  value="56259" >Oakdale</option>
+<option  value="56260" >Oakfield</option>
+<option  value="56261" >Oakland Gardens</option>
+<option  value="56262" >Oaks Corners</option>
+<option  value="56263" >Ocean Beach</option>
+<option  value="56264" >Oceanside</option>
+<option  value="56265" >Odessa</option>
+<option  value="56266" >Ogdensburg</option>
+<option  value="56267" >Olcott</option>
+<option  value="56268" >Old Bethpage</option>
+<option  value="56269" >Old Brookville</option>
+<option  value="56270" >Old Chatham</option>
+<option  value="56271" >Old Forge</option>
+<option  value="56272" >Old Westbury</option>
+<option  value="56273" >Olean</option>
+<option  value="56274" >Olivebridge</option>
+<option  value="96375" >Olmstedville</option>
+<option  value="56275" >Oneida</option>
+<option  value="56276" >Oneonta</option>
+<option  value="56277" >Ontario</option>
+<option  value="96376" >Ontario Center</option>
+<option  value="135281" >Orange Lake</option>
+<option  value="56278" >Orangeburg</option>
+<option  value="56279" >Orchard Park</option>
+<option  value="56280" >Orient</option>
+<option  value="56281" >Oriskany</option>
+<option  value="56282" >Oriskany Falls</option>
+<option  value="56283" >Ossining</option>
+<option  value="96377" >Oswegatchie</option>
+<option  value="56284" >Oswego</option>
+<option  value="56285" >Otego</option>
+<option  value="96378" >Otisco</option>
+<option  value="56286" >Otisville</option>
+<option  value="135282" >Otto</option>
+<option  value="56287" >Ouaquaga</option>
+<option  value="56288" >Ovid</option>
+<option  value="56289" >Owego</option>
+<option  value="135283" >Oxbow</option>
+<option  value="56290" >Oxford</option>
+<option  value="56291" >Oyster Bay</option>
+<option  value="135284" >Oyster Bay Cove</option>
+<option  value="56292" >Ozone Park</option>
+<option  value="56293" >Painted Post</option>
+<option  value="56294" >Palatine Bridge</option>
+<option  value="56295" >Palenville</option>
+<option  value="56296" >Palisades</option>
+<option  value="56297" >Palmyra</option>
+<option  value="56298" >Panama</option>
+<option  value="56299" >Paradox</option>
+<option  value="56300" >Parish</option>
+<option  value="135285" >Parishville</option>
+<option  value="56301" >Parksville</option>
+<option  value="56302" >Patchogue</option>
+<option  value="56303" >Patterson</option>
+<option  value="56304" >Pattersonville</option>
+<option  value="56305" >Paul Smiths</option>
+<option  value="56306" >Pavilion</option>
+<option  value="56307" >Pawling</option>
+<option  value="56308" >Peach Lake</option>
+<option  value="56309" >Pearl River</option>
+<option  value="56310" >Peconic</option>
+<option  value="56311" >Peekskill</option>
+<option  value="56312" >Pelham</option>
+<option  value="135286" >Pelham Manor</option>
+<option  value="56313" >Penfield</option>
+<option  value="56314" >Penn Yan</option>
+<option  value="56315" >Pennellville</option>
+<option  value="56316" >Perry</option>
+<option  value="96379" >Perrysburg</option>
+<option  value="56317" >Peru</option>
+<option  value="96380" >Peterboro</option>
+<option  value="56318" >Petersburg</option>
+<option  value="56319" >Phelps</option>
+<option  value="56320" >Philadelphia</option>
+<option  value="135287" >Phillipsport</option>
+<option  value="56321" >Philmont</option>
+<option  value="56322" >Phoenicia</option>
+<option  value="56323" >Phoenix</option>
+<option  value="96381" >Piermont</option>
+<option  value="96382" >Pierrepont Manor</option>
+<option  value="96383" >Piffard</option>
+<option  value="135288" >Pike</option>
+<option  value="56324" >Pine Bush</option>
+<option  value="56325" >Pine City</option>
+<option  value="96384" >Pine Hill</option>
+<option  value="56326" >Pine Island</option>
+<option  value="56327" >Pine Plains</option>
+<option  value="96385" >Pine Valley</option>
+<option  value="56328" >Piseco</option>
+<option  value="56329" >Pitcher</option>
+<option  value="56330" >Pittsford</option>
+<option  value="56331" >Plainedge</option>
+<option  value="56332" >Plainview</option>
+<option  value="96386" >Plainville</option>
+<option  value="96387" >Plandome</option>
+<option  value="56333" >Plandome Heights</option>
+<option  value="56334" >Plattekill</option>
+<option  value="56335" >Plattsburgh</option>
+<option  value="135289" >Plattsburgh West</option>
+<option  value="56336" >Pleasant Valley</option>
+<option  value="56337" >Pleasantville</option>
+<option  value="135290" >Plessis</option>
+<option  value="56338" >Poestenkill</option>
+<option  value="56339" >Point Lookout</option>
+<option  value="96388" >Poland</option>
+<option  value="56340" >Pomona</option>
+<option  value="56341" >Pompey</option>
+<option  value="96389" >Pond Eddy</option>
+<option  value="56342" >Port Byron</option>
+<option  value="56343" >Port Chester</option>
+<option  value="56344" >Port Crane</option>
+<option  value="56345" >Port Dickinson</option>
+<option  value="56346" >Port Ewen</option>
+<option  value="135291" >Port Gibson</option>
+<option  value="56347" >Port Henry</option>
+<option  value="56348" >Port Jefferson</option>
+<option  value="56349" >Port Jefferson Station</option>
+<option  value="56350" >Port Jervis</option>
+<option  value="135292" >Port Kent</option>
+<option  value="56351" >Port Leyden</option>
+<option  value="56352" >Port Washington</option>
+<option  value="56353" >Port Washington North</option>
+<option  value="135293" >Portageville</option>
+<option  value="56354" >Porter Corners</option>
+<option  value="96390" >Portland</option>
+<option  value="56355" >Portville</option>
+<option  value="56356" >Potsdam</option>
+<option  value="96391" >Pottersville</option>
+<option  value="56357" >Poughkeepsie</option>
+<option  value="56358" >Poughquag</option>
+<option  value="56359" >Pound Ridge</option>
+<option  value="56360" >Prattsburgh</option>
+<option  value="56361" >Prattsville</option>
+<option  value="56362" >Preble</option>
+<option  value="96392" >Preston Hollow</option>
+<option  value="56363" >Pulaski</option>
+<option  value="96393" >Pulteney</option>
+<option  value="56364" >Purchase</option>
+<option  value="96394" >Purling</option>
+<option  value="56365" >Putnam Lake</option>
+<option  value="56366" >Putnam Valley</option>
+<option  value="135294" >Quaker Street</option>
+<option  value="56367" >Queens Village</option>
+<option  value="56368" >Queensbury</option>
+<option  value="96395" >Quogue</option>
+<option  value="135295" >Rainbow Lake</option>
+<option  value="96396" >Randolph</option>
+<option  value="56369" >Ransomville</option>
+<option  value="56370" >Rapids</option>
+<option  value="96397" >Raquette Lake</option>
+<option  value="56371" >Ravena</option>
+<option  value="96398" >Ray Brook</option>
+<option  value="56372" >Red Creek</option>
+<option  value="56373" >Red Hook</option>
+<option  value="56374" >Red Oaks Mill</option>
+<option  value="135296" >Redfield</option>
+<option  value="96399" >Redwood</option>
+<option  value="56375" >Rego Park</option>
+<option  value="56376" >Remsen</option>
+<option  value="56377" >Remsenburg</option>
+<option  value="56378" >Rensselaer</option>
+<option  value="135297" >Rensselaer Falls</option>
+<option  value="96400" >Rensselaerville</option>
+<option  value="96401" >Retsof</option>
+<option  value="56379" >Rexford</option>
+<option  value="135298" >Rexville</option>
+<option  value="56380" >Rhinebeck</option>
+<option  value="135299" >Richburg</option>
+<option  value="56381" >Richfield Springs</option>
+<option  value="56382" >Richford</option>
+<option  value="96402" >Richland</option>
+<option  value="56383" >Richmond Hill</option>
+<option  value="56384" >Richmondville</option>
+<option  value="56385" >Richville</option>
+<option  value="56386" >Ridge</option>
+<option  value="56387" >Ridgewood</option>
+<option  value="56388" >Rifton</option>
+<option  value="96403" >Riga</option>
+<option  value="56389" >Ripley</option>
+<option  value="56390" >Riverhead</option>
+<option  value="56391" >Riverside</option>
+<option  value="56392" >Rochester</option>
+<option  value="56393" >Rock City Falls</option>
+<option  value="56394" >Rock Hill</option>
+<option  value="135300" >Rock Stream</option>
+<option  value="56395" >Rock Tavern</option>
+<option  value="56396" >Rockaway Park</option>
+<option  value="56397" >Rockville Centre</option>
+<option  value="56398" >Rocky Point</option>
+<option  value="96404" >Rodman</option>
+<option  value="56399" >Rome</option>
+<option  value="56400" >Romulus</option>
+<option  value="56401" >Ronkonkoma</option>
+<option  value="56402" >Roosevelt</option>
+<option  value="56403" >Roscoe</option>
+<option  value="135301" >Rose</option>
+<option  value="56404" >Rosedale</option>
+<option  value="56405" >Rosendale</option>
+<option  value="56406" >Roslyn</option>
+<option  value="56407" >Roslyn Estates</option>
+<option  value="56408" >Roslyn Heights</option>
+<option  value="56409" >Rotterdam</option>
+<option  value="56410" >Rotterdam Junction</option>
+<option  value="56411" >Round Lake</option>
+<option  value="135302" >Round Top</option>
+<option  value="56412" >Rouses Point</option>
+<option  value="56413" >Roxbury</option>
+<option  value="56414" >Rush</option>
+<option  value="96405" >Rushford</option>
+<option  value="56415" >Rushville</option>
+<option  value="56416" >Russell</option>
+<option  value="56417" >Rye</option>
+<option  value="56418" >Rye Brook</option>
+<option  value="56419" >Sackets Harbor</option>
+<option  value="56420" >Sag Harbor</option>
+<option  value="96406" >Sagaponack</option>
+<option  value="56421" >Saint Albans</option>
+<option  value="56422" >Saint Bonaventure</option>
+<option  value="56423" >Saint James</option>
+<option  value="56424" >Saint Johnsville</option>
+<option  value="135303" >Saint Regis Falls</option>
+<option  value="56425" >Salamanca</option>
+<option  value="56426" >Salem</option>
+<option  value="56427" >Salisbury</option>
+<option  value="135304" >Salisbury Center</option>
+<option  value="56428" >Salisbury Mills</option>
+<option  value="96407" >Salt Point</option>
+<option  value="56429" >Sanborn</option>
+<option  value="56430" >Sand Lake</option>
+<option  value="56431" >Sands Point</option>
+<option  value="56432" >Sandy Creek</option>
+<option  value="96408" >Sangerfield</option>
+<option  value="96409" >Saranac</option>
+<option  value="56433" >Saranac Lake</option>
+<option  value="56434" >Saratoga Springs</option>
+<option  value="135305" >Sardinia</option>
+<option  value="56435" >Saugerties</option>
+<option  value="135306" >Saugerties South</option>
+<option  value="56436" >Sauquoit</option>
+<option  value="56437" >Savannah</option>
+<option  value="96410" >Savona</option>
+<option  value="56438" >Sayville</option>
+<option  value="56439" >Scarsdale</option>
+<option  value="56440" >Schaghticoke</option>
+<option  value="56441" >Schenectady</option>
+<option  value="56442" >Schenevus</option>
+<option  value="96411" >Schodack Landing</option>
+<option  value="56443" >Schoharie</option>
+<option  value="56444" >Schroon Lake</option>
+<option  value="56445" >Schuyler Falls</option>
+<option  value="135307" >Schuyler Lake</option>
+<option  value="56446" >Schuylerville</option>
+<option  value="56447" >Scio</option>
+<option  value="96412" >Scipio Center</option>
+<option  value="96413" >Scotchtown</option>
+<option  value="56448" >Scotia</option>
+<option  value="135308" >Scottsburg</option>
+<option  value="56449" >Scottsville</option>
+<option  value="56450" >Sea Cliff</option>
+<option  value="56451" >Seaford</option>
+<option  value="56452" >Searingtown</option>
+<option  value="56453" >Selden</option>
+<option  value="56454" >Selkirk</option>
+<option  value="135309" >Seneca Castle</option>
+<option  value="56455" >Seneca Falls</option>
+<option  value="56456" >Seneca Knolls</option>
+<option  value="56457" >Setauket-East Setauket</option>
+<option  value="96414" >Severance</option>
+<option  value="96415" >Shandaken</option>
+<option  value="56458" >Sharon Springs</option>
+<option  value="56459" >Shelter Island</option>
+<option  value="96416" >Shelter Island Heights</option>
+<option  value="56460" >Shenorock</option>
+<option  value="56461" >Sherburne</option>
+<option  value="56462" >Sheridan</option>
+<option  value="56463" >Sherman</option>
+<option  value="56464" >Sherrill</option>
+<option  value="96417" >Shinnecock Hills</option>
+<option  value="56465" >Shirley</option>
+<option  value="56466" >Shokan</option>
+<option  value="56467" >Shoreham</option>
+<option  value="56468" >Shortsville</option>
+<option  value="56469" >Shrub Oak</option>
+<option  value="135310" >Shushan</option>
+<option  value="56470" >Sidney</option>
+<option  value="56471" >Sidney Center</option>
+<option  value="56472" >Silver Creek</option>
+<option  value="96418" >Silver Springs</option>
+<option  value="96419" >Sinclairville</option>
+<option  value="56473" >Skaneateles</option>
+<option  value="56474" >Skaneateles Falls</option>
+<option  value="56475" >Slate Hill</option>
+<option  value="56476" >Sleepy Hollow</option>
+<option  value="56477" >Slingerlands</option>
+<option  value="96420" >Sloan</option>
+<option  value="96421" >Sloansville</option>
+<option  value="56478" >Sloatsburg</option>
+<option  value="135311" >Smallwood</option>
+<option  value="135312" >Smithboro</option>
+<option  value="56479" >Smithtown</option>
+<option  value="96422" >Smithville Flats</option>
+<option  value="135313" >Smyrna</option>
+<option  value="56480" >Sodus</option>
+<option  value="56481" >Sodus Point</option>
+<option  value="135314" >Solsville</option>
+<option  value="56482" >Solvay</option>
+<option  value="56483" >Somers</option>
+<option  value="56484" >Sonyea</option>
+<option  value="56485" >Sound Beach</option>
+<option  value="56486" >South Bethlehem</option>
+<option  value="135315" >South Butler</option>
+<option  value="96423" >South Byron</option>
+<option  value="96424" >South Cairo</option>
+<option  value="56487" >South Corning</option>
+<option  value="96425" >South Dayton</option>
+<option  value="56488" >South Fallsburg</option>
+<option  value="56489" >South Farmingdale</option>
+<option  value="56490" >South Floral Park</option>
+<option  value="56491" >South Glens Falls</option>
+<option  value="56492" >South Hempstead</option>
+<option  value="56493" >South Hill</option>
+<option  value="56494" >South Huntington</option>
+<option  value="135316" >South Jamesport</option>
+<option  value="56495" >South Kortright</option>
+<option  value="56496" >South Lockport</option>
+<option  value="96426" >South New Berlin</option>
+<option  value="56497" >South Nyack</option>
+<option  value="56498" >South Ozone Park</option>
+<option  value="135317" >South Plymouth</option>
+<option  value="56499" >South Richmond Hill</option>
+<option  value="56500" >South Salem</option>
+<option  value="56501" >South Valley Stream</option>
+<option  value="96427" >South Wales</option>
+<option  value="56502" >Southampton</option>
+<option  value="96428" >Southfields</option>
+<option  value="56503" >Southold</option>
+<option  value="135318" >Southport</option>
+<option  value="56504" >Spackenkill</option>
+<option  value="56505" >Sparkill</option>
+<option  value="96429" >Sparrow Bush</option>
+<option  value="56506" >Speculator</option>
+<option  value="56507" >Spencer</option>
+<option  value="56508" >Spencerport</option>
+<option  value="96430" >Spencertown</option>
+<option  value="56509" >Speonk</option>
+<option  value="96431" >Sprakers</option>
+<option  value="56510" >Spring Brook</option>
+<option  value="135319" >Spring Glen</option>
+<option  value="56511" >Spring Valley</option>
+<option  value="96432" >Springfield Center</option>
+<option  value="56512" >Springfield Gardens</option>
+<option  value="56513" >Springs</option>
+<option  value="56514" >Springville</option>
+<option  value="56515" >Springwater</option>
+<option  value="56516" >Staatsburg</option>
+<option  value="96433" >Stafford</option>
+<option  value="56517" >Stamford</option>
+<option  value="56518" >Stanfordville</option>
+<option  value="56519" >Stanley</option>
+<option  value="56520" >Star Lake</option>
+<option  value="56521" >Staten Island</option>
+<option  value="96434" >Steamburg</option>
+<option  value="135320" >Stella Niagara</option>
+<option  value="56522" >Stephentown</option>
+<option  value="96435" >Sterling</option>
+<option  value="56523" >Sterling Forest</option>
+<option  value="56524" >Stewart Manor</option>
+<option  value="56525" >Stillwater</option>
+<option  value="135321" >Stittville</option>
+<option  value="96436" >Stockton</option>
+<option  value="56526" >Stone Ridge</option>
+<option  value="56527" >Stony Brook</option>
+<option  value="96437" >Stony Creek</option>
+<option  value="56528" >Stony Point</option>
+<option  value="56529" >Stormville</option>
+<option  value="96438" >Stottville</option>
+<option  value="135322" >Stow</option>
+<option  value="56530" >Stratford</option>
+<option  value="56531" >Strykersville</option>
+<option  value="56532" >Stuyvesant</option>
+<option  value="56533" >Stuyvesant Falls</option>
+<option  value="56534" >Suffern</option>
+<option  value="96439" >Sugar Loaf</option>
+<option  value="56535" >Summit</option>
+<option  value="96440" >Summitville</option>
+<option  value="56536" >Sunnyside</option>
+<option  value="135323" >Surprise</option>
+<option  value="56537" >Swan Lake</option>
+<option  value="56538" >Sylvan Beach</option>
+<option  value="56539" >Syosset</option>
+<option  value="56540" >Syracuse</option>
+<option  value="96441" >Taberg</option>
+<option  value="56541" >Tallman</option>
+<option  value="96442" >Tannersville</option>
+<option  value="56542" >Tappan</option>
+<option  value="56543" >Tarrytown</option>
+<option  value="56544" >Terryville</option>
+<option  value="56545" >Theresa</option>
+<option  value="56546" >Thiells</option>
+<option  value="135324" >Thomaston</option>
+<option  value="96443" >Thompson Ridge</option>
+<option  value="56547" >Thornwood</option>
+<option  value="56548" >Ticonderoga</option>
+<option  value="56549" >Tillson</option>
+<option  value="135325" >Tioga Center</option>
+<option  value="56550" >Tivoli</option>
+<option  value="56551" >Tomkins Cove</option>
+<option  value="56552" >Tonawanda</option>
+<option  value="96444" >Town Line</option>
+<option  value="96445" >Tribes Hill</option>
+<option  value="56553" >Troupsburg</option>
+<option  value="56554" >Trout Creek</option>
+<option  value="56555" >Troy</option>
+<option  value="56556" >Trumansburg</option>
+<option  value="135326" >Truxton</option>
+<option  value="56557" >Tuckahoe</option>
+<option  value="56558" >Tully</option>
+<option  value="135327" >Tunnel</option>
+<option  value="56559" >Tupper Lake</option>
+<option  value="56560" >Turin</option>
+<option  value="56561" >Tuxedo Park</option>
+<option  value="135328" >Tyrone</option>
+<option  value="56562" >Ulster Park</option>
+<option  value="56563" >Unadilla</option>
+<option  value="56564" >Union Hill</option>
+<option  value="56565" >Union Springs</option>
+<option  value="56566" >Uniondale</option>
+<option  value="135329" >Unionville</option>
+<option  value="135330" >University Gardens</option>
+<option  value="56567" >Upper Jay</option>
+<option  value="56568" >Upper Nyack</option>
+<option  value="56569" >Upton</option>
+<option  value="56570" >Utica</option>
+<option  value="96446" >Vails Gate</option>
+<option  value="56571" >Valatie</option>
+<option  value="56572" >Valhalla</option>
+<option  value="56573" >Valley Cottage</option>
+<option  value="56574" >Valley Falls</option>
+<option  value="56575" >Valley Stream</option>
+<option  value="135331" >Van Etten</option>
+<option  value="56576" >Van Hornesville</option>
+<option  value="56577" >Varysburg</option>
+<option  value="96447" >Verbank</option>
+<option  value="96448" >Vermontville</option>
+<option  value="56578" >Vernon</option>
+<option  value="56579" >Vernon Center</option>
+<option  value="56580" >Verona</option>
+<option  value="56581" >Verona Beach</option>
+<option  value="56582" >Verplanck</option>
+<option  value="135332" >Versailles</option>
+<option  value="56583" >Vestal</option>
+<option  value="56584" >Victor</option>
+<option  value="96449" >Victory Mills</option>
+<option  value="56585" >Village Green</option>
+<option  value="96450" >Village of the Branch</option>
+<option  value="56586" >Viola</option>
+<option  value="56587" >Voorheesville</option>
+<option  value="56588" >Waccabuc</option>
+<option  value="56589" >Waddington</option>
+<option  value="56590" >Wading River</option>
+<option  value="96451" >Wainscott</option>
+<option  value="56591" >Walden</option>
+<option  value="56592" >Wales Center</option>
+<option  value="96452" >Walker Valley</option>
+<option  value="56593" >Wallkill</option>
+<option  value="56594" >Walton</option>
+<option  value="56595" >Walton Park</option>
+<option  value="56596" >Walworth</option>
+<option  value="96453" >Wampsville</option>
+<option  value="96454" >Wanakah</option>
+<option  value="56597" >Wantagh</option>
+<option  value="56598" >Wappingers Falls</option>
+<option  value="56599" >Warners</option>
+<option  value="56600" >Warrensburg</option>
+<option  value="56601" >Warsaw</option>
+<option  value="56602" >Warwick</option>
+<option  value="135333" >Washington Heights</option>
+<option  value="135334" >Washington Mills</option>
+<option  value="56603" >Washingtonville</option>
+<option  value="96455" >Wassaic</option>
+<option  value="96456" >Water Mill</option>
+<option  value="56604" >Waterford</option>
+<option  value="56605" >Waterloo</option>
+<option  value="96457" >Watermill</option>
+<option  value="56606" >Waterport</option>
+<option  value="56607" >Watertown</option>
+<option  value="56608" >Waterville</option>
+<option  value="56609" >Watervliet</option>
+<option  value="56610" >Watkins Glen</option>
+<option  value="56611" >Waverly</option>
+<option  value="56612" >Wawarsing</option>
+<option  value="96458" >Wayland</option>
+<option  value="56613" >Webster</option>
+<option  value="56614" >Weedsport</option>
+<option  value="96459" >Wellesley Island</option>
+<option  value="96460" >Wells</option>
+<option  value="56615" >Wellsburg</option>
+<option  value="56616" >Wellsville</option>
+<option  value="56617" >Wesley Hills</option>
+<option  value="56618" >West Albany</option>
+<option  value="56619" >West Babylon</option>
+<option  value="56620" >West Bay Shore</option>
+<option  value="135335" >West Bloomfield</option>
+<option  value="96461" >West Camp</option>
+<option  value="135336" >West Carthage</option>
+<option  value="56621" >West Chazy</option>
+<option  value="96462" >West Coxsackie</option>
+<option  value="96463" >West Davenport</option>
+<option  value="96464" >West Edmeston</option>
+<option  value="56622" >West Elmira</option>
+<option  value="56623" >West End</option>
+<option  value="56624" >West Falls</option>
+<option  value="96465" >West Fulton</option>
+<option  value="56625" >West Glens Falls</option>
+<option  value="56626" >West Harrison</option>
+<option  value="56627" >West Haverstraw</option>
+<option  value="56628" >West Hempstead</option>
+<option  value="56629" >West Henrietta</option>
+<option  value="56630" >West Hills</option>
+<option  value="56631" >West Hurley</option>
+<option  value="56632" >West Islip</option>
+<option  value="56633" >West Kill</option>
+<option  value="56634" >West Leyden</option>
+<option  value="96466" >West Monroe</option>
+<option  value="56635" >West Nyack</option>
+<option  value="135337" >West Oneonta</option>
+<option  value="96467" >West Park</option>
+<option  value="56636" >West Point</option>
+<option  value="56637" >West Sand Lake</option>
+<option  value="56638" >West Sayville</option>
+<option  value="56639" >West Seneca</option>
+<option  value="96468" >West Shokan</option>
+<option  value="96469" >West Stockholm</option>
+<option  value="56640" >West Valley</option>
+<option  value="56641" >West Winfield</option>
+<option  value="96470" >Westbrookville</option>
+<option  value="56642" >Westbury</option>
+<option  value="56643" >Westerlo</option>
+<option  value="135338" >Westernville</option>
+<option  value="56644" >Westfield</option>
+<option  value="56645" >Westford</option>
+<option  value="56646" >Westhampton</option>
+<option  value="56647" >Westhampton Beach</option>
+<option  value="56648" >Westmere</option>
+<option  value="96471" >Westmoreland</option>
+<option  value="96472" >Weston Mills</option>
+<option  value="96473" >Westons Mills</option>
+<option  value="56649" >Westport</option>
+<option  value="56650" >Westtown</option>
+<option  value="56651" >Westvale</option>
+<option  value="56652" >Wevertown</option>
+<option  value="135339" >Wheatley Heights</option>
+<option  value="96474" >White Lake</option>
+<option  value="56653" >White Plains</option>
+<option  value="135340" >White Sulphur Springs</option>
+<option  value="56654" >Whitehall</option>
+<option  value="56655" >Whitesboro</option>
+<option  value="56656" >Whitestone</option>
+<option  value="96475" >Whitesville</option>
+<option  value="56657" >Whitney Point</option>
+<option  value="56658" >Willard</option>
+<option  value="135341" >Willet</option>
+<option  value="56659" >Williamson</option>
+<option  value="56660" >Williamstown</option>
+<option  value="56661" >Williamsville</option>
+<option  value="56662" >Williston Park</option>
+<option  value="56663" >Willsboro</option>
+<option  value="56664" >Willseyville</option>
+<option  value="56665" >Wilmington</option>
+<option  value="56666" >Wilson</option>
+<option  value="56667" >Windham</option>
+<option  value="56668" >Windsor</option>
+<option  value="56669" >Wingdale</option>
+<option  value="56670" >Winthrop</option>
+<option  value="56671" >Witherbee</option>
+<option  value="56672" >Wolcott</option>
+<option  value="56673" >Woodbourne</option>
+<option  value="56674" >Woodbury</option>
+<option  value="96476" >Woodgate</option>
+<option  value="56675" >Woodhaven</option>
+<option  value="96477" >Woodhull</option>
+<option  value="56676" >Woodmere</option>
+<option  value="56677" >Woodridge</option>
+<option  value="56678" >Woodside</option>
+<option  value="56679" >Woodstock</option>
+<option  value="56680" >Worcester</option>
+<option  value="56681" >Wurtsboro</option>
+<option  value="56682" >Wyandanch</option>
+<option  value="56683" >Wynantskill</option>
+<option  value="56684" >Wyoming</option>
+<option  value="56685" >Yaphank</option>
+<option  value="56686" >Yonkers</option>
+<option  value="96478" >York</option>
+<option  value="56687" >Yorkshire</option>
+<option  value="56688" >Yorktown Heights</option>
+<option  value="56689" >Yorkville</option>
+<option  value="56690" >Youngstown</option>
+<option  value="96479" >Yulan</option>
+<option  value="56691" >Zena</option>
+
+                        </select>
+                        </div>
+                        <!--<div class="bl_city">
+                            <input id="city" name="city_title" class="inp city not_frm" type="text" value="" />
+                            <div id="city_check" class="icon_check to_hide"></div>
+                        </div>-->
+
+                        <div id="city_error" class="error to_hide">&nbsp;</div>
+                    <div class="cl"></div>
+                    </div>
+
+                    <div class="bl">
+                        <label>E-mail</label>
+                        <div class="bl_inp_pos">
+                            <input id="email" name="email" class="inp email placeholder" type="text" placeholder="e.g. example@site.com" value=""/>
+                            <div id="email_check" class="icon_check to_hide"></div>
+                            <div id="email_error" class="error to_hide">&nbsp;</div>
+                        </div>
+                    </div>
+
+                    <div class="bl">
+                        <label></label>
+                        <div class="bl_inp_pos">
+                            <input id="phone" name="phone" class="inp email placeholder" type="text" placeholder="Enter Phone Number" value=""/>
+                            <div id="phone_check" class="icon_check to_hide"></div>
+                            <div id="phone_error" class="error to_hide">&nbsp;</div>
+                        </div>
+                    </div>
+
+                    <span class="sign">
+                        <input id="agree" name="privacy_policy" value="1" type="checkbox"/>
+                        <label for="agree">I agree to the</label>
+                        <a href="" onclick="infoOpen('terms'); return false;">Terms</a>
+                        <label for="agree">and</label>
+                        <a href="" onclick="infoOpen('priv'); return false;">Privacy Policy</a>
+                        <span class="cl"></span>
+                    </span>
+
+                    <button id="frm_register_submit" id="" class="btn pink disabled" disabled>Next</button>
+
+                    <span id="agree_error" class="error to_hide">You need to agree to the terms</span>
+
+                </div>
+            <div class="cl"></div>
+        </div>
+        </div>
+        <div id="step-2" class="hide step-2">
+            <div class="slogan">The last step! Don’t stop now.</div>
+            <div class="bl_form_registration">
+                <div class="part center">
+                    <div class="bl">
+                        <label>Username</label>
+                        <div class="bl_inp_pos">
+                            <input id="name" class="inp username placeholder" name="join_handle" maxlength="20" type="text" placeholder="This will be public" value=""/>
+                            <div id="name_check" class="icon_check to_hide"></div>
+                            <div id="name_error" class="error to_hide">&nbsp;</div>
+                        </div>
+                    </div>
+                    <div class="bl">
+                        <label>Password</label>
+                        <div class="bl_inp_pos">
+                            <input id="password" class="inp psw placeholder" name="join_password" type="password" placeholder="Password" value=""/>
+                            <div id="password_check" class="icon_check to_hide"></div>
+                            <div id="password_error" class="error to_hide">&nbsp;</div>
+                        </div>
+                    </div>
+                    <button id="frm_register_submit_2" class="btn pink" disabled>Done!</button>
+                </div>
+            <div class="cl"></div>
+            </div>
+        </div>
+     <!--   <script type="text/javascript">
+          $("#save").click(function(){
+          });
+       </script> -->
+   
+
+<script>
+    function setPageBackgroundHeight() {
+        if($('.bl_join_done').height()) {
+            return;
+        }
+
+        var isLoginPage = $('.bl_form_registration').height();
+        var contentHeight = $('.bl_logo').outerHeight(true) + parseInt($('.wrap_header_cont .bl').css('paddingTop'));
+        if(isLoginPage) {
+            contentHeight += $('.slogan').outerHeight(true) + $('.bl_form_registration').outerHeight(true);
+        } else {
+            contentHeight += $('#step-1').outerHeight(true);
+        }
+
+        $('.header, .cover, #bg_shadow').height(Math.max(contentHeight, $(window).height()));
+    }
+</script>
+    <!-- not page join2-->
+    </div>
+    <!-- header_cont_bl -->
+    </div>
+    <!-- /header_cont  -->
+    <div class="header">
+        
+        <div id="bg_cover" class="cover" style="background-image: url(images/main_page_image/1.jpg);"></div>
+        
+        <div class="bg_shadow"></div>
+        
+        <script>
+        var ready;
+        function bgReady() {
+            var $bgCover=$('#bg_cover');
+            if(ready){
+                if(!$bgCover.is('.show'))$bgCover.addClass('to_show')
+            }else if(document.cookie.indexOf('bgImpactMain=images/main_page_image/1.jpg')>=0) $bgCover.addClass('show');
+            document.cookie='bgImpactMain=images/main_page_image/1.jpg';
+            ready=1
+        }
+        bgReady();
+        var imgCover=new Image();
+        imgCover.onload = bgReady;
+        imgCover.src='images/main_page_image/1.jpg';
+        </script>
+        
+
+        
+
+        <script>
+            setPageBackgroundHeight();
+            $(window).on('resize', setPageBackgroundHeight);
+        </script>
+    </div>
+
+	
+	</div>
+	<!-- /wrapper -->
+	<!-- footer -->
+    <div class="footer">
+        <div class="footer_w">
+            
+            <ul class="nav">
+                
+                <li>
+                    
+                    <a  href="./about">About</a>
+                </li>
+                
+                <li>
+                    
+                    <span>|</span>
+                    
+                    <a  href="./contact">Contact us</a>
+                </li>
+                
+                <li>
+                    
+                    <span>|</span>
+                    
+                    <a target="_blank" href="./partner/">Affiliates</a>
+                </li>
+                
+            </ul>
+            
+            <span class="title_orig">(c) TalentTube 2020</span>
+        </div>
+        <div class="footer-ssl-seal"></div>
+	</div>
+	<!-- /footer -->
+	<div style="display:none;">
+
+    
+    <div id="pp_sign_in" class="popup pp_sign">
+        <div class="head">
+            Sign in
+            <a id="pp_sign_in_close" class="icon_close" href="">
+                <span class="close_hover"></span>
+            </a>
+        </div>
+        <div class="cont">
+            <div class="bl">
+                <form id="form_login" class="form_login" method="post" autocomplete="on" action="./ajax.php">
+                    <input id="form_login_cmd" type="hidden" name="cmd" value="login" />
+                    <input type="hidden" name="ajax" class="ajax" value="1" />
+                    <input id="form_login_user" type="text" name="user" class="inp placeholder" placeholder="Your email or username" />
+                    <div class="error"></div>
+                    <input id="form_login_pass"  type="password" name="password" class="inp placeholder" placeholder="Password" />
+                    <div class="bl_remember">
+                        <input id="form_login_remember" name="remember" value="1" type="checkbox" checked="checked"/>
+                        <label for="form_login_remember">Remember me</label>
+                    </div>
+                    <button id="form_login_submit" type="submit" class="btn pink">Sign in</button>
+                </form>
+                <a id="pp_forgot_pass_open" class="link" href="">Forgot password?</a>
+                
+                <div class="line"></div>
+                <div class="or"><span>or</span></div>
+                <ul class="bl_social_buttons">
+                    
+                    <li class="login_facebook"><a href="https://www.facebook.com/v2.2/dialog/oauth?client_id=1&state=d011f99a4fc6308a3ff3ca630888c216&response_type=code&sdk=php-sdk-5.6.2&redirect_uri=http%3A%2F%2Flocalhost%2Ftalenttube%2Fjoin_facebook.php%3Fcmd%3Dfb_login&scope=email">&nbsp;</a></li>
+                    
+                    <li class="login_google_plus"><a href="social_login.php?module=google_plus">&nbsp;</a></li>
+                    
+                    <li class="login_linkedin"><a href="social_login.php?module=linkedin">&nbsp;</a></li>
+                    
+                    <li class="login_twitter"><a href="social_login.php?module=twitter">&nbsp;</a></li>
+                    
+                    <li class="login_vk"><a href="social_login.php?module=vk">&nbsp;</a></li>
+                    
+                </ul>
+                
+                
+				<!--<a class="link link_close_login" onclick="$('#pp_sign_in').close(); return false;" href="">No account? Register now!</a>-->
+            </div>
+        </div>
+    </div>
+    
+
+
+    <div id="pp_resend_password" class="popup">
+        <div class="head">
+            Forgot password?
+            <a class="icon_close pp_forgot_pass_close" href="">
+                <span class="close_hover"></span>
+            </a>
+        </div>
+        <div class="cont">
+            <div class="bl">
+                <input id="pp_resend_password_email" type="text" class="inp placeholder" placeholder="Your e-mail" />
+                <div id="pp_resend_password_error" class="error">&nbsp;</div>
+                <div class="successful">&nbsp;</div>
+                <button id="pp_resend_password_submit" class="btn turquoise" disabled>Send Password</button>
+                Or, <a class="link turquoise pp_forgot_pass_close" href="">try logging in again</a>
+            </div>
+        </div>
+    </div>
+
+	</div>
+</div>
+<!-- /main -->
+
+
+<div style="display:none;">
+    <div id="css_loader" class="css_loader">
+		<div class="spinner center">
+			<div class="spinner-blade"></div>
+			<div class="spinner-blade"></div>
+			<div class="spinner-blade"></div>
+            <div class="spinner-blade"></div>
+			<div class="spinner-blade"></div>
+			<div class="spinner-blade"></div>
+			<div class="spinner-blade"></div>
+			<div class="spinner-blade"></div>
+			<div class="spinner-blade"></div>
+			<div class="spinner-blade"></div>
+			<div class="spinner-blade"></div>
+			<div class="spinner-blade"></div>
+		</div>
+	</div>
+    <div id="update_server"></div>
+</div>
+<script>
+    try {
+        imChats.initListIm();
+        initServer();
+    }
+    catch(e){};
+    var tmplsList = [];
+tmplsList[0] = 'new_age';
+tmplsList[1] = 'oryx';
+tmplsList[2] = 'mixer';
+tmplsList[3] = 'urban';
+tmplsList[4] = 'impact';
+tmplsList[5] = 'edge';
+
+
+var tmplCurrent = 'impact';
+
+if(false) {
+    initDevFunctions();
+}
+
+var sitePart = 'main';
+var sitePartParam = '';
+var languageOfUser = '';
+var siteLanguage = 'default';
+var siteGuid = '0'*1;
+</script><script>
+                var IS_DEMO = 0;
+                var urlPageJoin = 'join';
+                var urlPageLogin = 'login';
+                var urlPageUpgrade = 'upgrade';
+                var urlPagesSite = {
+                    index : 'index',
+                    login : 'login',
+                    join : 'join',
+                    home : 'profile_view',
+                    upgrade : 'upgrade',
+                    search_results : 'search_results',
+                    profile_view : 'profile_view',
+                    messages : 'messages',
+                    refill_credits : 'refill_credits',
+                    my_vids_list : 'user_vids_list',
+                    my_photos_list : 'user_photos_list',
+                    photos_list : 'photos_list',
+                    blogs_add : 'blogs_add',
+                    profile_settings : 'profile_settings',
+                    wall : 'wall'
+                };
+                var cacheVersionParam = '?v=4';
+
+                setAjaxPrefilter();
+            
+    
+</script>
+
+<script src="_server/js/video.js?v=4"></script>
+<script>videojs.options.flash.swf="./_server/videojs/video-js.swf"</script>
+
+
+<script src="https://connect.facebook.net/en_US/all.js"></script>
+<script type="text/javascript">
+    FB.init({
+        appId: '1',
+        cookie: true,
+        status: true
+    });
+
+    var j_facebook_invite_message = 'Please join TalentTube now and let\'s be friends on it as well!';
+</script>
+
+
+
+
+<div style="display:none;">
+	<div id="pp_terms" class="popup terms">
+		<div class="cont">
+			<div class="scroll-pane-terms scroll-info-terms">
+				<div class="title">Membership Terms ' Conditions</div>
+				<div class="bl_cont">
+					<span class="ter_big custom_style" >
+This service is for adults only (you must be at least 18 years old).
+The Our site service Singles Social Portal is a way for adults to meet each other online. <br>
+<br>
+This is a legal agreement ("Agreement") between you and Our site, Inc. Please read the Agreement carefully before registering for the Our site service. By registering for Our site.com, you become a member of the Service (a "Member"), and you agree to be bound by the terms and conditions of this Agreement (the "Terms") for as long as you continue to be a Member. If you do not agree to the Terms, you are not permitted to use the Our site.com service. 
+<br><br>
+The Terms are subject to change by Our site.com, Inc. at any time, without notice, effective upon posting of a link to same on our website (www.Our site.com). Minors (under 18 years old) may not become members. When you register, and from time to time thereafter, Our site.com, Inc. will require that you provide sufficient information to indicate that you are at least 18 years old. By becoming a Member, you represent and warrant that you are at least 18 years old. 
+<br><br>
+Either you or Our site.com, Inc. may terminate your Our site.com membership at anytime, for any reason, effective upon sending written notice to the other party. Our site.com, Inc. reserves the right to immediately suspend or terminate your access to the Our site.com service, without notice, upon any breach of this Agreement by you which is brought to Our site.com, Inc.'s attention. 
+<br><br>
+Your membership in the Our site.com service is for your sole, personal use. You may not authorize others to use your membership, and you may not assign or otherwise transfer your account to any other person or entity. 
+<br><br><br>
+
+
+<b>Online/Mobile Conduct</b><br>
+As a Member, you agree that: 
+<br><br>
+You are solely responsible for the content or information you publish or display (hereinafter, "post") on the Our site.com service, or transmit to other Our site.com Members. 
+<br><br>
+There is no tolerance for objectionable content. You will NOT post on the Our site.com service, or transmit to other Our site.com members or employees, any defamatory, inaccurate, abusive, obscene, profane, offensive, sexually oriented, threatening, harassing, racially offensive, or illegal material, or any material that infringes or violates another party's rights (including, but not limited to, intellectual property rights, and rights of privacy and publicity). 
+<br><br>
+You will use the Our site.com service in a manner consistent with any and all applicable laws and regulations. You will not include in your profile any telephone numbers, street addresses, last names, URL's, E-mail addresses, offensive anatomical or sexual references, or offensive sexually suggestive or connotative language, and you will not post any photos containing nudity or personal information. Our site.com, Inc. reserves the right, but has no obligation, to reject any profile or photo that does not comply with these prohibitions. 
+<br><br>
+You will not engage in advertising to, or solicitation of, other members to buy or sell any products or services through the Service. You will not transmit any chain letters or junk E-mail to other Our site.com members. 
+<br><br>
+You will not post, distribute or reproduce in any way any copyrighted material, trademarks, or other proprietary information without obtaining the prior written consent of the owner of such proprietary rights. 
+<br><br>
+You are solely responsible for your interactions with other Our site.com members. Our site.com, Inc. reserves the right, but has no obligation, to monitor disputes between you and other members. Any infraction may lead to legal remedy on behalf of Our site.com, Inc. 
+<br><br><br>
+
+
+<b>Indemnity by Member</b><br>
+<br>
+You will defend, indemnify, and hold harmless Our site.com, Inc., its officers, directors, employees, agents and third parties, for any losses, costs, liabilities and expenses (including reasonable attorneys' fees) relating to or arising out of your use of the Our site.com Service, including, but not limited to, any breach by you of the terms of this Agreement. 
+
+<br><br><br>
+
+<b>Online Content</b><br><br>
+Opinions, advice, statements, offers, or other information or content made available through the Our site.com service are those of their respective authors and not of Our site.com, Inc., and should not necessarily be relied upon. Such authors are solely responsible for such content. Our site.com, Inc. does not guarantee the accuracy, completeness, or usefulness of any information on the Service and neither adopts nor endorses nor is responsible for the accuracy or reliability of any opinion, advice or statement made. Under no circumstances will Our site.com, Inc. be responsible for any loss or damage resulting from anyone's reliance on information or other content posted on the Our site.com Service, or transmitted to Our site.com members. 
+<br><br>
+WARNING - PLEASE READ: It is possible that other Our site.com members or users (including unauthorized users, or "hackers") may post or transmit offensive or obscene materials on the Our site.com Service and that you may be involuntarily exposed to such offensive or obscene materials. It also is possible for others to obtain personal information about you due to your use of the Service, and that the recipient may use such information to harass or injure you. Our site.com, Inc. is not responsible for the use of any personal information that you may choose to disclose on the Service. Please carefully select the type of information that you post on the Our site.com service or release to others. 
+<br><br>
+Our site.com, Inc. reserves the right, but has no obligation, to monitor the materials posted in the public areas of the Our site.com Service. Our site.com, Inc. shall have the right to remove any such material that violates, or is alleged to violate, the law, or this Agreement. Notwithstanding this right of Our site.com, Inc., you remain solely responsible for the content of the materials you post in the public areas of the Service and your private email messages. Emails sent between you and other Our site.com members that are not readily accessible to the general public will be treated as private by Our site.com, Inc. to the extent required by applicable law. 
+<br><br><br>
+
+<b>
+Removal of Information</b><br><br>
+While we do not and cannot review every message sent by users of the Service, and are not responsible for any content of these messages, we reserve the right, but are not obligated, to delete or move content including without limitation profiles, public postings and messages, that we, in our sole discretion, deem to violate the code of conduct set out above or any applicable content guidelines, or to be otherwise unacceptable. You shall remain solely responsible for the content of profiles, public postings and messages you may transmit or record to the Service or send to the users of the Service. 
+<br><br><br>
+
+<b>Proprietary Rights</b><br><br>
+Our site.com, Inc. owns and retains other proprietary rights in the Our site.com Service. The Service contains the copyrighted material, trademarks, and other proprietary information of Our site.com, Inc. and its licensors. In addition, other members may post copyrighted information, which has copyright protection whether or not it is identified as copyrighted. Except for that information which is in the public domain or for which you have been given permission, you will not copy, modify, publish, transmit, distribute, perform, display, or sell any such proprietary information. 
+<br><br>
+By posting information or content to any public area of Our site.com, you automatically grant, and you represent and warrant that you have the right to grant, to Our site.com, Inc. and other Our site.com members an irrevocable, perpetual, non-exclusive, fully-paid, worldwide license to use, copy, perform, display and distribute such information and content and to prepare derivative works of, or incorporate into other works, such information and content, and to grant and authorize sublicenses of the foregoing. 
+<br><br><br>
+
+<b>
+Information Supplied by Member</b><br><br>
+Except as provided otherwise in Our site.com's privacy policy, Our site.com, Inc. will keep confidential all information supplied by you to Our site.com, Inc., including credit card number(s), and shall use or disclose such information only for the purposes for which such information was collected, or as required by law. 
+
+<br><br><br>
+
+<b>Mobile Fees and Payments</b><br><br>
+Any questions or disputes regarding billing, fees or payments should be addressed to your third party mobile phone service provider. 
+<br><br><br>
+
+
+<b>Disclaimer of Warranty</b><br><br>
+Our site.com, Inc. provides the Our site.com Service on an "as is" basis and grants no warranties of any kind, express, implied, statutory, in connection with the Service or in connection with any communication with Our site.com, Inc. or its representatives, or otherwise with respect to the Service. Our site.com, Inc. specifically disclaims any implied warranties of merchantability, fitness for a particular purpose, or non-infringement. Our site.com, Inc. does not warrant that your use of the Our site.com service will be secure, uninterrupted, always available, or error-free, or will meet your requirements, or that any defects in the Service will be corrected. Our site.com, Inc. disclaims liability for, and no warranty is made with respect to, telephone service, including coverage, range, or any interruption in telephone service. 
+<br><br><br>
+
+
+<b>Limitation of Liability</b><br><br>
+In no event will Our site.com, Inc. be liable (i) to you for any incidental, consequential, or indirect damages (including, but not limited to, damages for loss of data, loss of programs, lost profits, cost of procurement of substitute services or service interruptions) arising out of the use of or inability to use the Our site.com Service, even if Our site.com, Inc. or its agents or representatives know or have been advised of the possibility of such damages or (ii) to any person other than you. Notwithstanding anything to the contrary contained herein, Our site.com, Inc's. liability to you for any cause whatsoever, and regardless of the form of the action, will at all times be limited to the amount paid, if any, by you to Our site.com, Inc. for the Service during the term of membership. 
+<br><br>
+In addition, Our site.com, Inc. disclaims all liability, regardless of the form of action, for the acts or omissions of other members or users (including, but not limited to, unauthorized users, or "hackers") of the Our site.com Service. 
+
+<br><br><br>
+
+<b>State by State Variations</b><br><br>
+Certain jurisdictions limit the applicability of warranty disclaimers and limitations of liability so the above disclaimers of warranty and limitations of liability may not apply to you. 
+
+<br><br><br>
+
+<b>General Provisions</b><br><br>
+You agree that Florida law (regardless of conflicts of law principles) shall govern this Agreement, that any dispute arising out of or relating to this Agreement shall be subject to the exclusive venue of the federal and state courts in the State of Florida, and that you submit to the exclusive jurisdiction of the federal and state courts in the State of Florida in connection with the Service or this Agreement. This Agreement, accepted upon registering for the Our site.com Service, contains the entire agreement between you and Our site.com, Inc. regarding the use of the Service. This Agreement may only be amended upon notice by Our site.com, Inc. to you, or by a writing signed by you and an authorized official of Our site.com, Inc. Unless otherwise explicitly stated, the Terms will survive termination of your membership to the Service. If any provision of this Agreement is held invalid, the remainder of this Agreement shall continue in full force and effect. 
+
+<br><br><br>
+
+<b>Refund Policy</b><br><br>
+Our site.com will issue a refund within 72 hours of an initial subscription provided that none of the Services have been utilized. Beyond these conditions, requests for refunds will be at the sole discretion of Our site.com and will be reviewed on a member to member basis. 
+
+<br><br><br>
+
+<b>Copyright Policy</b><br><br>
+Termination of User Privileges for Infringement and Contact Information for Suspected Copyright Infringement: 
+<br><br>
+We will terminate the privileges of any user who uses this Site to unlawfully transmit copyrighted material without a license, express consent, valid defense or fair use exemption to do so. In particular, users who submit user content to this Site, whether articles, images, stories, software or other copyrightable material must ensure that the content they upload does not infringe the copyrights or other rights of third parties (such as privacy or publicity rights). After proper notification by the copyright holder or it agent to us, and confirmation through court order or admission by the user that he or she has used this Site as an instrument of unlawful infringement, we will terminate the infringing users' rights to use and/or access to this Site. We may also in our sole discretion decide to terminate a user's rights to use or access to the Site prior to that time if we have a good faith belief that the alleged infringement has occurred. 
+
+
+ </b></span>
+				</div>
+			</div>
+			<div class="bl_btn">
+				<button id="terms_close" class="btn lblue">I understand</button>
+			</div>
+		</div>
+	</div>
+	<div id="pp_priv" class="popup terms">
+		<div class="cont">
+			<div class="scroll-pane-terms scroll-info-priv">
+				<div class="title">Privacy Policy</div>
+				<div class="bl_cont">
+					<div class="ter_big custom_style">
+<p>IF YOU DO NOT ACCEPT AND AGREE WITH OUR PRIVACY POLICY THEN YOU MUST NOT ACCESS OR USE THE SITE AND/OR THE APPLICATION.</p>
+<h2>1. Chameleon users and visitors to our site</h2>
+<h3>What information does Chameleon collect if I decide to join the Chameleon social community?</h3>
+<p>Complete our online registration form, where we ask you to provide us with information about you such as your name, your email address, your gender, your date of birth, your location details. You also have the opportunity to provide other details about yourself, but these are optional. Because you control your user profile, these details are available to you at any time by accessing your “Profile” page, which gives you the chance to correct or update (other than gender and email address) your information at any time by just logging in to Chameleon.</p>
+<p>Once you have created a Profile, we will automatically track certain information such as your IP and email addresses.</p>
+<p>For safety and security and to ensure you have the best possible user experience, we require users to verify their accounts (because we want to make sure you are not a robot!) and might ask for your phone number. Don’t worry! This is only to make sure you are real and breathing!</p>
+<h3>What information does Chameleon collect about me if I’m under 18?</h3>
+<p>You can only become a member of Chameleon if your aged 18 or over or the age of majority in the country in which you reside if that happens to be greater than 18. That means Chameleon does not knowingly collect any information about children, minors or anyone under the age of majority. Nor do we knowingly market to children, minors or anyone under the age of 18. If you are less than 18 years old, we request that you do not submit information to us. If we become aware that a child, minor or anyone under the age of 18 has registered with us and provided us with personal information, we will take steps to terminate that person’s registration and delete their Profile information from Chameleon. If we do delete a Profile because you violated our no children rules, we may retain your email and IP address to ensure that you do not try to get around our rules by creating a new Profile.</p>
+<h3>Does Chameleon collect my personal information if I am not a member and just visit the site?</h3>
+<p>No. We don’t collect any personal information about visitors to our site. If you do visit us without becoming a member, we will place session ID cookies on your computer. For more information about cookies generally, look at the answer to “How does Chameleon collect information about me?” below.</p>
+<h3>If I put other information about me on the site, what does Chameleon do with it?</h3>
+<p>Chameleon is designed to make it easy for you to find, connect and interact with other members of Chameleon by posting information about yourself. When using the App you should assume that anything you post or submit will be publicly viewable and accessible, both by Users of the App and non-Users of the App. For example, to make it easier to find other Chameleoners and connect with them, we have allowed you to share other users' profiles on Facebook. This feature can be turned off in your settings at any time. You can also use our electronic messaging system, which allows you to communicate with other users. We recommend and encourage you (and all our members) to think carefully about the information they disclose about themselves. We also do not recommend that you put email addresses, URLs, instant messaging details, phone numbers, full names or addresses, credit card details, national identity numbers, drivers’ licence details and other sensitive information in your Profile which is open to abuse and misuse.</p>
+<p>Please be careful about posting sensitive details about yourself on you Profile such as your religious denomination and health details. While you may voluntarily provide this information to us when you create your Profile, including your sexual preferences and ethnic background, there is no requirement to do so. Please remember that photographs or any video clips that you post on Chameleon may reveal these kinds of sensitive personal data. Where you do upload and choose to tell us sensitive information about yourself, you are explicitly consenting to our processing your information and making this public to other users.</p>
+<p>When you post information about yourself or use the messaging, the amount of personal information you share is at your own risk. </p>
+<h3>What does Chameleon collect about me if I use the mobile app?</h3>
+<p>Chameleon offers you the opportunity to stay in touch with the friends and contacts you’ve made no matter where you are. You can do this by using your mobile phone or by downloading an application to your desktop that allows you to share your location with other users.</p>
+<p>When you use your mobile or the desktop application, we will collect information about WiFi access points as well as other location information about your longitude and latitude. That information helps us identify your physical location so that it can be displayed and shared with other members choosing to view “nearby” posts.</p>
+<p>If you do not want your location to be known, then please do not download the desktop application or use your mobile device when you are on Chameleon.</p>
+<h3>What’s collected from me if I use Chameleon’s premium services?</h3>
+<p>When you take advantage of Chameleon’s premium features, we collect financial information necessary to process your payments as per your chosen payment method. Please note that we do not store any credit card or other payment card details. However, our payment service providers do (and are approved to do so by all applicable regulatory bodies).</p>
+<p>When you access Chameleon or play our games we collect certain technical information about your computer system or mobile device and statistical data about how you play our games. We use this information to improve our site and our games, so that you can increase your fun.</p>
+<h3>Can Chameleon collect information about me from other sites I use, such as Facebook?</h3>
+<p>If you have registered on one of our partner websites, such as Facebook, your Profile will be available to all users of the Chameleon social network whether via our site or our partners’ websites.</p>
+<p>Remember that when you register with a Chameleon partner, you are also giving them personal information, so we recommend that you read their privacy policies as Chameleon does not control how they use their information.</p>
+<p>If you have have registered on one of our partner websites, such as Facebook, or you have verified your account via a partner website, we may connect your Chameleon profile with your profile on such partner website. We may do this by way of new products and applications which we introduce from time to time, including new products powered by our group companies.</p>
+<p>If you have verified your account through a partner website and do not want to link your Chameleon profile to your profile on the partner website, please go to the “Verifications” section on your profile page and click “forget this account”.</p>
+<p>If you have created a Chameleon profile through a partner website and you do not want to link your Chameleon profile to your profile on the partner website, Chameleon cannot amend these settings. Please visit the application settings on your partner website profile and follow the instructions to remove the Chameleon access permissions.</p>
+<h3>Does Chameleon collect any other personal information about me?</h3>
+<p>If you contact our Customer Support team via <a href="mailto:info@demo.chameleonsocial.com">info@demo.chameleonsocial.com</a>, we will receive your email address, and may track your IP address as well as the information you send to us to help resolve your query. We will keep records of our communications with you, including any complaints that we receive from you about other users (and from other users about you).</p>
+<h3>Will Chameleon contact me?</h3>
+<p>On your “Settings” page Chameleon offers you the opportunity to receive emails from us about new message notifications or other purposes related to the use of the website.</p>
+<h3>Does Chameleon use my personal information for any other purpose?</h3>
+<p>We may use material that you post on the open access areas of Chameleon in advertising and promotional materials on our partner sites and partner products. We believe these uses allow us to improve our site and better tailor your online experience to meet your needs.</p>
+<p>We use your personal information to resolve disputes, troubleshoot problems and enforce our Terms of Use.</p>
+<h3>What are 'cookies' and what 'cookies' does Chameleon use?</h3>
+<p>We collect information by placing cookies on your computer or mobile. A cookie is a piece of text stored on your computer or mobile by your web browser. They are basically a tool that stores information about website visits, recognises you and your preferences each time you visit Chameleon, and ensures site functionality and enables us to provide the services our members request.</p>
+<p>When you visit the publicly available sections of Chameleon, a session ID cookie is placed on your computer that only lasts while you’re visiting. We also place persistent cookies (also known an local storage devices) on members’ computers, so that Chameleon remembers them and makes their login experience faster and easier. We may use persistent tracking cookies on your mobile device, mainly for security protection purposes, such as to prevent phishers, scammers, unauthorised log in attempts, and to help you access your hacked account. We do not use any information whilst you are logged off.</p>
+<p>You may set your browser and your mobile settings to block cookies and local storage devices, but if you do so, you may not be able to access the features that Chameleon offers.</p>
+<p>Chameleon uses cookies and local storage devices for a number of reasons, including to ensure the security of our site, to provide you with features you have requested and to analyse how members and visitors use Chameleon. Chameleon’s uses of cookies and local shared devices so that we know who you are, what interests you and so that you can do the things online that you want to do, like chat with new people, share your content and buy Super Powers knowing that your data will be secure. Our use of cookies and local share devices, including the specific cookie names, may change over time, but will generally fall into the above categories. Please visit this page regularly so that you are aware of any changes.</p>
+<p>If you would like to know more about cookies, including flash cookies/local storage devices, the following websites provide useful information:</p>
+<ul>
+  <li>
+    <p><a target="_blank" href="http://www.allaboutcookies.org/">www.allaboutcookies.org</a></p>
+  </li>
+  <li>
+    <p><a target="_blank" href="http://www.youronlinechoices.eu/">www.youronlinechoices.eu</a></p>
+  </li>
+  <li>
+    <p><a target="_blank" href="http://helpx.adobe.com/flash-player/kb/disable-local-shared-objects-flash.html">http://helpx.adobe.com/flash-player/kb/disable-local-shared-objects-flash.html</a></p>
+  </li>
+</ul>
+<h2>2. Friends and other Chameleon users</h2>
+<h3>When I put information about myself on Chameleon, what do the other users see?</h3>
+<p>To ensure you get to meet as many people as possible on Chameleon, other members get to see your user name and any information you post on your Profile, including photos if you select the 'Any users' access setting. Any information you choose to provide should reflect how much you want other Chameleon members to know about you. You can also choose to limit the information that other users see by adjusting your privacy settings in the “Settings” page.</p>
+<h3>What am I allowed to do with other user’s personal information?</h3>
+<p>Use it to meet new friends and make new contacts! Beware that you may not use other users' information for commercial purposes, to spam, to harass, or to make unlawful threats. Chameleon reserves the right to terminate the accounts of those who misuse other users' information.</p>
+<h3>What information does Chameleon collect about my friends and contacts?</h3>
+<p>You can choose to invite your friends to join Chameleon to make sure that they also get the benefits of meeting new people. To make it easier to search and find friends and acquaintances on Chameleon, users may search for other members by email address. If you want to invite your friends and contacts to Chameleon, we will send an email invitation from Chameleon in your name or you can send an SMS (if you use our Android or iPhone app) to your friends and contacts encouraging them to sign up to Chameleon. If any of the individuals you have invited do not register within a few days, Chameleon may occasionally send reminder emails on your behalf to those individuals. You can choose to invite all your friends or only a select few by simply unticking the names of those friends you do not wish to invite, but please remember you must not invite any children to join. You are responsible for ensuring that your friend has agreed to receiving a Chameleon invite.</p>
+<p>When you import your contacts, we store their name and email address or their mobile number so that we can automatically connect you and your friend. Chameleon does not sell these email addresses or mobile numbers or use them to send any other communication besides email invitations. The friend may contact Chameleon to request the removal of their information from our database by clicking Contact us. Any such request will only apply to addresses or mobile numbers we have at the time of the request and not to any addresses that the member/user provides to us later.</p>
+<h2>3. Third parties</h2>
+<h3>Does Chameleon sell my information to other parties?</h3>
+<p>Not at all. We do not sell or rent out any personal information about you to any third party. Chameleon discloses aggregated non-personal data for marketing and promotional purposes. That means we do not disclose any information that could be used to identify you.</p>
+<h3>Does Chameleon disclose my information to other parties?</h3>
+<p>We may share aggregated information with such parties as Foursquare that includes your personal information (but which doesn’t identify you directly), together with other information including log data with third parties for industry analysis and demographic profiling and to deliver targeted advertising about other products and services.</p>
+<p>In particular, in relation to targeted advertising, we use third-party advertising companies to serve ads when you visit our Website. These companies may use information about your visits to this and other websites in order to provide advertisements about goods and services of interest to you.</p>
+<p>If you choose to, we may share your information with vendors, service providers, and other carefully selected third parties to improve our services to you, such as by facilitating payments. We ensure these parties must adhere to strict data protection and confidentiality provisions that are consistent with this Privacy Policy.</p>
+<p>Chameleon also wishes to maintain a healthy community, and we will cooperate with all law enforcement inquiries and with all third parties to enforce their intellectual property or other rights. We may also disclose your personal information to government or law enforcement agencies, or private parties, as required by law when/or, in our sole discretion, we believe that disclosure is necessary to protect our legal rights, or those of third parties and/or to comply with a judicial proceeding, court order, or legal process served on us.</p>
+<p>In the event that Chameleon or any of its affiliates undergoes a business transition or change of ownership, such as a merger, acquisition by another company, re-organisation, or sale of all or a portion of its assets, or in the event of insolvency or administration, we may be required to disclose your personal information.</p>
+<h2>4. Data storage</h2>
+<h3>Where is my personal information kept?</h3>
+<p>Chameleon is a global website operating through servers located in a number of countries around the world, including the United States. If you live in a country with data protection laws, the storage of your personal data may not provide you with the same protections as you enjoy in your country of residence. By submitting your personal information, or by choosing to upgrade the services you use, or by making use of the applications available on Chameleon, you agree to the transfer of your personal information to, and storage and processing of your personal information in, any such countries and destinations.</p>
+<h2>5. Security</h2>
+<h3>How does Chameleon protect my personal information?</h3>
+<p>Chameleon has implemented reasonable and appropriate security measures to protect and prevent the loss, misuse, and alteration of the information under our control, including your personal information. Chameleon uses reasonable security measures to safeguard the confidentiality of your personal information such as secured servers using firewalls. Our technical experts at Chameleon work hard to ensure your secure use of our site.</p>
+<p>While we take reasonable precautions against possible security breaches of our website, member database and records no website or Internet transmission is completely secure and we cannot guarantee that unauthorised access, hacking, data loss, or other breaches will never occur. We urge you to take steps to keep your personal information safe (including your password) and to log out of your account after use.</p>
+<p>We cannot guarantee the security of your personal data while it is being transmitted to our site and any transmission is at your own risk. Once we
+have received your information we have procedures and security features in place to try to prevent unauthorised access.</p>
+<h3>How do I help keep my information secure?</h3>
+<p>You may not disclose your password to any third parties or share it with any third parties. If you lose your password or give it out, your personal information may be compromised. You must change your password immediately via your “Settings” page. Chameleon cannot be held responsible for your failure to keep your password secure.</p>
+<h2>6. Your rights</h2>
+<h3>How do I change my Profile?</h3>
+<p>You can review and revise your profile information at any time. Once you register, you will be able to review and change much of your personal information including:</p>
+<ol>
+  <li>
+    <p>Your contact email address;</p>
+  </li>
+  <li>
+    <p>Your profile, photographs, and videos;</p>
+  </li>
+  <li>
+    <p>Your city, region, and country of residence;</p>
+  </li>
+  <li>
+    <p>Your password.</p>
+  </li>
+</ol>
+<p>Please promptly update your information if it changes by signing-in to your account and following the screen prompts. We strongly urge you to periodically change your password to help reduce the risk of unauthorised access to your account information.</p>
+<p>Users in certain jurisdictions are, in accordance with applicable law, entitled to exercise a right of access to personal information about themselves by asking for a copy of the information we hold about them (for which, where allowed by law, we may charge a small fee).</p>
+<h3>Can I deactivate or delete my Profile?</h3>
+<p>Users of the Chameleon network have the following choices to delete their profile from our database:</p>
+<ol>
+  <li>
+    <p>Send a message via <a href="mailto:info@demo.chameleonsocial.com">info@demo.chameleonsocial.com</a></p>
+  </li>
+  <li>
+    <p>Sign in with your password and delete your profile. These options are available from your “Settings” page.</p>
+  </li>
+</ol>
+<p>To prevent abuse and/or misuse of Chameleon by a user following termination or deletion of a profile/account we shall retain such information as we deem in our sole discretion may be necessary to ensure that user does not open a new account and profile in breach of our Terms of Use and to ensure compliance with all laws and regulations.</p>
+<p>Warning: Even after you remove information from your profile or delete your account, copies of that information may still be viewable and/or accessed on the Internet to the extent such information has been previously shared with others, or copied or stored by other users or to the extent such information has been shared with search engines. We cannot control this, nor do we accept any liability for this. If you have given third party applications or websites access to your personal information they may retain such information to the extent permitted under their terms of service or privacy policies.</p>
+<h3>What happens if I do nothing?</h3>
+<p>If you have not signed in to Chameleon for three months, we may remove your Profile as part of our data cleansing process.</p>
+<p>Your Chameleon account is non-transferable and any rights to your profile or contents within your account will be cancelled upon your death.</p>
+<p>If you have questions about our Privacy Policy or how we collect and use information, drop us a line via <a href="mailto:info@demo.chameleonsocial.com">info@demo.chameleonsocial.com</a></p>
+<p>This Privacy Policy was last updated on 4 August 2015.</p>
+</div>
+				</div>
+			</div>
+			<div class="bl_btn">
+				<button id="priv_close" class="btn lblue">I understand</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<script>
+    $(function(){
+        //document.cookie = 'cookiesAccepted=; path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+        var options = {
+            title: 'We are using cookies to give you the best experience on our site.',
+            text: 'Cookies are files stored in your browser. By continuing to use our website you are agreeing to our use of cookies. <a class="more_link" href="privacy_policy">Privacy Policy</a>',
+            acceptButtonText: 'Accept',
+            theme: 'dark',
+            learnMore: false,
+            position: 'bottom'
+        };
+        $.acceptCookies(options);
+    })
+</script>
+
+
+</body>
+</html>

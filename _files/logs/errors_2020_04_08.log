@@ -1,0 +1,270 @@
+2020-04-08 08:22:13
+User_id: 0
+Error: E_NOTICE
+URL: http://localhost/talenttube/search_results.php?join_search_page=1&ajax=1&set_template_runtime=impact&site_part_runtime=main
+File: F:\xampp\htdocs\talenttube\_include\current\userslist.class.php
+Line: 446
+Message: Undefined index: orientation
+
+Call stack:
+
+File: F:\xampp\htdocs\talenttube\search_results.php (Line: 1017)
+Class: Users_List
+Function: show
+
+$_POST = Array
+(
+    [with_photo] => 1
+    [join_answers] => Array
+        (
+            [resident ] => yes
+            [casual_part] => yes
+            [relocate] => yes
+            [job_type] => yes
+            [work_type] => yes
+        )
+
+)
+
+---------
+
+2020-04-08 09:32:31
+User_id: 0
+Error: E_NOTICE
+URL: http://localhost/talenttube/search_results.php?join_search_page=1&ajax=1&set_template_runtime=impact&site_part_runtime=main
+File: F:\xampp\htdocs\talenttube\_include\current\userslist.class.php
+Line: 446
+Message: Undefined index: orientation
+
+Call stack:
+
+File: F:\xampp\htdocs\talenttube\search_results.php (Line: 1017)
+Class: Users_List
+Function: show
+
+$_POST = Array
+(
+    [with_photo] => 1
+    [join_answers] => Array
+        (
+            [resident ] => yes
+            [casual_part] => yes
+            [relocate] => yes
+            [job_type] => yes
+            [work_type] => yes
+        )
+
+)
+
+---------
+
+2020-04-08 09:33:26
+User_id: 0
+Error: E_NOTICE
+URL: http://localhost/talenttube/search_results.php?join_search_page=1&ajax=1&set_template_runtime=impact&site_part_runtime=main
+File: F:\xampp\htdocs\talenttube\_include\current\userslist.class.php
+Line: 446
+Message: Undefined index: orientation
+
+Call stack:
+
+File: F:\xampp\htdocs\talenttube\search_results.php (Line: 1017)
+Class: Users_List
+Function: show
+
+$_POST = Array
+(
+    [with_photo] => 1
+    [join_answers] => Array
+        (
+            [resident ] => yes
+            [casual_part] => yes
+            [relocate] => yes
+            [job_type] => yes
+            [work_type] => yes
+        )
+
+)
+
+---------
+
+2020-04-08 10:30:00
+User_id: 0
+Error: E_NOTICE
+URL: http://localhost/talenttube/search_results.php?join_search_page=1&ajax=1&set_template_runtime=impact&site_part_runtime=main
+File: F:\xampp\htdocs\talenttube\_include\current\userslist.class.php
+Line: 446
+Message: Undefined index: orientation
+
+Call stack:
+
+File: F:\xampp\htdocs\talenttube\search_results.php (Line: 1017)
+Class: Users_List
+Function: show
+
+$_POST = Array
+(
+    [with_photo] => 1
+    [join_answers] => Array
+        (
+            [resident ] => yes
+            [casual_part] => yes
+            [relocate] => yes
+            [job_type] => yes
+            [work_type] => yes
+        )
+
+)
+
+---------
+
+2020-04-08 14:50:22
+User_id: 0
+Error: E_NOTICE
+URL: http://localhost/talenttube/search_results.php?join_search_page=1&ajax=1&set_template_runtime=impact&site_part_runtime=main
+File: F:\xampp\htdocs\talenttube\_include\current\userslist.class.php
+Line: 446
+Message: Undefined index: orientation
+
+Call stack:
+
+File: F:\xampp\htdocs\talenttube\search_results.php (Line: 1017)
+Class: Users_List
+Function: show
+
+$_POST = Array
+(
+    [with_photo] => 1
+    [join_answers] => Array
+        (
+            [resident ] => no
+            [casual_part] => yes
+            [relocate] => no
+            [job_type] => yes
+            [work_type] => no
+        )
+
+)
+
+---------
+
+2020-04-08 14:51:30
+User_id: 0
+Error: E_NOTICE
+URL: http://localhost/talenttube/search_results.php?join_search_page=1&ajax=1&set_template_runtime=impact&site_part_runtime=main
+File: F:\xampp\htdocs\talenttube\_include\current\userslist.class.php
+Line: 446
+Message: Undefined index: orientation
+
+Call stack:
+
+File: F:\xampp\htdocs\talenttube\search_results.php (Line: 1017)
+Class: Users_List
+Function: show
+
+$_POST = Array
+(
+    [with_photo] => 1
+    [join_answers] => Array
+        (
+            [resident ] => no
+            [casual_part] => no
+            [relocate] => yes
+            [job_type] => no
+            [work_type] => yes
+        )
+
+)
+
+---------
+
+2020-04-08 14:52:42
+User_id: 0
+Error: E_NOTICE
+URL: http://localhost/talenttube/search_results.php?join_search_page=1&ajax=1&set_template_runtime=impact&site_part_runtime=main
+File: F:\xampp\htdocs\talenttube\_include\current\userslist.class.php
+Line: 446
+Message: Undefined index: orientation
+
+Call stack:
+
+File: F:\xampp\htdocs\talenttube\search_results.php (Line: 1017)
+Class: Users_List
+Function: show
+
+$_POST = Array
+(
+    [with_photo] => 1
+    [join_answers] => Array
+        (
+            [resident ] => yes
+            [casual_part] => no
+            [relocate] => yes
+            [job_type] => no
+            [work_type] => yes
+        )
+
+)
+
+---------
+
+2020-04-08 14:53:47
+User_id: 0
+Error: E_NOTICE
+URL: http://localhost/talenttube/search_results.php?join_search_page=1&ajax=1&set_template_runtime=impact&site_part_runtime=main
+File: F:\xampp\htdocs\talenttube\_include\current\userslist.class.php
+Line: 446
+Message: Undefined index: orientation
+
+Call stack:
+
+File: F:\xampp\htdocs\talenttube\search_results.php (Line: 1017)
+Class: Users_List
+Function: show
+
+$_POST = Array
+(
+    [with_photo] => 1
+    [join_answers] => Array
+        (
+            [resident ] => no
+            [casual_part] => yes
+            [relocate] => no
+            [job_type] => yes
+            [work_type] => no
+        )
+
+)
+
+---------
+
+2020-04-08 15:50:14
+User_id: 0
+Error: E_NOTICE
+URL: http://localhost/talenttube/search_results.php?join_search_page=1&ajax=1&set_template_runtime=impact&site_part_runtime=main
+File: F:\xampp\htdocs\talenttube\_include\current\userslist.class.php
+Line: 446
+Message: Undefined index: orientation
+
+Call stack:
+
+File: F:\xampp\htdocs\talenttube\search_results.php (Line: 916)
+Class: Users_List
+Function: show
+
+$_POST = Array
+(
+    [with_photo] => 1
+    [join_answers] => Array
+        (
+            [resident ] => yes
+            [casual_part] => yes
+            [relocate] => yes
+            [job_type] => yes
+            [work_type] => yes
+        )
+
+)
+
+---------
+

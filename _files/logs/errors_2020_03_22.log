@@ -1,0 +1,60 @@
+2020-03-22 07:54:22
+User_id: 0
+Error: E_NOTICE
+URL: http://localhost/talenttube/search_results.php?join_search_page=1&ajax=1&set_template_runtime=impact&site_part_runtime=main
+File: D:\laragon\www\talenttube\_include\current\userslist.class.php
+Line: 446
+Message: Undefined index: orientation
+
+Call stack:
+
+File: D:\laragon\www\talenttube\search_results.php (Line: 1017)
+Class: Users_List
+Function: show
+
+$_POST = Array
+(
+    [with_photo] => 1
+    [join_answers] => Array
+        (
+            [resident ] => yes
+            [casual_part] => yes
+            [relocate] => yes
+            [job_type] => yes
+            [work_type] => yes
+        )
+
+)
+
+---------
+
+2020-03-22 08:21:36
+User_id: 0
+Error: E_NOTICE
+URL: http://localhost/talenttube/search_results.php?join_search_page=1&ajax=1&set_template_runtime=impact&site_part_runtime=main
+File: D:\laragon\www\talenttube\_include\current\userslist.class.php
+Line: 446
+Message: Undefined index: orientation
+
+Call stack:
+
+File: D:\laragon\www\talenttube\search_results.php (Line: 1017)
+Class: Users_List
+Function: show
+
+$_POST = Array
+(
+    [with_photo] => 1
+    [join_answers] => Array
+        (
+            [resident ] => yes
+            [casual_part] => yes
+            [relocate] => yes
+            [job_type] => yes
+            [work_type] => yes
+        )
+
+)
+
+---------
+

@@ -1,0 +1,571 @@
+2020-04-07 07:47:09
+User_id: 0
+Error: E_ERROR
+URL: http://localhost/talenttube/admin
+File: F:\xampp\htdocs\talenttube\_include\core\main_auth.php
+Line: 16
+Message: Uncaught Error: Call to undefined method User::loginByCookies() in F:\xampp\htdocs\talenttube\_include\core\main_auth.php:16
+Stack trace:
+#0 F:\xampp\htdocs\talenttube\_include\core\main_start.php(18): include()
+#1 F:\xampp\htdocs\talenttube\search_results.php(10): include('F:\\xampp\\htdocs...')
+#2 F:\xampp\htdocs\talenttube\router.php(16): include('F:\\xampp\\htdocs...')
+#3 {main}
+  thrown
+
+Call stack:
+
+File:  (Line: )
+Function: fatalScriptError
+
+---------
+
+2020-04-07 07:47:10
+User_id: 0
+Error: E_ERROR
+URL: http://localhost/talenttube/_server/update_server_ajax_impact.php?&set_template_runtime=impact&site_part_runtime=main
+File: F:\xampp\htdocs\talenttube\_include\core\main_auth.php
+Line: 16
+Message: Uncaught Error: Call to undefined method User::loginByCookies() in F:\xampp\htdocs\talenttube\_include\core\main_auth.php:16
+Stack trace:
+#0 F:\xampp\htdocs\talenttube\_include\core\main_start.php(18): include()
+#1 F:\xampp\htdocs\talenttube\_server\update_server_ajax_impact.php(11): include('F:\\xampp\\htdocs...')
+#2 {main}
+  thrown
+
+Call stack:
+
+File:  (Line: )
+Function: fatalScriptError
+
+$_POST = Array
+(
+    [cmd] => set_event_window
+)
+
+---------
+
+2020-04-07 08:06:59
+User_id: 5
+Error: E_NOTICE
+URL: http://localhost/talenttube/resume.php?action=get_resume&user_id=5
+File: F:\xampp\htdocs\talenttube\resume.php
+Line: 73
+Message: Undefined variable: user
+
+Call stack:
+
+---------
+
+2020-04-07 08:06:59
+User_id: 5
+Error: E_NOTICE
+URL: http://localhost/talenttube/resume.php?&set_template_runtime=impact&site_part_runtime=main
+File: F:\xampp\htdocs\talenttube\resume.php
+Line: 73
+Message: Undefined variable: user
+
+Call stack:
+
+---------
+
+2020-04-07 08:14:21
+User_id: 5
+Error: E_NOTICE
+URL: http://localhost/talenttube/resume.php?action=get_resume&user_id=5
+File: F:\xampp\htdocs\talenttube\resume.php
+Line: 74
+Message: Undefined variable: user
+
+Call stack:
+
+---------
+
+2020-04-07 08:14:22
+User_id: 5
+Error: E_NOTICE
+URL: http://localhost/talenttube/resume.php?&set_template_runtime=impact&site_part_runtime=main
+File: F:\xampp\htdocs\talenttube\resume.php
+Line: 74
+Message: Undefined variable: user
+
+Call stack:
+
+---------
+
+2020-04-07 08:14:43
+User_id: 5
+Error: E_NOTICE
+URL: http://localhost/talenttube/resume.php?action=get_resume&user_id=5
+File: F:\xampp\htdocs\talenttube\resume.php
+Line: 74
+Message: Undefined variable: user
+
+Call stack:
+
+---------
+
+2020-04-07 08:14:43
+User_id: 5
+Error: E_NOTICE
+URL: http://localhost/talenttube/resume.php?&set_template_runtime=impact&site_part_runtime=main
+File: F:\xampp\htdocs\talenttube\resume.php
+Line: 74
+Message: Undefined variable: user
+
+Call stack:
+
+---------
+
+2020-04-07 08:19:05
+User_id: 5
+Error: E_NOTICE
+URL: http://localhost/talenttube/resume.php?action=get_resume&user_id=5
+File: F:\xampp\htdocs\talenttube\resume.php
+Line: 74
+Message: Undefined variable: user
+
+Call stack:
+
+---------
+
+2020-04-07 08:35:20
+User_id: 5
+Error: E_NOTICE
+URL: http://localhost/talenttube/resume.php?action=get_resume&user_id=5
+File: F:\xampp\htdocs\talenttube\resume.php
+Line: 74
+Message: Undefined variable: user
+
+Call stack:
+
+---------
+
+2020-04-07 08:35:21
+User_id: 5
+Error: E_NOTICE
+URL: http://localhost/talenttube/resume.php?&set_template_runtime=impact&site_part_runtime=main
+File: F:\xampp\htdocs\talenttube\resume.php
+Line: 74
+Message: Undefined variable: user
+
+Call stack:
+
+---------
+
+2020-04-07 08:39:08
+User_id: 5
+Error: E_NOTICE
+URL: http://localhost/talenttube/resume.php?action=get_resume&user_id=5
+File: F:\xampp\htdocs\talenttube\resume.php
+Line: 74
+Message: Undefined variable: user
+
+Call stack:
+
+---------
+
+2020-04-07 08:40:23
+User_id: 5
+Error: E_NOTICE
+URL: http://localhost/talenttube/resume.php?action=get_resume&user_id=5
+File: F:\xampp\htdocs\talenttube\resume.php
+Line: 74
+Message: Undefined variable: user
+
+Call stack:
+
+---------
+
+2020-04-07 08:40:23
+User_id: 5
+Error: E_NOTICE
+URL: http://localhost/talenttube/resume.php?&set_template_runtime=impact&site_part_runtime=main
+File: F:\xampp\htdocs\talenttube\resume.php
+Line: 74
+Message: Undefined variable: user
+
+Call stack:
+
+---------
+
+2020-04-07 08:44:32
+User_id: 5
+Error: E_NOTICE
+URL: http://localhost/talenttube/resume.php?action=get_resume&user_id=5
+File: F:\xampp\htdocs\talenttube\resume.php
+Line: 74
+Message: Undefined variable: user
+
+Call stack:
+
+---------
+
+2020-04-07 08:44:32
+User_id: 5
+Error: E_NOTICE
+URL: http://localhost/talenttube/resume.php?&set_template_runtime=impact&site_part_runtime=main
+File: F:\xampp\htdocs\talenttube\resume.php
+Line: 74
+Message: Undefined variable: user
+
+Call stack:
+
+---------
+
+2020-04-07 11:26:35
+User_id: 5
+Error: E_NOTICE
+URL: http://localhost/talenttube/resume.php?action=get_resume&user_id=5
+File: F:\xampp\htdocs\talenttube\resume.php
+Line: 74
+Message: Undefined variable: user
+
+Call stack:
+
+---------
+
+2020-04-07 11:26:36
+User_id: 5
+Error: E_NOTICE
+URL: http://localhost/talenttube/resume.php?&set_template_runtime=impact&site_part_runtime=main
+File: F:\xampp\htdocs\talenttube\resume.php
+Line: 74
+Message: Undefined variable: user
+
+Call stack:
+
+---------
+
+2020-04-07 20:39:51
+User_id: 5
+Error: E_NOTICE
+URL: http://localhost/talenttube/resume.php?action=get_resume&user_id=5
+File: F:\xampp\htdocs\talenttube\resume.php
+Line: 74
+Message: Undefined variable: user
+
+Call stack:
+
+---------
+
+2020-04-07 20:39:51
+User_id: 5
+Error: E_NOTICE
+URL: http://localhost/talenttube/resume.php?&set_template_runtime=impact&site_part_runtime=main
+File: F:\xampp\htdocs\talenttube\resume.php
+Line: 74
+Message: Undefined variable: user
+
+Call stack:
+
+---------
+
+2020-04-07 20:45:36
+User_id: 5
+Error: E_NOTICE
+URL: http://localhost/talenttube/resume.php?action=get_resume&user_id=5
+File: F:\xampp\htdocs\talenttube\resume.php
+Line: 74
+Message: Undefined variable: user
+
+Call stack:
+
+---------
+
+2020-04-07 20:45:37
+User_id: 5
+Error: E_NOTICE
+URL: http://localhost/talenttube/resume.php?&set_template_runtime=impact&site_part_runtime=main
+File: F:\xampp\htdocs\talenttube\resume.php
+Line: 74
+Message: Undefined variable: user
+
+Call stack:
+
+---------
+
+2020-04-07 21:01:27
+User_id: 5
+Error: E_NOTICE
+URL: http://localhost/talenttube/resume.php?action=get_resume&user_id=5
+File: F:\xampp\htdocs\talenttube\resume.php
+Line: 74
+Message: Undefined variable: user
+
+Call stack:
+
+---------
+
+2020-04-07 21:07:21
+User_id: 5
+Error: E_NOTICE
+URL: http://localhost/talenttube/resume.php?action=get_resume&user_id=5
+File: F:\xampp\htdocs\talenttube\resume.php
+Line: 74
+Message: Undefined variable: user
+
+Call stack:
+
+---------
+
+2020-04-07 21:07:21
+User_id: 5
+Error: E_ERROR
+URL: http://localhost/talenttube/phone.php?&set_template_runtime=impact&site_part_runtime=main
+File: F:\xampp\htdocs\talenttube\_include\current\user.class.php
+Line: 725
+Message: Uncaught ArgumentCountError: Too few arguments to function User::getInfoFull(), 0 passed in F:\xampp\htdocs\talenttube\phone.php on line 3 and at least 1 expected in F:\xampp\htdocs\talenttube\_include\current\user.class.php:725
+Stack trace:
+#0 F:\xampp\htdocs\talenttube\phone.php(3): User::getInfoFull()
+#1 {main}
+  thrown
+
+Call stack:
+
+File:  (Line: )
+Function: fatalScriptError
+
+---------
+
+2020-04-07 21:08:59
+User_id: 5
+Error: E_NOTICE
+URL: http://localhost/talenttube/resume.php?action=get_resume&user_id=5
+File: F:\xampp\htdocs\talenttube\resume.php
+Line: 74
+Message: Undefined variable: user
+
+Call stack:
+
+---------
+
+2020-04-07 21:10:48
+User_id: 5
+Error: E_ERROR
+URL: http://localhost/talenttube/document.php
+File: F:\xampp\htdocs\talenttube\_include\current\user.class.php
+Line: 725
+Message: Uncaught ArgumentCountError: Too few arguments to function User::getInfoFull(), 0 passed in F:\xampp\htdocs\talenttube\document.php on line 16 and at least 1 expected in F:\xampp\htdocs\talenttube\_include\current\user.class.php:725
+Stack trace:
+#0 F:\xampp\htdocs\talenttube\document.php(16): User::getInfoFull()
+#1 {main}
+  thrown
+
+Call stack:
+
+File:  (Line: )
+Function: fatalScriptError
+
+---------
+
+2020-04-07 21:10:59
+User_id: 5
+Error: E_NOTICE
+URL: http://localhost/talenttube/resume.php
+File: F:\xampp\htdocs\talenttube\resume.php
+Line: 74
+Message: Undefined variable: user
+
+Call stack:
+
+---------
+
+2020-04-07 21:57:44
+User_id: 5
+Error: E_NOTICE
+URL: http://localhost/talenttube/resume.php?action=get_resume&user_id=5
+File: F:\xampp\htdocs\talenttube\resume.php
+Line: 74
+Message: Undefined variable: user
+
+Call stack:
+
+---------
+
+2020-04-07 21:57:54
+User_id: 5
+Error: E_ERROR
+URL: http://localhost/talenttube/phone.php
+File: F:\xampp\htdocs\talenttube\_include\current\user.class.php
+Line: 725
+Message: Uncaught ArgumentCountError: Too few arguments to function User::getInfoFull(), 0 passed in F:\xampp\htdocs\talenttube\phone.php on line 3 and at least 1 expected in F:\xampp\htdocs\talenttube\_include\current\user.class.php:725
+Stack trace:
+#0 F:\xampp\htdocs\talenttube\phone.php(3): User::getInfoFull()
+#1 {main}
+  thrown
+
+Call stack:
+
+File:  (Line: )
+Function: fatalScriptError
+
+---------
+
+2020-04-07 21:59:33
+User_id: 5
+Error: E_NOTICE
+URL: http://localhost/talenttube/resume.php?action=get_resume&user_id=5
+File: F:\xampp\htdocs\talenttube\resume.php
+Line: 74
+Message: Undefined variable: user
+
+Call stack:
+
+---------
+
+2020-04-07 21:59:36
+User_id: 5
+Error: E_NOTICE
+URL: http://localhost/talenttube/resume.php?action=get_resume&user_id=5
+File: F:\xampp\htdocs\talenttube\resume.php
+Line: 74
+Message: Undefined variable: user
+
+Call stack:
+
+---------
+
+2020-04-07 21:59:39
+User_id: 5
+Error: E_NOTICE
+URL: http://localhost/talenttube/resume.php?action=get_resume&user_id=5
+File: F:\xampp\htdocs\talenttube\resume.php
+Line: 74
+Message: Undefined variable: user
+
+Call stack:
+
+---------
+
+2020-04-07 21:59:41
+User_id: 5
+Error: E_NOTICE
+URL: http://localhost/talenttube/resume.php?action=get_resume&user_id=5
+File: F:\xampp\htdocs\talenttube\resume.php
+Line: 74
+Message: Undefined variable: user
+
+Call stack:
+
+---------
+
+2020-04-07 21:59:44
+User_id: 5
+Error: E_NOTICE
+URL: http://localhost/talenttube/resume.php?action=get_resume&user_id=5
+File: F:\xampp\htdocs\talenttube\resume.php
+Line: 74
+Message: Undefined variable: user
+
+Call stack:
+
+---------
+
+2020-04-07 21:59:46
+User_id: 5
+Error: E_NOTICE
+URL: http://localhost/talenttube/resume.php?action=get_resume&user_id=5
+File: F:\xampp\htdocs\talenttube\resume.php
+Line: 74
+Message: Undefined variable: user
+
+Call stack:
+
+---------
+
+2020-04-07 21:59:50
+User_id: 5
+Error: E_NOTICE
+URL: http://localhost/talenttube/resume.php?action=get_resume&user_id=5
+File: F:\xampp\htdocs\talenttube\resume.php
+Line: 74
+Message: Undefined variable: user
+
+Call stack:
+
+---------
+
+2020-04-07 22:00:16
+User_id: 5
+Error: E_NOTICE
+URL: http://localhost/talenttube/resume.php?action=get_resume&user_id=5
+File: F:\xampp\htdocs\talenttube\resume.php
+Line: 74
+Message: Undefined variable: user
+
+Call stack:
+
+---------
+
+2020-04-07 22:01:29
+User_id: 0
+Error: E_NOTICE
+URL: http://localhost/talenttube/search_results.php?join_search_page=1&ajax=1&set_template_runtime=impact&site_part_runtime=main
+File: F:\xampp\htdocs\talenttube\_include\current\userslist.class.php
+Line: 446
+Message: Undefined index: orientation
+
+Call stack:
+
+File: F:\xampp\htdocs\talenttube\search_results.php (Line: 1017)
+Class: Users_List
+Function: show
+
+$_POST = Array
+(
+    [with_photo] => 1
+    [join_answers] => Array
+        (
+            [resident ] => yes
+            [casual_part] => yes
+            [relocate] => yes
+            [job_type] => yes
+            [work_type] => yes
+        )
+
+)
+
+---------
+
+2020-04-07 22:02:21
+User_id: 0
+Error: E_NOTICE
+URL: http://localhost/talenttube/search_results.php?join_search_page=1&ajax=1&set_template_runtime=impact&site_part_runtime=main
+File: F:\xampp\htdocs\talenttube\_include\current\userslist.class.php
+Line: 446
+Message: Undefined index: orientation
+
+Call stack:
+
+File: F:\xampp\htdocs\talenttube\search_results.php (Line: 1017)
+Class: Users_List
+Function: show
+
+$_POST = Array
+(
+    [with_photo] => 1
+    [join_answers] => Array
+        (
+            [resident ] => yes
+            [casual_part] => yes
+            [relocate] => yes
+            [job_type] => yes
+            [work_type] => yes
+        )
+
+)
+
+---------
+
+2020-04-07 22:02:29
+User_id: 21
+Error: E_NOTICE
+URL: http://localhost/talenttube/resume.php?action=get_resume&user_id=21
+File: F:\xampp\htdocs\talenttube\resume.php
+Line: 74
+Message: Undefined variable: user
+
+Call stack:
+
+---------
+

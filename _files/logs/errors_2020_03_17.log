@@ -1,0 +1,319 @@
+2020-03-17 07:25:49
+User_id: 0
+Error: E_USER_NOTICE
+URL: http://localhost/talenttube/
+File: C:\xampp\htdocs\talenttube\_include\lib\db_common.php
+Line: 49
+Message: Can't execute query: Unknown database 'talenttube'
+
+
+Call stack:
+
+File: C:\xampp\htdocs\talenttube\_include\lib\db_common.php (Line: 49)
+Function: trigger_error
+
+File: C:\xampp\htdocs\talenttube\_include\lib\db_common.php (Line: 609)
+Class: DB_Common
+Function: triggerError
+
+File: C:\xampp\htdocs\talenttube\_include\lib\db_common.php (Line: 76)
+Class: DB_Common
+Function: select_db
+
+File: C:\xampp\htdocs\talenttube\_include\core\start.php (Line: 377)
+Class: DB_Common
+Function: connect
+
+File: C:\xampp\htdocs\talenttube\_include\core\main_start.php (Line: 12)
+Function: include_once
+
+File: C:\xampp\htdocs\talenttube\index.php (Line: 16)
+Function: include
+
+---------
+
+2020-03-17 08:03:52
+User_id: 1
+Error: E_WARNING
+URL: http://localhost/talenttube/resume.php
+File: C:\xampp\htdocs\talenttube\resume.php
+Line: 25
+Message: move_uploaded_file(_files/resumeUpload/1485sample.pdf): failed to open stream: No such file or directory
+
+Call stack:
+
+File: C:\xampp\htdocs\talenttube\resume.php (Line: 25)
+Function: move_uploaded_file
+
+$_POST = Array
+(
+    [submit] => 
+)
+
+$_FILES = Array
+(
+    [resume] => Array
+        (
+            [name] => sample.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php41DE.tmp
+            [error] => 0
+            [size] => 3028
+        )
+
+)
+
+---------
+
+2020-03-17 09:17:49
+User_id: 16
+Error: E_NOTICE
+URL: http://localhost/talenttube/document.php
+File: C:\xampp\htdocs\talenttube\document.php
+Line: 15
+Message: Undefined index: name
+
+Call stack:
+
+---------
+
+2020-03-17 09:18:07
+User_id: 16
+Error: E_NOTICE
+URL: http://localhost/talenttube/document.php
+File: C:\xampp\htdocs\talenttube\document.php
+Line: 15
+Message: Undefined index: id
+
+Call stack:
+
+---------
+
+2020-03-17 09:28:06
+User_id: 16
+Error: E_NOTICE
+URL: http://localhost/talenttube/document.php
+File: C:\xampp\htdocs\talenttube\document.php
+Line: 16
+Message: Undefined index: name
+
+Call stack:
+
+---------
+
+2020-03-17 09:28:46
+User_id: 16
+Error: E_NOTICE
+URL: http://localhost/talenttube/document.php
+File: C:\xampp\htdocs\talenttube\document.php
+Line: 16
+Message: Undefined index: role
+
+Call stack:
+
+---------
+
+2020-03-17 13:13:25
+User_id: 16
+Error: E_COMPILE_ERROR
+URL: http://localhost/talenttube/document.php
+File: C:\xampp\htdocs\talenttube\_include\lib\lib.php
+Line: 31
+Message: Cannot redeclare logger() (previously declared in C:\xampp\htdocs\talenttube\_include\lib\lib.php:22)
+
+Call stack:
+
+File:  (Line: )
+Function: fatalScriptError
+
+---------
+
+2020-03-17 13:14:47
+User_id: 16
+Error: E_COMPILE_ERROR
+URL: http://localhost/talenttube/document.php
+File: C:\xampp\htdocs\talenttube\_include\lib\lib.php
+Line: 31
+Message: Cannot redeclare logger() (previously declared in C:\xampp\htdocs\talenttube\_include\lib\lib.php:22)
+
+Call stack:
+
+File:  (Line: )
+Function: fatalScriptError
+
+---------
+
+2020-03-17 13:14:54
+User_id: 16
+Error: E_COMPILE_ERROR
+URL: http://localhost/talenttube/document.php
+File: C:\xampp\htdocs\talenttube\_include\lib\lib.php
+Line: 31
+Message: Cannot redeclare logger() (previously declared in C:\xampp\htdocs\talenttube\_include\lib\lib.php:22)
+
+Call stack:
+
+File:  (Line: )
+Function: fatalScriptError
+
+---------
+
+2020-03-17 13:57:20
+User_id: 17
+Error: E_NOTICE
+URL: http://localhost/talenttube/document.php
+File: C:\xampp\htdocs\talenttube\document.php
+Line: 30
+Message: Undefined variable: cat
+
+Call stack:
+
+---------
+
+2020-03-17 14:24:27
+User_id: 16
+Error: E_WARNING
+URL: http://localhost/talenttube/document.php
+File: C:\xampp\htdocs\talenttube\_include\lib\db_mysqli.php
+Line: 37
+Message: mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given
+
+Call stack:
+
+File: C:\xampp\htdocs\talenttube\_include\lib\db_mysqli.php (Line: 37)
+Function: mysqli_fetch_array
+
+File: C:\xampp\htdocs\talenttube\_include\lib\db_common.php (Line: 311)
+Class: DB
+Function: driver_fetch_array
+
+File: C:\xampp\htdocs\talenttube\document.php (Line: 24)
+Class: DB_Common
+Function: fetch_row
+
+---------
+
+2020-03-17 14:24:51
+User_id: 16
+Error: E_WARNING
+URL: http://localhost/talenttube/document.php
+File: C:\xampp\htdocs\talenttube\_include\lib\db_mysqli.php
+Line: 37
+Message: mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given
+
+Call stack:
+
+File: C:\xampp\htdocs\talenttube\_include\lib\db_mysqli.php (Line: 37)
+Function: mysqli_fetch_array
+
+File: C:\xampp\htdocs\talenttube\_include\lib\db_common.php (Line: 311)
+Class: DB
+Function: driver_fetch_array
+
+File: C:\xampp\htdocs\talenttube\document.php (Line: 24)
+Class: DB_Common
+Function: fetch_row
+
+---------
+
+2020-03-17 14:26:42
+User_id: 16
+Error: E_WARNING
+URL: http://localhost/talenttube/document.php
+File: C:\xampp\htdocs\talenttube\_include\lib\db_mysqli.php
+Line: 37
+Message: mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given
+
+Call stack:
+
+File: C:\xampp\htdocs\talenttube\_include\lib\db_mysqli.php (Line: 37)
+Function: mysqli_fetch_array
+
+File: C:\xampp\htdocs\talenttube\_include\lib\db_common.php (Line: 311)
+Class: DB
+Function: driver_fetch_array
+
+File: C:\xampp\htdocs\talenttube\document.php (Line: 35)
+Class: DB_Common
+Function: fetch_row
+
+---------
+
+2020-03-17 14:27:35
+User_id: 16
+Error: E_WARNING
+URL: http://localhost/talenttube/document.php
+File: C:\xampp\htdocs\talenttube\document.php
+Line: 24
+Message: mysqli_fetch_array() expects parameter 1 to be mysqli_result, integer given
+
+Call stack:
+
+File: C:\xampp\htdocs\talenttube\document.php (Line: 24)
+Function: mysqli_fetch_array
+
+---------
+
+2020-03-17 14:27:52
+User_id: 16
+Error: E_ERROR
+URL: http://localhost/talenttube/document.php
+File: C:\xampp\htdocs\talenttube\document.php
+Line: 24
+Message: Call to undefined function mysqli_result()
+
+Call stack:
+
+File:  (Line: )
+Function: fatalScriptError
+
+---------
+
+2020-03-17 14:42:37
+User_id: 16
+Error: E_NOTICE
+URL: http://localhost/talenttube/document.php
+File: C:\xampp\htdocs\talenttube\document.php
+Line: 16
+Message: Undefined variable: option
+
+Call stack:
+
+---------
+
+2020-03-17 14:42:50
+User_id: 16
+Error: E_NOTICE
+URL: http://localhost/talenttube/document.php
+File: C:\xampp\htdocs\talenttube\document.php
+Line: 16
+Message: Undefined variable: option
+
+Call stack:
+
+---------
+
+2020-03-17 14:43:09
+User_id: 16
+Error: E_NOTICE
+URL: http://localhost/talenttube/document.php
+File: C:\xampp\htdocs\talenttube\document.php
+Line: 16
+Message: Undefined variable: optionSet
+
+Call stack:
+
+---------
+
+2020-03-17 14:44:19
+User_id: 16
+Error: E_NOTICE
+URL: http://localhost/talenttube/document.php
+File: C:\xampp\htdocs\talenttube\document.php
+Line: 17
+Message: Undefined variable: name
+
+Call stack:
+
+---------
+

@@ -1,0 +1,1380 @@
+2020-03-25 05:17:05
+User_id: 0
+Error: E_WARNING
+URL: http://localhost/talenttube/editjob.php?id=39
+File: D:\laragon\www\talenttube\_include\lib\db_mysqli.php
+Line: 21
+Message: mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES)
+
+Call stack:
+
+File: D:\laragon\www\talenttube\_include\lib\db_mysqli.php (Line: 21)
+Function: mysqli_connect
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 70)
+Class: DB
+Function: driver_connect
+
+File: D:\laragon\www\talenttube\_include\core\start.php (Line: 377)
+Class: DB_Common
+Function: connect
+
+File: D:\laragon\www\talenttube\_include\core\main_start.php (Line: 12)
+Function: include_once
+
+File: D:\laragon\www\talenttube\editjob.php (Line: 2)
+Function: include
+
+---------
+
+2020-03-25 05:17:06
+User_id: 0
+Error: E_WARNING
+URL: http://localhost/talenttube/page?id=47
+File: D:\laragon\www\talenttube\_include\lib\db_mysqli.php
+Line: 21
+Message: mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES)
+
+Call stack:
+
+File: D:\laragon\www\talenttube\_include\lib\db_mysqli.php (Line: 21)
+Function: mysqli_connect
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 70)
+Class: DB
+Function: driver_connect
+
+File: D:\laragon\www\talenttube\_include\core\start.php (Line: 377)
+Class: DB_Common
+Function: connect
+
+File: D:\laragon\www\talenttube\_include\core\main_start.php (Line: 12)
+Function: include_once
+
+File: D:\laragon\www\talenttube\page.php (Line: 11)
+Function: include
+
+---------
+
+2020-03-25 05:17:08
+User_id: 0
+Error: E_WARNING
+URL: http://localhost/talenttube/admin
+File: D:\laragon\www\talenttube\_include\lib\db_mysqli.php
+Line: 21
+Message: mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES)
+
+Call stack:
+
+File: D:\laragon\www\talenttube\_include\lib\db_mysqli.php (Line: 21)
+Function: mysqli_connect
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 70)
+Class: DB
+Function: driver_connect
+
+File: D:\laragon\www\talenttube\_include\core\start.php (Line: 377)
+Class: DB_Common
+Function: connect
+
+File: D:\laragon\www\talenttube\_include\core\main_start.php (Line: 12)
+Function: include_once
+
+File: D:\laragon\www\talenttube\router.php (Line: 9)
+Function: include
+
+---------
+
+2020-03-25 05:17:23
+User_id: 0
+Error: E_WARNING
+URL: http://localhost/talenttube/
+File: D:\laragon\www\talenttube\_include\lib\db_mysqli.php
+Line: 21
+Message: mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES)
+
+Call stack:
+
+File: D:\laragon\www\talenttube\_include\lib\db_mysqli.php (Line: 21)
+Function: mysqli_connect
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 70)
+Class: DB
+Function: driver_connect
+
+File: D:\laragon\www\talenttube\_include\core\start.php (Line: 377)
+Class: DB_Common
+Function: connect
+
+File: D:\laragon\www\talenttube\_include\core\main_start.php (Line: 12)
+Function: include_once
+
+File: D:\laragon\www\talenttube\index.php (Line: 16)
+Function: include
+
+---------
+
+2020-03-25 05:30:44
+User_id: 0
+Error: E_WARNING
+URL: http://localhost/talenttube/
+File: D:\laragon\www\talenttube\_include\lib\db_mysqli.php
+Line: 21
+Message: mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES)
+
+Call stack:
+
+File: D:\laragon\www\talenttube\_include\lib\db_mysqli.php (Line: 21)
+Function: mysqli_connect
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 70)
+Class: DB
+Function: driver_connect
+
+File: D:\laragon\www\talenttube\_include\core\start.php (Line: 377)
+Class: DB_Common
+Function: connect
+
+File: D:\laragon\www\talenttube\_include\core\main_start.php (Line: 12)
+Function: include_once
+
+File: D:\laragon\www\talenttube\index.php (Line: 16)
+Function: include
+
+---------
+
+2020-03-25 05:42:54
+User_id: 5
+Error: E_NOTICE
+URL: http://localhost/talenttube/page?id=47
+File: D:\laragon\www\talenttube\page.php
+Line: 16
+Message: Undefined variable: id
+
+Call stack:
+
+---------
+
+2020-03-25 06:20:19
+User_id: 0
+Error: E_PARSE
+URL: http://localhost/talenttube/_server/update_server_ajax_impact.php?&set_template_runtime=impact&site_part_runtime=main
+File: D:\laragon\www\talenttube\_include\config\db.php
+Line: 5
+Message: syntax error, unexpected '<<' (T_SL), expecting end of file
+
+Call stack:
+
+File:  (Line: )
+Function: fatalScriptError
+
+$_POST = Array
+(
+    [cmd] => update_im
+    [is_visible_messages] => true
+    [users_list] => {}
+    [users_list_open_im] => {}
+    [user_to] => 0
+    [display] => open_list_chats
+    [last_id] => 0
+    [status_writing] => {}
+    [is_mode_fb] => true
+    [timeout_server] => 15
+    [page] => page.php
+    [request_user_id] => 0
+    [city_counter_street_chat] => 0
+    [city_counter_games] => 0
+    [city_counter] => 0
+    [hide_im_on_page_city] => 0
+    [geo_position] => Array
+        (
+            [lat] => 0
+            [long] => 0
+        )
+
+)
+
+---------
+
+2020-03-25 06:20:30
+User_id: 0
+Error: E_PARSE
+URL: http://localhost/talenttube/_server/update_server_ajax_impact.php?&set_template_runtime=impact&site_part_runtime=main
+File: D:\laragon\www\talenttube\_include\config\db.php
+Line: 5
+Message: syntax error, unexpected '<<' (T_SL), expecting end of file
+
+Call stack:
+
+File:  (Line: )
+Function: fatalScriptError
+
+$_POST = Array
+(
+    [cmd] => update_im
+    [is_visible_messages] => true
+    [users_list] => {}
+    [users_list_open_im] => {}
+    [user_to] => 0
+    [display] => open_list_chats
+    [last_id] => 0
+    [status_writing] => {}
+    [is_mode_fb] => true
+    [timeout_server] => 15
+    [page] => page.php
+    [request_user_id] => 0
+    [city_counter_street_chat] => 0
+    [city_counter_games] => 0
+    [city_counter] => 0
+    [hide_im_on_page_city] => 0
+    [geo_position] => Array
+        (
+            [lat] => 0
+            [long] => 0
+        )
+
+)
+
+---------
+
+2020-03-25 07:03:30
+User_id: 0
+Error: E_PARSE
+URL: http://localhost/talenttube/_server/update_server_ajax_impact.php?&set_template_runtime=impact&site_part_runtime=main
+File: D:\laragon\www\talenttube\_include\config\db.php
+Line: 3
+Message: syntax error, unexpected '<<' (T_SL), expecting end of file
+
+Call stack:
+
+File:  (Line: )
+Function: fatalScriptError
+
+$_POST = Array
+(
+    [cmd] => update_im
+    [is_visible_messages] => true
+    [users_list] => {}
+    [users_list_open_im] => {}
+    [user_to] => 0
+    [display] => open_list_chats
+    [last_id] => 0
+    [status_writing] => {}
+    [is_mode_fb] => false
+    [timeout_server] => 15
+    [page] => page.php
+    [request_user_id] => 0
+    [city_counter_street_chat] => 0
+    [city_counter_games] => 0
+    [city_counter] => 0
+    [hide_im_on_page_city] => 0
+    [geo_position] => Array
+        (
+            [lat] => 0
+            [long] => 0
+        )
+
+)
+
+---------
+
+2020-03-25 07:03:35
+User_id: 0
+Error: E_PARSE
+URL: http://localhost/talenttube/_server/update_server_ajax_impact.php?&set_template_runtime=impact&site_part_runtime=main
+File: D:\laragon\www\talenttube\_include\config\db.php
+Line: 3
+Message: syntax error, unexpected '<<' (T_SL), expecting end of file
+
+Call stack:
+
+File:  (Line: )
+Function: fatalScriptError
+
+$_POST = Array
+(
+    [cmd] => update_im
+    [is_visible_messages] => true
+    [users_list] => {}
+    [users_list_open_im] => {}
+    [user_to] => 0
+    [display] => open_list_chats
+    [last_id] => 0
+    [status_writing] => {}
+    [is_mode_fb] => false
+    [timeout_server] => 15
+    [page] => page.php
+    [request_user_id] => 0
+    [city_counter_street_chat] => 0
+    [city_counter_games] => 0
+    [city_counter] => 0
+    [hide_im_on_page_city] => 0
+    [geo_position] => Array
+        (
+            [lat] => 0
+            [long] => 0
+        )
+
+)
+
+---------
+
+2020-03-25 07:03:41
+User_id: 0
+Error: E_USER_NOTICE
+URL: http://localhost/talenttube/_server/update_server_ajax_impact.php?&set_template_runtime=impact&site_part_runtime=main
+File: D:\laragon\www\talenttube\_include\lib\db_common.php
+Line: 49
+Message: Can't execute query: Unknown database 't_tube'
+
+
+Call stack:
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 49)
+Function: trigger_error
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 609)
+Class: DB_Common
+Function: triggerError
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 76)
+Class: DB_Common
+Function: select_db
+
+File: D:\laragon\www\talenttube\_include\core\start.php (Line: 377)
+Class: DB_Common
+Function: connect
+
+File: D:\laragon\www\talenttube\_include\core\main_start.php (Line: 12)
+Function: include_once
+
+File: D:\laragon\www\talenttube\_server\update_server_ajax_impact.php (Line: 11)
+Function: include
+
+$_POST = Array
+(
+    [cmd] => update_im
+    [is_visible_messages] => true
+    [users_list] => {}
+    [users_list_open_im] => {}
+    [user_to] => 0
+    [display] => open_list_chats
+    [last_id] => 0
+    [status_writing] => {}
+    [is_mode_fb] => false
+    [timeout_server] => 15
+    [page] => page.php
+    [request_user_id] => 0
+    [city_counter_street_chat] => 0
+    [city_counter_games] => 0
+    [city_counter] => 0
+    [hide_im_on_page_city] => 0
+    [geo_position] => Array
+        (
+            [lat] => 0
+            [long] => 0
+        )
+
+)
+
+---------
+
+2020-03-25 07:03:45
+User_id: 0
+Error: E_USER_NOTICE
+URL: http://localhost/talenttube/_server/update_server_ajax_impact.php?&set_template_runtime=impact&site_part_runtime=main
+File: D:\laragon\www\talenttube\_include\lib\db_common.php
+Line: 49
+Message: Can't execute query: Unknown database 't_tube'
+
+
+Call stack:
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 49)
+Function: trigger_error
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 609)
+Class: DB_Common
+Function: triggerError
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 76)
+Class: DB_Common
+Function: select_db
+
+File: D:\laragon\www\talenttube\_include\core\start.php (Line: 377)
+Class: DB_Common
+Function: connect
+
+File: D:\laragon\www\talenttube\_include\core\main_start.php (Line: 12)
+Function: include_once
+
+File: D:\laragon\www\talenttube\_server\update_server_ajax_impact.php (Line: 11)
+Function: include
+
+$_POST = Array
+(
+    [cmd] => update_im
+    [is_visible_messages] => true
+    [users_list] => {}
+    [users_list_open_im] => {}
+    [user_to] => 0
+    [display] => open_list_chats
+    [last_id] => 0
+    [status_writing] => {}
+    [is_mode_fb] => false
+    [timeout_server] => 15
+    [page] => page.php
+    [request_user_id] => 0
+    [city_counter_street_chat] => 0
+    [city_counter_games] => 0
+    [city_counter] => 0
+    [hide_im_on_page_city] => 0
+    [geo_position] => Array
+        (
+            [lat] => 0
+            [long] => 0
+        )
+
+)
+
+---------
+
+2020-03-25 07:03:52
+User_id: 0
+Error: E_USER_NOTICE
+URL: http://localhost/talenttube/_server/update_server_ajax_impact.php?&set_template_runtime=impact&site_part_runtime=main
+File: D:\laragon\www\talenttube\_include\lib\db_common.php
+Line: 49
+Message: Can't execute query: Unknown database 't_tube'
+
+
+Call stack:
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 49)
+Function: trigger_error
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 609)
+Class: DB_Common
+Function: triggerError
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 76)
+Class: DB_Common
+Function: select_db
+
+File: D:\laragon\www\talenttube\_include\core\start.php (Line: 377)
+Class: DB_Common
+Function: connect
+
+File: D:\laragon\www\talenttube\_include\core\main_start.php (Line: 12)
+Function: include_once
+
+File: D:\laragon\www\talenttube\_server\update_server_ajax_impact.php (Line: 11)
+Function: include
+
+$_POST = Array
+(
+    [cmd] => update_im
+    [is_visible_messages] => true
+    [users_list] => {}
+    [users_list_open_im] => {}
+    [user_to] => 0
+    [display] => open_list_chats
+    [last_id] => 0
+    [status_writing] => {}
+    [is_mode_fb] => false
+    [timeout_server] => 15
+    [page] => page.php
+    [request_user_id] => 0
+    [city_counter_street_chat] => 0
+    [city_counter_games] => 0
+    [city_counter] => 0
+    [hide_im_on_page_city] => 0
+    [geo_position] => Array
+        (
+            [lat] => 0
+            [long] => 0
+        )
+
+)
+
+---------
+
+2020-03-25 07:03:55
+User_id: 0
+Error: E_USER_NOTICE
+URL: http://localhost/talenttube/_server/update_server_ajax_impact.php?&set_template_runtime=impact&site_part_runtime=main
+File: D:\laragon\www\talenttube\_include\lib\db_common.php
+Line: 49
+Message: Can't execute query: Unknown database 't_tube'
+
+
+Call stack:
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 49)
+Function: trigger_error
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 609)
+Class: DB_Common
+Function: triggerError
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 76)
+Class: DB_Common
+Function: select_db
+
+File: D:\laragon\www\talenttube\_include\core\start.php (Line: 377)
+Class: DB_Common
+Function: connect
+
+File: D:\laragon\www\talenttube\_include\core\main_start.php (Line: 12)
+Function: include_once
+
+File: D:\laragon\www\talenttube\_server\update_server_ajax_impact.php (Line: 11)
+Function: include
+
+$_POST = Array
+(
+    [cmd] => update_im
+    [is_visible_messages] => true
+    [users_list] => {}
+    [users_list_open_im] => {}
+    [user_to] => 0
+    [display] => open_list_chats
+    [last_id] => 0
+    [status_writing] => {}
+    [is_mode_fb] => false
+    [timeout_server] => 15
+    [page] => page.php
+    [request_user_id] => 0
+    [city_counter_street_chat] => 0
+    [city_counter_games] => 0
+    [city_counter] => 0
+    [hide_im_on_page_city] => 0
+    [geo_position] => Array
+        (
+            [lat] => 0
+            [long] => 0
+        )
+
+)
+
+---------
+
+2020-03-25 07:04:03
+User_id: 0
+Error: E_USER_NOTICE
+URL: http://localhost/talenttube/_server/update_server_ajax_impact.php?&set_template_runtime=impact&site_part_runtime=main
+File: D:\laragon\www\talenttube\_include\lib\db_common.php
+Line: 49
+Message: Can't execute query: Unknown database 't_tube'
+
+
+Call stack:
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 49)
+Function: trigger_error
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 609)
+Class: DB_Common
+Function: triggerError
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 76)
+Class: DB_Common
+Function: select_db
+
+File: D:\laragon\www\talenttube\_include\core\start.php (Line: 377)
+Class: DB_Common
+Function: connect
+
+File: D:\laragon\www\talenttube\_include\core\main_start.php (Line: 12)
+Function: include_once
+
+File: D:\laragon\www\talenttube\_server\update_server_ajax_impact.php (Line: 11)
+Function: include
+
+$_POST = Array
+(
+    [cmd] => update_im
+    [is_visible_messages] => true
+    [users_list] => {}
+    [users_list_open_im] => {}
+    [user_to] => 0
+    [display] => open_list_chats
+    [last_id] => 0
+    [status_writing] => {}
+    [is_mode_fb] => false
+    [timeout_server] => 15
+    [page] => page.php
+    [request_user_id] => 0
+    [city_counter_street_chat] => 0
+    [city_counter_games] => 0
+    [city_counter] => 0
+    [hide_im_on_page_city] => 0
+    [geo_position] => Array
+        (
+            [lat] => 0
+            [long] => 0
+        )
+
+)
+
+---------
+
+2020-03-25 07:04:05
+User_id: 0
+Error: E_USER_NOTICE
+URL: http://localhost/talenttube/_server/update_server_ajax_impact.php?&set_template_runtime=impact&site_part_runtime=main
+File: D:\laragon\www\talenttube\_include\lib\db_common.php
+Line: 49
+Message: Can't execute query: Unknown database 't_tube'
+
+
+Call stack:
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 49)
+Function: trigger_error
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 609)
+Class: DB_Common
+Function: triggerError
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 76)
+Class: DB_Common
+Function: select_db
+
+File: D:\laragon\www\talenttube\_include\core\start.php (Line: 377)
+Class: DB_Common
+Function: connect
+
+File: D:\laragon\www\talenttube\_include\core\main_start.php (Line: 12)
+Function: include_once
+
+File: D:\laragon\www\talenttube\_server\update_server_ajax_impact.php (Line: 11)
+Function: include
+
+$_POST = Array
+(
+    [cmd] => update_im
+    [is_visible_messages] => true
+    [users_list] => {}
+    [users_list_open_im] => {}
+    [user_to] => 0
+    [display] => open_list_chats
+    [last_id] => 0
+    [status_writing] => {}
+    [is_mode_fb] => false
+    [timeout_server] => 15
+    [page] => page.php
+    [request_user_id] => 0
+    [city_counter_street_chat] => 0
+    [city_counter_games] => 0
+    [city_counter] => 0
+    [hide_im_on_page_city] => 0
+    [geo_position] => Array
+        (
+            [lat] => 0
+            [long] => 0
+        )
+
+)
+
+---------
+
+2020-03-25 07:04:14
+User_id: 0
+Error: E_USER_NOTICE
+URL: http://localhost/talenttube/_server/update_server_ajax_impact.php?&set_template_runtime=impact&site_part_runtime=main
+File: D:\laragon\www\talenttube\_include\lib\db_common.php
+Line: 49
+Message: Can't execute query: Unknown database 't_tube'
+
+
+Call stack:
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 49)
+Function: trigger_error
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 609)
+Class: DB_Common
+Function: triggerError
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 76)
+Class: DB_Common
+Function: select_db
+
+File: D:\laragon\www\talenttube\_include\core\start.php (Line: 377)
+Class: DB_Common
+Function: connect
+
+File: D:\laragon\www\talenttube\_include\core\main_start.php (Line: 12)
+Function: include_once
+
+File: D:\laragon\www\talenttube\_server\update_server_ajax_impact.php (Line: 11)
+Function: include
+
+$_POST = Array
+(
+    [cmd] => update_im
+    [is_visible_messages] => true
+    [users_list] => {}
+    [users_list_open_im] => {}
+    [user_to] => 0
+    [display] => open_list_chats
+    [last_id] => 0
+    [status_writing] => {}
+    [is_mode_fb] => false
+    [timeout_server] => 15
+    [page] => page.php
+    [request_user_id] => 0
+    [city_counter_street_chat] => 0
+    [city_counter_games] => 0
+    [city_counter] => 0
+    [hide_im_on_page_city] => 0
+    [geo_position] => Array
+        (
+            [lat] => 0
+            [long] => 0
+        )
+
+)
+
+---------
+
+2020-03-25 07:04:15
+User_id: 0
+Error: E_USER_NOTICE
+URL: http://localhost/talenttube/_server/update_server_ajax_impact.php?&set_template_runtime=impact&site_part_runtime=main
+File: D:\laragon\www\talenttube\_include\lib\db_common.php
+Line: 49
+Message: Can't execute query: Unknown database 't_tube'
+
+
+Call stack:
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 49)
+Function: trigger_error
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 609)
+Class: DB_Common
+Function: triggerError
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 76)
+Class: DB_Common
+Function: select_db
+
+File: D:\laragon\www\talenttube\_include\core\start.php (Line: 377)
+Class: DB_Common
+Function: connect
+
+File: D:\laragon\www\talenttube\_include\core\main_start.php (Line: 12)
+Function: include_once
+
+File: D:\laragon\www\talenttube\_server\update_server_ajax_impact.php (Line: 11)
+Function: include
+
+$_POST = Array
+(
+    [cmd] => update_im
+    [is_visible_messages] => true
+    [users_list] => {}
+    [users_list_open_im] => {}
+    [user_to] => 0
+    [display] => open_list_chats
+    [last_id] => 0
+    [status_writing] => {}
+    [is_mode_fb] => false
+    [timeout_server] => 15
+    [page] => page.php
+    [request_user_id] => 0
+    [city_counter_street_chat] => 0
+    [city_counter_games] => 0
+    [city_counter] => 0
+    [hide_im_on_page_city] => 0
+    [geo_position] => Array
+        (
+            [lat] => 0
+            [long] => 0
+        )
+
+)
+
+---------
+
+2020-03-25 08:06:11
+User_id: 0
+Error: E_NOTICE
+URL: http://localhost/talenttube/search_results.php?join_search_page=1&ajax=1&set_template_runtime=impact&site_part_runtime=main
+File: D:\laragon\www\talenttube\_include\current\userslist.class.php
+Line: 446
+Message: Undefined index: orientation
+
+Call stack:
+
+File: D:\laragon\www\talenttube\search_results.php (Line: 1017)
+Class: Users_List
+Function: show
+
+$_POST = Array
+(
+    [with_photo] => 1
+    [join_answers] => Array
+        (
+            [resident ] => yes
+            [casual_part] => yes
+            [relocate] => yes
+            [job_type] => yes
+            [work_type] => yes
+        )
+
+)
+
+---------
+
+2020-03-25 10:55:59
+User_id: 12
+Error: E_USER_NOTICE
+URL: http://localhost/talenttube/editjob.php?id=72
+File: D:\laragon\www\talenttube\_include\lib\db_common.php
+Line: 49
+Message: Can't execute query: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE id= 72' at line 2
+UPDATE job SET first_name='saadjdfhjdhf',last_name='khan',age='',position='',address='',
+    mobile='',email='', WHERE id= 72
+
+Call stack:
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 49)
+Function: trigger_error
+
+File: D:\laragon\www\talenttube\_include\lib\db_mysqli.php (Line: 31)
+Class: DB_Common
+Function: triggerError
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 287)
+Class: DB
+Function: driver_query
+
+File: D:\laragon\www\talenttube\editjob.php (Line: 20)
+Class: DB_Common
+Function: query
+
+$_POST = Array
+(
+    [jobid] =>  72
+    [first_name] => saadjdfhjdhf
+    [last_name] => khan
+    [age] => 
+    [position] => 
+    [address] => 
+    [mobile] => 
+    [email] => 
+    [Save] => 
+)
+
+---------
+
+2020-03-25 11:00:54
+User_id: 12
+Error: E_NOTICE
+URL: http://localhost/talenttube/editjob.php?id=72
+File: D:\laragon\www\talenttube\editjob.php
+Line: 106
+Message: Undefined index: phone
+
+Call stack:
+
+---------
+
+2020-03-25 11:03:04
+User_id: 12
+Error: E_USER_NOTICE
+URL: http://localhost/talenttube/editjob.php?id=72
+File: D:\laragon\www\talenttube\_include\lib\db_common.php
+Line: 49
+Message: Can't execute query: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE id=  72' at line 2
+UPDATE job SET first_name='saaddfkdjf',last_name='khan',age='54',position='',address='kpk pakistan, kpk pakistan',
+    mobile='03445964152',email=' saadkhan.mcs@gmail.com', WHERE id=  72
+
+Call stack:
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 49)
+Function: trigger_error
+
+File: D:\laragon\www\talenttube\_include\lib\db_mysqli.php (Line: 31)
+Class: DB_Common
+Function: triggerError
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 287)
+Class: DB
+Function: driver_query
+
+File: D:\laragon\www\talenttube\editjob.php (Line: 20)
+Class: DB_Common
+Function: query
+
+$_POST = Array
+(
+    [jobid] =>  72
+    [first_name] => saaddfkdjf
+    [last_name] => khan
+    [age] => 54
+    [position] => 
+    [address] => kpk pakistan, kpk pakistan
+    [mobile] => 03445964152
+    [email] =>  saadkhan.mcs@gmail.com
+    [Save] => 
+)
+
+---------
+
+2020-03-25 11:14:52
+User_id: 12
+Error: E_USER_NOTICE
+URL: http://localhost/talenttube/editjob.php?id=72
+File: D:\laragon\www\talenttube\_include\lib\db_common.php
+Line: 49
+Message: Can't execute query: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE id=  72' at line 2
+UPDATE job SET first_name='saadjhjkhkjhk',last_name='khan',age='54',position='',address='kpk pakistan, kpk pakistan',
+    mobile='03445964152',email=' saadkhan.mcs@gmail.com', WHERE id=  72
+
+Call stack:
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 49)
+Function: trigger_error
+
+File: D:\laragon\www\talenttube\_include\lib\db_mysqli.php (Line: 31)
+Class: DB_Common
+Function: triggerError
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 287)
+Class: DB
+Function: driver_query
+
+File: D:\laragon\www\talenttube\editjob.php (Line: 20)
+Class: DB_Common
+Function: query
+
+$_POST = Array
+(
+    [jobid] =>  72
+    [first_name] => saadjhjkhkjhk
+    [last_name] => khan
+    [age] => 54
+    [position] => 
+    [address] => kpk pakistan, kpk pakistan
+    [mobile] => 03445964152
+    [email] =>  saadkhan.mcs@gmail.com
+    [Save] => 
+)
+
+---------
+
+2020-03-25 11:16:14
+User_id: 12
+Error: E_USER_NOTICE
+URL: http://localhost/talenttube/editjob.php?id=72
+File: D:\laragon\www\talenttube\_include\lib\db_common.php
+Line: 49
+Message: Can't execute query: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE id=  72' at line 2
+UPDATE job SET first_name='saadjhjkhkjhk',last_name='khan',age='54',position='',address='kpk pakistan, kpk pakistan',
+    mobile='03445964152',email=' saadkhan.mcs@gmail.com', WHERE id=  72
+
+Call stack:
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 49)
+Function: trigger_error
+
+File: D:\laragon\www\talenttube\_include\lib\db_mysqli.php (Line: 31)
+Class: DB_Common
+Function: triggerError
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 287)
+Class: DB
+Function: driver_query
+
+File: D:\laragon\www\talenttube\editjob.php (Line: 20)
+Class: DB_Common
+Function: query
+
+$_POST = Array
+(
+    [jobid] =>  72
+    [first_name] => saadjhjkhkjhk
+    [last_name] => khan
+    [age] => 54
+    [position] => 
+    [address] => kpk pakistan, kpk pakistan
+    [mobile] => 03445964152
+    [email] =>  saadkhan.mcs@gmail.com
+    [Save] => 
+)
+
+---------
+
+2020-03-25 11:16:36
+User_id: 12
+Error: E_USER_NOTICE
+URL: http://localhost/talenttube/editjob.php?id=72
+File: D:\laragon\www\talenttube\_include\lib\db_common.php
+Line: 49
+Message: Can't execute query: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE id=  72' at line 2
+UPDATE job SET first_name='saadjhjkhkjhk',last_name='khan',age='54',position='',address='kpk pakistan, kpk pakistan',
+    mobile='03445964152',email=' saadkhan.mcs@gmail.com', WHERE id=  72
+
+Call stack:
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 49)
+Function: trigger_error
+
+File: D:\laragon\www\talenttube\_include\lib\db_mysqli.php (Line: 31)
+Class: DB_Common
+Function: triggerError
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 287)
+Class: DB
+Function: driver_query
+
+File: D:\laragon\www\talenttube\editjob.php (Line: 20)
+Class: DB_Common
+Function: query
+
+$_POST = Array
+(
+    [jobid] =>  72
+    [first_name] => saadjhjkhkjhk
+    [last_name] => khan
+    [age] => 54
+    [position] => 
+    [address] => kpk pakistan, kpk pakistan
+    [mobile] => 03445964152
+    [email] =>  saadkhan.mcs@gmail.com
+    [Save] => 
+)
+
+---------
+
+2020-03-25 11:17:04
+User_id: 12
+Error: E_USER_NOTICE
+URL: http://localhost/talenttube/editjob.php?id=72
+File: D:\laragon\www\talenttube\_include\lib\db_common.php
+Line: 49
+Message: Can't execute query: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE id=  72' at line 2
+UPDATE job SET first_name='saadkjfkldsjflksdjf',last_name='khan',age='54',position='',address='kpk pakistan, kpk pakistan',
+    mobile='03445964152',email=' saadkhan.mcs@gmail.com', WHERE id=  72
+
+Call stack:
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 49)
+Function: trigger_error
+
+File: D:\laragon\www\talenttube\_include\lib\db_mysqli.php (Line: 31)
+Class: DB_Common
+Function: triggerError
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 287)
+Class: DB
+Function: driver_query
+
+File: D:\laragon\www\talenttube\editjob.php (Line: 20)
+Class: DB_Common
+Function: query
+
+$_POST = Array
+(
+    [jobid] =>  72
+    [first_name] => saadkjfkldsjflksdjf
+    [last_name] => khan
+    [age] => 54
+    [position] => 
+    [address] => kpk pakistan, kpk pakistan
+    [mobile] => 03445964152
+    [email] =>  saadkhan.mcs@gmail.com
+    [Save] => 
+)
+
+---------
+
+2020-03-25 11:20:14
+User_id: 12
+Error: E_USER_NOTICE
+URL: http://localhost/talenttube/editjob.php?id=72
+File: D:\laragon\www\talenttube\_include\lib\db_common.php
+Line: 49
+Message: Can't execute query: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE id=  72' at line 2
+UPDATE job SET first_name='saadkjfkldsjflksdjf',last_name='khan',age='54',position='',address='kpk pakistan, kpk pakistan',
+    mobile='03445964152',email=' saadkhan.mcs@gmail.com', WHERE id=  72
+
+Call stack:
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 49)
+Function: trigger_error
+
+File: D:\laragon\www\talenttube\_include\lib\db_mysqli.php (Line: 31)
+Class: DB_Common
+Function: triggerError
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 260)
+Class: DB
+Function: driver_query
+
+File: D:\laragon\www\talenttube\editjob.php (Line: 20)
+Class: DB_Common
+Function: execute
+
+$_POST = Array
+(
+    [jobid] =>  72
+    [first_name] => saadkjfkldsjflksdjf
+    [last_name] => khan
+    [age] => 54
+    [position] => 
+    [address] => kpk pakistan, kpk pakistan
+    [mobile] => 03445964152
+    [email] =>  saadkhan.mcs@gmail.com
+    [Save] => 
+)
+
+---------
+
+2020-03-25 11:21:53
+User_id: 12
+Error: E_WARNING
+URL: http://localhost/talenttube/editjob.php?id=72
+File: D:\laragon\www\talenttube\editjob.php
+Line: 20
+Message: Illegal string offset 'id'
+
+Call stack:
+
+$_POST = Array
+(
+    [jobid] =>  72
+    [first_name] => saadkjfkldsjflksdjf
+    [last_name] => khan
+    [age] => 54
+    [position] => 
+    [address] => kpk pakistan, kpk pakistan
+    [mobile] => 03445964152
+    [email] =>  saadkhan.mcs@gmail.com
+    [Save] => 
+)
+
+---------
+
+2020-03-25 11:22:26
+User_id: 12
+Error: E_WARNING
+URL: http://localhost/talenttube/editjob.php?id=72
+File: D:\laragon\www\talenttube\editjob.php
+Line: 20
+Message: Illegal string offset 'jobid'
+
+Call stack:
+
+$_POST = Array
+(
+    [jobid] =>  72
+    [first_name] => saadkjfkldsjflksdjf
+    [last_name] => khan
+    [age] => 54
+    [position] => 
+    [address] => kpk pakistan, kpk pakistan
+    [mobile] => 03445964152
+    [email] =>  saadkhan.mcs@gmail.com
+    [Save] => 
+)
+
+---------
+
+2020-03-25 11:22:59
+User_id: 12
+Error: E_USER_NOTICE
+URL: http://localhost/talenttube/editjob.php?id=72
+File: D:\laragon\www\talenttube\_include\lib\db_common.php
+Line: 49
+Message: Can't execute query: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE id=' 72'' at line 2
+UPDATE job SET first_name='saadkjfkldsjflksdjf',last_name='khan',age='54',position='',address='kpk pakistan, kpk pakistan',
+    mobile='03445964152',email=' saadkhan.mcs@gmail.com', WHERE id=' 72'
+
+Call stack:
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 49)
+Function: trigger_error
+
+File: D:\laragon\www\talenttube\_include\lib\db_mysqli.php (Line: 31)
+Class: DB_Common
+Function: triggerError
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 260)
+Class: DB
+Function: driver_query
+
+File: D:\laragon\www\talenttube\editjob.php (Line: 20)
+Class: DB_Common
+Function: execute
+
+$_POST = Array
+(
+    [jobid] =>  72
+    [first_name] => saadkjfkldsjflksdjf
+    [last_name] => khan
+    [age] => 54
+    [position] => 
+    [address] => kpk pakistan, kpk pakistan
+    [mobile] => 03445964152
+    [email] =>  saadkhan.mcs@gmail.com
+    [Save] => 
+)
+
+---------
+
+2020-03-25 11:24:29
+User_id: 12
+Error: E_USER_NOTICE
+URL: http://localhost/talenttube/editjob.php?id=72
+File: D:\laragon\www\talenttube\_include\lib\db_common.php
+Line: 49
+Message: Can't execute query: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE id=' 72'' at line 2
+UPDATE job SET first_name='saadkjfkldsjflksdjf',last_name='khan',age='54',position='',address='kpk pakistan, kpk pakistan',
+    mobile='03445964152',email=' saadkhan.mcs@gmail.com', WHERE id=' 72'
+
+Call stack:
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 49)
+Function: trigger_error
+
+File: D:\laragon\www\talenttube\_include\lib\db_mysqli.php (Line: 31)
+Class: DB_Common
+Function: triggerError
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 287)
+Class: DB
+Function: driver_query
+
+File: D:\laragon\www\talenttube\editjob.php (Line: 20)
+Class: DB_Common
+Function: query
+
+$_POST = Array
+(
+    [jobid] =>  72
+    [first_name] => saadkjfkldsjflksdjf
+    [last_name] => khan
+    [age] => 54
+    [position] => 
+    [address] => kpk pakistan, kpk pakistan
+    [mobile] => 03445964152
+    [email] =>  saadkhan.mcs@gmail.com
+    [Save] => 
+)
+
+---------
+
+2020-03-25 11:29:27
+User_id: 12
+Error: E_USER_NOTICE
+URL: http://localhost/talenttube/editjob.php?id=72
+File: D:\laragon\www\talenttube\_include\lib\db_common.php
+Line: 49
+Message: Can't execute query: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE id=  72' at line 2
+UPDATE job SET first_name='saadkjfkldsjflksdjf',last_name='khan',age='54',position='',address='kpk pakistan, kpk pakistan',
+    mobile='03445964152',email=' saadkhan.mcs@gmail.com', WHERE id=  72
+
+Call stack:
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 49)
+Function: trigger_error
+
+File: D:\laragon\www\talenttube\_include\lib\db_mysqli.php (Line: 31)
+Class: DB_Common
+Function: triggerError
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 260)
+Class: DB
+Function: driver_query
+
+File: D:\laragon\www\talenttube\editjob.php (Line: 20)
+Class: DB_Common
+Function: execute
+
+$_POST = Array
+(
+    [jobid] =>  72
+    [first_name] => saadkjfkldsjflksdjf
+    [last_name] => khan
+    [age] => 54
+    [position] => 
+    [address] => kpk pakistan, kpk pakistan
+    [mobile] => 03445964152
+    [email] =>  saadkhan.mcs@gmail.com
+    [Save] => 
+)
+
+---------
+
+2020-03-25 11:30:42
+User_id: 12
+Error: E_USER_NOTICE
+URL: http://localhost/talenttube/editjob.php?id=72
+File: D:\laragon\www\talenttube\_include\lib\db_common.php
+Line: 49
+Message: Can't execute query: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE id=  72' at line 2
+UPDATE job SET first_name='saadfhgfhgfh',last_name='khan',age='54',position='',address='kpk pakistan, kpk pakistan',
+    mobile='03445964152',email=' saadkhan.mcs@gmail.com', WHERE id=  72
+
+Call stack:
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 49)
+Function: trigger_error
+
+File: D:\laragon\www\talenttube\_include\lib\db_mysqli.php (Line: 31)
+Class: DB_Common
+Function: triggerError
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 260)
+Class: DB
+Function: driver_query
+
+File: D:\laragon\www\talenttube\editjob.php (Line: 20)
+Class: DB_Common
+Function: execute
+
+$_POST = Array
+(
+    [jobid] =>  72
+    [first_name] => saadfhgfhgfh
+    [last_name] => khan
+    [age] => 54
+    [position] => 
+    [address] => kpk pakistan, kpk pakistan
+    [mobile] => 03445964152
+    [email] =>  saadkhan.mcs@gmail.com
+    [Save] => 
+)
+
+---------
+
+2020-03-25 11:32:31
+User_id: 12
+Error: E_NOTICE
+URL: http://localhost/talenttube/editjob.php?id=72
+File: D:\laragon\www\talenttube\editjob.php
+Line: 22
+Message: Undefined variable: update
+
+Call stack:
+
+$_POST = Array
+(
+    [jobid] =>  72
+    [first_name] => saadfhgfhgfh
+    [last_name] => khan
+    [age] => 54
+    [position] => 
+    [address] => kpk pakistan, kpk pakistan
+    [mobile] => 03445964152
+    [email] =>  saadkhan.mcs@gmail.com
+    [Save] => 
+)
+
+---------
+

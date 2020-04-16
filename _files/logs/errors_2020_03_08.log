@@ -1,0 +1,209 @@
+2020-03-08 16:03:45
+User_id: 1
+Error: E_ERROR
+URL: http://localhost/talenttube/ajax.php?&set_template_runtime=impact&site_part_runtime=main
+File: D:\laragon\www\talenttube\_include\current\cprofilephoto.class.php
+Line: 1715
+Message: Uncaught Error: Call to undefined function deletephoto() in D:\laragon\www\talenttube\_include\current\cprofilephoto.class.php:1715
+Stack trace:
+#0 D:\laragon\www\talenttube\_include\current\cprofilephoto.class.php(2104): CProfilePhoto::deletePhoto('21')
+#1 D:\laragon\www\talenttube\ajax.php(425): CProfilePhoto::deleteOldPendingPhotos('private')
+#2 {main}
+  thrown
+
+Call stack:
+
+File:  (Line: )
+Function: fatalScriptError
+
+$_POST = Array
+(
+    [cmd] => delete_pending_photos
+    [type] => private
+)
+
+---------
+
+2020-03-08 16:04:26
+User_id: 1
+Error: E_ERROR
+URL: http://localhost/talenttube/ajax.php?cmd=photo_add_upload&type=private&set_template_runtime=impact&site_part_runtime=main
+File: D:\laragon\www\talenttube\_include\current\cprofilephoto.class.php
+Line: 69
+Message: Uncaught Error: Call to undefined function uploadphoto() in D:\laragon\www\talenttube\_include\current\cprofilephoto.class.php:69
+Stack trace:
+#0 D:\laragon\www\talenttube\_include\current\cphotouploadhandler.class.php(25): CProfilePhoto::photoUpload('D:\\laragon\\www\\...')
+#1 D:\laragon\www\talenttube\_include\current\fileupload.class.php(1299): CPhotoUploadHandler->handle_file_upload('C:\\Users\\s\\AppD...', '1583683465462_0', 67924, 'image/jpeg', 0, 0, NULL)
+#2 D:\laragon\www\talenttube\_include\current\fileupload.class.php(177): UploadHandler->post()
+#3 D:\laragon\www\talenttube\_include\current\fileupload.class.php(161): UploadHandler->initialize()
+#4 D:\laragon\www\talenttube\ajax.php(334): UploadHandler->__construct(Array, true, Array)
+#5 {main}
+  thrown
+
+Call stack:
+
+File:  (Line: )
+Function: fatalScriptError
+
+$_POST = Array
+(
+    [file_name] => 1583683465462_0
+)
+
+$_FILES = Array
+(
+    [file_private] => Array
+        (
+            [name] => Array
+                (
+                    [0] => pexels-photo-1236701.jpeg
+                )
+
+            [type] => Array
+                (
+                    [0] => image/jpeg
+                )
+
+            [tmp_name] => Array
+                (
+                    [0] => C:\Users\s\AppData\Local\Temp\php6F0.tmp
+                )
+
+            [error] => Array
+                (
+                    [0] => 0
+                )
+
+            [size] => Array
+                (
+                    [0] => 67924
+                )
+
+        )
+
+)
+
+---------
+
+2020-03-08 16:12:08
+User_id: 1
+Error: E_ERROR
+URL: http://localhost/talenttube/ajax.php?cmd=photo_add_upload&type=private&set_template_runtime=impact&site_part_runtime=main
+File: D:\laragon\www\talenttube\_include\current\cprofilephoto.class.php
+Line: 69
+Message: Uncaught Error: Call to undefined function uploadphoto() in D:\laragon\www\talenttube\_include\current\cprofilephoto.class.php:69
+Stack trace:
+#0 D:\laragon\www\talenttube\_include\current\cphotouploadhandler.class.php(25): CProfilePhoto::photoUpload('D:\\laragon\\www\\...')
+#1 D:\laragon\www\talenttube\_include\current\fileupload.class.php(1299): CPhotoUploadHandler->handle_file_upload('C:\\Users\\s\\AppD...', '1583683927527_0', 67924, 'image/jpeg', 0, 0, NULL)
+#2 D:\laragon\www\talenttube\_include\current\fileupload.class.php(177): UploadHandler->post()
+#3 D:\laragon\www\talenttube\_include\current\fileupload.class.php(161): UploadHandler->initialize()
+#4 D:\laragon\www\talenttube\ajax.php(334): UploadHandler->__construct(Array, true, Array)
+#5 {main}
+  thrown
+
+Call stack:
+
+File:  (Line: )
+Function: fatalScriptError
+
+$_POST = Array
+(
+    [file_name] => 1583683927527_0
+)
+
+$_FILES = Array
+(
+    [file_private] => Array
+        (
+            [name] => Array
+                (
+                    [0] => pexels-photo-1236701.jpeg
+                )
+
+            [type] => Array
+                (
+                    [0] => image/jpeg
+                )
+
+            [tmp_name] => Array
+                (
+                    [0] => C:\Users\s\AppData\Local\Temp\php13C2.tmp
+                )
+
+            [error] => Array
+                (
+                    [0] => 0
+                )
+
+            [size] => Array
+                (
+                    [0] => 67924
+                )
+
+        )
+
+)
+
+---------
+
+2020-03-08 16:15:37
+User_id: 1
+Error: E_ERROR
+URL: http://localhost/talenttube/ajax.php?cmd=photo_add_upload&type=private&set_template_runtime=impact&site_part_runtime=main
+File: D:\laragon\www\talenttube\_include\current\cprofilephoto.class.php
+Line: 69
+Message: Uncaught Error: Call to undefined function uploadphoto() in D:\laragon\www\talenttube\_include\current\cprofilephoto.class.php:69
+Stack trace:
+#0 D:\laragon\www\talenttube\_include\current\cphotouploadhandler.class.php(25): CProfilePhoto::photoUpload('D:\\laragon\\www\\...')
+#1 D:\laragon\www\talenttube\_include\current\fileupload.class.php(1299): CPhotoUploadHandler->handle_file_upload('C:\\Users\\s\\AppD...', '1583684137068_0', 67924, 'image/jpeg', 0, 0, NULL)
+#2 D:\laragon\www\talenttube\_include\current\fileupload.class.php(177): UploadHandler->post()
+#3 D:\laragon\www\talenttube\_include\current\fileupload.class.php(161): UploadHandler->initialize()
+#4 D:\laragon\www\talenttube\ajax.php(334): UploadHandler->__construct(Array, true, Array)
+#5 {main}
+  thrown
+
+Call stack:
+
+File:  (Line: )
+Function: fatalScriptError
+
+$_POST = Array
+(
+    [file_name] => 1583684137068_0
+)
+
+$_FILES = Array
+(
+    [file_private] => Array
+        (
+            [name] => Array
+                (
+                    [0] => pexels-photo-1236701.jpeg
+                )
+
+            [type] => Array
+                (
+                    [0] => image/jpeg
+                )
+
+            [tmp_name] => Array
+                (
+                    [0] => C:\Users\s\AppData\Local\Temp\php4702.tmp
+                )
+
+            [error] => Array
+                (
+                    [0] => 0
+                )
+
+            [size] => Array
+                (
+                    [0] => 67924
+                )
+
+        )
+
+)
+
+---------
+

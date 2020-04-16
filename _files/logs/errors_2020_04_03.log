@@ -1,0 +1,200 @@
+2020-04-03 07:59:10
+User_id: 0
+Error: E_NOTICE
+URL: http://localhost/talenttube/search_results.php?join_search_page=1&ajax=1&set_template_runtime=impact&site_part_runtime=main
+File: F:\xampp\htdocs\talenttube\_include\current\userslist.class.php
+Line: 446
+Message: Undefined index: orientation
+
+Call stack:
+
+File: F:\xampp\htdocs\talenttube\search_results.php (Line: 1017)
+Class: Users_List
+Function: show
+
+$_POST = Array
+(
+    [with_photo] => 1
+    [join_answers] => Array
+        (
+            [resident ] => yes
+            [casual_part] => yes
+            [relocate] => yes
+            [job_type] => yes
+            [work_type] => yes
+        )
+
+)
+
+---------
+
+2020-04-03 08:29:49
+User_id: 0
+Error: E_NOTICE
+URL: http://localhost/talenttube/search_results.php?join_search_page=1&ajax=1&set_template_runtime=impact&site_part_runtime=main
+File: F:\xampp\htdocs\talenttube\_include\current\userslist.class.php
+Line: 446
+Message: Undefined index: orientation
+
+Call stack:
+
+File: F:\xampp\htdocs\talenttube\search_results.php (Line: 1017)
+Class: Users_List
+Function: show
+
+$_POST = Array
+(
+    [with_photo] => 1
+    [join_answers] => Array
+        (
+            [resident ] => yes
+            [casual_part] => yes
+            [relocate] => yes
+            [job_type] => yes
+            [work_type] => yes
+        )
+
+)
+
+---------
+
+2020-04-03 08:30:30
+User_id: 0
+Error: E_NOTICE
+URL: http://localhost/talenttube/search_results.php?join_search_page=1&ajax=1&set_template_runtime=impact&site_part_runtime=main
+File: F:\xampp\htdocs\talenttube\_include\current\userslist.class.php
+Line: 446
+Message: Undefined index: orientation
+
+Call stack:
+
+File: F:\xampp\htdocs\talenttube\search_results.php (Line: 1017)
+Class: Users_List
+Function: show
+
+$_POST = Array
+(
+    [with_photo] => 1
+    [join_answers] => Array
+        (
+            [resident ] => yes
+            [casual_part] => yes
+            [relocate] => yes
+            [job_type] => yes
+            [work_type] => yes
+        )
+
+)
+
+---------
+
+2020-04-03 08:35:16
+User_id: 0
+Error: E_NOTICE
+URL: http://localhost/talenttube/search_results.php?join_search_page=1&ajax=1&set_template_runtime=impact&site_part_runtime=main
+File: F:\xampp\htdocs\talenttube\_include\current\userslist.class.php
+Line: 446
+Message: Undefined index: orientation
+
+Call stack:
+
+File: F:\xampp\htdocs\talenttube\search_results.php (Line: 1017)
+Class: Users_List
+Function: show
+
+$_POST = Array
+(
+    [with_photo] => 1
+    [join_answers] => Array
+        (
+            [resident ] => yes
+            [casual_part] => yes
+            [relocate] => yes
+            [job_type] => yes
+            [work_type] => yes
+        )
+
+)
+
+---------
+
+2020-04-03 14:51:46
+User_id: 14
+Error: E_NOTICE
+URL: http://localhost/talenttube/document.php
+File: F:\xampp\htdocs\talenttube\document.php
+Line: 16
+Message: Undefined index: phone
+
+Call stack:
+
+---------
+
+2020-04-03 14:52:44
+User_id: 14
+Error: E_ERROR
+URL: http://localhost/talenttube/document.php
+File: F:\xampp\htdocs\talenttube\_include\current\user.class.php
+Line: 725
+Message: Uncaught ArgumentCountError: Too few arguments to function User::getInfoFull(), 0 passed in F:\xampp\htdocs\talenttube\document.php on line 16 and at least 1 expected in F:\xampp\htdocs\talenttube\_include\current\user.class.php:725
+Stack trace:
+#0 F:\xampp\htdocs\talenttube\document.php(16): User::getInfoFull()
+#1 {main}
+  thrown
+
+Call stack:
+
+File:  (Line: )
+Function: fatalScriptError
+
+---------
+
+2020-04-03 14:53:43
+User_id: 14
+Error: E_ERROR
+URL: http://localhost/talenttube/document.php
+File: F:\xampp\htdocs\talenttube\_include\current\user.class.php
+Line: 725
+Message: Uncaught ArgumentCountError: Too few arguments to function User::getInfoFull(), 0 passed in F:\xampp\htdocs\talenttube\document.php on line 16 and at least 1 expected in F:\xampp\htdocs\talenttube\_include\current\user.class.php:725
+Stack trace:
+#0 F:\xampp\htdocs\talenttube\document.php(16): User::getInfoFull()
+#1 {main}
+  thrown
+
+Call stack:
+
+File:  (Line: )
+Function: fatalScriptError
+
+---------
+
+2020-04-03 15:07:05
+User_id: 0
+Error: E_NOTICE
+URL: http://localhost/talenttube/search_results.php?join_search_page=1&ajax=1&set_template_runtime=impact&site_part_runtime=main
+File: F:\xampp\htdocs\talenttube\_include\current\userslist.class.php
+Line: 446
+Message: Undefined index: orientation
+
+Call stack:
+
+File: F:\xampp\htdocs\talenttube\search_results.php (Line: 1017)
+Class: Users_List
+Function: show
+
+$_POST = Array
+(
+    [with_photo] => 1
+    [join_answers] => Array
+        (
+            [resident ] => yes
+            [casual_part] => yes
+            [relocate] => yes
+            [job_type] => yes
+            [work_type] => yes
+        )
+
+)
+
+---------
+

@@ -1,0 +1,536 @@
+2020-03-13 05:10:01
+User_id: 1
+Error: E_USER_NOTICE
+URL: http://localhost/talenttube/jobs_form.php
+File: D:\laragon\www\talenttube\_include\lib\db_common.php
+Line: 49
+Message: Can't execute query: Unknown column 'user' in 'where clause'
+SELECT * FROM user where role = user
+
+Call stack:
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 49)
+Function: trigger_error
+
+File: D:\laragon\www\talenttube\_include\lib\db_mysqli.php (Line: 31)
+Class: DB_Common
+Function: triggerError
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 287)
+Class: DB
+Function: driver_query
+
+File: D:\laragon\www\talenttube\jobs_form.php (Line: 16)
+Class: DB_Common
+Function: query
+
+$_POST = Array
+(
+    [first_name] => saad
+    [last_name] => khan
+    [age] => 12
+    [position] => 
+    [address] => kpk pakistan, kpk pakistan
+    [mobile] => 03445964152
+    [email] => saadkhan.mcs@gmail.com
+    [Save] => 
+)
+
+---------
+
+2020-03-13 05:11:48
+User_id: 1
+Error: E_USER_NOTICE
+URL: http://localhost/talenttube/jobs_form.php
+File: D:\laragon\www\talenttube\_include\lib\db_common.php
+Line: 49
+Message: Can't execute query: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '== user' at line 1
+SELECT * FROM user where role == user
+
+Call stack:
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 49)
+Function: trigger_error
+
+File: D:\laragon\www\talenttube\_include\lib\db_mysqli.php (Line: 31)
+Class: DB_Common
+Function: triggerError
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 287)
+Class: DB
+Function: driver_query
+
+File: D:\laragon\www\talenttube\jobs_form.php (Line: 16)
+Class: DB_Common
+Function: query
+
+$_POST = Array
+(
+    [first_name] => saad
+    [last_name] => khan
+    [age] => 12
+    [position] => 
+    [address] => kpk pakistan, kpk pakistan
+    [mobile] => 03445964152
+    [email] => saadkhan.mcs@gmail.com
+    [Save] => 
+)
+
+---------
+
+2020-03-13 05:12:06
+User_id: 1
+Error: E_USER_NOTICE
+URL: http://localhost/talenttube/jobs_form.php
+File: D:\laragon\www\talenttube\_include\lib\db_common.php
+Line: 49
+Message: Can't execute query: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '== admin' at line 1
+SELECT * FROM user where role == admin
+
+Call stack:
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 49)
+Function: trigger_error
+
+File: D:\laragon\www\talenttube\_include\lib\db_mysqli.php (Line: 31)
+Class: DB_Common
+Function: triggerError
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 287)
+Class: DB
+Function: driver_query
+
+File: D:\laragon\www\talenttube\jobs_form.php (Line: 16)
+Class: DB_Common
+Function: query
+
+$_POST = Array
+(
+    [first_name] => saad
+    [last_name] => khan
+    [age] => 12
+    [position] => 
+    [address] => kpk pakistan, kpk pakistan
+    [mobile] => 03445964152
+    [email] => saadkhan.mcs@gmail.com
+    [Save] => 
+)
+
+---------
+
+2020-03-13 05:12:14
+User_id: 1
+Error: E_USER_NOTICE
+URL: http://localhost/talenttube/jobs_form.php
+File: D:\laragon\www\talenttube\_include\lib\db_common.php
+Line: 49
+Message: Can't execute query: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '== admin' at line 1
+SELECT * FROM user where role == admin
+
+Call stack:
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 49)
+Function: trigger_error
+
+File: D:\laragon\www\talenttube\_include\lib\db_mysqli.php (Line: 31)
+Class: DB_Common
+Function: triggerError
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 287)
+Class: DB
+Function: driver_query
+
+File: D:\laragon\www\talenttube\jobs_form.php (Line: 16)
+Class: DB_Common
+Function: query
+
+$_POST = Array
+(
+    [first_name] => saad
+    [last_name] => khan
+    [age] => 23
+    [position] => 
+    [address] => kpk pakistan, kpk pakistan
+    [mobile] => 03445964152
+    [email] => saadkhan.mcs@gmail.com
+    [Save] => 
+)
+
+---------
+
+2020-03-13 05:13:15
+User_id: 1
+Error: E_USER_NOTICE
+URL: http://localhost/talenttube/jobs_form.php
+File: D:\laragon\www\talenttube\_include\lib\db_common.php
+Line: 49
+Message: Can't execute query: Unknown column 'imran' in 'where clause'
+SELECT * FROM user where name = imran
+
+Call stack:
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 49)
+Function: trigger_error
+
+File: D:\laragon\www\talenttube\_include\lib\db_mysqli.php (Line: 31)
+Class: DB_Common
+Function: triggerError
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 287)
+Class: DB
+Function: driver_query
+
+File: D:\laragon\www\talenttube\jobs_form.php (Line: 16)
+Class: DB_Common
+Function: query
+
+$_POST = Array
+(
+    [first_name] => saad
+    [last_name] => khan
+    [age] => 23
+    [position] => 
+    [address] => kpk pakistan, kpk pakistan
+    [mobile] => 03445964152
+    [email] => saadkhan.mcs@gmail.com
+    [Save] => 
+)
+
+---------
+
+2020-03-13 05:13:25
+User_id: 1
+Error: E_USER_NOTICE
+URL: http://localhost/talenttube/jobs_form.php
+File: D:\laragon\www\talenttube\_include\lib\db_common.php
+Line: 49
+Message: Can't execute query: Unknown column 'imran' in 'where clause'
+SELECT * FROM user where name = imran
+
+Call stack:
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 49)
+Function: trigger_error
+
+File: D:\laragon\www\talenttube\_include\lib\db_mysqli.php (Line: 31)
+Class: DB_Common
+Function: triggerError
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 287)
+Class: DB
+Function: driver_query
+
+File: D:\laragon\www\talenttube\jobs_form.php (Line: 16)
+Class: DB_Common
+Function: query
+
+$_POST = Array
+(
+    [first_name] => saad
+    [last_name] => khan
+    [age] => 23
+    [position] => 
+    [address] => kpk pakistan, kpk pakistan
+    [mobile] => 03445964152
+    [email] => saadkhan.mcs@gmail.com
+    [Save] => 
+)
+
+---------
+
+2020-03-13 05:20:18
+User_id: 1
+Error: E_USER_NOTICE
+URL: http://localhost/talenttube/jobs_form.php
+File: D:\laragon\www\talenttube\_include\lib\db_common.php
+Line: 49
+Message: Can't execute query: Unknown column 'firstname' in 'where clause'
+SELECT * FROM resume Where firstname = saad
+
+Call stack:
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 49)
+Function: trigger_error
+
+File: D:\laragon\www\talenttube\_include\lib\db_mysqli.php (Line: 31)
+Class: DB_Common
+Function: triggerError
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 287)
+Class: DB
+Function: driver_query
+
+File: D:\laragon\www\talenttube\jobs_form.php (Line: 16)
+Class: DB_Common
+Function: query
+
+$_POST = Array
+(
+    [first_name] => saad
+    [last_name] => khan
+    [age] => 23
+    [position] => 
+    [address] => kpk pakistan, kpk pakistan
+    [mobile] => 03445964152
+    [email] => saadkhan.mcs@gmail.com
+    [Save] => 
+)
+
+---------
+
+2020-03-13 05:20:41
+User_id: 1
+Error: E_USER_NOTICE
+URL: http://localhost/talenttube/jobs_form.php
+File: D:\laragon\www\talenttube\_include\lib\db_common.php
+Line: 49
+Message: Can't execute query: Unknown column 'firstname' in 'where clause'
+SELECT * FROM resume Where firstname = saad
+
+Call stack:
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 49)
+Function: trigger_error
+
+File: D:\laragon\www\talenttube\_include\lib\db_mysqli.php (Line: 31)
+Class: DB_Common
+Function: triggerError
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 287)
+Class: DB
+Function: driver_query
+
+File: D:\laragon\www\talenttube\jobs_form.php (Line: 16)
+Class: DB_Common
+Function: query
+
+$_POST = Array
+(
+    [first_name] => saad
+    [last_name] => khan
+    [age] => 34
+    [position] => 
+    [address] => kpk pakistan, kpk pakistan
+    [mobile] => 03445964152
+    [email] => saadkhan.mcs@gmail.com
+    [Save] => 
+)
+
+---------
+
+2020-03-13 05:21:04
+User_id: 1
+Error: E_USER_NOTICE
+URL: http://localhost/talenttube/jobs_form.php
+File: D:\laragon\www\talenttube\_include\lib\db_common.php
+Line: 49
+Message: Can't execute query: Unknown column 'firstname' in 'where clause'
+SELECT * FROM job Where firstname = saad
+
+Call stack:
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 49)
+Function: trigger_error
+
+File: D:\laragon\www\talenttube\_include\lib\db_mysqli.php (Line: 31)
+Class: DB_Common
+Function: triggerError
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 287)
+Class: DB
+Function: driver_query
+
+File: D:\laragon\www\talenttube\jobs_form.php (Line: 16)
+Class: DB_Common
+Function: query
+
+$_POST = Array
+(
+    [first_name] => saad
+    [last_name] => khan
+    [age] => 34
+    [position] => 
+    [address] => kpk pakistan, kpk pakistan
+    [mobile] => 03445964152
+    [email] => saadkhan.mcs@gmail.com
+    [Save] => 
+)
+
+---------
+
+2020-03-13 05:21:22
+User_id: 1
+Error: E_USER_NOTICE
+URL: http://localhost/talenttube/jobs_form.php
+File: D:\laragon\www\talenttube\_include\lib\db_common.php
+Line: 49
+Message: Can't execute query: Unknown column 'saad' in 'where clause'
+SELECT * FROM job Where first_name = saad
+
+Call stack:
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 49)
+Function: trigger_error
+
+File: D:\laragon\www\talenttube\_include\lib\db_mysqli.php (Line: 31)
+Class: DB_Common
+Function: triggerError
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 287)
+Class: DB
+Function: driver_query
+
+File: D:\laragon\www\talenttube\jobs_form.php (Line: 16)
+Class: DB_Common
+Function: query
+
+$_POST = Array
+(
+    [first_name] => saad
+    [last_name] => khan
+    [age] => 34
+    [position] => 
+    [address] => kpk pakistan, kpk pakistan
+    [mobile] => 03445964152
+    [email] => saadkhan.mcs@gmail.com
+    [Save] => 
+)
+
+---------
+
+2020-03-13 05:21:38
+User_id: 1
+Error: E_USER_NOTICE
+URL: http://localhost/talenttube/jobs_form.php
+File: D:\laragon\www\talenttube\_include\lib\db_common.php
+Line: 49
+Message: Can't execute query: Unknown column 'Saad' in 'where clause'
+SELECT * FROM job Where first_name = Saad
+
+Call stack:
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 49)
+Function: trigger_error
+
+File: D:\laragon\www\talenttube\_include\lib\db_mysqli.php (Line: 31)
+Class: DB_Common
+Function: triggerError
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 287)
+Class: DB
+Function: driver_query
+
+File: D:\laragon\www\talenttube\jobs_form.php (Line: 16)
+Class: DB_Common
+Function: query
+
+$_POST = Array
+(
+    [first_name] => saad
+    [last_name] => khan
+    [age] => 34
+    [position] => 
+    [address] => kpk pakistan, kpk pakistan
+    [mobile] => 03445964152
+    [email] => saadkhan.mcs@gmail.com
+    [Save] => 
+)
+
+---------
+
+2020-03-13 05:22:15
+User_id: 1
+Error: E_USER_NOTICE
+URL: http://localhost/talenttube/jobs_form.php
+File: D:\laragon\www\talenttube\_include\lib\db_common.php
+Line: 49
+Message: Can't execute query: Unknown column 'Saad' in 'where clause'
+SELECT * FROM job Where first_name = Saad
+
+Call stack:
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 49)
+Function: trigger_error
+
+File: D:\laragon\www\talenttube\_include\lib\db_mysqli.php (Line: 31)
+Class: DB_Common
+Function: triggerError
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 287)
+Class: DB
+Function: driver_query
+
+File: D:\laragon\www\talenttube\jobs_form.php (Line: 16)
+Class: DB_Common
+Function: query
+
+$_POST = Array
+(
+    [first_name] => saad
+    [last_name] => khan
+    [age] => 34
+    [position] => 
+    [address] => kpk pakistan, kpk pakistan
+    [mobile] => 03445964152
+    [email] => saadkhan.mcs@gmail.com
+    [Save] => 
+)
+
+---------
+
+2020-03-13 06:15:09
+User_id: 0
+Error: E_WARNING
+URL: http://localhost/talenttube/_server/update_server_ajax_impact.php?&set_template_runtime=impact&site_part_runtime=main
+File: D:\laragon\www\talenttube\_include\lib\db_mysqli.php
+Line: 21
+Message: mysqli_connect(): (HY000/2002): No connection could be made because the target machine actively refused it.
+
+
+Call stack:
+
+File: D:\laragon\www\talenttube\_include\lib\db_mysqli.php (Line: 21)
+Function: mysqli_connect
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 70)
+Class: DB
+Function: driver_connect
+
+File: D:\laragon\www\talenttube\_include\core\start.php (Line: 377)
+Class: DB_Common
+Function: connect
+
+File: D:\laragon\www\talenttube\_include\core\main_start.php (Line: 12)
+Function: include_once
+
+File: D:\laragon\www\talenttube\_server\update_server_ajax_impact.php (Line: 11)
+Function: include
+
+$_POST = Array
+(
+    [cmd] => update_im
+    [is_visible_messages] => true
+    [users_list] => {}
+    [users_list_open_im] => {}
+    [user_to] => 0
+    [display] => open_list_chats
+    [last_id] => 0
+    [status_writing] => {}
+    [is_mode_fb] => true
+    [timeout_server] => 15
+    [page] => search_results.php
+    [request_user_id] => 1
+    [city_counter_street_chat] => 0
+    [city_counter_games] => 0
+    [city_counter] => 0
+    [hide_im_on_page_city] => 0
+    [geo_position] => Array
+        (
+            [lat] => 0
+            [long] => 0
+        )
+
+)
+
+---------
+

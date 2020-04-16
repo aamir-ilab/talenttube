@@ -1,0 +1,87 @@
+2020-02-28 10:15:06
+User_id: 0
+Error: E_WARNING
+URL: http://localhost/talenttube/
+File: D:\laragon\www\talenttube\_include\lib\db_mysqli.php
+Line: 21
+Message: mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES)
+
+Call stack:
+
+File: D:\laragon\www\talenttube\_include\lib\db_mysqli.php (Line: 21)
+Function: mysqli_connect
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 70)
+Class: DB
+Function: driver_connect
+
+File: D:\laragon\www\talenttube\_include\core\start.php (Line: 376)
+Class: DB_Common
+Function: connect
+
+File: D:\laragon\www\talenttube\_include\core\main_start.php (Line: 12)
+Function: include_once
+
+File: D:\laragon\www\talenttube\index.php (Line: 16)
+Function: include
+
+---------
+
+2020-02-28 11:18:22
+User_id: 0
+Error: E_WARNING
+URL: http://localhost/talenttube/
+File: D:\laragon\www\talenttube\_include\lib\db_mysqli.php
+Line: 21
+Message: mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES)
+
+Call stack:
+
+File: D:\laragon\www\talenttube\_include\lib\db_mysqli.php (Line: 21)
+Function: mysqli_connect
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 70)
+Class: DB
+Function: driver_connect
+
+File: D:\laragon\www\talenttube\_include\core\start.php (Line: 376)
+Class: DB_Common
+Function: connect
+
+File: D:\laragon\www\talenttube\_include\core\main_start.php (Line: 12)
+Function: include_once
+
+File: D:\laragon\www\talenttube\index.php (Line: 16)
+Function: include
+
+---------
+
+2020-02-28 11:18:48
+User_id: 0
+Error: E_WARNING
+URL: http://localhost/talenttube/
+File: D:\laragon\www\talenttube\_include\lib\db_mysqli.php
+Line: 21
+Message: mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES)
+
+Call stack:
+
+File: D:\laragon\www\talenttube\_include\lib\db_mysqli.php (Line: 21)
+Function: mysqli_connect
+
+File: D:\laragon\www\talenttube\_include\lib\db_common.php (Line: 70)
+Class: DB
+Function: driver_connect
+
+File: D:\laragon\www\talenttube\_include\core\start.php (Line: 376)
+Class: DB_Common
+Function: connect
+
+File: D:\laragon\www\talenttube\_include\core\main_start.php (Line: 12)
+Function: include_once
+
+File: D:\laragon\www\talenttube\index.php (Line: 16)
+Function: include
+
+---------
+

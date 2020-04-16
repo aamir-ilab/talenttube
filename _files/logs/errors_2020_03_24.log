@@ -1,0 +1,333 @@
+2020-03-24 05:44:18
+User_id: 0
+Error: E_NOTICE
+URL: http://localhost/talenttube/search_results.php?join_search_page=1&ajax=1&set_template_runtime=impact&site_part_runtime=main
+File: D:\laragon\www\talenttube\_include\current\userslist.class.php
+Line: 446
+Message: Undefined index: orientation
+
+Call stack:
+
+File: D:\laragon\www\talenttube\search_results.php (Line: 1017)
+Class: Users_List
+Function: show
+
+$_POST = Array
+(
+    [with_photo] => 1
+    [join_answers] => Array
+        (
+            [resident ] => yes
+            [casual_part] => yes
+            [relocate] => yes
+            [job_type] => yes
+            [work_type] => yes
+        )
+
+)
+
+---------
+
+2020-03-24 07:02:32
+User_id: 0
+Error: E_NOTICE
+URL: http://localhost/talenttube/search_results.php?join_search_page=1&ajax=1&set_template_runtime=impact&site_part_runtime=main
+File: D:\laragon\www\talenttube\_include\current\userslist.class.php
+Line: 446
+Message: Undefined index: orientation
+
+Call stack:
+
+File: D:\laragon\www\talenttube\search_results.php (Line: 1017)
+Class: Users_List
+Function: show
+
+$_POST = Array
+(
+    [with_photo] => 1
+    [join_answers] => Array
+        (
+            [resident ] => yes
+            [casual_part] => yes
+            [relocate] => yes
+            [job_type] => yes
+            [work_type] => yes
+        )
+
+)
+
+---------
+
+2020-03-24 08:28:42
+User_id: 11
+Error: E_WARNING
+URL: http://localhost/talenttube/document.php
+File: D:\laragon\www\talenttube\document.php
+Line: 59
+Message: readfile(MyWordDocument.doc): failed to open stream: No such file or directory
+
+Call stack:
+
+File: D:\laragon\www\talenttube\document.php (Line: 59)
+Function: readfile
+
+---------
+
+2020-03-24 08:31:19
+User_id: 11
+Error: E_WARNING
+URL: http://localhost/talenttube/document.php
+File: D:\laragon\www\talenttube\document.php
+Line: 60
+Message: readfile(_files/resumeUpload7914CV.pdf): failed to open stream: No such file or directory
+
+Call stack:
+
+File: D:\laragon\www\talenttube\document.php (Line: 60)
+Function: readfile
+
+---------
+
+2020-03-24 08:48:18
+User_id: 11
+Error: E_ERROR
+URL: http://localhost/talenttube/document.php
+File: D:\laragon\www\talenttube\document.php
+Line: 57
+Message: Cannot redeclare read_file_docx() (previously declared in D:\laragon\www\talenttube\document.php:57)
+
+Call stack:
+
+File:  (Line: )
+Function: fatalScriptError
+
+---------
+
+2020-03-24 08:49:54
+User_id: 11
+Error: E_NOTICE
+URL: http://localhost/talenttube/document.php
+File: D:\laragon\www\talenttube\document.php
+Line: 104
+Message: Undefined variable: content
+
+Call stack:
+
+---------
+
+2020-03-24 08:50:08
+User_id: 11
+Error: E_ERROR
+URL: http://localhost/talenttube/document.php
+File: D:\laragon\www\talenttube\document.php
+Line: 58
+Message: Cannot redeclare read_file_docx() (previously declared in D:\laragon\www\talenttube\document.php:58)
+
+Call stack:
+
+File:  (Line: )
+Function: fatalScriptError
+
+---------
+
+2020-03-24 08:50:19
+User_id: 11
+Error: E_ERROR
+URL: http://localhost/talenttube/document.php
+File: D:\laragon\www\talenttube\document.php
+Line: 102
+Message: Uncaught Error: Call to undefined function read_file_docxx() in D:\laragon\www\talenttube\document.php:102
+Stack trace:
+#0 {main}
+  thrown
+
+Call stack:
+
+File:  (Line: )
+Function: fatalScriptError
+
+---------
+
+2020-03-24 08:50:46
+User_id: 11
+Error: E_ERROR
+URL: http://localhost/talenttube/document.php
+File: D:\laragon\www\talenttube\document.php
+Line: 58
+Message: Cannot redeclare read_file_docx() (previously declared in D:\laragon\www\talenttube\document.php:58)
+
+Call stack:
+
+File:  (Line: )
+Function: fatalScriptError
+
+---------
+
+2020-03-24 08:51:09
+User_id: 11
+Error: E_NOTICE
+URL: http://localhost/talenttube/document.php
+File: D:\laragon\www\talenttube\document.php
+Line: 104
+Message: Undefined variable: content
+
+Call stack:
+
+---------
+
+2020-03-24 08:52:29
+User_id: 11
+Error: E_ERROR
+URL: http://localhost/talenttube/document.php
+File: D:\laragon\www\talenttube\document.php
+Line: 58
+Message: Cannot redeclare read_file_docx() (previously declared in D:\laragon\www\talenttube\document.php:58)
+
+Call stack:
+
+File:  (Line: )
+Function: fatalScriptError
+
+---------
+
+2020-03-24 08:52:55
+User_id: 11
+Error: E_ERROR
+URL: http://localhost/talenttube/document.php
+File: D:\laragon\www\talenttube\document.php
+Line: 58
+Message: Cannot redeclare read_file_docx() (previously declared in D:\laragon\www\talenttube\document.php:58)
+
+Call stack:
+
+File:  (Line: )
+Function: fatalScriptError
+
+---------
+
+2020-03-24 08:53:06
+User_id: 11
+Error: E_ERROR
+URL: http://localhost/talenttube/document.php
+File: D:\laragon\www\talenttube\document.php
+Line: 58
+Message: Cannot redeclare read_file_docx() (previously declared in D:\laragon\www\talenttube\document.php:58)
+
+Call stack:
+
+File:  (Line: )
+Function: fatalScriptError
+
+---------
+
+2020-03-24 08:54:44
+User_id: 11
+Error: E_ERROR
+URL: http://localhost/talenttube/document.php
+File: D:\laragon\www\talenttube\document.php
+Line: 58
+Message: Cannot redeclare read_file_docx() (previously declared in D:\laragon\www\talenttube\document.php:58)
+
+Call stack:
+
+File:  (Line: )
+Function: fatalScriptError
+
+---------
+
+2020-03-24 13:36:41
+User_id: 5
+Error: E_NOTICE
+URL: http://localhost/talenttube/editjob.php?id=38
+File: D:\laragon\www\talenttube\editjob.php
+Line: 24
+Message: Undefined variable: con
+
+Call stack:
+
+$_POST = Array
+(
+    [first_name] => 
+    [last_name] => 
+    [age] => 
+    [position] => 
+    [address] => 
+    [mobile] => 
+    [email] => 
+    [Save] => 
+)
+
+---------
+
+2020-03-24 13:37:13
+User_id: 5
+Error: E_NOTICE
+URL: http://localhost/talenttube/editjob.php?id=38
+File: D:\laragon\www\talenttube\editjob.php
+Line: 51
+Message: Undefined variable: jobid
+
+Call stack:
+
+$_POST = Array
+(
+    [first_name] => 
+    [last_name] => 
+    [age] => 
+    [position] => 
+    [address] => 
+    [mobile] => 
+    [email] => 
+    [Save] => 
+)
+
+---------
+
+2020-03-24 13:40:28
+User_id: 5
+Error: E_NOTICE
+URL: http://localhost/talenttube/editjob.php?id=38
+File: D:\laragon\www\talenttube\editjob.php
+Line: 51
+Message: Undefined variable: jobid
+
+Call stack:
+
+$_POST = Array
+(
+    [first_name] => 
+    [last_name] => 
+    [age] => 
+    [position] => 
+    [address] => 
+    [mobile] => 
+    [email] => 
+    [Save] => 
+)
+
+---------
+
+2020-03-24 13:40:49
+User_id: 5
+Error: E_NOTICE
+URL: http://localhost/talenttube/editjob.php?id=38
+File: D:\laragon\www\talenttube\editjob.php
+Line: 51
+Message: Undefined variable: jobid
+
+Call stack:
+
+---------
+
+2020-03-24 13:41:00
+User_id: 5
+Error: E_NOTICE
+URL: http://localhost/talenttube/editjob.php?id=38
+File: D:\laragon\www\talenttube\editjob.php
+Line: 51
+Message: Undefined variable: jobid
+
+Call stack:
+
+---------
+

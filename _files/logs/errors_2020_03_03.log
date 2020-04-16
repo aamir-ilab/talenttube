@@ -1,0 +1,92 @@
+2020-03-03 11:15:45
+User_id: 0
+Error: E_WARNING
+URL: http://localhost/talenttube/talenttube/
+File: D:\laragon\www\talenttube\talenttube\_include\lib\db_mysqli.php
+Line: 21
+Message: mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES)
+
+Call stack:
+
+File: D:\laragon\www\talenttube\talenttube\_include\lib\db_mysqli.php (Line: 21)
+Function: mysqli_connect
+
+File: D:\laragon\www\talenttube\talenttube\_include\lib\db_common.php (Line: 70)
+Class: DB
+Function: driver_connect
+
+File: D:\laragon\www\talenttube\talenttube\_include\core\start.php (Line: 377)
+Class: DB_Common
+Function: connect
+
+File: D:\laragon\www\talenttube\talenttube\_include\core\main_start.php (Line: 12)
+Function: include_once
+
+File: D:\laragon\www\talenttube\talenttube\index.php (Line: 16)
+Function: include
+
+---------
+
+2020-03-03 11:16:47
+User_id: 0
+Error: E_WARNING
+URL: http://localhost/talenttube/talenttube/
+File: D:\laragon\www\talenttube\talenttube\_include\lib\db_mysqli.php
+Line: 21
+Message: mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES)
+
+Call stack:
+
+File: D:\laragon\www\talenttube\talenttube\_include\lib\db_mysqli.php (Line: 21)
+Function: mysqli_connect
+
+File: D:\laragon\www\talenttube\talenttube\_include\lib\db_common.php (Line: 70)
+Class: DB
+Function: driver_connect
+
+File: D:\laragon\www\talenttube\talenttube\_include\core\start.php (Line: 377)
+Class: DB_Common
+Function: connect
+
+File: D:\laragon\www\talenttube\talenttube\_include\core\main_start.php (Line: 12)
+Function: include_once
+
+File: D:\laragon\www\talenttube\talenttube\index.php (Line: 16)
+Function: include
+
+---------
+
+2020-03-03 11:20:11
+User_id: 0
+Error: E_USER_NOTICE
+URL: http://localhost/talenttube/talenttube/
+File: D:\laragon\www\talenttube\talenttube\_include\lib\db_common.php
+Line: 49
+Message: Can't execute query: Unknown database 'talenttube'
+
+
+Call stack:
+
+File: D:\laragon\www\talenttube\talenttube\_include\lib\db_common.php (Line: 49)
+Function: trigger_error
+
+File: D:\laragon\www\talenttube\talenttube\_include\lib\db_common.php (Line: 609)
+Class: DB_Common
+Function: triggerError
+
+File: D:\laragon\www\talenttube\talenttube\_include\lib\db_common.php (Line: 76)
+Class: DB_Common
+Function: select_db
+
+File: D:\laragon\www\talenttube\talenttube\_include\core\start.php (Line: 377)
+Class: DB_Common
+Function: connect
+
+File: D:\laragon\www\talenttube\talenttube\_include\core\main_start.php (Line: 12)
+Function: include_once
+
+File: D:\laragon\www\talenttube\talenttube\index.php (Line: 16)
+Function: include
+
+---------
+
