@@ -1,527 +1,89 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>TalentTube</title>
-    
-    <meta name="viewport" content="width=973">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta name="description" content="TalentTube">
-    <meta name="keywords" content="">
-    
-    <link rel="shortcut icon" href="images/favicon_impact.ico?v=1583280658" type="image/x-icon">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <script type="text/javascript" src="_server/jquery/jquery-1.11.2.min.js?v=4"></script>
-    <script type="text/javascript" src="_server/jquery/jquery-ui-1.11.4.min.js?v=4"></script>
-
-    <script type="text/javascript" src="_server/jquery/jquery.formstyler.js?v=4"></script>
-    <link rel="stylesheet" type="text/css" href="css/jquery.formstyler.css?v=4"/>
-
-    
-
-    <script type="text/javascript" src="_server/jquery/modernizr.js?v=4"></script>
-    <script type="text/javascript" src="_server/jquery/lib.js?v=4"></script>
-    <script language="javascript" type="text/javascript">
-        setOptionsSite({"options":{"number_of_columns_in_language_selector":"5","message_notifications_not_show_when_3d_city":"N","forced_open_chat_with_new_message":"N","photo_approval":"N"}});
-    </script>
-    <script type="text/javascript" src="js/lib.js?v=4"></script>
-    <script type="text/javascript" src="js/script.js?v=4"></script>
-    <script type="text/javascript" src="_server/jquery/jquery.form.js?v=4"></script>
-
-    
-    <link rel="stylesheet" type="text/css" href="css/index_page.css?v=4"/>
-    
-    
-    
-    <script type="text/javascript" src="js/index.js?v=4"></script>
-    <script type="text/javascript" src="js/login_form.js?v=4"></script>
-
-    <script language="javascript" type="text/javascript">
-        var siteLangParts = {
-            signIn : 'Sign in',
-			incorrectEmail : 'The E-mail is incorrect.',
-            send_again : 'Send Again',
-            send_password : 'Send Password',
-            link_password_send : 'The link for changing the password has been sent!'
-        };
-    </script>
-    
-    
-
-    
-
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css?v=4"/>
-
-    
-
-    <script type="text/javascript" src="_server/jquery/jquery.popup.js?v=4"></script>
-    <script type="text/javascript" src="_server/jquery/prettyCheckable.js?v=4"></script>
-
-    <!-- <link rel="stylesheet" type="text/css" href="./css.php?v=4&set_template_runtime=impact&page=index.php&demo_version=" /> -->
-
-    <style type="text/css">
-        button.btn.pink{ background: #ff6d85; color: #FFFFFF; }
-        button.btn.pink:hover { background: #e7495c; }
-    </style>
-    
-
-    
-    <style type="text/css">
-        body, .footer, .content{ background-color: #FFFFFF }
-        .bl_main_info .item p, .footer, .footer .nav li, .footer .nav li a { color: #000000 }
-
-        .header, .main.above .wrapper {
-            background: #5b0079;
-        }
-
-        
-
-        
-
-        .main.above .bg_shadow { background: rgba(0, 0, 0, 0.55)}
-    </style>
-    
-
-    
-
-    
-
-    <style>body,.header{background-color: transparent;}</style>
-<!-- 
-    <script type="text/javascript" src="./js.php?v=4&file=tmpl.js&set_template_runtime=impact&set_language_runtime=default"></script>
-    <script type="text/javascript" src="./js.php?v=4&get_lang=1&file=set_language.js&set_template_runtime=impact&set_language_runtime=default"></script>
-    <script type="text/javascript" src="./js.php?v=4&get_lang=1&file=set_language.js&set_template_runtime=impact&set_language_runtime=default&page=index.php"></script>
- -->
-	<script type="text/javascript" src="js/device.min.js?v=4"></script>
-	<script type="text/javascript" src="_server/jquery/jquery.cookie.js?v=4"></script>
-
-    <!-- <link href="css/video-js.css?v=4" rel="stylesheet"> -->
-    <!-- If you'd like to support IE8 -->
-    <script src="_server/jquery/videojs-ie8.min.js?v=4"></script>
-
-    <link href="css/videojs.css?v=4" rel="stylesheet">
-
-	
-
-    <link rel="stylesheet" type="text/css" href="css/cookiepopup.css?v=4" />
-    <script type="text/javascript" src="js/cookiepopup.js?v=4"></script>
-
-    <script language="javascript" type="text/javascript">
-        
-        initSmoothScroll();
-        
-        var ajax_login_status=false;
-        var siteTitle='TalentTube';
-        var siteTitleTemp='TalentTube';
-
-        var urlMain=url_main='./';
-        var urlFiles='./_files/';
-        var url_tmpl_main='./_frameworks/main/impact/';
-        var url_tmpl_images=url_tmpl_main+'images/';
-        var url_ajax='./ajax.php';
-        var dirTmplMain='.'+'./_frameworks/main/impact/';
-        var urlPageLogin='login';
-        var urlPageUpgrade='upgrade';
-        var urlPageProfile='profile_view';
-        var currentPage='index.php';
-        var activePage='index.php';
-
-        var isPlayerNative='0'*1;
-        var isPageProfile=false;
-		var isCurUserSuperPowers=''*1;
-
-        // Server
-        var requestUserId='0'*1;
-        var userAllowedFeature=[];
-
-        var user_profile_bg='';
-        var user_profile_bg_video = {};
-        var is_bg_video_all_page = 1;
-        var profile_bg_video_quality = 'default';
-
-        var profile_bg_video_play_disabled = 0;
-
-        
-        
-        setGeoPointData();
-    </script>
-    
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <title>Home page</title>
 </head>
-<body  >
-<!-- main -->
-<div class="main  ">
-    
-	
-    <!-- wrapper -->
-    <div class="wrapper">
-        <!-- header_top  -->
-        <div class="head_top absolute">
-            <div class="bl">
-					<div class="fl_right">
-                    
-                    <span class="link">Have an account?</span>
-                    <a id="pp_sign_in_open" class="btn_sign" href="">Sign in</a>
-                    
-                    
-                    </div>
-                <div class="cl"></div>
-            </div>
-            
-            <div class="cl"></div>
-        </div>
-        <!-- /header_top  -->
-        <!-- header_cont  -->
-        <div class="wrap_header_cont absolute">
-            <!-- header_cont_bl -->
-            <div class="bl">
-            <div class="bl_logo">
-                <img id="logo_main_page" src="images/logo.png?v=1583280665" style="height:44px;" alt="" />
-                <script>goToIndexForLogo();</script>
-            </div>
-    
-
-    
-
-    
-    
-    <div class="bl_join_done">
-        <div class="slogan">Join the best Talent Matcher in the world.</div>
-        <form id="frm_join_index_step_1" action="./join" method="POST">
-            <div class="bl_form bl_form_index">
-                
-                <label>I am a</label>
-                
-                
-                
-                <div class="bl_select">
-                    <select id="bl_join_done_orientation" name="orientation" class="select_main select_index">
-                    <option  value="1" >Job Seeker</option>
-<option  value="2" selected="selected">Employer</option>
-
-                    </select>
-                    <div id="orientation_error" class="error to_hide">Orientation is required</div>
-                </div>
-                
-                <button type="submit" class="btn pink">Continue</button>
-                <script>if(!$('.select_index')[0])$jq('.bl_form_index').addClass('show');</script>
-            </div>
-        </form>
-        <script>
-        $jq('#bl_join_done_orientation').styler({
-            onSelectOpened:function(){
-                $('#orientation_error').addClass('to_hide');
-            }
-        })
-        $('#frm_join_index_step_1').submit(function(){
-            var $frm=$(this),isError=false;
-            $('select',$frm).each(function(){
-                if(!this.value || this.value == 0){
-                    isError=true;
-                    $('#'+this.name+'_error').removeClass('to_hide');
-                }
-            })
-            if(isError){
-                return false;
-            }
-        })
-        </script>
-    </div>
-
-<script>
-    function setPageBackgroundHeight() {
-        if($('.bl_join_done').height()) {
-            return;
-        }
-
-        var isLoginPage = $('.bl_form_registration').height();
-        var contentHeight = $('.bl_logo').outerHeight(true) + parseInt($('.wrap_header_cont .bl').css('paddingTop'));
-        if(isLoginPage) {
-            contentHeight += $('.slogan').outerHeight(true) + $('.bl_form_registration').outerHeight(true);
-        } else {
-            contentHeight += $('#step-1').outerHeight(true);
-        }
-
-        $('.header, .cover, #bg_shadow').height(Math.max(contentHeight, $(window).height()));
-    }
-</script>
-    <!-- not page join2-->
-    </div>
-    <!-- header_cont_bl -->
-    </div>
-    <!-- /header_cont  -->
-    <div class="header">
-        
-        <div id="bg_cover" class="cover" style="background-image: url(images/main_page_image/1.jpg);"></div>
-        
-        <script>
-        var ready;
-        function bgReady() {
-            var $bgCover=$('#bg_cover');
-            if(ready){
-                if(!$bgCover.is('.show'))$bgCover.addClass('to_show')
-            }else if(document.cookie.indexOf('bgImpactMain=images/main_page_image/1.jpg')>=0) $bgCover.addClass('show');
-            document.cookie='bgImpactMain=images/main_page_image/1.jpg';
-            ready=1
-        }
-        bgReady();
-        var imgCover=new Image();
-        imgCover.onload = bgReady;
-        imgCover.src='images/main_page_image/1.jpg';
-        </script>
-        
-
-        
-
-        <script>
-            setPageBackgroundHeight();
-            $(window).on('resize', setPageBackgroundHeight);
-        </script>
-    </div>
-
-	
-    <!-- content -->
-    <div class="content">
-        <div class="cont_w">
-            <div class="bl_main_info">
-                <div class="item">
-                    <div class="pic">
-                        <img src="images/pic_clock.png" width="128" height="128" alt="" />
-                    </div>
-                    <p>Signing up takes two minutes and is totally free.</p>
-                </div>
-                <div class="item">
-                    <div class="pic">
-                        <img src="images/pic_heart.png" width="128" height="104" alt="" />
-                    </div>
-                    <p>Our matching algorithm helps to find the right people.</p>
-                </div>
-                <div class="item">
-                    <div class="pic">
-                        <img src="images/pic_chat.png" width="128" height="112" alt="" />
-                    </div>
-                    <p>You can chat, see photos, have fun, and even meet!</p>
-                </div>
-            </div>
-            <div class="cl"></div>
-        </div>
-    </div>
-    <!-- /content -->
-	
-	</div>
-	<!-- /wrapper -->
-	<!-- footer -->
-    <div class="footer">
-        <div class="footer_w">
-            
-            <ul class="nav">
-                
-                <li>
-                    
-                    <a  href="./about">About</a>
-                </li>
-                
-                <li>
-                    
-                    <span>|</span>
-                    
-                    <a  href="./contact">Contact us</a>
-                </li>
-                
-                <li>
-                    
-                    <span>|</span>
-                    
-                    <a target="_blank" href="./partner/">Affiliates</a>
-                </li>
-                
-            </ul>
-            
-            <span class="title_orig">(c) TalentTube 2020</span>
-        </div>
-        <div class="footer-ssl-seal"></div>
-	</div>
-	<!-- /footer -->
-	<div style="display:none;">
-
-    
-    <div id="pp_sign_in" class="popup pp_sign">
-        <div class="head">
-            Sign in
-            <a id="pp_sign_in_close" class="icon_close" href="">
-                <span class="close_hover"></span>
-            </a>
-        </div>
-        <div class="cont">
-            <div class="bl">
-                <form id="form_login" class="form_login" method="post" autocomplete="on" action="./ajax.php">
-                    <input id="form_login_cmd" type="hidden" name="cmd" value="login" />
-                    <input type="hidden" name="ajax" class="ajax" value="1" />
-                    <input id="form_login_user" type="text" name="user" class="inp placeholder" placeholder="Your email or username" />
-                    <div class="error"></div>
-                    <input id="form_login_pass"  type="password" name="password" class="inp placeholder" placeholder="Password" />
-                    <div class="bl_remember">
-                        <input id="form_login_remember" name="remember" value="1" type="checkbox" checked="checked"/>
-                        <label for="form_login_remember">Remember me</label>
-                    </div>
-                    <button id="form_login_submit" type="submit" class="btn pink">Sign in</button>
-                </form>
-                <a id="pp_forgot_pass_open" class="link" href="">Forgot password?</a>
-                
-                <div class="line"></div>
-                <div class="or"><span>or</span></div>
-                <ul class="bl_social_buttons">
-                    
-                    <li class="login_facebook"><a href="https://www.facebook.com/v2.2/dialog/oauth?client_id=1&state=d011f99a4fc6308a3ff3ca630888c216&response_type=code&sdk=php-sdk-5.6.2&redirect_uri=http%3A%2F%2Flocalhost%2Ftalenttube%2Fjoin_facebook.php%3Fcmd%3Dfb_login&scope=email">&nbsp;</a></li>
-                    
-                    <li class="login_google_plus"><a href="social_login.php?module=google_plus">&nbsp;</a></li>
-                    
-                    <li class="login_linkedin"><a href="social_login.php?module=linkedin">&nbsp;</a></li>
-                    
-                    <li class="login_twitter"><a href="social_login.php?module=twitter">&nbsp;</a></li>
-                    
-                    <li class="login_vk"><a href="social_login.php?module=vk">&nbsp;</a></li>
-                    
-                </ul>
-                
-                
-				<!--<a class="link link_close_login" onclick="$('#pp_sign_in').close(); return false;" href="">No account? Register now!</a>-->
-            </div>
-        </div>
-    </div>
-    
-
-
-    <div id="pp_resend_password" class="popup">
-        <div class="head">
-            Forgot password?
-            <a class="icon_close pp_forgot_pass_close" href="">
-                <span class="close_hover"></span>
-            </a>
-        </div>
-        <div class="cont">
-            <div class="bl">
-                <input id="pp_resend_password_email" type="text" class="inp placeholder" placeholder="Your e-mail" />
-                <div id="pp_resend_password_error" class="error">&nbsp;</div>
-                <div class="successful">&nbsp;</div>
-                <button id="pp_resend_password_submit" class="btn turquoise" disabled>Send Password</button>
-                Or, <a class="link turquoise pp_forgot_pass_close" href="">try logging in again</a>
-            </div>
-        </div>
-    </div>
-
-	</div>
-</div>
-<!-- /main -->
-
-
-<div style="display:none;">
-    <div id="css_loader" class="css_loader">
-		<div class="spinner center">
-			<div class="spinner-blade"></div>
-			<div class="spinner-blade"></div>
-			<div class="spinner-blade"></div>
-            <div class="spinner-blade"></div>
-			<div class="spinner-blade"></div>
-			<div class="spinner-blade"></div>
-			<div class="spinner-blade"></div>
-			<div class="spinner-blade"></div>
-			<div class="spinner-blade"></div>
-			<div class="spinner-blade"></div>
-			<div class="spinner-blade"></div>
-			<div class="spinner-blade"></div>
-		</div>
-	</div>
-    <div id="update_server"></div>
-</div>
-<script>
-    try {
-        imChats.initListIm();
-        initServer();
-    }
-    catch(e){};
-    var tmplsList = [];
-tmplsList[0] = 'new_age';
-tmplsList[1] = 'oryx';
-tmplsList[2] = 'mixer';
-tmplsList[3] = 'urban';
-tmplsList[4] = 'impact';
-tmplsList[5] = 'edge';
-
-
-var tmplCurrent = 'impact';
-
-if(false) {
-    initDevFunctions();
+<style type="text/css">
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
 }
 
-var sitePart = 'main';
-var sitePartParam = '';
-var languageOfUser = '';
-var siteLanguage = 'default';
-var siteGuid = '0'*1;
-</script><script>
-                var IS_DEMO = 0;
-                var urlPageJoin = 'join';
-                var urlPageLogin = 'login';
-                var urlPageUpgrade = 'upgrade';
-                var urlPagesSite = {
-                    index : 'index',
-                    login : 'login',
-                    join : 'join',
-                    home : 'profile_view',
-                    upgrade : 'upgrade',
-                    search_results : 'search_results',
-                    profile_view : 'profile_view',
-                    messages : 'messages',
-                    refill_credits : 'refill_credits',
-                    my_vids_list : 'user_vids_list',
-                    my_photos_list : 'user_photos_list',
-                    photos_list : 'photos_list',
-                    blogs_add : 'blogs_add',
-                    profile_settings : 'profile_settings',
-                    wall : 'wall'
-                };
-                var cacheVersionParam = '?v=4';
-
-                setAjaxPrefilter();
-            
-    
-</script>
-
-<script src="js/video.js?v=4"></script>
-<script>videojs.options.flash.swf="js/video-js.swf"</script>
-
-
-<script src="https://connect.facebook.net/en_US/all.js"></script>
-<script type="text/javascript">
-    FB.init({
-        appId: '1',
-        cookie: true,
-        status: true
-    });
-
-    var j_facebook_invite_message = 'Please join TalentTube now and let\'s be friends on it as well!';
-</script>
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
 
 
 
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+   color: white;
+}
 
+.button {
+  background-color: #FF69B4;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
 
+</style>
 
-<script>
-    $(function(){
-        //document.cookie = 'cookiesAccepted=; path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
-        var options = {
-            title: 'We are using cookies to give you the best experience on our site.',
-            text: 'Cookies are files stored in your browser. By continuing to use our website you are agreeing to our use of cookies. <a class="more_link" href="privacy_policy">Privacy Policy</a>',
-            acceptButtonText: 'Accept',
-            theme: 'dark',
-            learnMore: false,
-            position: 'bottom'
-        };
-        $.acceptCookies(options);
-    })
-</script>
+</head>
+<body>
 
+<div class="container-flude">
+  <div class="row">
+      <div class="col-12">
+        <img src="images/mains/1.jpg" style="width: 1600px">
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="top-right">Top Right</div>
+   <div class="top-right">Top Right</div>
+  <div class="centered" style="">i am a
+      
+       <select>
+         <option class="form-control">5</option>
+       </select>         
+          <button class="button">Continue</button>
+   </div>       
+
+  </div>
+</div>
+<div class="container" style="margin-top: 30px;">
+  <div class="row">
+    <div class="col-4">
+      <img src="images/pic_clock.png" width="128" height="128" alt="" />
+      <p>kjfkdjklfjsl</p>
+    </div>
+   
+    <div class="col-4">
+      <img src="images/pic_heart.png" width="128" height="104" alt="" />
+    </div>
+   
+    <div class="col-4">
+      <img src="images/pic_chat.png" width="128" height="112" alt="" />
+    </div>
+  </div>
+</div>
 
 </body>
-</html>
+</html> 
