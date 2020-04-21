@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TalentTube</title>
+    
+    <meta name="viewport" content="width=973">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="description" content="TalentTube">
+    <meta name="keywords" content="">
+    
+    <link rel="shortcut icon" href="../imagesfavicon_impact.ico?v=1583280658" type="image/x-icon">
+
+      <script type="text/javascript" src="../_server/jquery/jquery-1.11.2.min.js?v=4"></script>
+    <script type="text/javascript" src="../_server/jquery/jquery-ui-1.11.4.min.js?v=4"></script>
+
+    <script type="text/javascript" src="../_server/jquery/jquery.formstyler.js?v=4"></script>
+    <link rel="stylesheet" type="text/css" href="../css/jquery.formstyler.css?v=4"/>
+    
+
+    <script type="text/javascript" src="../_server/jquery/modernizr.js?v=4"></script>
+    <script type="text/javascript" src="../_server/jquery/lib.js?v=4"></script>
+    
+    <script type="text/javascript" src="../js/lib.js?v=4"></script>
+    <script type="text/javascript" src="../js/script.js?v=4"></script>
+    <script type="text/javascript" src="../_server/jquery/jquery.form.js?v=4"></script>
+
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css?v=4"/>
+
+    
+    <link rel="stylesheet" type="text/css" href="../css/tinyscrollbar.css?v=4"/>
+    <link rel="stylesheet" type="text/css" href="../css/style.css?v=4"/>
+    
+    <script type="text/javascript" src="../js/profile.js?v=4"></script>
+    <script type="text/javascript" src="../js/upgrade.js?v=4"></script>
+
+
+   <script type="text/javascript" src="../js/profile_photo.js?v=4"></script>
+    <script type="text/javascript" src="../js/messages.js?v=4"></script>
+    <script type="text/javascript" src="../js/im.js?v=4"></script>
+ 
+ 
+    
+
+    <style type="text/css">
+        button.btn.pink{ background: #ff6d85; color: #FFFFFF; }
+        button.btn.pink:hover { background: #e7495c; }
+    </style>
+    
+    <style type="text/css">
+
+        html{ background: #254c8e; }
+        body{ background: #254c8e!important; }
+
+        
+
+        .header ul.nav li a { color: #FFFFFF }
+        .header ul.nav li a:hover, .header ul.nav li span { color: #8ad4ff }
+
+        .column_main{background-color: #f3f5f9;}
+
+          .column_main .col ul.nav li span.icon { background-image: url(../images/menu_icons/icons_nav_default.png); }
+
+        #colfix_l, .colfix_r_bg, .colfix_r_bg_head { background-color: #142d69 }
+        .column_main .col ul.nav li a.menu_selected { background-color: #0a1f52; }
+
+        .column_main .col ul.nav li a {
+            color: #8ba1d5;
+            border-top-color: rgba(255,255,255,0.1);
+            border-bottom-color: rgba(0,0,0,0.4);
+        }
+        .column_main .col ul.nav li a:hover, .column_main .col ul.nav li a.inactive:hover { color: #c5d5fc }
+
+        .column_main .col ul.nav li a.inactive {
+            color: #49619a;
+        }
+
+        .column_main .col ul.nav li .count { color: #FFFFFF }
+        .column_main .col ul.nav li .count.decor { background-color: #eb6077 }
+
+        .column_main .col .link a { color: #f3f5f9 }
+        .column_main .col .link a:hover { color: #5ac9fe }
+        .column_main .col .link a.link_show_banner.action_show {color: #49619a}
+        .column_main .col .link a.link_show_banner.action_show:hover {color: #c5d5fc }
+
+        .column_main .banner_header_bl a.link_show_banner { color: #7d7d7d }
+        .column_main .banner_header_bl a.link_show_banner:hover { color: #000000 }
+
+        .main .banner_footer_bl a.link_show_banner { color: #f3f5f9 }
+        .main .banner_footer_bl a.link_show_banner:hover { color: #5ac9fe }
+
+        .column_main .col .bl_visited_photo strong, .profile_sign .txt { color: #FFFFFF }
+
+        .footer .nav li, .footer .nav li a, .column_lang_bl .column_lang a.language{ color: #FFFFFF }
+        .column_lang_bl .column_lang a.language::after{ border-bottom: 6px solid #FFFFFF; }
+        .footer .nav li a:hover, .column_lang_bl .column_lang a.language:hover { color: #5ac9fe }
+        .column_lang_bl .column_lang a.language:hover::after{ border-bottom: 6px solid #5ac9fe; }
+
+        .footer_w, .footer-ssl-seal{ color: #FFFFFF }
+
+        button.btn.pink.btn_question { background: #ff6d85; color: #FFFFFF; }
+        button.btn.pink.btn_question:hover { background: #e7495c; }
+
+        button.btn.turquoise{ background: #40c7db; color: #FFFFFF; }
+        button.btn.turquoise:hover { background: #3ab9ce; }
+
+        button.btn.lblue{ background: #6dc9ff; color: #FFFFFF; }
+        button.btn.lblue:hover { background: #2faae0; }
+
+        button.btn.turquoise.btn_question { background: #40c7db; color: #FFFFFF; }
+        button.btn.turquoise.btn_question:hover { background: #02afc3; }
+
+        button.btn.btn_submit_upgrade { background: #fabc3d; color: #FFFFFF; }
+        button.btn.btn_submit_upgrade:hover { background: #ee972f; }
+
+        button.btn.like_frame {background: transparent; border: 1px solid #d5dce6; color: #a9aeb5;}
+        button.btn.like_frame:hover {background: transparent; border: 1px solid #d5dce6;}
+        button.btn.like_frame.active{background: #ffa200; border: 1px solid #ffa200;}
+        button.btn.like_frame.active:hover{background: #ffa200; border: 1px solid #ffa200;}
+
+
+        button.btn.btn_open_im_top{background: #323741; color:#FFFFFF;}
+        button.btn.btn_open_im_top:hover{background: #505967;}
+        button.btn.btn_open_im_top .border_decor{border-bottom: 6px solid #89e214;}
+
+        button.btn.btn_open_im_bottom{background: #6dc9ff; color:#FFFFFF;}
+        button.btn.btn_open_im_bottom:hover{background: #2faae0;}
+
+         .tabs_profile .col_right .btn_browse_invisibly{background: #cbe8fb url(../images/arrow_browse_invisibly.png) 95% 50% no-repeat; color: #4c8fba;}
+        .tabs_profile .col_right .btn_browse_invisibly:hover{background: #bbe3fc url(../images/arrow_browse_invisibly.png) 95% 50% no-repeat; }
+
+        .bl_browse .bl_filter{background: #fffff0;}
+        .bl_browse .bl_filter .filter_extended{background: #f8f8d8;}
+
+        .chat .head a { background-color: #323741; color: #FFFFFF; }
+        .chat .head span.marker { background-color: #40c7db; }
+
+        .chat.active .head a, .open_im_more_bl, .open_im_more ul.open_im_more_list li:last-child::after,
+        .open_im_more ul.open_im_more_list{ background-color: #6D8FFF; color: #FFFFFF; }
+
+        .chat.open .cont .item .message .msg_check,
+        .chat.active .head a:hover, .open_im_more_bl:hover,
+        .open_im_more ul.open_im_more_list li:last-child:hover::after,
+        .open_im_more ul.open_im_more_list li:hover{ background-color: #6280FF; }
+
+        @-webkit-keyframes open_im_head_blink {
+            0% {background-color: #6D8FFF;}
+            50% {background-color: #536dd9;}
+            100% {background-color: #6D8FFF;}
+        }
+        @keyframes open_im_head_blink {
+            0% {background-color: #6D8FFF;}
+            50% {background-color: #536dd9;}
+            100% {background-color: #6D8FFF;}
+        }
+
+        .chat.open .cont .item .message .msg_check.msg_arrow:after {
+            border-left-color:#6280FF;
+        }
+
+        .chat.active .head span.marker { background-color: #40c7db; }
+
+        .chat.noactive .head a { background-color: #888888; color: #FFFFFF; }
+        .chat.noactive .head a:hover { background-color: #7A7A7A; }
+        .chat.noactive .head span.marker { background-color: #b2b2b2; }
+
+        .chat .cont .chat_cont .item { color: #6D8FFF; }
+        .chat .cont .chat_cont .item:hover { background-color: #6D8FFF; color: #FFFFFF; }
+
+        .bl_ads { color: #8ba1d5; }
+
+        .pagination a.disabled:hover, .pagination a.disabled {
+            color: #BFBFBF;
+        }
+
+        .pagination a:hover, .pagination .pagination-active {
+            color: #FFFFFF;
+        }
+
+        .pagination a:before {
+            background-color: #142d69;
+        }
+
+        .pagination a {
+            color: #2c3e50;
+        }
+    </style>
+
+ 
+    <script language="javascript" type="text/javascript">
+        
+        initSmoothScroll();
+        
+        var ajax_login_status=true;
+        var siteTitle='TalentTube';
+        var siteTitleTemp='TalentTube';
+
+        var urlMain=url_main='./';
+        var urlFiles='./_files/';
+        var url_tmpl_main='./_frameworks/main/impact/';
+        var url_tmpl_images=url_tmpl_main+'images/';
+        var url_ajax='./ajax.php';
+        var dirTmplMain='.'+'./_frameworks/main/impact/';
+        var urlPageLogin='login';
+        var urlPageUpgrade='upgrade';
+        var urlPageProfile='profile_view';
+        var currentPage='messages.php';
+        var activePage='messages.php';
+
+        var isPlayerNative='0'*1;
+        var isPageProfile=false;
+        var isCurUserSuperPowers=''*1;
+
+        // Server
+        var requestUserId='0'*1;
+        var userAllowedFeature={"3d_city":0,"encounters":0,"invisible_mode":0,"extended_search":0,"audiochat":1,"videochat":1,"message_read_receipts":0,"kill_the_ads":0,"site_access_paying":0,"min_number_upload_photos":""};
+
+        var user_profile_bg='';
+        var user_profile_bg_video = {};
+        var is_bg_video_all_page = 1;
+        var profile_bg_video_quality = 'default';
+
+        var profile_bg_video_play_disabled = 0;
+
+        
+        
+        setGeoPointData({"country":"United States","city":"New York"});
+    </script>
+    
+</head>
+<body  >
+<!-- main -->
+<div class="main  ">
+    
+	
+
+    
+    <!-- wrapper -->
+    <div class="wrapper">
+    <!-- header -->
+	<div class="header">
+        <div class="header_w">
+            <!--<a href="./employertest" class="empty_logo"></a>-->
+
+			
+            <ul class="nav">
+                
+                <li class="credits_balans_li"><a class="credits_balans" id="credits_balans_header" href="">0 credits</a></li>
+                
+                
+                <li><a href="./profile_view">Profile</a></li>
+                
+                
+                
+                <li><a href="" onclick="Profile.showSettingsEditor(); return false;">Settings</a></li>
+                
+                
+                <li><a href="./upgrade">Upgrade</a></li>
+                
+                
+                
+                <li><a onclick="Profile.confirmLogout(); return false;" href="">Sign out</a></li>
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+            </ul>
+        </div>
+	</div>
+	<!-- /header -->
+
+	<!-- content -->
+
+    <div class="content">
+        <div class="cont_w">
+            <div class="column_main">
+    
+
+    
+    
+<script type="text/javascript" src="../_server/js/chart.bundle.min.js?v=6"></script>
+
+<script>
+$(function(){
+    $jq('.main').scroll(function(){
+        if($jq('.main').scrollTop()>($('.column_main').height()-$jq('.main').height()-1000)){
+            loadBaseListUsers();
+        }
+    })
+})
+var isLoadBaseListUsers=false, lastIdBaseListUsers, onPageDefault='';
+function loadBaseListUsers(){
+    if(offset=='no'||isLoadBaseListUsers)return;
+    var page=activePage;
+    $.ajax({type:'POST', url:'./'+page, data:{ajax:1,on_page:onPageDefault,id:lastIdBaseListUsers},
+            beforeSend:function(){
+                isLoadBaseListUsers=true;
+                $jq('#loader_base_page').removeClass('hidden');
+            },
+            success:function(data){
+                $jq('#loader_base_page').addClass('hidden');
+                if(page=='user_block_list.php'){
+                    var data=checkDataAjax(data);
+                    if(data===false)return;
+                }
+                var list=$(trim(data)),users,t=200,i=0;
+                    list.filter('.pages').appendTo('#page_list_users');
+                    users=list.filter('.items').find('.item').hide();
+                    (function fu(){
+                        var item=users.eq(i);
+                        if(!item[0]){
+                            isLoadBaseListUsers=false;
+                            return;
+                        }
+                        if(!$('#'+item.attr('id'))[0]){
+                            item.appendTo('#page_list_users').slideDown(t*=.8, function(){
+                                $(this).removeAttr('style');
+                                i++; fu();
+                            })
+                        }else if(item[0]){
+                            i++; fu();
+                        }
+                    })()
+            }
+    })
+}
+</script>
+<div class="col_center">
+    <div class="head icon_head_blocked_users">Blocked Users</div>
+    <div class="cont">
+        <div id="page_list_users" class="block_statistics blocked_users">
+            
+
+
+
+            <script>offset='no';</script>
+
+        </div>
+        <div id="loader_base_page" class="css_loader loader_base_page hidden">
+            <div class="spinner center">
+                <div class="spinner-blade"></div>
+                <div class="spinner-blade"></div>
+                <div class="spinner-blade"></div>
+                <div class="spinner-blade"></div>
+                <div class="spinner-blade"></div>
+                <div class="spinner-blade"></div>
+                <div class="spinner-blade"></div>
+                <div class="spinner-blade"></div>
+                <div class="spinner-blade"></div>
+                <div class="spinner-blade"></div>
+                <div class="spinner-blade"></div>
+                <div class="spinner-blade"></div>
+            </div>
+        </div>
+        
+        <div class="bl_no_one">
+            <div class="icon"></div>
+            <div class="txt">No one here yet.</div>
+        </div>
+        
+        <div class="cl"></div>
+    </div>
+</div>
+
+
+<!-- col left -->
+	
+	<div id="colfix_l_bl" class="col left" >
+        <div class="bl_logo">
+            <a href="./employertest" class="logo">
+                <img src="../images/logo_inner.png?v=1585339751" style="max-width:183px; max-height: 60px;" alt="" /> <!--24-->
+            </a>
+        </div>
+		<div id="colfix_l" class="cont col_fix">
+            
+            
+            
+            <ul class="nav">
+            
+            <li>
+                <a id="narrow_menu_link_26" href="browser.html" class="column_narrow_search_results  ">
+                    <span class="icon"></span>Browse matches
+                    
+                </a>
+            </li>
+            
+            <li>
+                <a id="narrow_menu_link_27" href="messages.html" class="column_narrow_messages  ">
+                    <span class="icon"></span>Messages
+                    
+                    <span id="narrow_messages" class="count "></span>
+                    
+                </a>
+            </li>
+            
+            <li>
+                <a id="narrow_menu_link_28" href="./hot_or_not" class="column_narrow_hot_or_not  ">
+                    <span class="icon"></span>Talent Matcher
+                    
+                </a>
+            </li>
+            
+            <li>
+                <a id="narrow_menu_link_35" href="chatroom.html" class="column_narrow_general_chat  ">
+                    <span class="icon"></span>Chat rooms
+                    
+                    <span id="narrow_general_chat_count" class="count "></span>
+                    
+                </a>
+            </li>
+            
+            <li>
+                <a id="narrow_menu_link_20" href="profile-vister.html" class="column_narrow_profile_visitors  ">
+                    <span class="icon"></span>Profile visitors
+                    
+                    <span id="narrow_visitors_count" class="count ">4</span>
+                    
+                </a>
+            </li>
+            
+            <li>
+                <a id="narrow_menu_link_31" href="./mutual_likes" class="column_narrow_mutual_likes  ">
+                    <span class="icon"></span>Mutual likes
+                    
+                    <span id="narrow_mutual_likes_count" class="count "></span>
+                    
+                </a>
+            </li>
+            
+            <li>
+                <a id="" href="interest-parties.html" class="column_narrow_who_likes_you  ">
+                    <span class="icon"></span>Interested Parties
+                    
+                    <span id="narrow_who_likes_you_count" class="count "></span>
+                    
+                </a>
+            </li>
+            
+            <li>
+                <a id="narrow_menu_link_52" href="./page?id=52" class="Jobs  inactive">
+                    <span class="icon"></span>JOBS
+                    
+                </a>
+            </li>
+            
+            <li>
+                <a id="narrow_menu_link_30" href="myinterest.html" class="column_narrow_whom_you_like  ">
+                    <span class="icon"></span>My Interest
+                    
+                    <span id="narrow_whom_you_like_count" class="count "></span>
+                    
+                </a>
+            </li>
+            
+            <li>
+                <a id="narrow_menu_link_32" href="private-resume.html" class="column_narrow_can_see_your_private_photos  ">
+                    <span class="icon"></span>Private Resume access
+                    
+                    <span id="narrow_private_photo_count" class="count "></span>
+                    
+                </a>
+            </li>
+            
+            <li>
+                <a id="narrow_menu_link_23" href="./" class="column_narrow_invite  ">
+                    <span class="icon"></span>Invite friends
+                    
+                </a>
+            </li>
+            
+            <li>
+                <a id="user_block_list" href="block.html" class="column_narrow_blocked menu_selected inactive">
+                    <span class="icon"></span>Blocked
+                    
+                    <span id="narrow_blocked_count" class="count "></span>
+                    
+                </a>
+            </li>
+            
+            </ul>
+            
+            
+
+            
+			
+            
+            
+
+            
+                <div class="bl_visited_photo">
+                    <strong>Recently visited</strong>
+                    <ul class="list_photo">
+                        
+                        <li><a title="anotherjobseeker" href="anotherjobseeker"><img src="./_files/photo/38_24_s.jpg" alt="" /></a></li>
+                         
+                    </ul>
+                <div class="cl"></div>
+                </div>
+            
+			
+            
+            
+
+            
+			
+            
+            
+            
+            <div id="bl_banner_l_empty" class="bl_banner_empty"></div>
+        </div>
+    </div>
+	
+    </div>
+    <!-- /col right -->
+    <script>prepareBannerColumns();</script>
+	
+            </div>
+            <div class="cl"></div>
+        </div>
+	</div>
+	<!-- /content -->
+	</div>
+
+    
+	<!-- /wrapper -->
+
+	<!-- footer -->
+    <div class="footer">
+        <div class="footer_w">
+            <ul class="nav">
+                
+                
+                <li>
+                    
+                    <a  href="./about">About</a>
+                </li>
+                
+                <li>
+                    
+                    <span>|</span>
+                    
+                    <a  href="./contact">Contact us</a>
+                </li>
+                
+                <li>
+                    
+                    <span>|</span>
+                    
+                    <a target="_blank" href="./partner/">Affiliates</a>
+                </li>
+                
+                
+            </ul>
+            <span class="title_orig">(c) TalentTube 2020</span>
+        </div>
+        <div class="footer-ssl-seal"></div>
+	</div>
+	<!-- /footer -->
+</div>
+
+
+
+</body>
+</html>

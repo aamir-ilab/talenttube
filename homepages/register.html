@@ -1,0 +1,551 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TalentTube</title>
+    
+    <meta name="viewport" content="width=973">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="description" content="TalentTube">
+    <meta name="keywords" content="">
+    
+   
+
+  
+    <link rel="shortcut icon" href="../images/favicon_impact.ico?v=1583280658" type="image/x-icon">
+
+    <script type="text/javascript" src="../_server/jquery/jquery-1.11.2.min.js?v=4"></script>
+    <script type="text/javascript" src="../_server/jquery/jquery-ui-1.11.4.min.js?v=4"></script>
+
+    <script type="text/javascript" src="../_server/jquery/jquery.formstyler.js?v=4"></script>
+    <link rel="stylesheet" type="text/css" href="../css/jquery.formstyler.css?v=4"/>
+
+    
+    <link rel="stylesheet" type="text/css" href="../css/jquery.jscrollpane.css?v=4"/>
+    <script type="text/javascript" src="../_server/jquery/jquery.jscrollpane.js?v=4"></script>
+    <script type="text/javascript" src="../_server/jquery/jquery.mousewheel.js?v=4"></script>
+    
+
+    <script type="text/javascript" src="../_server/jquery/modernizr.js?v=4"></script>
+    <script type="text/javascript" src="../_server/lib.js?v=4"></script>
+    <script language="javascript" type="text/javascript">
+        setOptionsSite({"options":{"number_of_columns_in_language_selector":"5","message_notifications_not_show_when_3d_city":"N","forced_open_chat_with_new_message":"N","photo_approval":"N"}});
+    </script>
+
+    <script type="text/javascript" src="../js/lib.js?v=4"></script>
+    <script type="text/javascript" src="../js/script.js?v=4"></script>
+    <script type="text/javascript" src="../_server/jquery/jquery.form.js?v=4"></script>
+    
+   <link rel="stylesheet" type="text/css" href="../css/index_page.css?v=4"/>
+    
+    
+    
+    
+     <script type="text/javascript" src="../js/index.js?v=4"></script>
+    <script type="text/javascript" src="../js/login_form.js?v=4"></script>
+
+    <script language="javascript" type="text/javascript">
+        var siteLangParts = {
+            signIn : 'Sign in',
+            incorrectEmail : 'The E-mail is incorrect.',
+            send_again : 'Send Again',
+            send_password : 'Send Password',
+            link_password_send : 'The link for changing the password has been sent!'
+        };
+    </script>
+    
+    
+
+    
+
+     <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css?v=4"/>
+
+    
+
+    <script type="text/javascript" src="../_server/jquery/jquery.popup.js?v=4"></script>
+    <script type="text/javascript" src="../_server/jquery/prettyCheckable.js?v=4"></script>
+
+ 
+
+    <style type="text/css">
+        button.btn.pink{ background: #ff6d85; color: #FFFFFF; }
+        button.btn.pink:hover { background: #e7495c; }
+    </style>
+    
+
+    
+    <style type="text/css">
+        body, .footer, .content{ background-color: #FFFFFF }
+        .bl_main_info .item p, .footer, .footer .nav li, .footer .nav li a { color: #000000 }
+
+        .header, .main.above .wrapper {
+            background: #5b0079;
+        }
+
+        
+
+        
+        .header { min-height: 100vh !important; }
+        .main.above .header .cover img{ min-height: 100vh; }
+        .main.above .wrapper { margin-bottom: 0px; }
+        
+
+        .main.above .bg_shadow { background: rgba(0, 0, 0, 0.55)}
+    </style>
+    
+
+    
+
+    
+
+   
+
+    <script type="text/javascript" src="../js/device.min.js?v=4"></script>
+    <script type="text/javascript" src="../_server/jquery/jquery.cookie.js?v=4"></script>
+    <link href="../css/video-js.css?v=4" rel="stylesheet">
+    <!-- If you'd like to support IE8 -->
+    <script src="../_server/jquery/videojs-ie8.min.js?v=4"></script>
+
+    <link href="../css/videojs.css?v=4" rel="stylesheet">
+
+    
+
+    <link rel="stylesheet" type="text/css" href="../css/cookiepopup.css?v=4" />
+    <script type="text/javascript" src="../js/cookiepopup.js?v=4"></script>
+
+    <script language="javascript" type="text/javascript">
+        
+        initSmoothScroll();
+        
+        var ajax_login_status=false;
+        var siteTitle='TalentTube';
+        var siteTitleTemp='TalentTube';
+
+        var urlMain=url_main='./';
+        var urlFiles='./_files/';
+        var url_tmpl_main='./_frameworks/main/impact/';
+        var url_tmpl_images=url_tmpl_main+'images/';
+        var url_ajax='./ajax.php';
+        var dirTmplMain='.'+'./_frameworks/main/impact/';
+        var urlPageLogin='login';
+        var urlPageUpgrade='upgrade';
+        var urlPageProfile='profile_view';
+        var currentPage='join.php';
+        var activePage='join.php';
+
+        var isPlayerNative='0'*1;
+        var isPageProfile=false;
+        var isCurUserSuperPowers=''*1;
+
+        // Server
+        var requestUserId='0'*1;
+        var userAllowedFeature=[];
+
+        var user_profile_bg='';
+        var user_profile_bg_video = {};
+        var is_bg_video_all_page = 1;
+        var profile_bg_video_quality = 'default';
+
+        var profile_bg_video_play_disabled = 1;
+
+        
+        
+        setGeoPointData();
+    </script>
+    
+</head>
+<body  >
+<!-- main -->
+<div class="main above ">
+    
+    
+    <!-- wrapper -->
+    <div class="wrapper">
+        <!-- header_top  -->
+        <div class="head_top absolute">
+            <div class="bl">
+                    <div class="fl_right">
+                    
+                    <span class="link">Have an account?</span>
+                    <a id="pp_sign_in_open" class="btn_sign" href="">Sign in</a>
+                    
+                    
+                    </div>
+                <div class="cl"></div>
+            </div>
+            
+            <div class="cl"></div>
+        </div>
+        <!-- /header_top  -->
+        <!-- header_cont  -->
+        <div class="wrap_header_cont absolute">
+            <!-- header_cont_bl -->
+            <div class="bl">
+            <div class="bl_logo">
+                <img id="logo_main_page" src="../images/logo.png?v=1583280665" style="height:44px;" alt="" />>
+                <script>goToIndexForLogo();</script>
+            </div>
+    
+
+    <script type="text/javascript" src="http://182.180.54.194/talenttube/_frameworks/main/impact/js/join.js?v=6"></script>
+
+    
+    
+<script type="text/javascript" src="../_server/join.js?v=4"></script>
+
+<style>
+    select{ opacity: 0; height: 34px; width: 50px; }
+    .header{ min-height: 110vh; }
+    .header .cover{ min-height: 110vh; }
+    .wrap_header_cont{ height: 100vh; }
+    .wrap_header_cont .bl{ padding: 174px 0 0; }
+</style>
+        <div id="step-1" class="hide1">
+        <div class="slogan">Almost there! Just a little more to go.</div>
+        <div class="bl_form_registration bl_form_registration_step_1">
+                
+                <div class="part br" >
+                    <p>Sign up faster.</p>
+                    <ul class="bl_social_buttons bl_social_buttons_register">
+                    
+                        <li class="login_facebook"><a href="https://www.facebook.com/v2.2/dialog/oauth?client_id=1&state=d011f99a4fc6308a3ff3ca630888c216&response_type=code&sdk=php-sdk-5.6.2&redirect_uri=http%3A%2F%2Flocalhost%2Ftalenttube%2Fjoin_facebook.php%3Fcmd%3Dfb_login&scope=email">&nbsp;</a></li>
+                    
+                        <li class="login_google_plus"><a href="social_login.php?module=google_plus">&nbsp;</a></li>
+                    
+                        <li class="login_linkedin"><a href="social_login.php?module=linkedin">&nbsp;</a></li>
+                    
+                        <li class="login_twitter"><a href="social_login.php?module=twitter">&nbsp;</a></li>
+                    
+                        <li class="login_vk"><a href="social_login.php?module=vk">&nbsp;</a></li>
+                    
+                    </ul>
+                    <div class="line_or">
+                        <div class="line_top"></div>
+                        <div class="or">or</div>
+                        <div class="line_bottom"></div>
+                    </div>
+                </div>
+                
+
+                <div id="bl_frm_register" class="part">
+                    <div class="bl">
+                        <label>First Name</label>
+                        <form name="frm_date" action="" autocomplete="off">
+                           <div class="col-sm-12 " style="display: flex;">
+                                <input type="text" name="firstname" class="inp" placeholder="First Name"/>
+
+                                <input type="text" name="surname"  class="inp" placeholder="Sur Name" style="margin-left: 15px;" / >
+                            <!--<div id="day_check" class="icon_check to_hide"></div>-->
+                            </div> 
+                            
+                        </form>
+                        <div id="birth_error" class="error to_hide">&nbsp;</div>
+                        <div class="cl"></div>
+                    </div>
+
+                    
+
+                    <div class="bl">
+                        <label>I am from
+                        </label>
+                        <div id="css_loader_location" class="css_loader css_loader_location hidden">
+                            <div class="spinner spinnerw center">
+                                <div class="spinner-blade"></div>
+                                <div class="spinner-blade"></div>
+                                <div class="spinner-blade"></div>
+                                <div class="spinner-blade"></div>
+                                <div class="spinner-blade"></div>
+                                <div class="spinner-blade"></div>
+                                <div class="spinner-blade"></div>
+                                <div class="spinner-blade"></div>
+                                <div class="spinner-blade"></div>
+                                <div class="spinner-blade"></div>
+                                <div class="spinner-blade"></div>
+                                <div class="spinner-blade"></div>
+                            </div>
+                        </div>
+                        <div class="bl_location">
+                        <select name="country" data-search-unique-id="true" data-location="geo_states" id="country" class="location country geo" data-search="true" data-search-placeholder="Enter manually..." data-search-not-found="No matches...">
+                            <option  id="option_country_230"  value="230" selected="selected">United States</option>
+                            <option  id="option_country_229"  value="229" >United Kingdom</option>
+                            <option  id="option_country_40"  value="40" >Canada</option>
+                            <option  id="option_country_1"  value="1" >Afghanistan</option>
+                            <option  id="option_country_2"  value="2" >Aland Islands</option>
+                            <option  id="option_country_3"  value="3" >Albania</option>
+
+
+                        </select>
+                        <select name="state" id="state" data-location="geo_cities" class="location state geo" data-search="true" data-search-placeholder="Enter manually..." data-search-not-found="No matches...">
+                            <option  value="2527" >Alabama</option>
+
+<option  value="2575" >West Virginia</option>
+<option  value="2576" >Wisconsin</option>
+<option  value="2577" >Wyoming</option>
+
+                        </select>
+                        <div class="separator"></div>
+                        <select name="city" id="city" class="location city" data-search="true" data-search-placeholder="Enter manually..." data-search-not-found="No matches...">
+                            <option  value="55420" >Accord</option>
+                            <option  value="96200" >Acra</option>
+                            <option  value="55421" >Adams</option>
+                            <option  value="135165" >Adams Basin</option>
+                            <option  value="96201" >Adams Center</option>
+                            <option  value="55422" >Addison</option>
+                            <option  value="55423" >Adirondack</option>
+                            <option  value="55424" >Afton</option>
+                            <option  value="55425" >Airmont</option>
+                            <option  value="55426" >Akron</option>
+                            <option  value="55427" >Alabama</option>
+                            <option  value="55428" >Albany</option>
+                            <option  value="55429" >Albertson</option>
+                            <option  value="55430" >Albion</option>
+                            <option  value="135166" >Alcove</option>
+                            <option  value="55431" >Alden</option>
+                            <option  value="55432" >Alder Creek</option>
+                            <option  value="96202" >Alexander</option>
+                            <option  value="55433" >Alexandria Bay</option>
+                            <option  value="55434" >Alfred</option>
+                            <option  value="55435" >Alfred Station</option>
+                            <option  value="55436" >Allegany</option>
+                            <option  value="135167" >Allentown</option>
+                            <option  value="55437" >Alma</option>
+
+                            <option  value="55949" >Hoosick</option>
+                            <option  value="55950" >Hoosick Falls</option>
+                            <option  value="55951" >Hopewell Junction</option>
+
+
+                        </select>
+                        </div>
+                        <!--<div class="bl_city">
+                            <input id="city" name="city_title" class="inp city not_frm" type="text" value="" />
+                            <div id="city_check" class="icon_check to_hide"></div>
+                        </div>-->
+
+                        <div id="city_error" class="error to_hide">&nbsp;</div>
+                    <div class="cl"></div>
+                    </div>
+
+                    <div class="bl">
+                        <label>E-mail</label>
+                        <div class="bl_inp_pos">
+                            <input id="email" name="email" class="inp email placeholder" type="text" placeholder="e.g. example@site.com" value=""/>
+                            <div id="email_check" class="icon_check to_hide"></div>
+                            <div id="email_error" class="error to_hide">&nbsp;</div>
+                        </div>
+                    </div>
+
+                    <div class="bl">
+                        <label></label>
+                        <div class="bl_inp_pos">
+                            <input id="phone" name="phone" class="inp email placeholder" type="text" placeholder="Enter Phone Number" value=""/>
+                            <div id="phone_check" class="icon_check to_hide"></div>
+                            <div id="phone_error" class="error to_hide">&nbsp;</div>
+                        </div>
+                    </div>
+
+                    <span class="sign">
+                        <input id="agree" name="privacy_policy" value="1" type="checkbox"/>
+                        <label for="agree">I agree to the</label>
+                        <a href="" onclick="infoOpen('terms'); return false;">Terms</a>
+                        <label for="agree">and</label>
+                        <a href="" onclick="infoOpen('priv'); return false;">Privacy Policy</a>
+                        <span class="cl"></span>
+                    </span>
+
+                    <button id="frm_register_submit" id="" class="btn pink disabled" disabled>Next</button>
+
+                    <span id="agree_error" class="error to_hide">You need to agree to the terms</span>
+
+                </div>
+            <div class="cl"></div>
+        </div>
+        </div>
+        <div id="step-2" class="hide step-2">
+            <div class="slogan">The last step! Don’t stop now.</div>
+            <div class="bl_form_registration">
+                <div class="part center">
+                    <div class="bl">
+                        <label>Username</label>
+                        <div class="bl_inp_pos">
+                            <input id="name" class="inp username placeholder" name="join_handle" maxlength="20" type="text" placeholder="This will be public" value=""/>
+                            <div id="name_check" class="icon_check to_hide"></div>
+                            <div id="name_error" class="error to_hide">&nbsp;</div>
+                        </div>
+                    </div>
+                    <div class="bl">
+                        <label>Password</label>
+                        <div class="bl_inp_pos">
+                            <input id="password" class="inp psw placeholder" name="join_password" type="password" placeholder="Password" value=""/>
+                            <div id="password_check" class="icon_check to_hide"></div>
+                            <div id="password_error" class="error to_hide">&nbsp;</div>
+                        </div>
+                    </div>
+                    <button id="frm_register_submit_2" class="btn pink" disabled>Done!</button>
+                </div>
+            <div class="cl"></div>
+            </div>
+        </div>
+  
+   
+
+    </div>
+    <!-- header_cont_bl -->
+    </div>
+    <!-- /header_cont  -->
+    <div class="header">
+        
+        <div id="bg_cover" class="cover" style="background-image: url(../images/main_page_image/1.jpg);"></div>
+        
+        <div class="bg_shadow"></div>
+        
+        <script>
+        var ready;
+        function bgReady() {
+            var $bgCover=$('#bg_cover');
+            if(ready){
+                if(!$bgCover.is('.show'))$bgCover.addClass('to_show')
+            }else if(document.cookie.indexOf('bgImpactMain=../images/main_page_image/1.jpg')>=0) $bgCover.addClass('show');
+            document.cookie='bgImpactMain=images/main_page_image/1.jpg';
+            ready=1
+        }
+        bgReady();
+        var imgCover=new Image();
+        imgCover.onload = bgReady;
+        imgCover.src='../images/main_page_image/1.jpg';
+        </script>
+        
+
+        
+
+        
+    </div>
+
+    
+    </div>
+    <!-- /wrapper -->
+    <!-- footer -->
+    <div class="footer">
+        <div class="footer_w">
+            
+            <ul class="nav">
+                
+                <li>
+                    
+                    <a  href="./about">About</a>
+                </li>
+                
+                <li>
+                    
+                    <span>|</span>
+                    
+                    <a  href="./contact">Contact us</a>
+                </li>
+                
+                <li>
+                    
+                    <span>|</span>
+                    
+                    <a target="_blank" href="./partner/">Affiliates</a>
+                </li>
+                
+            </ul>
+            
+            <span class="title_orig">(c) TalentTube 2020</span>
+        </div>
+        <div class="footer-ssl-seal"></div>
+    </div>
+    <!-- /footer -->
+    <div style="display:none;">
+
+    
+    <div id="pp_sign_in" class="popup pp_sign">
+        <div class="head">
+            Sign in
+            <a id="pp_sign_in_close" class="icon_close" href="">
+                <span class="close_hover"></span>
+            </a>
+        </div>
+        <div class="cont">
+            <div class="bl">
+                <form id="form_login" class="form_login" method="post" autocomplete="on" action="./ajax.php">
+                    <input id="form_login_cmd" type="hidden" name="cmd" value="login" />
+                    <input type="hidden" name="ajax" class="ajax" value="1" />
+                    <input id="form_login_user" type="text" name="user" class="inp placeholder" placeholder="Your email or username" />
+                    <div class="error"></div>
+                    <input id="form_login_pass"  type="password" name="password" class="inp placeholder" placeholder="Password" />
+                    <div class="bl_remember">
+                        <input id="form_login_remember" name="remember" value="1" type="checkbox" checked="checked"/>
+                        <label for="form_login_remember">Remember me</label>
+                    </div>
+                    <button id="form_login_submit" type="submit" class="btn pink">Sign in</button>
+                </form>
+                <a id="pp_forgot_pass_open" class="link" href="">Forgot password?</a>
+                
+                <div class="line"></div>
+                <div class="or"><span>or</span></div>
+                <ul class="bl_social_buttons">
+                    
+                    <li class="login_facebook"><a href="https://www.facebook.com/v2.2/dialog/oauth?client_id=1&state=d011f99a4fc6308a3ff3ca630888c216&response_type=code&sdk=php-sdk-5.6.2&redirect_uri=http%3A%2F%2Flocalhost%2Ftalenttube%2Fjoin_facebook.php%3Fcmd%3Dfb_login&scope=email">&nbsp;</a></li>
+                    
+                    <li class="login_google_plus"><a href="social_login.php?module=google_plus">&nbsp;</a></li>
+                    
+                    <li class="login_linkedin"><a href="social_login.php?module=linkedin">&nbsp;</a></li>
+                    
+                    <li class="login_twitter"><a href="social_login.php?module=twitter">&nbsp;</a></li>
+                    
+                    <li class="login_vk"><a href="social_login.php?module=vk">&nbsp;</a></li>
+                    
+                </ul>
+                
+                
+                <!--<a class="link link_close_login" onclick="$('#pp_sign_in').close(); return false;" href="">No account? Register now!</a>-->
+            </div>
+        </div>
+    </div>
+    
+
+
+    <div id="pp_resend_password" class="popup">
+        <div class="head">
+            Forgot password?
+            <a class="icon_close pp_forgot_pass_close" href="">
+                <span class="close_hover"></span>
+            </a>
+        </div>
+        <div class="cont">
+            <div class="bl">
+                <input id="pp_resend_password_email" type="text" class="inp placeholder" placeholder="Your e-mail" />
+                <div id="pp_resend_password_error" class="error">&nbsp;</div>
+                <div class="successful">&nbsp;</div>
+                <button id="pp_resend_password_submit" class="btn turquoise" disabled>Send Password</button>
+                Or, <a class="link turquoise pp_forgot_pass_close" href="">try logging in again</a>
+            </div>
+        </div>
+    </div>
+
+    </div>
+</div>
+<!-- /main -->
+
+
+<script src="https://connect.facebook.net/en_US/all.js"></script>
+<script type="text/javascript">
+    FB.init({
+        appId: '1',
+        cookie: true,
+        status: true
+    });
+
+    var j_facebook_invite_message = 'Please join TalentTube now and let\'s be friends on it as well!';
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>

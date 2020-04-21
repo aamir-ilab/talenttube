@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html >
+<script>
+var b=/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+document.documentElement.classList.add(b?'mobile':'desktop');
+if(/Chrome/i.test(navigator.userAgent))document.documentElement.classList.add('chrome');
+</script>
+<head>
+    <title>TalentTube</title>
+    <meta name="description" content="TalentTube">
+    <meta name="keywords" content="">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi" />
+    <meta name="theme-color" content="#5b0079">
+    
+    <link rel="shortcut icon" href="../images/favicon_impact.ico?v=1583280658" type="image/x-icon">
+
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css?v=4"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css?v=4"/>
+    
+    
+    <script type="text/javascript" src="../_server/jquery/jquery-1.11.2.min.js?v=4"></script>
+    <script type="text/javascript" src="../_server/jquery/jquery-ui-1.12.1.min.js?v=4"></script>
+
+    <script type="text/javascript" src="../_server/lib.js?v=4"></script>
+    <script type="text/javascript" src="js/script.js?v=4"></script>
+
+   
+    <script type="text/javascript" src="../_server/jquery/jquery.form.js?v=4"></script>
+    <script type="text/javascript" src="../_server/jquery/jquery.popup.js?v=4"></script>
+    <script type="text/javascript" src="../_server/jquery/jquery.cookie.js?v=4"></script>
+    <link rel="stylesheet" type="text/css" href="css/cookiepopup.css?v=4" />
+    <script type="text/javascript" src="js/cookiepopup.js?v=4"></script>
+
+    
+    <script type="text/javascript" src="js/index.js?v=4"></script>
+    
+
+   
+    <script>initStyle();</script>
+
+    
+    <style id="style_color_scheme" data-cache="4" type="text/css">
+        html { background: #5b0079; }
+        html.html_member { background-color: #254c8e; }
+
+        
+    </style>
+    
+
+</head>
+
+
+<body class="body_visitor">
+    <div id="main_wrap" data-cache-version="6" data-tmpl-active="impact_mobile" data-url-page="index.php" class="main_wrap" style="height:100%">
+        <div id="main" class="main shadow_bg">
+            <script>
+                (function()
+                {
+                    var $main=$('#main'),hBg={portrait:0,landscape:0};
+                    function setBgH(orBg){
+                    if(!hBg[orBg])hBg[orBg]=Math.max($main[0].offsetHeight,$main[0].clientHeight);//$main[
+                    $('#bg_fon').css({height:hBg[orBg],width:$win[0].innerWidth})
+                    }
+                    function bgReady()
+                    {
+                        if(ready)$bg.fadeTo(1300,1);
+                        else $bg.fadeTo(0,($.cookie('bgImpactMobileMain') == '1.jpg')*1);
+                        var or=$win[0].innerWidth>$win[0].innerHeight?'landscape':'portrait';
+                        setBgH(or);
+                        $.cookie('bgImpactMobileMain','1.jpg');
+                        ready=1
+                    }
+                    var $bg=$('#bg_fon'),ready;
+                    if(!$bg[0])
+                    {
+                        $bg=$('<div id="bg_fon" class="bg_fon"></div>'+
+                        '<div id="bg_fon_shadow" class="bg_fon_shadow"></div>'+
+                        '<div id="bg_fon_full_shadow" class="bg_fon_full_shadow"></div>').prependTo($('body'));
+                        $('<img src="mobileimages/1.jpg"/>').load(bgReady).appendTo($('#bg_fon'));
+                    }
+                    $(bgReady);
+                    window.addEventListener('orientationchange', function() {
+                        setTimeout(function(){setBgH(window.orientation==0?'portrait':'landscape')},150);
+                    },false);
+                })()
+            </script>
+
+
+<!-- wrapper -->
+<div class="wrapper">
+    <div id="content" class="content">
+        <div id="wrap_content" class="wrap_cont">
+            <div class="content_logo">
+                <div data-layer-loader="true" data-not-loader="true" data-url="./index" onclick="goToIndex(this)">
+                    <img style="height:29px;" id="img_logo" src="mobileimages/logo.svg?v=1585339752" alt="" />
+                </div>
+            </div>
+            <div id="page_content" class="page_content">
+                <div class="page_content_inner page_index txt_shadow">
+                    <div class="bl_frm large_field">
+                        <form id="form_login" class="form_login frm frm_center" method="post" action="./join.php">
+                            <input type="hidden" name="cmd" value="login" />
+                            <input type="hidden" name="ajax" class="ajax" value="1" />
+                            <div class="bl">
+                                <label>Mail/name</label>
+                                <input id="form_login_user" name="user" type="text" value=""/>
+                            </div>
+                            <div class="bl">
+                                <label>Password</label>
+                                <input id="form_login_pass" name="password" type="password"/>
+                                <div id="icon_field_hint" class="icon_field_vis"></div>
+                            </div>
+                            <div class="bl remember_bl">
+                                <div class="label_checkbox fl_left custom_checkbox">
+                                    <input id="remember" name="remember" value="1" type="checkbox" checked="checked" /><label for="remember"><span></span> Remember me</label>
+                                </div>
+                                <div class="info_txt fl_right">
+                                    <a href="./forgot_password" data-cl-loader="loader_link_forgot" class="go_to_page no_color_t">Forgot password?</a>
+                                </div>
+                                <div class="cl"></div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="frm_btn">
+                        <button id="form_log_in_submit" class="btn large pink">Sign in</button>
+                        <div class="double">
+                         <span>
+                            <a href="./join" class="go_to_page btn large white_frame">Join us!</a>
+                        </span>
+                    </div>
+                    <ul class="bl_social_buttons">
+                        <li class="login_facebook"><a onclick="clIndex.goToSocialLogin($(this),'https://www.facebook.com/v2.2/dialog/oauth?client_id=1&state=3e7c7ba6d358df2d9b82a6e6dc639268&response_type=code&sdk=php-sdk-5.6.2&redirect_uri=http%3A%2F%2F182.180.54.194%2Ftalenttube%2Fm%2Fjoin_facebook.php%3Fcmd%3Dfb_login&scope=email'); return false;" href="https://www.facebook.com/v2.2/dialog/oauth?client_id=1&state=3e7c7ba6d358df2d9b82a6e6dc639268&response_type=code&sdk=php-sdk-5.6.2&redirect_uri=http%3A%2F%2F182.180.54.194%2Ftalenttube%2Fm%2Fjoin_facebook.php%3Fcmd%3Dfb_login&scope=email"><span>&nbsp;</span></a></li>
+                        <li class="login_google_plus"><a onclick="clIndex.goToSocialLogin($(this),'social_login.php?module=google_plus'); return false;" href="social_login.php?module=google_plus"><span>&nbsp;</span></a></li>
+            
+                        <li class="login_linkedin"><a onclick="clIndex.goToSocialLogin($(this),'social_login.php?module=linkedin'); return false;" href="social_login.php?module=linkedin"><span>&nbsp;</span></a></li>
+            
+                        <li class="login_twitter"><a onclick="clIndex.goToSocialLogin($(this),'social_login.php?module=twitter'); return false;" href="social_login.php?module=twitter"><span>&nbsp;</span></a></li>
+            
+                        <li class="login_vk"><a onclick="clIndex.goToSocialLogin($(this),'social_login.php?module=vk'); return false;" href="social_login.php?module=vk"><span>&nbsp;</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+    <!-- /wrapper -->
+</div>
+</div><!-- /main_wrap -->
+
+</body>
+</html>

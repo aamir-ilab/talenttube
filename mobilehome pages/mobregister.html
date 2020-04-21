@@ -1,0 +1,449 @@
+
+<!DOCTYPE html>
+<html >
+<script>
+var b=/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+document.documentElement.classList.add(b?'mobile':'desktop');
+if(/Chrome/i.test(navigator.userAgent))document.documentElement.classList.add('chrome');
+</script>
+<head>
+    <title>TalentTube</title>
+    <meta name="description" content="TalentTube">
+    <meta name="keywords" content="">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi" />
+    <meta name="theme-color" content="#5b0079">
+    
+    <link rel="shortcut icon" href="../images/favicon_impact.ico?v=1583280658" type="image/x-icon">
+
+   <!--  <style type="text/css">
+        body:after {
+            content: url('../_frameworks/mobile/impact_mobile/images/profile_info_figure_top.svg')
+                     url('../_frameworks/mobile/impact_mobile/images/profile_info_figure_bottom.svg')
+                     url('../_files/tmpl/impact_mobile_footer_figure_6f89b5.svg')
+                     url('../_frameworks/mobile/impact_mobile/images/icon_field_hint.svg') url('../_frameworks/mobile/impact_mobile/images/icon_field_vis.svg')
+                     url('../_frameworks/mobile/impact_mobile/images/logo.svg?v=1583280691');
+            display: none;
+        }
+    </style>
+ -->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css?v=4"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css?v=4"/>
+    
+    
+    <script type="text/javascript" src="../_server/jquery/jquery-1.11.2.min.js?v=4"></script>
+    <script type="text/javascript" src="../_server/jquery/jquery-ui-1.12.1.min.js?v=4"></script>
+
+    <script type="text/javascript" src="../_server/lib.js?v=4"></script>
+    <script type="text/javascript" src="js/script.js?v=4"></script>
+
+   
+    <script type="text/javascript" src="../_server/jquery/jquery.form.js?v=4"></script>
+    <script type="text/javascript" src="../_server/jquery/jquery.popup.js?v=4"></script>
+    <script type="text/javascript" src="../_server/jquery/jquery.cookie.js?v=4"></script>
+    <link rel="stylesheet" type="text/css" href="css/cookiepopup.css?v=4" />
+    <script type="text/javascript" src="js/cookiepopup.js?v=4"></script>
+
+    
+    <script type="text/javascript" src="js/index.js?v=4"></script>
+    
+
+   
+    <script>initStyle();</script>
+
+    
+    <style id="style_color_scheme" data-cache="4" type="text/css">
+        html { background: #5b0079; }
+        html.html_member { background-color: #254c8e; }
+
+        
+
+        html, body { color: #ffffff; }
+
+        
+        html, body, .info_txt a, .bl_term_txt a { color: #FFFFFF; }
+
+        .info_txt.small, .info_txt.small a { color: rgba(255,255,255,0.54); }
+        .txt_shadow a.btn, .txt_shadow label, .txt_shadow .info_txt a { text-shadow: 1px 1px 0 rgba(0,0,0,0.5); }
+        a.btn { text-shadow: -1px -1px 0 ; }
+        .bg_fon_full_shadow { background: rgba(0, 0, 0, 0.40); }
+        
+
+        .body_member, .bl_profile, .bl_profile .cont_wrap .profile_info_content { background-color: #254c8e; }
+        .header, .message_chat .message_field_chat, .bl_frm.color { background-color: #142d69; }
+        .header .bl_icon_nav .icon_nav .fa, .header .icons_info ul li .fa,
+        .cookie-popup-sub-headline a.more_link{ color: #8ba1d5 }
+        .header .bl_icon_nav .icon_status_warning, .header .icons_info ul li span.count { background-color: #f15d75; color: #ffffff; }
+        .loader_filter  .spinner .spinner-blade { background-color: #8ba1d5!important; }
+
+        .content .head, .content .head span.title .fa { background-color: #000000; color: #f15d75; }
+
+        .bl_profile .cont_wrap .title, .bl_profile .cont_wrap .bl table tr th, .bl_frm.bl_frm_settings .bl.arrow .title { color: #ffffc5; }
+        .bl_profile .fa { color: #8ccd00; }
+        .loader_pen .spinner .spinner-blade, .loader_pen_small .spinner .spinner-blade { background-color: #8ccd00!important; }
+        .bl_upgrade ul li { color: #cde0ff; }
+
+        .footer .top, .footer .bot { background-color: #6f89b5; }
+        .footer .arrow-up .fa-arrow-up { color: #6f89b5; }
+        .footer .bot .info, .footer .bot .info a { color: #a1b2d9; }
+        .footer .arrow-up { background-color: #40c7db; }
+        .footer .bl_options a, .footer .bl_options span { color: #cdd1dd; }
+        .footer .figure { background-image: url("../_files/tmpl/impact_mobile_footer_figure_6f89b5.svg"); }
+
+        .popup.main_menu { background-color: rgba(255,255,255,0.87); }
+        .main_menu .menu_squares .square .fa { color: #FFFFFF; }
+        .main_menu .menu_squares .square .name, .main_menu .menu_squares .square .count, .bl_profile .bl_profile_pic .bl_profile_bg_squares .square .count {
+            color: #FFFFFF;
+            background-color: #142d69;
+        }
+
+        .bl_tinder { background: #8ba1d5; border-color: #142d69; }
+
+        button.btn.pink, button.btn.violet.disconnect { background-color: #ff6d85; color: #FFFFFF; }
+        button.btn.pink:active, button.btn.violet.disconnect:active { background-color: #e7495c; }
+
+        button.btn:disabled { background-color: #9f9f9f!important; }
+
+        button.btn.white_frame, a.btn.white_frame { border-color: #d5dce6;
+                                                    background-color:transparent;
+                                                    color: #FFFFFF}
+        button.btn.white_frame:active, a.btn.white_frame:active { background-color: rgba(225,225,225,0.2); }
+
+
+
+        .popup .cont_pp { background-color: rgba(255,255,255,0.87); }
+        .popup .cont_pp .txt .fa { color: #6989f5; }
+        .popup .cont_pp .txt, .popup .cont_pp .txt a { color: #000000; }
+
+        button.btn.violet { background: #6d8fff; color: #FFFFFF; }
+        button.btn.violet span { color: #FFFFFF; }
+
+        .processing button.btn.violet:not([data-action='disabled']){ background: #6d8fff!important; color: #FFFFFF!important; }
+
+        button.btn.navyblue  { background: #8995b3; color: #FFFFFF; }
+        .popup.question .cont_pp .dubl_btn .btn.l { border-right-color: #FFFFFF; }
+
+        .bl_profile .bl_profile_pic .pic { background-color: #254c8e; }
+
+        button.btn, a.btn { color: #FFFFFF; }
+        button.btn .fa, a.btn .fa{color: #FFFFFF;}
+        button.btn.lblue, a.btn.lblue, a.lblue { background: #6dc9ff; }
+        a.btn.lblue, a.lblue { color: #FFFFFF; }
+        a.btn.lblue .fa,  a.lblue .fa{ color: #FFFFFF!important; }
+
+        button.btn.lblue:active, a.btn.lblue:active, a.lblue:active { background: #2faae0; }
+
+        .bl_meet .gradient { background-image: linear-gradient(to bottom, rgba(37, 76, 142, 0), #254c8e 95%); }
+
+        .bl_profile .bl_profile_pic .bl_profile_bg_squares .square { border-color: #254c8e; }
+
+        .bl_one_photo .bl_private_photo .count, .bl_one_photo .bl_private_photo .fa, .bl_one_photo .bl_private_photo .txt, .banner_footer_mobile_user .link a { color: #a1b2d9; }
+        .bl_one_photo .bl_private_photo .bl { border-color: #a1b2d9; }
+
+        .profile_btn_messages{ background: #323741!important; color:#FFFFFF!important;}
+        .profile_btn_messages:active{background: #505967!important; }
+        .profile_btn_messages .border_decor{border-bottom: 6px solid #89e214!important;}
+    </style>
+    
+
+</head>
+
+<body class="body_visitor">
+<div id="main_wrap" data-cache-version="4" data-tmpl-active="impact_mobile" data-url-page="join.php" class="main_wrap" style="height:100%">
+
+<div id="main" class="main shadow_bg">
+
+<script>
+    (function(){
+        var $main=$('#main'),hBg={portrait:0,landscape:0};
+        function setBgH(orBg){
+            if(!hBg[orBg])hBg[orBg]=Math.max($main[0].offsetHeight,$main[0].clientHeight);//$main[0].scrollHeight,
+            //$('#bg_fon_img')[orBg=='landscape'?'addClass':'removeClass']('landscape');
+            $('#bg_fon').css({height:hBg[orBg],width:$win[0].innerWidth})
+        }
+        function bgReady() {
+            if(ready)$bg.fadeTo(1300,1);
+            else $bg.fadeTo(0,($.cookie('bgImpactMobileMain') == '1.jpg')*1);
+            var or=$win[0].innerWidth>$win[0].innerHeight?'landscape':'portrait';
+            setBgH(or);
+            $.cookie('bgImpactMobileMain','1.jpg');
+            ready=1
+        }
+        var $bg=$('#bg_fon'),ready;
+        if(!$bg[0]){
+            $bg=$('<div id="bg_fon" class="bg_fon"></div>'+
+                  '<div id="bg_fon_shadow" class="bg_fon_shadow"></div>'+
+                  '<div id="bg_fon_full_shadow" class="bg_fon_full_shadow"></div>').prependTo($('body'));
+            $('<img src="mobileimages/1.jpg"/>').load(bgReady).appendTo($('#bg_fon'));
+        }
+        $(bgReady);
+        window.addEventListener('orientationchange', function() {
+            setTimeout(function(){setBgH(window.orientation==0?'portrait':'landscape')},150);
+        },false);
+    })()
+</script>
+
+
+<!-- wrapper -->
+<div class="wrapper">
+    <!-- content -->
+    <div id="content" class="content">
+        <div id="wrap_content" class="wrap_cont">
+            <div class="content_logo">
+                <div data-layer-loader="true" data-not-loader="true" data-url="./index" onclick="goToIndex(this)">
+                    <img style="height:29px;" id="img_logo" src="mobileimages/logo.svg?v=1583280691" alt="" />
+                </div>
+            </div>
+            <div id="page_content" class="page_content">
+
+
+
+<script type="text/javascript" src="../_frameworks/mobile/impact_mobile/js/join.js?v=4"></script>
+<script id="script_replace_page">
+    urlPageHistory='join';
+</script>
+<div class="page_content_inner txt_shadow">
+    <script>
+    var isIos = '0'*1,
+        isRecaptcha=false,
+        minCahrPass='4'*1,
+        maxCahrPass='30'*1,
+        minCahrName='3'*1,
+        maxCahrName='20'*1,
+        minAge='18'*1,
+        lMaxMinLengthPassword='The password needs to be between 4 and 30 symbols in length.',
+        lMaxMinLengthUsername='The username needs to be between 3 and 20 symbols in length.';
+
+    
+    var clJoin = new CJoin();
+    clJoin.initJoin();
+</script>
+<div id="form_box" class="bl_frm large_field">
+    <input type="hidden" name="cmd" class="ajax" value="register" />
+    <input type="hidden" name="ajax" class="ajax" value="1" />
+
+    <div class="bl">
+        <label>Email:</label>
+        <input id="email" name="email" class="inp register mail" type="text" value=""/>
+    </div>
+    <div class="bl">
+        <label>Password:</label>
+        <input id="password" name="join_password" class="inp register" type="password" value=""/>
+    </div>
+    <div class="bl">
+        <label>Username:</label>
+        <input id="user_name" maxlength="20" name="join_handle" maxlength="20" class="inp register" type="text" value=""/>
+    </div>
+
+    <form id="form_birthday" name="frm_date" action="" autocomplete="off" class="form_birthday">
+        <div class="bl">
+            <label>Birthday:</label>
+            <div class="field birthday">
+                <div class="item l">
+                <select name="day" id="day" class="s_birthday">
+                <option value="1"  selected="selected">1</option>
+                <option value="2" >2</option>
+                <option value="3" >3</option>
+
+                <option value="31" >31</option>
+
+                </select>
+                </div>
+                <div class="item c">
+                <select name="month" id="month" class="s_birthday">
+                <option value="1">Jan</option>
+                <option value="2">Feb</option>
+                <option value="3">Mar</option>
+                <option value="4" selected="selected">Apr</option>
+                <option value="5">May</option>
+                <option value="6">Jun</option>
+                <option value="7">Jul</option>
+                <option value="8">Aug</option>
+                <option value="9">Sep</option>
+                <option value="10">Oct</option>
+                <option value="11">Nov</option>
+                <option value="12">Dec</option>
+
+                </select>
+                </div>
+                <div class="item r">
+                <select name="year" id="year" class="s_birthday">
+                <option value="1920" >1920</option>
+                <option value="1921" >1921</option>
+                <option value="1922" >1922</option>
+                <option value="1923" >1923</option>
+                <option value="1924" >1924</option>
+                <option value="1925" >1925</option>
+                <option value="1926" >1926</option>
+                <
+                <option value="2000" >2000</option>
+                <option value="2001" >2001</option>
+                <option value="2002" >2002</option>
+
+                </select>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    
+    <div class="bl">
+        <label>I am a:</label>
+        <div class="field">
+            <select name="orientation" id="orientation">
+                <option  value="1" >Job Seeker</option>
+                <option  value="2" selected="selected">Employer</option>
+
+            </select>
+        </div>
+    </div>
+    
+
+    <div id="country_box" class="bl">
+        <label><span style="position:relative;">I am from:</span></label>
+        <div class="field">
+            <select name="country" id="country" data-location="states" class="location">
+            <option  id="option_country_230"  value="230" selected="selected">United States</option>
+
+            <option  id="option_country_226"  value="226" >Uganda</option>
+            <option  id="option_country_227"  value="227" >Ukraine</option>
+            <option  id="option_country_228"  value="228" >United Arab Emirates</option>
+            <option  id="option_country_229"  value="229" >United Kingdom</option>
+            <option  id="option_country_230"  value="230" >United States</option>
+            <option  id="option_country_231"  value="231" >United States Minor Outlying Islands</option>
+            <option  id="option_country_232"  value="232" >Uruguay</option>
+            <option  id="option_country_233"  value="233" >Uzbekistan</option>
+            <option  id="option_country_234"  value="234" >Vanuatu</option>
+            <option  id="option_country_235"  value="235" >Venezuela, Bolivarian Republic of</option>
+            <option  id="option_country_236"  value="236" >Viet Nam</option>
+            <option  id="option_country_237"  value="237" >Virgin Islands, British</option>
+            <option  id="option_country_238"  value="238" >Virgin Islands, U.S.</option>
+            <option  id="option_country_239"  value="239" >Wallis and Futuna</option>
+            <option  id="option_country_241"  value="241" >Yemen</option>
+            <option  id="option_country_242"  value="242" >Zambia</option>
+            <option  id="option_country_243"  value="243" >Zimbabwe</option>
+
+            </select>
+        </div>
+    </div>
+    <div class="bl">
+        <div class="field">
+            <select name="state" id="state" data-location="cities" class="location">
+                <option  value="2527" >Alabama</option>
+                <option  value="2528" >Alaska</option>
+                <option  value="2529" >Arizona</option>
+                <option  value="2530" >Arkansas</option>
+                <option  value="2531" >California</option>
+                <option  value="2532" >Colorado</option>
+
+                <option  value="2572" >Vermont</option>
+                <option  value="2573" >Virginia</option>
+                <option  value="2574" >Washington</option>
+                <option  value="2575" >West Virginia</option>
+                <option  value="2576" >Wisconsin</option>
+                <option  value="2577" >Wyoming</option>
+
+            </select>
+        </div>
+    </div>
+    <div class="bl">
+        <div class="field">
+            <select name="city" id="city" class="location">
+                <option  value="55420" >Accord</option>
+                <option  value="96200" >Acra</option>
+                <option  value="55421" >Adams</option>
+                <option  value="135165" >Adams Basin</option>
+                <option  value="96201" >Adams Center</option>
+                <option  value="55422" >Addison</option>
+                <option  value="55423" >Adirondack</option>
+                <option  value="55424" >Afton</option>
+                <option  value="55425" >Airmont</option>
+                <option  value="55426" >Akron</option>
+                <option  value="55427" >Alabama</option>
+                <option  value="55428" >Albany</option>
+                <option  value="55429" >Albertson</option>
+                <option  value="55430" >Albion</option>
+                <option  value="135166" >Alcove</option>
+                <option  value="55431" >Alden</option>
+                <option  value="55432" >Alder Creek</option>
+                <option  value="96202" >Alexander</option>
+                <option  value="55433" >Alexandria Bay</option>
+                <option  value="55434" >Alfred</option>
+                <option  value="55435" >Alfred Station</option>
+                <option  value="55436" >Allegany</option>
+                <option  value="135167" >Allentown</option>
+                <option  value="55437" >Alma</option>
+                <option  value="55438" >Almond</option>
+
+                <option  value="96479" >Yulan</option>
+                <option  value="56691" >Zena</option>
+
+            </select>
+        </div>
+    </div>
+
+    
+    <div class="bl">
+        <label>Enter code:</label>
+        <div class="field bl_capcha">
+            <div class="item l capcha">
+                <img title="Refresh" id="img_join_captcha" onclick="clJoin.refreshCaptcha();" src="../_server/securimage/securimage_show_custom.php?site_part_mobile=1&sid=1587413106">
+            </div>
+            <div class="item c">
+                <img title="Refresh" onclick="clJoin.refreshCaptcha();" src="mobileimages/icon_refresh.svg">
+            </div>
+            <div class="item r">
+                <input id="captcha" data-of=".bl_capcha" name="captcha" class="inp register" type="text" value=""/>
+            </div>
+        </div>
+    </div>
+    
+    
+
+    <div class="bl">
+        <div class="info_txt small prev">
+            <div class="custom_checkbox no_hide">
+                <input id="agree" type="checkbox"/>
+                <label for="agree"><span></span>
+                    I agree to the
+                    <a class="go_to_page link_info" data-cl-loader="loader_link_info" href="./terms">Terms</a> and
+                    <a class="go_to_page link_info" data-cl-loader="loader_link_info" href="./privacy_policy">Privacy Policy</a>
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <div class="bl bl_one">
+        <div class="frm_btn">
+            <button id="form_register_submit" class="btn large pink">Register</button>
+        </div>
+    </div>
+
+    <div class="bl">
+        <div class="info_txt small next">
+            <a class="go_to_page link_info link_back_login" data-cl-loader="loader_link_info" href="./index">Go to login page</a>
+        </div>
+    </div>
+</div>
+<!-- ended form div -->
+
+</div>
+
+</div>
+               
+</div>
+            
+</div>
+       
+    </div>
+    <!-- /wrapper -->
+</div>
+
+
+
+</div><!-- /main_wrap -->
+
+
+</body>
+</html>
