@@ -38,154 +38,21 @@
    <script type="text/javascript" src="../js/profile_photo.js?v=4"></script>
     <script type="text/javascript" src="../js/messages.js?v=4"></script>
     <script type="text/javascript" src="../js/im.js?v=4"></script>
- 
- 
-    
-
-    <style type="text/css">
-        button.btn.pink{ background: #ff6d85; color: #FFFFFF; }
-        button.btn.pink:hover { background: #e7495c; }
-    </style>
-    
     <style type="text/css">
 
         html{ background: #254c8e; }
         body{ background: #254c8e!important; }
-
-        
-
-        .header ul.nav li a { color: #FFFFFF }
-        .header ul.nav li a:hover, .header ul.nav li span { color: #8ad4ff }
-
-        .column_main{background-color: #f3f5f9;}
-
-          .column_main .col ul.nav li span.icon { background-image: url(../images/menu_icons/icons_nav_default.png); }
-
         #colfix_l, .colfix_r_bg, .colfix_r_bg_head { background-color: #142d69 }
-        .column_main .col ul.nav li a.menu_selected { background-color: #0a1f52; }
-
-        .column_main .col ul.nav li a {
-            color: #8ba1d5;
-            border-top-color: rgba(255,255,255,0.1);
-            border-bottom-color: rgba(0,0,0,0.4);
-        }
-        .column_main .col ul.nav li a:hover, .column_main .col ul.nav li a.inactive:hover { color: #c5d5fc }
+      
 
         .column_main .col ul.nav li a.inactive {
             color: #49619a;
         }
 
-        .column_main .col ul.nav li .count { color: #FFFFFF }
-        .column_main .col ul.nav li .count.decor { background-color: #eb6077 }
 
-        .column_main .col .link a { color: #f3f5f9 }
-        .column_main .col .link a:hover { color: #5ac9fe }
-        .column_main .col .link a.link_show_banner.action_show {color: #49619a}
-        .column_main .col .link a.link_show_banner.action_show:hover {color: #c5d5fc }
-
-        .column_main .banner_header_bl a.link_show_banner { color: #7d7d7d }
-        .column_main .banner_header_bl a.link_show_banner:hover { color: #000000 }
-
-        .main .banner_footer_bl a.link_show_banner { color: #f3f5f9 }
-        .main .banner_footer_bl a.link_show_banner:hover { color: #5ac9fe }
-
-        .column_main .col .bl_visited_photo strong, .profile_sign .txt { color: #FFFFFF }
-
-        .footer .nav li, .footer .nav li a, .column_lang_bl .column_lang a.language{ color: #FFFFFF }
-        .column_lang_bl .column_lang a.language::after{ border-bottom: 6px solid #FFFFFF; }
-        .footer .nav li a:hover, .column_lang_bl .column_lang a.language:hover { color: #5ac9fe }
-        .column_lang_bl .column_lang a.language:hover::after{ border-bottom: 6px solid #5ac9fe; }
-
-        .footer_w, .footer-ssl-seal{ color: #FFFFFF }
-
-        button.btn.pink.btn_question { background: #ff6d85; color: #FFFFFF; }
-        button.btn.pink.btn_question:hover { background: #e7495c; }
-
-        button.btn.turquoise{ background: #40c7db; color: #FFFFFF; }
-        button.btn.turquoise:hover { background: #3ab9ce; }
-
-        button.btn.lblue{ background: #6dc9ff; color: #FFFFFF; }
-        button.btn.lblue:hover { background: #2faae0; }
-
-        button.btn.turquoise.btn_question { background: #40c7db; color: #FFFFFF; }
-        button.btn.turquoise.btn_question:hover { background: #02afc3; }
-
-        button.btn.btn_submit_upgrade { background: #fabc3d; color: #FFFFFF; }
-        button.btn.btn_submit_upgrade:hover { background: #ee972f; }
-
-        button.btn.like_frame {background: transparent; border: 1px solid #d5dce6; color: #a9aeb5;}
-        button.btn.like_frame:hover {background: transparent; border: 1px solid #d5dce6;}
-        button.btn.like_frame.active{background: #ffa200; border: 1px solid #ffa200;}
-        button.btn.like_frame.active:hover{background: #ffa200; border: 1px solid #ffa200;}
-
-
-        button.btn.btn_open_im_top{background: #323741; color:#FFFFFF;}
-        button.btn.btn_open_im_top:hover{background: #505967;}
-        button.btn.btn_open_im_top .border_decor{border-bottom: 6px solid #89e214;}
-
-        button.btn.btn_open_im_bottom{background: #6dc9ff; color:#FFFFFF;}
-        button.btn.btn_open_im_bottom:hover{background: #2faae0;}
-
-         .tabs_profile .col_right .btn_browse_invisibly{background: #cbe8fb url(../images/arrow_browse_invisibly.png) 95% 50% no-repeat; color: #4c8fba;}
-        .tabs_profile .col_right .btn_browse_invisibly:hover{background: #bbe3fc url(../images/arrow_browse_invisibly.png) 95% 50% no-repeat; }
-
-        .bl_browse .bl_filter{background: #fffff0;}
-        .bl_browse .bl_filter .filter_extended{background: #f8f8d8;}
-
-        .chat .head a { background-color: #323741; color: #FFFFFF; }
-        .chat .head span.marker { background-color: #40c7db; }
-
-        .chat.active .head a, .open_im_more_bl, .open_im_more ul.open_im_more_list li:last-child::after,
-        .open_im_more ul.open_im_more_list{ background-color: #6D8FFF; color: #FFFFFF; }
-
-        .chat.open .cont .item .message .msg_check,
-        .chat.active .head a:hover, .open_im_more_bl:hover,
-        .open_im_more ul.open_im_more_list li:last-child:hover::after,
-        .open_im_more ul.open_im_more_list li:hover{ background-color: #6280FF; }
-
-        @-webkit-keyframes open_im_head_blink {
-            0% {background-color: #6D8FFF;}
-            50% {background-color: #536dd9;}
-            100% {background-color: #6D8FFF;}
-        }
-        @keyframes open_im_head_blink {
-            0% {background-color: #6D8FFF;}
-            50% {background-color: #536dd9;}
-            100% {background-color: #6D8FFF;}
-        }
-
-        .chat.open .cont .item .message .msg_check.msg_arrow:after {
-            border-left-color:#6280FF;
-        }
-
-        .chat.active .head span.marker { background-color: #40c7db; }
-
-        .chat.noactive .head a { background-color: #888888; color: #FFFFFF; }
-        .chat.noactive .head a:hover { background-color: #7A7A7A; }
-        .chat.noactive .head span.marker { background-color: #b2b2b2; }
-
-        .chat .cont .chat_cont .item { color: #6D8FFF; }
-        .chat .cont .chat_cont .item:hover { background-color: #6D8FFF; color: #FFFFFF; }
-
-        .bl_ads { color: #8ba1d5; }
-
-        .pagination a.disabled:hover, .pagination a.disabled {
-            color: #BFBFBF;
-        }
-
-        .pagination a:hover, .pagination .pagination-active {
-            color: #FFFFFF;
-        }
-
-        .pagination a:before {
-            background-color: #142d69;
-        }
-
-        .pagination a {
-            color: #2c3e50;
-        }
+       
+       
     </style>
-
  
     <script language="javascript" type="text/javascript">
         

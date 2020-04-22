@@ -19,9 +19,7 @@
 
     <script type="text/javascript" src="../_server/jquery/modernizr.js?v=4"></script>
     <script type="text/javascript" src="../_server/jquery/lib.js?v=4"></script>
-    <script language="javascript" type="text/javascript">
-        setOptionsSite({"options":{"number_of_columns_in_language_selector":"5","message_notifications_not_show_when_3d_city":"N","forced_open_chat_with_new_message":"N","photo_approval":"N"}});
-    </script>
+   
     <script type="text/javascript" src="../js/lib.js?v=4"></script>
     <script type="text/javascript" src="../js/script.js?v=4"></script>
     <script type="text/javascript" src="../_server/jquery/jquery.form.js?v=4"></script>
@@ -65,109 +63,7 @@
 
     <script type="text/javascript" src="../_server/jquery/jquery.popup.js?v=4"></script>
     <script type="text/javascript" src="../_server/jquery/prettyCheckable.js?v=4"></script>
-    <script language="javascript" type="text/javascript">
-        var siteLangParts = {
-            server_error_try_again : 'Server error, try again.',
-            user_has_been_blocked : 'The user has been blocked.',
-            user_has_been_unlocked : 'The user has been unblocked.',
-            close_window : 'Close window',
-            please_wait_for : 'Please wait for confirmation.',
-            invitation_sent : 'Invitation sent!',
-            attention : 'Attention',
-            decline : 'Decline',
-            start : 'Start',
-            invitation_declined : 'Invitation declined',
-            user_not_online : 'The user is offline now, please try later.',
-            lChromSsl_video : 'Chrome needs SSL certificate to run video chat',
-            lChromSsl_audio : 'Chrome needs SSL certificate to run audio chat',
-            lNoWebrtcSupport : 'The browser has no WebRTC support',
-            you_have_no_enough_credits : 'You have no enough credits',
-            buy_credits: 'Buy credits',
-            remove_ads : 'Remove ads',
-            show_ads : 'Show ads'
-        };
-
-        var Profile = new CProfile('12', '', 'aHR0cDovL2xvY2FsaG9zdC90YWxlbnR0dWJlL3VzZXJzX3ZpZXdlZF9tZQ==', '0');
-            Profile.init('', 'N', '', '', '', '0', '');
-            Profile.langParts = {
-                do_you_want_to_log_out : 'Do you really want to log out? ',
-                reset : 'Reset',
-                cancel : 'Cancel',
-                who_are_you_looking_for : 'Who are you looking for?',
-                your_status_here : 'Your status here...',
-                edit_basic_details : 'Edit basic details',
-                edit_personal_details : 'Edit personal info',
-                your_like_has_been_sent : 'Your like has been sent!',
-                profile_menu_user_block : 'Block user',
-                profile_menu_user_unblock : 'Unblock user',
-                report_sent : 'Your report has been sent. Thank you!',
-                report_title_user : 'Add a message for the administrator',
-                report_title_photo : 'Report this photo to administrator',
-                unlike : 'Unlike',
-                like : 'Like',
-                profile_like : 'Like',
-                profile_liked : 'Liked',
-                go : 'GO',
-                profile_settings : 'Profile settings',
-                block_visitor_user_alert : 'Block user',
-                user_unblock_alert : 'Unblock user',
-                you_havent_blocked_anyone_yet : 'You haven’t blocked anyone yet.',
-                unblock : 'Unblock',
-                the_profile_will_be_unblocked_if_you_like_it : 'The profile will be unblocked if you like it',
-                the_profile_will_be_unlocked_if_you_send_a_message : 'The profile will be unlocked if you send a message'
-            };
-
-        var upgrade = new CUpgrade('aHR0cDovL2xvY2FsaG9zdC90YWxlbnR0dWJlL3VzZXJzX3ZpZXdlZF9tZQ==');
-            upgrade.langParts = {
-                proceed : 'Proceed',
-                go : 'GO',
-                credit_balance : '{credit} credits'
-            };
-
-        var messages = new CMessages('12', '30');
-            messages.langParts = {'really_delete_all_messages' : '',
-                                  'cancel' : 'Cancel',
-                                  'delete' : 'Delete',
-                                  'btn_perform_action' : ''}
-
-        var imChats = new CIm('12', '30', '');
-            imChats.langParts = {
-                count:'',
-                count_empty:'',
-                upgrade_to_see_if_read:'<a href=\"upgrade.php\">Upgrade</a> to see if read',
-                just_now:'Just now',
-                are_you_sure_you_want_to_close:'Are you sure you want to close this chat window?'
-            };
-            imChats.setData({
-                user_name:'fast1',
-                user_age:'35',
-                user_photo:'impact_nophoto_F_m.png'
-            });
-        var audioChat = new CChat('audio');
-            audioChat.price = '0'*1;
-            audioChat.langParts = {
-                start_chat:'Start audio chat?'
-            }
-        var videoChat = new CChat('video');
-            videoChat.price = '0'*1;
-            videoChat.isDemoUser = ''*1;
-            videoChat.langParts = {
-                start_chat:'Start video chat?'
-            }
-
-        var cityStreetChat = new CCityStreetChat();
-            cityStreetChat.langParts = {
-                start_chat : '',
-            }
-
-        var isPlayerNative = '0' * 1;
-    </script>
-    
-
-    <style type="text/css">
-        button.btn.pink{ background: #ff6d85; color: #FFFFFF; }
-        button.btn.pink:hover { background: #e7495c; }
-    </style>
+   
     
     <style type="text/css">
 
@@ -181,150 +77,18 @@
 
         .column_main{background-color: #f3f5f9;}
 
-         .column_main .col ul.nav li span.icon { background-image: url(../images/menu_icons/icons_nav_default.png); }
+         /*.column_main .col ul.nav li span.icon { background-image: url(../images/menu_icons/icons_nav_default.png); }*/
 
         #colfix_l, .colfix_r_bg, .colfix_r_bg_head { background-color: #142d69 }
         .column_main .col ul.nav li a.menu_selected { background-color: #0a1f52; }
 
-        .column_main .col ul.nav li a {
-            color: #8ba1d5;
-            border-top-color: rgba(255,255,255,0.1);
-            border-bottom-color: rgba(0,0,0,0.4);
-        }
-        .column_main .col ul.nav li a:hover, .column_main .col ul.nav li a.inactive:hover { color: #c5d5fc }
-
-        .column_main .col ul.nav li a.inactive {
-            color: #49619a;
-        }
-
-        .column_main .col ul.nav li .count { color: #FFFFFF }
-        .column_main .col ul.nav li .count.decor { background-color: #eb6077 }
-
-        .column_main .col .link a { color: #f3f5f9 }
-        .column_main .col .link a:hover { color: #5ac9fe }
-        .column_main .col .link a.link_show_banner.action_show {color: #49619a}
-        .column_main .col .link a.link_show_banner.action_show:hover {color: #c5d5fc }
-
-        .column_main .banner_header_bl a.link_show_banner { color: #7d7d7d }
-        .column_main .banner_header_bl a.link_show_banner:hover { color: #000000 }
-
-        .main .banner_footer_bl a.link_show_banner { color: #f3f5f9 }
-        .main .banner_footer_bl a.link_show_banner:hover { color: #5ac9fe }
-
-        .column_main .col .bl_visited_photo strong, .profile_sign .txt { color: #FFFFFF }
-
-        .footer .nav li, .footer .nav li a, .column_lang_bl .column_lang a.language{ color: #FFFFFF }
-        .column_lang_bl .column_lang a.language::after{ border-bottom: 6px solid #FFFFFF; }
-        .footer .nav li a:hover, .column_lang_bl .column_lang a.language:hover { color: #5ac9fe }
-        .column_lang_bl .column_lang a.language:hover::after{ border-bottom: 6px solid #5ac9fe; }
-
-        .footer_w, .footer-ssl-seal{ color: #FFFFFF }
-
-        button.btn.pink.btn_question { background: #ff6d85; color: #FFFFFF; }
-        button.btn.pink.btn_question:hover { background: #e7495c; }
-
-        button.btn.turquoise{ background: #40c7db; color: #FFFFFF; }
-        button.btn.turquoise:hover { background: #3ab9ce; }
-
-        button.btn.lblue{ background: #6dc9ff; color: #FFFFFF; }
-        button.btn.lblue:hover { background: #2faae0; }
-
-        button.btn.turquoise.btn_question { background: #40c7db; color: #FFFFFF; }
-        button.btn.turquoise.btn_question:hover { background: #02afc3; }
-
-        button.btn.btn_submit_upgrade { background: #fabc3d; color: #FFFFFF; }
-        button.btn.btn_submit_upgrade:hover { background: #ee972f; }
-
-        button.btn.like_frame {background: transparent; border: 1px solid #d5dce6; color: #a9aeb5;}
-        button.btn.like_frame:hover {background: transparent; border: 1px solid #d5dce6;}
-        button.btn.like_frame.active{background: #ffa200; border: 1px solid #ffa200;}
-        button.btn.like_frame.active:hover{background: #ffa200; border: 1px solid #ffa200;}
-
-
-        button.btn.btn_open_im_top{background: #323741; color:#FFFFFF;}
-        button.btn.btn_open_im_top:hover{background: #505967;}
-        button.btn.btn_open_im_top .border_decor{border-bottom: 6px solid #89e214;}
-
-        button.btn.btn_open_im_bottom{background: #6dc9ff; color:#FFFFFF;}
-        button.btn.btn_open_im_bottom:hover{background: #2faae0;}
-
         
-         .tabs_profile .col_right .btn_browse_invisibly{background: #cbe8fb url(../images/arrow_browse_invisibly.png) 95% 50% no-repeat; color: #4c8fba;}
-        .tabs_profile .col_right .btn_browse_invisibly:hover{background: #bbe3fc url(../../images/arrow_browse_invisibly.png) 95% 50% no-repeat; }
+   
 
-        .bl_browse .bl_filter{background: #fffff0;}
-        .bl_browse .bl_filter .filter_extended{background: #f8f8d8;}
+     
 
-        .chat .head a { background-color: #323741; color: #FFFFFF; }
-        .chat .head span.marker { background-color: #40c7db; }
-
-        .chat.active .head a, .open_im_more_bl, .open_im_more ul.open_im_more_list li:last-child::after,
-        .open_im_more ul.open_im_more_list{ background-color: #6D8FFF; color: #FFFFFF; }
-
-        .chat.open .cont .item .message .msg_check,
-        .chat.active .head a:hover, .open_im_more_bl:hover,
-        .open_im_more ul.open_im_more_list li:last-child:hover::after,
-        .open_im_more ul.open_im_more_list li:hover{ background-color: #6280FF; }
-
-        @-webkit-keyframes open_im_head_blink {
-            0% {background-color: #6D8FFF;}
-            50% {background-color: #536dd9;}
-            100% {background-color: #6D8FFF;}
-        }
-        @keyframes open_im_head_blink {
-            0% {background-color: #6D8FFF;}
-            50% {background-color: #536dd9;}
-            100% {background-color: #6D8FFF;}
-        }
-
-        .chat.open .cont .item .message .msg_check.msg_arrow:after {
-            border-left-color:#6280FF;
-        }
-
-        .chat.active .head span.marker { background-color: #40c7db; }
-
-        .chat.noactive .head a { background-color: #888888; color: #FFFFFF; }
-        .chat.noactive .head a:hover { background-color: #7A7A7A; }
-        .chat.noactive .head span.marker { background-color: #b2b2b2; }
-
-        .chat .cont .chat_cont .item { color: #6D8FFF; }
-        .chat .cont .chat_cont .item:hover { background-color: #6D8FFF; color: #FFFFFF; }
-
-        .bl_ads { color: #8ba1d5; }
-
-        .pagination a.disabled:hover, .pagination a.disabled {
-            color: #BFBFBF;
-        }
-
-        .pagination a:hover, .pagination .pagination-active {
-            color: #FFFFFF;
-        }
-
-        .pagination a:before {
-            background-color: #142d69;
-        }
-
-        .pagination a {
-            color: #2c3e50;
-        }
     </style>
     
-
-    
-
-    
-
-    
-
-    <!--<style>body,.header{background-color: transparent;}</style>-->
-
-  <!--   <script type="text/javascript" src="./js.php?v=4&file=tmpl.js&set_template_runtime=impact&set_language_runtime=default"></script>
-    <script type="text/javascript" src="./js.php?v=4&get_lang=1&file=set_language.js&set_template_runtime=impact&set_language_runtime=default"></script>
-    <script type="text/javascript" src="./js.php?v=4&get_lang=1&file=set_language.js&set_template_runtime=impact&set_language_runtime=default&page=users_viewed_me.php"></script> -->
-
-
-
-    <script type="text/javascript" src="../js/device.min.js?v=4"></script>
     <script type="text/javascript" src="../_server/jquery/jquery.cookie.js?v=4"></script>
 
     <!-- <link href="css/video-js.css?v=4" rel="stylesheet"> -->
@@ -439,98 +203,7 @@
     
     
 <script type="text/javascript" src="./_server/js/chart.bundle.min.js?v=6"></script>
-<script language="javascript" type="text/javascript">
-var Photo = new CProfilePhoto('38');
-Photo.setData({guid : '26',
-               fuid : '0'*1,
-               url_files : './_files/',
-               url_main : './',
-               url_main_images : './_frameworks/main/impact/images/',
-               url_ajax : './ajax.php',
-               url_profile : 'profile_view',
-               photoWidthMain : ''*1,
-               uploadLimitPhotoCount : ''*1,
-               isUploadPhotoToSeePhotos : '0'*1,
-               maxFileSize : ''*1,
-               maxVideoSize : ''*1,
-               notLockedUser : '1'*1,
-               photoRatingEnabled : '1'*1,
-               autoPlayVideo : 'autoplay',
-               greetingVideoId : '0'*1,
-               gender : 'F',
-});
-
-
-Photo.counter.public = '1';
-
-
-Photo.langParts = {
-    'counter' : "(<span>{number}</span>)",
-    'file_upload_failed' : "File upload failed",
-    'uploaded' : "Uploaded",
-    'make_private' : "Make private",
-    'make_public' : "Make public",
-    'delete_photo' : "Delete photo",
-    'maxNumberOfFiles' : "Maximum number of files exceeded",
-    'acceptFileTypes' : "Filetype not allowed",
-    'maxFileSize' : "",
-    'maxVideoSize' : "",
-    'minFileSize' : "File is too small",
-    'addCaption' : "Click to add caption",
-    'addTitle' : "Click to add title",
-    'save' : "Save",
-    'cancel' : "Cancel",
-    'saving' : "Saving...",
-    'uploadCounter' : '{count} photos •',
-    'uploadCounterVideo' : '{count} videos •',
-    'position_photo' : '({offset}/{num})',
-    'load_more_comments' : 'Load more comments (<span>{count}</span>)',
-    'position_photo' : '({offset}/{num})',
-    'load_more_comments' : 'Load more comments (<span>{count}</span>)',
-    'photo_caption' : 'Click here to add a photo title...',
-    'video_caption' : 'Click here to add a video title...',
-    'set_default_photo' : 'This photo has been set as your profile picture.',
-    'uploaded_several_photos' : 'You have already uploaded photos. Cancel and delete those photos?',
-    'uploaded_several_videos' : 'You have already uploaded videos. Cancel and delete those videos?',
-    'being_checked_by_moderators' : 'Being checked by moderators',
-    'access_requested_please_wait' : 'Access requested, please wait.',
-    'marked_photos_private' : 'The user has marked {count} of her photos as private. You need his permission to view them:',
-    'marked_photos_private_m' : 'The user has marked {count} of his photos as private. You need his permission to view them:',
-    'marked_photos_private_f' : 'The user has marked {count} of her photos as private. You need his permission to view them:',
-    'next_photo' : 'Next photo',
-    'access_been_requested' : 'Access has been requested',
-    'photos_will_not_be_published' : 'If you go away from this page now your photos and videos will not be published. Reload the page?',
-    'not_see_this_gallery' : 'Currently you can not view this gallery.',
-    'can_only_be_public' : 'A profile picture can only be public.',
-    'you_can_not_delete_spotlight_photo' : 'You can not delete a Spotlight photo!',
-    'server_error_try_again' : 'Server error, try again.',
-    'upload_more_than_limit' : '',
-    'upgrade' : 'Upgrade',
-    'please_upload_photo_to_see_photos' : 'Please upload a public profile photo to see photos!',
-    'delete_photo' : 'Delete photo',
-    'delete_video' : 'Delete video',
-    'next_video' : 'Next video',
-    'prev_video' : 'Previous video',
-    'prev_photo' : 'Previous photo',
-    'error_license_title' : 'License not found!',
-    'error_license_signature' : 'Please contact support to correct this issue',
-    'set_background_video' : '',
-    'set_greeting_video' : 'This video has been set as your video greeting.',
-    'confirm_delete_photo' : 'Delete photo?'
-};
-$(function(){
-    Photo.init();
-})
-</script>
-<script>
-var isSuperPowers = ''*1;
-var isFreeSite = ''*1;
-var isPageProfile = true;
-var urlSearchResults = 'search_results.php';
-$(function(){
-    Photo.init(true);
-})
-</script>
+<!--  -->
 <!-- col_center -->
 <div data-uid="38" data-gender="F" data-fuid="0" class="col_center col_encounters to_hide">
 <script>
@@ -551,9 +224,7 @@ updateCountersLikes(checkDataAjax(''));
             <div id="photo_pic_main" class="pic">
                 <div class="profile_pic_one">
                     <img onclick="Photo.openGalleryId('24');" data-offset-id="24"  class="photo show_photo_gallery" onload="Profile.onLoadMainPhoto($(this));"  oncontextmenu="return false;" data-main-photo="24" id="pic_main_img" src="./_files/photo/38_24_b.jpg" title="" />
-                    <script>
-                        Photo.setPhotoInfo('24', 'public', {"photo_id":"24","user_id":"38","description":"","private":"N","is_friend":0,"default":"Y","default_group":"N","group_id":"0","visible":"Y","reports":"","version":"0","report_user":"0","src_b":"photo\/38_24_b.jpg","src_m":"photo\/38_24_m.jpg","src_r":"photo\/38_24_r.jpg","src_s":"photo\/38_24_s.jpg","time_ago":"10 days ago","date":"April 7, 2020","like":"0","dislike":"0","my_like":"","votes":"0","rating":"0","average":"0","my_rating":0,"visible_rating":0,"offset":0,"next":0,"prev":0,"next_id":"24","prev_id":"24","next_title":"","prev_title":"","is_video":0,"hide_header":0});
-                    </script>
+                   <!--  -->
                 </div>
             </div>
             <div class="info">
@@ -566,7 +237,7 @@ updateCountersLikes(checkDataAjax(''));
         <div class="chart_statistics_canvas">
             <canvas id="physics38" width="146" height="146"></canvas>
         </div>
-        <script>$(function(){Profile.renderChart('physics38','100','1')});</script>
+        <!-- <script>$(function(){Profile.renderChart('physics38','100','1')});</script> -->
         <div class="count"><div class="bl">100<span>%</span></div></div>
     </div>
     <div class="name_statistics name_statistics_profile">
@@ -580,7 +251,7 @@ updateCountersLikes(checkDataAjax(''));
             <iframe class="chartjs-hidden-iframe" tabindex="-1" style="width: 100%; display: block; border: 0px; height: 0px; margin: 0px; position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px;"></iframe>
            
         </div>
-        <script>$(function(){Profile.renderChart('intellect38','100','2')});</script>
+        <!-- <script>$(function(){Profile.renderChart('intellect38','100','2')});</script> -->
         <div class="count"><div class="bl">100<span>%</span></div></div>
     </div>
     <div class="name_statistics name_statistics_profile">
@@ -593,7 +264,7 @@ updateCountersLikes(checkDataAjax(''));
         <div class="chart_statistics_canvas">
             <canvas id="hobbies38" width="146" height="146"></canvas>
         </div>
-        <script>$(function(){Profile.renderChart('hobbies38','70','3')});</script>
+        <!-- <script>$(function(){Profile.renderChart('hobbies38','70','3')});</script> -->
         <div class="count"><div class="bl">70<span>%</span></div></div>
     </div>
     <div class="name_statistics name_statistics_profile">
@@ -620,10 +291,10 @@ updateCountersLikes(checkDataAjax(''));
         </div>
         <div class="choose_btn">
             <div class="bl l">
-                <button onclick="Profile.sendLikeEncounters('38','N',$(this));" class="btn pink large"><img width="21" height="24" alt="" src="images/icon_cancel.png"></button>
+                <button onclick="Profile.sendLikeEncounters('38','N',$(this));" class="btn pink large"><img width="21" height="24" alt="" src="../images/icon_cancel.png"></button>
             </div>
             <div class="bl r">
-                <button onclick="Profile.sendLikeEncounters('38','Y',$(this));" class="btn lgreen large"><img width="24" height="22" alt="" src="images/icon_star_big.png"></button>
+                <button onclick="Profile.sendLikeEncounters('38','Y',$(this));" class="btn lgreen large"><img width="24" height="22" alt="" src="../images/icon_star_big.png"></button>
             </div>
             <div class="cl"></div>
         </div>
