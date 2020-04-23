@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -24,19 +25,13 @@
     <script type="text/javascript" src="../js/script.js?v=4"></script>
     <script type="text/javascript" src="../_server/jquery/jquery.form.js?v=4"></script>
 
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css?v=4"/>
 
     
     <link rel="stylesheet" type="text/css" href="../css/tinyscrollbar.css?v=4"/>
     <link rel="stylesheet" type="text/css" href="../css/style.css?v=4"/>
     
-    <script type="text/javascript" src="../js/profile.js?v=4"></script>
-    <script type="text/javascript" src="../js/upgrade.js?v=4"></script>
 
-
-   <script type="text/javascript" src="../js/profile_photo.js?v=4"></script>
-    <script type="text/javascript" src="../js/messages.js?v=4"></script>
-    <script type="text/javascript" src="../js/im.js?v=4"></script>
- 
  
     
 
@@ -49,16 +44,30 @@
 
         html{ background: #254c8e; }
         body{ background: #254c8e!important; }
+
+        
+
+        .header ul.nav li a { color: #FFFFFF }
+        .header ul.nav li a:hover, .header ul.nav li span { color: #8ad4ff }
+
+        .column_main{background-color: #f3f5f9;}
+
+          .column_main .col ul.nav li span.icon { background-image: url(../images/menu_icons/icons_nav_default.png); }
+
         #colfix_l, .colfix_r_bg, .colfix_r_bg_head { background-color: #142d69 }
-      
+        .column_main .col ul.nav li a.menu_selected { background-color: #0a1f52; }
 
-        .column_main .col ul.nav li a.inactive {
-            color: #49619a;
+        .column_main .col ul.nav li a {
+            color: #8ba1d5;
+            border-top-color: rgba(255,255,255,0.1);
+            border-bottom-color: rgba(0,0,0,0.4);
         }
+        
 
+        
 
        
-       
+
     </style>
 
  
@@ -130,12 +139,27 @@
                 <li><a href="" onclick="Profile.showSettingsEditor(); return false;">Settings</a></li>
                 
                 
-                <li><a href="./upgrade">Upgrade</a></li>
                 
+                <li class="selected"><span>Upgrade</span></li>
                 
                 
                 <li><a onclick="Profile.confirmLogout(); return false;" href="">Sign out</a></li>
-             </ul>
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+            </ul>
         </div>
 	</div>
 	<!-- /header -->
@@ -149,37 +173,133 @@
 
     
     
-<script type="text/javascript" src="../_server/js/chart.bundle.min.js?v=6"></script>
-
-
 <div class="col_center">
-    <div class="head icon_head_blocked_users">Blocked Users</div>
-    <div class="cont">
-        
-        <div id="loader_base_page" class="css_loader loader_base_page hidden">
-            <div class="spinner center">
-                <div class="spinner-blade"></div>
-                <div class="spinner-blade"></div>
-                <div class="spinner-blade"></div>
-                <div class="spinner-blade"></div>
-                <div class="spinner-blade"></div>
-                <div class="spinner-blade"></div>
-                <div class="spinner-blade"></div>
-                <div class="spinner-blade"></div>
-                <div class="spinner-blade"></div>
-                <div class="spinner-blade"></div>
-                <div class="spinner-blade"></div>
-                <div class="spinner-blade"></div>
+    <div class="head">Upgrade your account and get <strong class="pink">6 super benefits!</strong></div>
+    <div class="cont bl_upgrade">
+        <!-- upgrade_info -->
+        <div class="upgrade_info">
+			
+            <div class="item icon_upgrade_city">
+				<div class="bl">
+                <strong>3DCity - a wonderful live experience</strong>
+                Chat with your friends and meet new people in a real 3D environment!
+				</div>
+            </div>
+            
+            
+            <div class="item icon_upgrade_search_options">
+                <div class="bl">
+                    <strong>Advanced match search options</strong>
+                    Search by attractiveness, body type, personality, and more! Now you can even search matches by how they’ve publicly answered their questions.
+                </div>
+            </div>
+            
+            
+            <div class="item icon_upgrade_who_likes_you">
+                <div class="bl">
+                    <strong>See who likes you</strong>
+                    Get the full list of people who like you. We’ll also point them out on the Visitors page.
+                </div>
+            </div>
+            
+            
+            <div class="item icon_upgrade_profiles_invisibly">
+                <div class="bl">
+                    <strong>Browse profiles invisibly</strong>
+                    No one will know if you’ve visited their profile, unless you want them to.
+                </div>
+            </div>
+            
+            
+            <div class="item icon_upgrade_message">
+                <div class="bl">
+                    <strong>Message read receipts</strong>
+                    Sometimes it’s nice to know that your message was seen. If you’re upgraded, we’ll let you know.
+                </div>
+            </div>
+            
+            
+            <div class="item icon_upgrade_kill_ads">
+                <div class="bl">
+                    <strong>Kill the ads</strong>
+                    This means faster page loads, fewer distractions, and less brainwashing.
+                </div>
+            </div>
+            
+
+			
+            
+
+        </div>
+        <!-- upgrade_info -->
+
+        <!-- upgrade_package -->
+        <div class="upgrade_package ">
+            <div class="items">
+            
+            <label class="item selected" for="rb_0">
+                <div class="bl">
+                    <div class="rb"><input onchange="upgrade.selectedPaymentPlan('7', '1 week package', 'Total: $3.00');" class="niceRadio upgrade_radio_styled" id="rb_0" name="rb" checked type="radio" /></div>
+                    <ul class="price">
+                        <li>1 week package</li>
+                        <li class="old">$7.00 old price</li>
+                        <li class="new">$3.00 new price</li>
+                    </ul>
+                </div>
+            </label>
+            
+            <label class="item " for="rb_1">
+                <div class="bl">
+                    <div class="rb"><input onchange="upgrade.selectedPaymentPlan('8', '1 month package', 'Total: $10.00');" class="niceRadio upgrade_radio_styled" id="rb_1" name="rb"  type="radio" /></div>
+                    <ul class="price">
+                        <li>1 month package</li>
+                        <li class="old">$15.00 old price</li>
+                        <li class="new">$10.00 new price</li>
+                    </ul>
+                </div>
+            </label>
+            
+            <label class="item " for="rb_2">
+                <div class="bl">
+                    <div class="rb"><input onchange="upgrade.selectedPaymentPlan('9', '3 months package', 'Total: $20.00');" class="niceRadio upgrade_radio_styled" id="rb_2" name="rb"  type="radio" /></div>
+                    <ul class="price">
+                        <li>3 months package</li>
+                        <li class="old">$25.00 old price</li>
+                        <li class="new">$20.00 new price</li>
+                    </ul>
+                </div>
+            </label>
+            
+            <label class="item " for="rb_3">
+                <div class="bl">
+                    <div class="rb"><input onchange="upgrade.selectedPaymentPlan('10', '6 months package', 'Total: $30.00');" class="niceRadio upgrade_radio_styled" id="rb_3" name="rb"  type="radio" /></div>
+                    <ul class="price">
+                        <li>6 months package</li>
+                        <li class="old">$35.00 old price</li>
+                        <li class="new">$30.00 new price</li>
+                    </ul>
+                </div>
+            </label>
+            
+            <label class="item " for="rb_4">
+                <div class="bl">
+                    <div class="rb"><input onchange="upgrade.selectedPaymentPlan('11', '12 months package', 'Total: $50.00');" class="niceRadio upgrade_radio_styled" id="rb_4" name="rb"  type="radio" /></div>
+                    <ul class="price">
+                        <li>12 months package</li>
+                        <li class="old">$55.00 old price</li>
+                        <li class="new">$50.00 new price</li>
+                    </ul>
+                </div>
+            </label>
+            
+            <button  onclick="upgrade.showPopupPaymentSystem(); return false;" class="btn large yellow btn_submit_upgrade">Upgrade</button>
             </div>
         </div>
-        
-        
-        <div class="cl"></div>
+        <!-- /upgrade_package -->
+    <div class="cl"></div>
     </div>
 </div>
 
-
-<!-- col left -->
 	
 	<div id="colfix_l_bl" class="col left" >
         <div class="bl_logo">
@@ -194,14 +314,14 @@
             <ul class="nav">
             
             <li>
-                <a id="narrow_menu_link_26" href="browser.html" class="column_narrow_search_results  ">
+                <a id="narrow_menu_link_26" href="./search_results" class="column_narrow_search_results  ">
                     <span class="icon"></span>Browse matches
                     
                 </a>
             </li>
             
             <li>
-                <a id="narrow_menu_link_27" href="messages.html" class="column_narrow_messages  ">
+                <a id="narrow_menu_link_27" href="./messages" class="column_narrow_messages  ">
                     <span class="icon"></span>Messages
                     
                     <span id="narrow_messages" class="count "></span>
@@ -217,7 +337,7 @@
             </li>
             
             <li>
-                <a id="narrow_menu_link_35" href="chatroom.html" class="column_narrow_general_chat  ">
+                <a id="narrow_menu_link_35" href="./general_chat" class="column_narrow_general_chat  ">
                     <span class="icon"></span>Chat rooms
                     
                     <span id="narrow_general_chat_count" class="count "></span>
@@ -226,7 +346,7 @@
             </li>
             
             <li>
-                <a id="narrow_menu_link_20" href="profile-vister.html" class="column_narrow_profile_visitors  ">
+                <a id="narrow_menu_link_20" href="./users_viewed_me" class="column_narrow_profile_visitors  ">
                     <span class="icon"></span>Profile visitors
                     
                     <span id="narrow_visitors_count" class="count ">4</span>
@@ -244,7 +364,7 @@
             </li>
             
             <li>
-                <a id="" href="interest-parties.html" class="column_narrow_who_likes_you  ">
+                <a id="narrow_menu_link_29" href="./who_likes_you" class="column_narrow_who_likes_you  ">
                     <span class="icon"></span>Interested Parties
                     
                     <span id="narrow_who_likes_you_count" class="count "></span>
@@ -260,7 +380,7 @@
             </li>
             
             <li>
-                <a id="narrow_menu_link_30" href="myinterest.html" class="column_narrow_whom_you_like  ">
+                <a id="narrow_menu_link_30" href="./whom_you_like" class="column_narrow_whom_you_like  ">
                     <span class="icon"></span>My Interest
                     
                     <span id="narrow_whom_you_like_count" class="count "></span>
@@ -269,7 +389,7 @@
             </li>
             
             <li>
-                <a id="narrow_menu_link_32" href="private-resume.html" class="column_narrow_can_see_your_private_photos  ">
+                <a id="narrow_menu_link_32" href="./private_photo_access" class="column_narrow_can_see_your_private_photos  ">
                     <span class="icon"></span>Private Resume access
                     
                     <span id="narrow_private_photo_count" class="count "></span>
@@ -285,7 +405,7 @@
             </li>
             
             <li>
-                <a id="user_block_list" href="block.html" class="column_narrow_blocked menu_selected inactive">
+                <a id="user_block_list" href="./user_block_list" class="column_narrow_blocked  inactive">
                     <span class="icon"></span>Blocked
                     
                     <span id="narrow_blocked_count" class="count "></span>
@@ -294,12 +414,11 @@
             </li>
             
             </ul>
-            
-            
             <div id="bl_banner_l_empty" class="bl_banner_empty"></div>
         </div>
     </div>
 	
+   
     </div>
     <!-- /col right -->
     <script>prepareBannerColumns();</script>
@@ -347,6 +466,8 @@
 	</div>
 	<!-- /footer -->
 </div>
+
+
 
 
 

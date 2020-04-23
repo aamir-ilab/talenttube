@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/jquery.formstyler.css">
+	<script type="text/javascript" src="../js/script.js"></script>
+	<script type="text/javascript" src="../_server/jquery/jquery-1.11.2.min.js?v=4"></script>
+    <script type="text/javascript" src="../_server/jquery/jquery-ui-1.11.4.min.js?v=4"></script>
+    <link rel="stylesheet" type="text/css" href="../css/selectbox.css">
+
+    <script type="text/javascript" src="../_server/jquery/jquery.formstyler.js?v=4"></script>
+    <link rel="stylesheet" type="text/css" href="../css/jquery.formstyler.css?v=4"/>
+    <script type="text/javascript" src="../js/settings.js"></script>
+
+    <script type="text/javascript" src="../_server/jquery/modernizr.js?v=4"></script>
+    <script type="text/javascript" src="../_server/jquery/lib.js?v=4"></script>
+    
+    <script type="text/javascript" src="../js/lib.js?v=4"></script>
+    <script type="text/javascript" src="../js/script.js?v=4"></script>
+    <script type="text/javascript" src="../_server/jquery/jquery.form.js?v=4"></script>
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css?v=4"/>
+    <script language="javascript" type="text/javascript">
+        
+        initSmoothScroll();
+        
+        var ajax_login_status=true;
+        var siteTitle='TalentTube';
+        var siteTitleTemp='TalentTube';
+
+        var urlMain=url_main='./';
+        var urlFiles='./_files/';
+        var url_tmpl_main='./_frameworks/main/impact/';
+        var url_tmpl_images=url_tmpl_main+'images/';
+        var url_ajax='./ajax.php';
+        var dirTmplMain='.'+'./_frameworks/main/impact/';
+        var urlPageLogin='login';
+        var urlPageUpgrade='upgrade';
+        var urlPageProfile='profile_view';
+        var currentPage='messages.php';
+        var activePage='messages.php';
+
+        var isPlayerNative='0'*1;
+        var isPageProfile=false;
+        var isCurUserSuperPowers=''*1;
+
+        // Server
+        var requestUserId='0'*1;
+        var userAllowedFeature={"3d_city":0,"encounters":0,"invisible_mode":0,"extended_search":0,"audiochat":1,"videochat":1,"message_read_receipts":0,"kill_the_ads":0,"site_access_paying":0,"min_number_upload_photos":""};
+
+        var user_profile_bg='';
+        var user_profile_bg_video = {};
+        var is_bg_video_all_page = 1;
+        var profile_bg_video_quality = 'default';
+
+        var profile_bg_video_play_disabled = 0;
+
+        
+        
+        setGeoPointData({"country":"United States","city":"New York"});
+    </script>
+    <style type="text/css">
+    	.tb_frm td .jq-radio{
+    		margin-left: 10px;
+    	}
+    </style>
+    
+</head>
+<body>
+	<center>
+		<div id="pp_profile_settings_editor" class="pp_edit_info pp_cont" style="z-index: 1001; margin: 100px 3px;">
+			<div class="frame">
+
+            <a class="icon_close" href="#close">
+                <span class="close_hover"></span>
+            </a>
+            <div class="head">Profile settings</div>
+            <div class="cont">
+            	<div class="cont">
+            		<div class="bl_frm">
+            			<table class="tb_frm">
+            				<tr>
+            					<th><label class="name">Interface language</label></th>
+            					<td><div class="field">
+            						<div class="jq-selectbox__select" style="position: relative">
+            							<div class="jq-selectbox__select-text">English</div>
+            							<div class="jq-selectbox__trigger">
+            								<div class="jq-selectbox__trigger-arrow"></div>
+            							</div>
+            						</div>
+            					</div>
+            				</td>
+            			</tr>
+            			<tr>
+            				<th><label class="name">Timezone</label></th>
+            				<td><div class="field">
+            					<div class="jq-selectbox__select" style="position: relative">
+            						<div class="jq-selectbox__select-text">Choose a city in the same timezone as you</div>
+            						<div class="jq-selectbox__trigger">
+            							<div class="jq-selectbox__trigger-arrow">
+            								
+            							</div>
+            						</div>
+            					</div>
+            				</div>
+            			</td>
+            		</tr>
+            		<tr>
+            		 <td>
+            		 	<div class="field"></div>
+            		 </td>
+            		</table>
+                </div>
+            </div>
+        </div>
+        <div class="foot">
+        	<div class="fl_right bl_btn to_show" style="transition-delay: 0.7s;">
+        		<button id="btn_profile_delete" class="btn small turquoise save_settings">Save</button>
+           </div>
+           <div class="cl"></div>
+       </div>
+       <div class="bl_frm">
+       	<div class="head head_title">Notification settings</div>
+       	<table class="tb_frm">
+       		<tbody>
+       			<tr>
+       				<th class="th_label_vt"><label class="name">New messages</label></th>
+       				<td><div class="field">
+       					<div id="radio_set_notif_new_msg_1-styler" class="jq-radio rb styler_settings checked" unselectable="on" style="user-select: none; display: inline-block; position: relative;">
+       						<input class="label_radio" value="1" name="set_notif_new_msg" id="radio_set_notif_new_msg_1" type="radio" checked="" style="position: absolute;  opacity: 0; margin: 0px; padding: 0px;">
+       						<div class="jq-radio__div"></div>
+       					</div>
+       					<label for="radio_set_notif_new_msg_1" class="label_radio">On</label>
+       					<div id="radio_set_notif_new_msg_2-styler" class="jq-radio rb styler_settings" unselectable="on" style="user-select: none; display: inline-block; position: relative;">
+       						<input class="rb styler_settings" value="2" name="set_notif_new_msg" id="radio_set_notif_new_msg_2" type="radio" style="position: absolute; z-index: -1; opacity: 0; margin: 0px; padding: 0px;">
+       						<div class="jq-radio__div"></div>
+       					</div>
+       					<label for="radio_set_notif_new_msg_2" class="label_radio">Off</label>
+       				</div>
+       			</td>
+       		</tr>
+       		<tr>
+       			<th class="th_label_vt"><label class="name">New comments</label></th>
+       			<td><div class="field">
+       				<div id="radio_set_notif_new_comments_1-styler" class="jq-radio rb styler_settings checked" unselectable="on" style="user-select: none; display: inline-block; position: relative;">
+       					<input class="rb styler_settings" value="1" name="set_notif_new_comments" id="radio_set_notif_new_comments_1" type="radio" checked="" style="position: absolute; z-index: -1; opacity: 0; margin: 0px; padding: 0px;">
+       					<div class="jq-radio__div"></div>
+       				</div>
+       				<label for="radio_set_notif_new_comments_1" class="label_radio">On</label>
+       				<div id="radio_set_notif_new_comments_2-styler" class="jq-radio rb styler_settings" unselectable="on" style="user-select: none; display: inline-block; position: relative;">
+       					<input class="rb styler_settings" value="2" name="set_notif_new_comments" id="radio_set_notif_new_comments_2" type="radio" style="position: absolute; z-index: -1; opacity: 0; margin: 0px; padding: 0px;">
+       					<div class="jq-radio__div"></div>
+       				</div>
+       				<label for="radio_set_notif_new_comments_2" class="label_radio">Off</label>
+       			</div>
+       		</td>
+       	</tr>
+       	<tr>
+       		<th class="th_label_vt"><label class="name">Profile visitors</label></th>
+       		<td>
+       			<div class="field">
+       				<div id="radio_set_notif_profile_visitors_1-styler" class="jq-radio rb styler_settings checked" unselectable="on" style="user-select: none; display: inline-block; position: relative;">
+       					<input class="rb styler_settings" value="1" name="set_notif_profile_visitors" id="radio_set_notif_profile_visitors_1" type="radio" checked="" style="position: absolute; z-index: -1; opacity: 0; margin: 0px; padding: 0px;">
+       					<div class="jq-radio__div"></div>
+       				</div>
+       				<label for="radio_set_notif_profile_visitors_1" class="label_radio">On</label>
+       				<div id="radio_set_notif_profile_visitors_2-styler" class="jq-radio rb styler_settings" unselectable="on" style="user-select: none; display: inline-block; position: relative;">
+       					<input class="rb styler_settings" value="2" name="set_notif_profile_visitors" id="radio_set_notif_profile_visitors_2" type="radio" style="position: absolute; z-index: -1; opacity: 0; margin: 0px; padding: 0px;">
+       					<div class="jq-radio__div"></div>
+       				</div>
+       				<label for="radio_set_notif_profile_visitors_2" class="label_radio">Off</label>
+       			</div>
+       		</td>
+       	</tr>
+       	<tr>
+       		<th class="th_label_vt"><label class="name">Want to meet you</label></th>
+       		<td>
+       			<div class="field">
+       				<div id="radio_set_notif_want_to_meet_you_1-styler" class="jq-radio rb styler_settings checked" unselectable="on" style="user-select: none; display: inline-block; position: relative;">
+       					<input class="rb styler_settings" value="1" name="set_notif_want_to_meet_you" id="radio_set_notif_want_to_meet_you_1" type="radio" checked="" style="position: absolute; z-index: -1; opacity: 0; margin: 0px; padding: 0px;">
+       					<div class="jq-radio__div"></div>
+       				</div>
+       				<label for="radio_set_notif_want_to_meet_you_1" class="label_radio">On</label>
+       				<div id="radio_set_notif_want_to_meet_you_2-styler" class="jq-radio rb styler_settings" unselectable="on" style="user-select: none; display: inline-block; position: relative;">
+       					<input class="rb styler_settings" value="2" name="set_notif_want_to_meet_you" id="radio_set_notif_want_to_meet_you_2" type="radio" style="position: absolute; z-index: -1; opacity: 0; margin: 0px; padding: 0px;">
+       					<div class="jq-radio__div"></div>
+       				</div>
+       				<label for="radio_set_notif_want_to_meet_you_2" class="label_radio">Off</label>
+       			</div>
+       		</td>
+       	</tr>
+       	<tr>
+       		<th class="th_label_vt"><label class="name">Mutual attractions</label></th>
+       		<td>
+       			<div class="field">
+       				<div id="radio_set_notif_mutual_attraction_1-styler" class="jq-radio rb styler_settings checked" unselectable="on" style="user-select: none; display: inline-block; position: relative;">
+       					<input class="rb styler_settings" value="1" name="set_notif_mutual_attraction" id="radio_set_notif_mutual_attraction_1" type="radio" checked="" style="position: absolute; z-index: -1; opacity: 0; margin: 0px; padding: 0px;">
+       					<div class="jq-radio__div"></div>
+       				</div>
+       				<label for="radio_set_notif_mutual_attraction_1" class="label_radio">On</label>
+       				<div id="radio_set_notif_mutual_attraction_2-styler" class="jq-radio rb styler_settings" unselectable="on" style="user-select: none; display: inline-block; position: relative;">
+       					<input class="rb styler_settings" value="2" name="set_notif_mutual_attraction" id="radio_set_notif_mutual_attraction_2" type="radio" style="position: absolute; z-index: -1; opacity: 0; margin: 0px; padding: 0px;">
+       					<div class="jq-radio__div"></div>
+       				</div>
+       				<label for="radio_set_notif_mutual_attraction_2" class="label_radio">Off</label>
+       			</div>
+       		</td>
+       	</tr>
+       	<tr>
+       		<th class="th_label_vt">
+       			<label class="name">Who voted on your photos</label></th>
+       			<td>
+       				<div class="field">
+       					<div id="radio_set_notif_voted_photos_1-styler" class="jq-radio rb styler_settings checked" unselectable="on" style="user-select: none; display: inline-block; position: relative;">
+       						<input class="rb styler_settings" value="1" name="set_notif_voted_photos" id="radio_set_notif_voted_photos_1" type="radio" checked="" style="position: absolute; z-index: -1; opacity: 0; margin: 0px; padding: 0px;"><div class="jq-radio__div">
+       							
+       						</div>
+       					</div>
+       					<label for="radio_set_notif_voted_photos_1" class="label_radio">On</label>
+       					<div id="radio_set_notif_voted_photos_2-styler" class="jq-radio rb styler_settings" unselectable="on" style="user-select: none; display: inline-block; position: relative;">
+       						<input class="rb styler_settings" value="2" name="set_notif_voted_photos" id="radio_set_notif_voted_photos_2" type="radio" style="position: absolute; z-index: -1; opacity: 0; margin: 0px; padding: 0px;">
+       						<div class="jq-radio__div"></div>
+       					</div>
+       					<label for="radio_set_notif_voted_photos_2" class="label_radio">Off</label>
+       				</div>
+       			</td>
+       		</tr>
+       		<tr>
+       			<th class="th_label_vt">
+       				<label class="name">Match mail</label></th>
+       				<td>
+       					<div class="field">
+       						<div id="radio_match_mail_1-styler" class="jq-radio rb styler_settings checked" unselectable="on" style="user-select: none; display: inline-block; position: relative;">
+       							<input class="rb styler_settings" value="1" name="match_mail" id="radio_match_mail_1" type="radio" checked="" style="position: absolute; z-index: -1; opacity: 0; margin: 0px; padding: 0px;">
+       							<div class="jq-radio__div"></div>
+       						</div>
+                            <label for="radio_match_mail_1" class="label_radio">On</label>
+                            <div id="radio_match_mail_2-styler" class="jq-radio rb styler_settings" unselectable="on" style="user-select: none; display: inline-block; position: relative;">
+                            	<input class="rb styler_settings" value="2" name="match_mail" id="radio_match_mail_2" type="radio" style="position: absolute; z-index: -1; opacity: 0; margin: 0px; padding: 0px;"><div class="jq-radio__div"></div>
+                            </div>
+                            <label for="radio_match_mail_2" class="label_radio">Off</label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                	<th class="th_label_vt"><label class="name">Date Newsletter</label></th>
+                	<td>
+                		<div class="field">
+                			<div id="radio_newsletter_Y-styler" class="jq-radio rb styler_settings checked" unselectable="on" style="user-select: none; display: inline-block; position: relative;">
+                				<input class="rb styler_settings" value="Y" name="newsletter" id="radio_newsletter_Y" type="radio" checked="" style="position: absolute; z-index: -1; opacity: 0; margin: 0px; padding: 0px;">
+                				<div class="jq-radio__div"></div>
+                			</div>
+                            <label for="radio_newsletter_Y" class="label_radio">On</label>
+                            <div id="radio_newsletter_N-styler" class="jq-radio rb styler_settings" unselectable="on" style="user-select: none; display: inline-block; position: relative;">
+                            	<input class="rb styler_settings" value="N" name="newsletter" id="radio_newsletter_N" type="radio" style="position: absolute; z-index: -1; opacity: 0; margin: 0px; padding: 0px;">
+                            	<div class="jq-radio__div"></div>
+                            </div>
+                            <label for="radio_newsletter_N" class="label_radio">Off</labe>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="foot">
+        	<div class="fl_right bl_btn to_show" style="transition-delay: 0.7s;">
+        		<button id="btn_profile_delete" class="btn small turquoise save_settings" disabled="">Save</button>
+        	</div>
+        	<div class="cl"></div>
+            </div>
+            <div id="fields_3" class="list_settings_cont select_var2 fields">
+            	<div class="cont">
+            		<div class="bl_frm">
+            			<div class="head head_title">Browse profiles invisibly</div>
+            			<div class="info_link">To use this feature you need to <span>upgrade your account</span>.
+            			</div>
+            		</div>
+            	</div>
+            </div>
+            <div class="foot">
+            	<div class="fl_right bl_btn to_show" style="transition-delay: 0.7s;">
+            		<button id="btn_profile_delete" class="btn small turquoise save_settings" disabled="">Save</button>
+                </div>
+                <div class="cl"></div>
+            </div>
+            <div class="cont">
+            	<div class="bl_frm">
+            		<div class="head head_title">Change password</div>
+            		<table class="tb_frm">
+            			<tbody>
+            				<tr>
+            					<th><label class="name">Current password</label></th>
+            					<td><div class="field">
+            						<input id="old_password" maxlength="30" class="inp password" type="password" name="old_password">
+            						<div class="error_frm" style="height: 0px;"></div>
+            					</div>
+            				</td>
+            			</tr>
+            			<tr>
+            				<th><label class="name">New password</label></th>
+            				<td>
+            					<div class="field">
+            						<input id="new_password" maxlength="30" class="inp password" type="password" name="new_password">
+            						<div class="error_frm"></div>
+            					</div>
+            				</td>
+            			</tr>
+            			<tr>
+            				<th><label class="name">Retype new password</label></th>
+            				<td>
+            					<div class="field">
+            						<input id="verify_new_password" maxlength="30" class="inp password" type="password" name="verify_new_password">
+            						<div class="error_frm"></div>
+            					</div>
+            				</td>
+            			</tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="foot">
+        	<div class="fl_right bl_btn to_show" style="transition-delay: 0.7s;">
+        		<button id="btn_profile_delete" class="btn small turquoise save_settings" disabled="">Save</button>
+        	</div>
+        	<div class="cl"></div>
+        </div>
+      
+    </form>
+    <div class="cont">
+    	<div class="bl_frm">
+    		<div class="head head_title">Change email address</div>
+    		<table class="tb_frm">
+    			<tbody>
+    				<tr>
+    					<th><label class="name">New email address</label></th>
+                        <td>
+                        	<div class="field">
+                        		<input id="new_email" name="new_email" class="inp mail" type="text">
+                        		<div class="error_frm"></div>
+                        	</div>
+                        </td>
+                    </tr>
+                    <tr>
+                    	<th><label class="name">Current password</label></th>
+                    	<td>
+                    		<div class="field">
+                    			<input id="password_email" name="password" maxlength="30" class="inp" type="password">
+                    			<div class="error_frm"></div>
+                    		</div>
+                    	</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="foot">
+        	<div class="fl_right bl_btn to_show" style="transition-delay: 0.7s;">
+        		<button id="btn_update_mail" class="btn small turquoise save_settings" disabled="">Save</button>
+        	</div>
+        	<div class="cl"></div>
+        </div>
+        <div id="fields_7" class="list_settings_cont fields">
+        	<input id="cmd_profile_delete" type="hidden" name="cmd" value="check_password">
+        	<div class="cont">
+        		<div class="bl_frm">
+        			<div class="head head_title">Delete profile</div>
+        			<table class="tb_frm">
+        				<tbody>
+        					<tr>
+        						<th><label class="name">Current password</label></th>
+        						<td>
+        							<div class="field">
+        								<input id="password_delete" class="inp" name="password" type="password">
+        								<div class="error_frm"></div>
+        							</div>
+        						</td>
+        					</tr>
+        				</tbody>
+        			</table>
+        		</div>
+        	</div>
+        	<div class="foot">
+        		<div class="fl_right bl_btn to_show" style="transition-delay: 0.7s;">
+        			<button id="btn_profile_delete" class="btn small turquoise save_settings" disabled="">Delete</button>
+        		</div>
+        		<div class="cl"></div>
+        	</div>
+        </div>
+    </div>
+</center>
+</body>
+</html>
