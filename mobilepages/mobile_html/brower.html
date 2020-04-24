@@ -1,0 +1,1219 @@
+
+<!DOCTYPE html>
+<html class="html_member">
+<script>
+var b=/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+document.documentElement.classList.add(b?'mobile':'desktop');
+if(/Chrome/i.test(navigator.userAgent))document.documentElement.classList.add('chrome');
+</script>
+<head>
+	<title>TalentTube</title>
+    <meta name="description" content="TalentTube">
+    <meta name="keywords" content="">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi" />
+    <meta name="theme-color" content="#142d69">
+    
+    <link rel="shortcut icon" href="../_files/favicon_impact.ico?v=1585339750" type="image/x-icon">
+
+    <style type="text/css">
+        body:after {
+            content: url('../_frameworks/mobile/impact_mobile/images/profile_info_figure_top.svg')
+                     url('../_frameworks/mobile/impact_mobile/images/profile_info_figure_bottom.svg')
+                     url('../_files/tmpl/impact_mobile_footer_figure_6f89b5.svg')
+                     url('../_frameworks/mobile/impact_mobile/images/icon_field_hint.svg') url('../_frameworks/mobile/impact_mobile/images/icon_field_vis.svg')
+                     url('../_frameworks/mobile/impact_mobile/images/logo.svg?v=1585339752');
+            display: none;
+        }
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="../_frameworks/mobile/impact_mobile/css/font-awesome.min.css?v=6"/>
+    <link rel="stylesheet" type="text/css" href="../_frameworks/mobile/impact_mobile/css/style.css?v=6"/>
+    
+    
+    <script type="text/javascript" src="../_server/jquery/jquery-1.11.2.min.js?v=6"></script>
+    <script type="text/javascript" src="../_server/jquery/jquery-ui-1.12.1.min.js?v=6"></script>
+
+    <script type="text/javascript" src="../_server/lib.js?v=6"></script>
+    <script type="text/javascript" src="../_frameworks/mobile/impact_mobile/js/script.js?v=6"></script>
+
+    <script id="set_language_mobile_var" data-cache="6" data-lang="default" type="text/javascript" src="./js.php?v=6&file=tmpl.js&set_template_mobile_runtime=impact_mobile&set_language_mobile_runtime=default"></script>
+    <script id="set_language_mobile_all" data-cache="6" data-lang="default" type="text/javascript" src="./js.php?v=6&get_lang=1&file=set_language.js&set_template_mobile_runtime=impact_mobile&set_language_mobile_runtime=default"></script>
+    <script id="set_language_mobile_search_results.php" data-cache="6" data-lang="default" type="text/javascript" src="./js.php?v=6&get_lang=1&file=set_language.js&set_template_mobile_runtime=impact_mobile&set_language_mobile_runtime=default&page=search_results.php"></script>
+
+    <script type="text/javascript" src="../_server/jquery/jquery.form.js?v=6"></script>
+    <script type="text/javascript" src="../_server/jquery/jquery.popup.js?v=6"></script>
+    <script type="text/javascript" src="../_server/jquery/jquery.cookie.js?v=6"></script>
+    <link rel="stylesheet" type="text/css" href="../_frameworks/mobile/impact_mobile/css/cookiepopup.css?v=6" />
+    <script type="text/javascript" src="../_frameworks/mobile/impact_mobile/js/cookiepopup.js?v=6"></script>
+
+    
+    
+    <script type="text/javascript" src="../_server/server_mobile.js?v=6"></script>
+    <script type="text/javascript" src="../_server/jquery/jquery.winFocus.js?v=6"></script>
+    <script type="text/javascript" src="../_server/jquery/jquery.lazyload.js?v=6"></script>
+    <script type="text/javascript" src="../_frameworks/mobile/impact_mobile/js/profile.js?v=6"></script>
+    <script type="text/javascript" src="../_frameworks/mobile/impact_mobile/js/profile_photo.js?v=6"></script>
+    <script type="text/javascript" src="../_frameworks/mobile/impact_mobile/js/search_results.js?v=6"></script>
+    <script type="text/javascript" src="../_frameworks/mobile/impact_mobile/js/messages.js?v=6"></script>
+    <script type="text/javascript" src="../_frameworks/mobile/impact_mobile/js/chat.js?v=6"></script>
+    <script type="text/javascript" src="../_frameworks/mobile/impact_mobile/js/city_street_chat.js?v=6"></script>
+    <script type="text/javascript" src="../_server/jquery/jquery.touchSwipe.min.js?v=6"></script>
+    <script type="text/javascript" src="../_server/jquery/jquery.flowtype.js?v=6"></script>
+    <script type="text/javascript" src="../_frameworks/mobile/impact_mobile/js/common.js?v=6"></script>
+    <script id="script_replace_one" language="javascript" type="text/javascript">
+        var clProfile = new CProfile('26'*1, ''*1);
+        var messages = new CMessages('26'*1);
+        var clCommon = new CCommon();
+        var cityStreetChat = new CCityStreetChat();
+        var videoChat = new CChat('video');
+        var audioChat = new CChat('audio');
+        var notInitMediaChat=true;
+        var imMessagesCount = '';
+        var urlFiles='../_files/';
+    </script>
+    
+    <script id="script_replace_header" language="javascript" type="text/javascript">
+        var ajax_login_status=true;
+        var url_page='search_results.php';
+        var activePage='search_results.php';
+        var currentPage='search_results.php';
+        var urlPageHistory='search_results.php';
+        var urlPageHistorySetHash=false;
+        var setAjaxLoad='1'*1;
+        var isCurUserSuperPowers=''*1;
+        var isFreeSite='0'*1;
+        var userAllowedFeature={"3d_city":0,"encounters":0,"invisible_mode":0,"extended_search":0,"audiochat":1,"videochat":1,"message_read_receipts":0,"kill_the_ads":0,"site_access_paying":0,"min_number_upload_photos":""};
+        var chatsPrice={video:'0'*1,audio:'0'*1};
+        
+        
+    </script>
+    <style id="style_calc" type="text/css"></style>
+    <script>initStyle();</script>
+
+    
+    <style id="style_color_scheme" data-cache="6" type="text/css">
+        html { background: #5b0079; }
+        html.html_member { background-color: #254c8e; }
+
+        
+
+        html, body { color: #ffffff; }
+
+        
+
+        .body_member, .bl_profile, .bl_profile .cont_wrap .profile_info_content { background-color: #254c8e; }
+        .header, .message_chat .message_field_chat, .bl_frm.color { background-color: #142d69; }
+        .header .bl_icon_nav .icon_nav .fa, .header .icons_info ul li .fa,
+        .cookie-popup-sub-headline a.more_link{ color: #8ba1d5 }
+        .header .bl_icon_nav .icon_status_warning, .header .icons_info ul li span.count { background-color: #f15d75; color: #ffffff; }
+        .loader_filter  .spinner .spinner-blade { background-color: #8ba1d5!important; }
+
+        .content .head, .content .head span.title .fa { background-color: #000000; color: #f15d75; }
+
+        .bl_profile .cont_wrap .title, .bl_profile .cont_wrap .bl table tr th, .bl_frm.bl_frm_settings .bl.arrow .title { color: #ffffc5; }
+        .bl_profile .fa { color: #8ccd00; }
+        .loader_pen .spinner .spinner-blade, .loader_pen_small .spinner .spinner-blade { background-color: #8ccd00!important; }
+        .bl_upgrade ul li { color: #cde0ff; }
+
+        .footer .top, .footer .bot { background-color: #6f89b5; }
+        .footer .arrow-up .fa-arrow-up { color: #6f89b5; }
+        .footer .bot .info, .footer .bot .info a { color: #a1b2d9; }
+        .footer .arrow-up { background-color: #40c7db; }
+        .footer .bl_options a, .footer .bl_options span { color: #cdd1dd; }
+        .footer .figure { background-image: url("../_files/tmpl/impact_mobile_footer_figure_6f89b5.svg"); }
+
+        .popup.main_menu { background-color: rgba(255,255,255,0.87); }
+        .main_menu .menu_squares .square .fa { color: #FFFFFF; }
+        .main_menu .menu_squares .square .name, .main_menu .menu_squares .square .count, .bl_profile .bl_profile_pic .bl_profile_bg_squares .square .count {
+            color: #FFFFFF;
+            background-color: #142d69;
+        }
+
+        .bl_tinder { background: #8ba1d5; border-color: #142d69; }
+
+        button.btn.pink, button.btn.violet.disconnect { background-color: #ff6d85; color: #FFFFFF; }
+        button.btn.pink:active, button.btn.violet.disconnect:active { background-color: #e7495c; }
+
+        button.btn:disabled { background-color: #9f9f9f!important; }
+
+        button.btn.white_frame, a.btn.white_frame { border-color: #d5dce6;
+                                                    background-color:transparent;
+                                                    color: #FFFFFF}
+        button.btn.white_frame:active, a.btn.white_frame:active { background-color: rgba(225,225,225,0.2); }
+
+
+
+        .popup .cont_pp { background-color: rgba(255,255,255,0.87); }
+        .popup .cont_pp .txt .fa { color: #6989f5; }
+        .popup .cont_pp .txt, .popup .cont_pp .txt a { color: #000000; }
+
+        button.btn.violet { background: #6d8fff; color: #FFFFFF; }
+        button.btn.violet span { color: #FFFFFF; }
+
+        .processing button.btn.violet:not([data-action='disabled']){ background: #6d8fff!important; color: #FFFFFF!important; }
+
+        button.btn.navyblue  { background: #8995b3; color: #FFFFFF; }
+        .popup.question .cont_pp .dubl_btn .btn.l { border-right-color: #FFFFFF; }
+
+        .bl_profile .bl_profile_pic .pic { background-color: #254c8e; }
+
+        button.btn, a.btn { color: #FFFFFF; }
+        button.btn .fa, a.btn .fa{color: #FFFFFF;}
+        button.btn.lblue, a.btn.lblue, a.lblue { background: #6dc9ff; }
+        a.btn.lblue, a.lblue { color: #FFFFFF; }
+        a.btn.lblue .fa,  a.lblue .fa{ color: #FFFFFF!important; }
+
+        button.btn.lblue:active, a.btn.lblue:active, a.lblue:active { background: #2faae0; }
+
+        .bl_meet .gradient { background-image: linear-gradient(to bottom, rgba(37, 76, 142, 0), #254c8e 95%); }
+
+        .bl_profile .bl_profile_pic .bl_profile_bg_squares .square { border-color: #254c8e; }
+
+        .bl_one_photo .bl_private_photo .count, .bl_one_photo .bl_private_photo .fa, .bl_one_photo .bl_private_photo .txt, .banner_footer_mobile_user .link a { color: #a1b2d9; }
+        .bl_one_photo .bl_private_photo .bl { border-color: #a1b2d9; }
+
+        .profile_btn_messages{ background: #323741!important; color:#FFFFFF!important;}
+        .profile_btn_messages:active{background: #505967!important; }
+        .profile_btn_messages .border_decor{border-bottom: 6px solid #89e214!important;}
+    </style>
+    
+
+</head>
+
+<body class="body_member">
+<div id="main_wrap" data-cache-version="6" data-tmpl-active="impact_mobile" data-url-page="search_results.php" class="main_wrap" style="height:100%">
+
+
+
+
+<div id="header_menu" class="popup main_menu">
+        <div class="cont_overflow">
+        <div id="header_menu_cont" class="cont_pp">
+            <div class="menu_squares">
+            
+                <div class="squares">
+                    
+                    <a href="./profile_view" data-cl-loader="loader_menu_header" data-type-loader="fade_btn" data-cl-children=".name" data-action="profile_view" class="square bg_1 profile_view go_to_page ">
+                        <div class="bl_tb">
+                            <div class="bl_td">
+                                <div class="icon">
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                </div>
+                                <!-- <div class="bl_name"> --><span class="name"><span class="fix">Profile</span></span><!-- </div> -->
+                                
+                                <div class="count counter_profile_view ">
+                                    <span></span>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="./search_results" data-cl-loader="loader_menu_header" data-type-loader="fade_btn" data-cl-children=".name" data-action="search_results" class="square bg_2 search_results go_to_page ">
+                        <div class="bl_tb">
+                            <div class="bl_td">
+                                <div class="icon">
+                                
+                                
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                </div>
+                                <!-- <div class="bl_name"> --><span class="name"><span class="fix">Matches</span></span><!-- </div> -->
+                                
+                                <div class="count counter_search_results ">
+                                    <span></span>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="./messages" data-cl-loader="loader_menu_header" data-type-loader="fade_btn" data-cl-children=".name" data-action="messages" class="square bg_3 messages go_to_page ">
+                        <div class="bl_tb">
+                            <div class="bl_td">
+                                <div class="icon">
+                                
+                                
+                                
+                                
+                                
+                                
+                                <i class="fa fa-comment fa-1x" aria-hidden="true"></i>
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                </div>
+                                <!-- <div class="bl_name"> --><span class="name"><span class="fix">Messages</span></span><!-- </div> -->
+                                
+                                <div class="count counter_messages ">
+                                    <span></span>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="./users_viewed_me" data-cl-loader="loader_menu_header" data-type-loader="fade_btn" data-cl-children=".name" data-action="profile_visitors" class="square bg_4 profile_visitors go_to_page ">
+                        <div class="bl_tb">
+                            <div class="bl_td">
+                                <div class="icon">
+                                
+                                
+                                
+                                
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                                <i class="fa fa-user fa-user2" aria-hidden="true"></i>
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                </div>
+                                <!-- <div class="bl_name"> --><span class="name"><span class="fix">Visitors</span></span><!-- </div> -->
+                                
+                                <div class="count counter_profile_visitors to_show">
+                                    <span>4</span>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </a>
+                    
+                </div>
+            
+                <div class="squares">
+                    
+                    <a href="./who_likes_you" data-cl-loader="loader_menu_header" data-type-loader="fade_btn" data-cl-children=".name" data-action="who_likes_you" class="square bg_5 who_likes_you go_to_page ">
+                        <div class="bl_tb">
+                            <div class="bl_td">
+                                <div class="icon">
+                                
+                                
+                                
+                                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                </div>
+                                <!-- <div class="bl_name"> --><span class="name"><span class="fix">Like you</span></span><!-- </div> -->
+                                
+                                <div class="count counter_who_likes_you ">
+                                    <span></span>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="./whom_you_like" data-cl-loader="loader_menu_header" data-type-loader="fade_btn" data-cl-children=".name" data-action="whom_you_like" class="square bg_6 whom_you_like go_to_page ">
+                        <div class="bl_tb">
+                            <div class="bl_td">
+                                <div class="icon">
+                                
+                                
+                                
+                                
+                                
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                </div>
+                                <!-- <div class="bl_name"> --><span class="name"><span class="fix">You like</span></span><!-- </div> -->
+                                
+                                <div class="count counter_whom_you_like ">
+                                    <span></span>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="./mutual_likes" data-cl-loader="loader_menu_header" data-type-loader="fade_btn" data-cl-children=".name" data-action="mutual_likes" class="square bg_7 mutual_likes go_to_page ">
+                        <div class="bl_tb">
+                            <div class="bl_td">
+                                <div class="icon">
+                                
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                                <i class="fa fa-user fa-user2" aria-hidden="true"></i>
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                </div>
+                                <!-- <div class="bl_name"> --><span class="name"><span class="fix">Mutual</span></span><!-- </div> -->
+                                
+                                <div class="count counter_mutual_likes ">
+                                    <span></span>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="./hot_or_not" data-cl-loader="loader_menu_header" data-type-loader="fade_btn" data-cl-children=".name" data-action="hot_or_not" class="square bg_8 hot_or_not go_to_page ">
+                        <div class="bl_tb">
+                            <div class="bl_td">
+                                <div class="icon">
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                <i class="fa fa-fire" aria-hidden="true"></i>
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                </div>
+                                <!-- <div class="bl_name"> --><span class="name"><span class="fix">Hot or not</span></span><!-- </div> -->
+                                
+                                <div class="count counter_hot_or_not ">
+                                    <span></span>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </a>
+                    
+                </div>
+            
+                <div class="squares">
+                    
+                    <a href="./private_photo_access" data-cl-loader="loader_menu_header" data-type-loader="fade_btn" data-cl-children=".name" data-action="can_see_your_private_photos" class="square bg_9 can_see_your_private_photos go_to_page ">
+                        <div class="bl_tb">
+                            <div class="bl_td">
+                                <div class="icon">
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                <i class="fa fa-lock" aria-hidden="true"></i>
+                                
+                                
+                                
+                                
+                                </div>
+                                <!-- <div class="bl_name"> --><span class="name"><span class="fix">Access</span></span><!-- </div> -->
+                                
+                                <div class="count counter_can_see_your_private_photos ">
+                                    <span></span>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="./3d/city" data-cl-loader="loader_menu_header" data-type-loader="fade_btn" data-cl-children=".name" data-action="3d_city" class="square bg_10 3d_city go_to_page no_load_ajax">
+                        <div class="bl_tb">
+                            <div class="bl_td">
+                                <div class="icon">
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                <i class="fa fa-cube" aria-hidden="true"></i>
+                                
+                                
+                                
+                                
+                                
+                                
+                                </div>
+                                <!-- <div class="bl_name"> --><span class="name"><span class="fix">3DCity</span></span><!-- </div> -->
+                                
+                                <div class="count counter_3d_city ">
+                                    <span></span>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="./3d/street_chat" data-cl-loader="loader_menu_header" data-type-loader="fade_btn" data-cl-children=".name" data-action="street_chat" class="square bg_11 street_chat go_to_page no_load_ajax">
+                        <div class="bl_tb">
+                            <div class="bl_td">
+                                <div class="icon">
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                <i class="fa fa-street-view" aria-hidden="true"></i>
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                </div>
+                                <!-- <div class="bl_name"> --><span class="name"><span class="fix">Street chat</span></span><!-- </div> -->
+                                
+                                <div class="count counter_street_chat ">
+                                    <span></span>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="./games" data-cl-loader="loader_menu_header" data-type-loader="fade_btn" data-cl-children=".name" data-action="game_choose" class="square bg_12 game_choose go_to_page ">
+                        <div class="bl_tb">
+                            <div class="bl_td">
+                                <div class="icon">
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                <i class="fa fa-gamepad" aria-hidden="true"></i>
+                                
+                                
+                                
+                                
+                                
+                                </div>
+                                <!-- <div class="bl_name"> --><span class="name"><span class="fix">Games</span></span><!-- </div> -->
+                                
+                                <div class="count counter_game_choose ">
+                                    <span></span>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </a>
+                    
+                </div>
+            
+                <div class="squares">
+                    
+                    <a href="./profile_boost" data-cl-loader="loader_menu_header" data-type-loader="fade_btn" data-cl-children=".name" data-action="boost" class="square bg_13 boost go_to_page ">
+                        <div class="bl_tb">
+                            <div class="bl_td">
+                                <div class="icon">
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                <i class="fa fa-bolt" aria-hidden="true"></i>
+                                
+                                </div>
+                                <!-- <div class="bl_name"> --><span class="name"><span class="fix">Boost</span></span><!-- </div> -->
+                                
+                                <div class="count counter_boost ">
+                                    <span></span>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="./upgrade" data-cl-loader="loader_menu_header" data-type-loader="fade_btn" data-cl-children=".name" data-action="upgrade" class="square bg_14 upgrade go_to_page ">
+                        <div class="bl_tb">
+                            <div class="bl_td">
+                                <div class="icon">
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                <i class="fa fa-diamond" aria-hidden="true"></i>
+                                
+                                
+                                </div>
+                                <!-- <div class="bl_name"> --><span class="name"><span class="fix">Upgrade</span></span><!-- </div> -->
+                                
+                                <div class="count counter_upgrade ">
+                                    <span></span>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="./profile_settings" data-cl-loader="loader_menu_header" data-type-loader="fade_btn" data-cl-children=".name" data-action="settings" class="square bg_15 settings go_to_page ">
+                        <div class="bl_tb">
+                            <div class="bl_td">
+                                <div class="icon">
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                <i class="fa fa-cog" aria-hidden="true"></i>
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                </div>
+                                <!-- <div class="bl_name"> --><span class="name"><span class="fix">Settings</span></span><!-- </div> -->
+                                
+                                <div class="count counter_settings ">
+                                    <span></span>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="./index?cmd=logout" data-cl-loader="loader_menu_header" data-type-loader="fade_btn" data-cl-children=".name" data-action="logout" class="square bg_16 logout go_to_page ">
+                        <div class="bl_tb">
+                            <div class="bl_td">
+                                <div class="icon">
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                
+                                
+                                
+                                </div>
+                                <!-- <div class="bl_name"> --><span class="name"><span class="fix">Log Out</span></span><!-- </div> -->
+                                
+                                <div class="count counter_logout ">
+                                    <span></span>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </a>
+                    
+                </div>
+            
+            </div>
+            <div class="cl"></div>
+        </div>
+        </div>
+</div>
+
+<!-- header -->
+
+<div id="bl_header" class="header">
+        <div class="bl_icon_nav" onclick="clCommon.showHeaderMenu()">
+            <div class="icon_nav"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></div>
+            <div id="counter_events" class="icon_status_warning "></div>
+        </div>
+        <div class="bl_logo">
+            <a data-layer-loader="true" data-not-loader="true" data-url="profile_view" class="go_to_page" href="profile_view">
+                <img style="height:19px;" src="../_frameworks/mobile/impact_mobile/images/logo_inner.svg?v=1585339752" alt="" />
+            </a>
+        </div>
+
+        <div id="bl_header_action" class="bl_icons_info">
+            <div class="icons_info">
+                <ul>
+                    <li class="icon_msg">
+                        <a class="go_to_page" data-type-loader="fade_btn" data-cl-loader="loader_filter"  href="./messages">
+                            <i class="fa fa-comment fa-1x" aria-hidden="true"></i>
+                            <span class="count counter_messages "><span></span></span>
+                        </a>
+                    </li>
+                    <li class="icon_notification">
+                        <a class="go_to_page" data-type-loader="fade_btn" data-cl-loader="loader_filter"  href="./users_viewed_me">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                            <i class="fa fa-user fa-user2" aria-hidden="true"></i>
+                            <span class="count counter_profile_visitors_header "><span></span></span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="icon_filter">
+                        <a id="btn_show_filter" data-type-loader="fade_btn" data-cl-loader="loader_filter" onclick="clSearch.showFilter(); return false;" href="">
+                            <i class="fa fa-filter" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+</div>
+
+
+<div id="main" class="main">
+<!-- wrapper -->
+<div id="wrapper" class="wrapper">
+    <!-- /header -->
+    <!-- content -->
+    <div id="content" class="content">
+
+<script id="script_replace_page">
+    urlPageHistory='search_results';
+    
+    urlPageHistorySetHash=true;
+    
+</script>
+<div class="bl_profile_wrap">
+    <script>
+        var clSearch = new CSearchResults();
+        clSearch.setData({
+            display:'',
+            uploadContentAjax:'0'*1
+        });
+    </script>
+    <div id="main_content_block" class="bl_profile ">
+        <div id="search_switch"  >
+        <div id="search_head" class="head filter_head">
+    <div class="info"><div class="bl">To meet <span class="gray">job seeker, </span><span class="gray">Casula</span> </div></div>
+    <div class="count"><span>2 FOUND</span></div>
+    <div class="cl"></div>
+</div>
+<script>clSearch.prepareHeaderDataFilter();</script>
+<div class="bl_list_photo">
+    
+    <div id="bl_search_users_list" class="list_photos">
+        <ul id="search_users_list" class="search_users_list initial"><li id="users_list_item_38" class="item users_list_item sliding">
+            <!-- <div class="hidden all"> -->
+            <a onclick="clSearch.toProfileUser(this); return false;" data-not-loader="true" href="./profile_view.php?user_id=38&from=search&ref=people_nearby">
+                <img src="../_files/photo/38_24_mm.jpg" alt="" class="user_photo to_hide" onerror="showLoadPhoto($(this))" onload="showLoadPhoto($(this))" />
+                <!-- <span class="shadow"></span> -->
+                
+                
+                <span class="name">anotherjobseeker, 35</span>
+            </a>
+            <!-- </div> -->
+        </li><li id="users_list_item_31" class="item users_list_item sliding">
+            <!-- <div class="hidden all"> -->
+            <a onclick="clSearch.toProfileUser(this); return false;" data-not-loader="true" href="./profile_view.php?user_id=31&from=search&ref=people_nearby">
+                <img src="../_files/photo/31_22_mm.jpg" alt="" class="user_photo to_hide" onerror="showLoadPhoto($(this))" onload="showLoadPhoto($(this))" />
+                <!-- <span class="shadow"></span> -->
+                
+                
+                <span class="name">jobseekertest1, 35</span>
+            </a>
+            <!-- </div> -->
+        </li></ul>
+        <script>
+		clSearch.total=+'2';
+        
+		clSearch.onPage=+'6';
+        clSearch.setOffset('1');
+        
+        </script>
+        
+    </div>
+    
+    
+</div>
+        </div>
+    </div>
+    <div id="filter_switch" class="bl_profile filter_switch">
+        <div>
+<div class="head">
+    <span class="title"><i class="fa fa-filter" aria-hidden="true"></i> FILTER DATA</span>
+</div>
+<div class="wrap_cont_filter">
+<form id="frm_filter" name="filter" method="POST" action="./search_results.php">
+<input name="set_filter" value="1" type="hidden"/>
+<input name="display" value="" type="hidden"/>
+<input name="ajax_page" value="1" type="hidden"/>
+<input id="people_nearby" name="people_nearby" value="1" type="hidden"/>
+
+<div class="bl_frm">
+    
+    
+    <div class="bl"  >
+        <label>With whom</label>
+        <div class="field custom_checkbox">
+            <div class="list_checkbox">
+            
+            <input id="p_orientation_1" name="p_orientation[]" value="1" type="checkbox"  checked />
+            <label for="p_orientation_1"><span></span> <!-- class="part" -->
+            Job Seeker
+            </label>
+            
+            <input id="p_orientation_2" name="p_orientation[]" value="2" type="checkbox"  />
+            <label for="p_orientation_2"><span></span> <!-- class="part" -->
+            Employer
+            </label>
+            
+            </div>
+            <div class="cl"></div>
+        </div>
+    </div>
+    
+</div>
+
+
+<div class="bl_frm">
+    <div class="bl">
+        <label>Ages</label>
+        <div class="field age">
+            <div class="from">
+                <select id="p_age_from" name="p_age_from">
+                <option value="18" >18</option>
+<option value="19" >19</option>
+<option value="20" >20</option>
+<option value="21" >21</option>
+<option value="22" >22</option>
+<option value="23" >23</option>
+<option value="24" >24</option>
+<option value="25" >25</option>
+<option value="26" >26</option>
+<option value="27" >27</option>
+<option value="28" >28</option>
+<option value="29" >29</option>
+<option value="30" >30</option>
+<option value="31" >31</option>
+<option value="32" >32</option>
+<option value="33" >33</option>
+<option value="34" >34</option>
+<option value="35" >35</option>
+<option value="36" >36</option>
+
+
+                </select>
+            </div>
+            <span class="def">&dash;</span>
+            <div class="to">
+                <select id="p_age_to" name="p_age_to">
+                <option value="18" >18</option>
+<option value="19" >19</option>
+<option value="20" >20</option>
+<option value="21" >21</option>
+<option value="22" >22</option>
+<option value="23" >23</option>
+<option value="24" >24</option>
+<option value="25" >25</option>
+<option value="26" >26</option>
+<
+<option value="99" >99</option>
+<option value="100"  selected="selected">100</option>
+
+                </select>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bl_frm color">
+    <div class="bl">
+        <label>Location</label>
+        <div class="field">
+            <select name="country" id="country" data-location="geo_states" class="location">
+                <option value="people_nearby">People nearby</option>
+                <option value="0">Select all</option>
+                <option  id="option_country_230"  value="230" >United States</option>
+<option  id="option_country_229"  value="229" >United Kingdom</option>
+<option  id="option_country_40"  value="40" >Canada</option>
+<option  id="option_country_1"  value="1" >Afghanistan</option>
+<option  id="option_country_2"  value="2" >Aland Islands</option>
+<option  id="option_country_3"  value="3" >Albania</option>
+<option  id="option_country_4"  value="4" >Algeria</option>
+<option  id="option_country_5"  value="5" >American Samoa</option>
+<option  id="option_country_6"  value="6" >Andorra</option>
+<option  id="option_country_7"  value="7" >Angola</option>
+<option  id="option_country_8"  value="8" >Anguilla</option>
+<option  id="option_country_10"  value="10" >Antigua and Barbuda</option>
+<option  id="option_country_11"  value="11" >Argentina</option>
+<option  id="option_country_12"  value="12" >Armenia</option>
+<option  id="option_country_13"  value="13" >Aruba</option>
+<option  id="option_country_14"  value="14" >Australia</option>
+<option  id="option_country_15"  value="15" >Austria</option>
+<option  id="option_country_16"  value="16" >Azerbaijan</option>
+<option  id="option_country_17"  value="17" >Bahamas</option>
+<option  id="option_country_18"  value="18" >Bahrain</option>
+<option  id="option_country_19"  value="19" >Bangladesh</option>
+<option  id="option_country_20"  value="20" >Barbados</option>
+<option  id="option_country_21"  value="21" >Belarus</option>
+<option  id="option_country_22"  value="22" >Belgium</option>
+<option  id="option_country_23"  value="23" >Belize</option>
+<option  id="option_country_24"  value="24" >Benin</option>
+<option  id="option_country_25"  value="25" >Bermuda</option>
+<option  id="option_country_26"  value="26" >Bhutan</option>
+<option  id="option_country_27"  value="27" >Bolivia, Plurinational State of</option>
+<option  id="option_country_29"  value="29" >Bosnia and Herzegovina</option>
+<option  id="option_country_30"  value="30" >Botswana</option>
+<option  id="option_country_31"  value="31" >Brazil</option>
+<option  id="option_country_32"  value="32" >British Indian Ocean Territory</option>
+<option  id="option_country_33"  value="33" >Brunei Darussalam</option>
+<option  id="option_country_34"  value="34" >Bulgaria</option>
+<option  id="option_country_35"  value="35" >Burkina Faso</option>
+<option  id="option_country_36"  value="36" >Burundi</option>
+<option  id="option_country_37"  value="37" >Cabo Verde</option>
+<option  id="option_country_38"  value="38" >Cambodia</option>
+<option  id="option_country_39"  value="39" >Cameroon</option>
+<option  id="option_country_40"  value="40" >Canada</option>
+<option  id="option_country_41"  value="41" >Cayman Islands</option>
+<option  id="option_country_42"  value="42" >Central African Republic</option>
+<option  id="option_country_43"  value="43" >Chad</option>
+<option  id="option_country_44"  value="44" >Chile</option>
+<option  id="option_country_45"  value="45" >China</option>
+<option  id="option_country_46"  value="46" >Christmas Island</option>
+<option  id="option_country_47"  value="47" >Colombia</option>
+
+
+            </select>
+        </div>
+    </div>
+    <div class="bl">
+        <div class="field">
+            <select name="state" id="state" data-location="geo_cities" class="location">
+                <option value="0">Select all</option>
+                <option  value="128" >Australian Capital Territory</option>
+<option  value="129" selected="selected">New South Wales</option>
+<option  value="130" >Northern Territory</option>
+<option  value="131" >Queensland</option>
+<option  value="132" >South Australia</option>
+<option  value="133" >Tasmania</option>
+<option  value="134" >Victoria</option>
+<option  value="135" >Western Australia</option>
+
+            </select>
+        </div>
+    </div>
+    <div class="bl">
+        <div class="field">
+            <select name="city" id="city" class="location">
+                <option value="0">Select all</option>
+ 				<option  value="654" >Abbotsbury</option>
+<option  value="655" >Abbotsford</option>
+
+<option  value="99661" >Yerranderie</option>
+<option  value="99662" >Yerrinbool</option>
+<option  value="1380" >Yetman</option>
+<option  value="1381" >Yoogali</option>
+<option  value="1382" >Young</option>
+<option  value="65743" >Yowie Bay</option>
+<option  value="99663" >Yuraygir</option>
+<option  value="1383" >Zetland</option>
+
+            </select>
+        </div>
+    </div>
+    <div id="radius_bl" class="bl">
+		<div class="bl form_resize bl_slider">
+			<div id="radius_slider">
+				<input id="radius" name="radius" type="range" min="0" max="201" step="1" value="0">
+                <div  class="count">
+                    <div id="count_cont" class="count_cont"></div>
+                </div>
+				<div class="count_decor"></div>
+            </div>
+		</div>
+	</div>
+</div>
+<div class="bl_frm">
+    <div class="bl">
+        <label>Show</label>
+        <div class="field">
+            <select name="status">
+            <option value="" selected="selected">All</option>
+<option value="new">New</option>
+<option value="online">Online now</option>
+
+            </select>
+        </div>
+    </div>
+</div>
+
+<div class="bl_frm">
+    <div class="bl">
+        <div class="field custom_checkbox">
+            <input id="module_search_with_photo" name="with_photo" class="with_photo" value="1" type="checkbox" checked="checked" />
+            <label class="label_with_photo" for="module_search_with_photo"><span></span>
+            With photo
+            </label>
+        </div>
+    </div>
+</div>
+
+<div class="bl_frm">
+    <div class="bl">
+        <label>Search by username</label>
+        <div class="field">
+            <input id="filter_name_key" type="text" name="global_search_by_username">
+        </div>
+    </div>
+</div>
+<div class="frm_btn">
+    <button id="perform_action_search" class="btn large pink">Done</button>
+</div>
+</form>
+<script>clSearch.initFilter('Within %1 miles','201','1');</script>
+</div>
+</div>
+    </div>
+    <script>
+        clSearch.init();
+    </script>
+</div>
+
+</div>
+    <!-- /content -->
+</div>
+<!-- /wrapper -->
+<script>
+    clCommon.init();
+    try {initServer()}catch(e){};
+</script>
+</div>
+
+</div><!-- /main_wrap -->
+<div id="page_shadow_empty" class="page_shadow_empty"></div>
+<div id="layer_block_page" class="layer_block_page to_hide">
+    <div id="loader_layer_block_page" class="frame_loader_search_list">
+    <div class="css_loader loader_layer_block_page hidden">
+		<div class="spinner center">
+			<div class="spinner-blade"></div>
+			<div class="spinner-blade"></div>
+			<div class="spinner-blade"></div>
+            <div class="spinner-blade"></div>
+			<div class="spinner-blade"></div>
+			<div class="spinner-blade"></div>
+			<div class="spinner-blade"></div>
+			<div class="spinner-blade"></div>
+			<div class="spinner-blade"></div>
+			<div class="spinner-blade"></div>
+			<div class="spinner-blade"></div>
+			<div class="spinner-blade"></div>
+		</div>
+	</div>
+    </div>
+</div>
+<div id="update_server">
+    <script id="script_replace_footer">
+        setPageData('TalentTube','TalentTube','');
+        commonInitPage();
+        var requestUserId = '0'*1;
+        var requestUserOnline = '1'*1;
+    </script>
+    <script class="default_values">
+        var urlFiles='../_files/';
+        var urlTmplMobileImages='../_frameworks/mobile/impact_mobile/images/';
+        var appTitle = 'TalentTube';
+        var imMessagesCount = '';
+        var isInAppPurchaseEnabled = '1'*1;
+        var appVibrationDuration = '1'*1000;
+        var tmplsList = [];
+tmplsList[0] = 'edge_mobile';
+tmplsList[1] = 'black';
+tmplsList[2] = 'white';
+tmplsList[3] = 'urban_mobile';
+tmplsList[4] = 'impact_mobile';
+
+
+var tmplCurrent = 'impact_mobile';
+
+if(false) {
+    initDevFunctions();
+}
+
+var sitePart = 'mobile';
+var sitePartParam = '_mobile';
+var languageOfUser = '';
+var siteLanguage = 'default';
+var siteGuid = '26'*1;
+</script><script>
+                var IS_DEMO = 0;
+                var urlPageJoin = 'join';
+                var urlPageLogin = 'login';
+                var urlPageUpgrade = 'upgrade';
+                var urlPagesSite = {
+                    index : 'index',
+                    login : 'login',
+                    join : 'join',
+                    home : 'profile_view',
+                    upgrade : 'upgrade',
+                    search_results : 'search_results',
+                    profile_view : 'profile_view',
+                    messages : 'messages',
+                    refill_credits : 'refill_credits',
+                    my_vids_list : 'user_vids_list',
+                    my_photos_list : 'user_photos_list',
+                    photos_list : 'photos_list',
+                    blogs_add : 'blogs_add',
+                    profile_settings : 'profile_settings',
+                    wall : 'wall'
+                };
+                var cacheVersionParam = '?v=6';
+
+                setAjaxPrefilter();
+            
+    </script>
+</div>
+
+
+
+
+
+
+
+<script>
+    $(function(){
+        //document.cookie = 'cookiesAccepted=; path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+        var options = {
+            title: 'We are using cookies to give you the best experience on our site.',
+            text: 'Cookies are files stored in your browser. By continuing to use our website you are agreeing to our use of cookies. <a class="more_link" href="privacy_policy">Privacy Policy</a>',
+            acceptButtonText: 'Accept',
+            theme: 'dark',
+            learnMore: false,
+            position: 'bottom'
+        };
+        $.acceptCookies(options);
+    })
+</script>
+
+</body>
+</html>
