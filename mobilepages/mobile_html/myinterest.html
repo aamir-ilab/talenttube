@@ -7,7 +7,7 @@ document.documentElement.classList.add(b?'mobile':'desktop');
 if(/Chrome/i.test(navigator.userAgent))document.documentElement.classList.add('chrome');
 </script>
 <head>
-    <title>TalentTube</title>
+	<title>TalentTube</title>
     <meta name="description" content="TalentTube">
     <meta name="keywords" content="">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -16,8 +16,6 @@ if(/Chrome/i.test(navigator.userAgent))document.documentElement.classList.add('c
     <meta name="theme-color" content="#142d69">
     
     <link rel="shortcut icon" href="../_files/favicon_impact.ico?v=1585339750" type="image/x-icon">
-
-   
 
     <link rel="stylesheet" type="text/css" href="../_frameworks/mobile/impact_mobile/css/font-awesome.min.css?v=6"/>
     <link rel="stylesheet" type="text/css" href="../_frameworks/mobile/impact_mobile/css/style.css?v=6"/>
@@ -28,19 +26,11 @@ if(/Chrome/i.test(navigator.userAgent))document.documentElement.classList.add('c
 
     <script type="text/javascript" src="../_server/lib.js?v=6"></script>
     <script type="text/javascript" src="../_frameworks/mobile/impact_mobile/js/script.js?v=6"></script>
-
-    <script id="set_language_mobile_var" data-cache="6" data-lang="default" type="text/javascript" src="./js.php?v=6&file=tmpl.js&set_template_mobile_runtime=impact_mobile&set_language_mobile_runtime=default"></script>
-    <script id="set_language_mobile_all" data-cache="6" data-lang="default" type="text/javascript" src="./js.php?v=6&get_lang=1&file=set_language.js&set_template_mobile_runtime=impact_mobile&set_language_mobile_runtime=default"></script>
-    <script id="set_language_mobile_mutual_attractions.php" data-cache="6" data-lang="default" type="text/javascript" src="./js.php?v=6&get_lang=1&file=set_language.js&set_template_mobile_runtime=impact_mobile&set_language_mobile_runtime=default&page=mutual_attractions.php"></script>
-
     <script type="text/javascript" src="../_server/jquery/jquery.form.js?v=6"></script>
     <script type="text/javascript" src="../_server/jquery/jquery.popup.js?v=6"></script>
     <script type="text/javascript" src="../_server/jquery/jquery.cookie.js?v=6"></script>
     <link rel="stylesheet" type="text/css" href="../_frameworks/mobile/impact_mobile/css/cookiepopup.css?v=6" />
     <script type="text/javascript" src="../_frameworks/mobile/impact_mobile/js/cookiepopup.js?v=6"></script>
-
-    
-    
     <script type="text/javascript" src="../_server/server_mobile.js?v=6"></script>
     <script type="text/javascript" src="../_server/jquery/jquery.winFocus.js?v=6"></script>
     <script type="text/javascript" src="../_server/jquery/jquery.lazyload.js?v=6"></script>
@@ -64,26 +54,19 @@ if(/Chrome/i.test(navigator.userAgent))document.documentElement.classList.add('c
         var imMessagesCount = '';
         var urlFiles='../_files/';
     </script>
-   
-    <style id="style_calc" type="text/css"></style>
-    <script>initStyle();</script>
-
     
-    <style id="style_color_scheme" data-cache="6" type="text/css">
+   
+    
+    <script>initStyle();</script>
+      <style id="style_color_scheme" data-cache="6" type="text/css">
         html { background: #5b0079; }
         html.html_member { background-color: #254c8e; }
-
-        
-
         html, body { color: #ffffff; }
     </style>
-
-    
-
 </head>
 
 <body class="body_member">
-<div id="main_wrap" data-cache-version="6" data-tmpl-active="impact_mobile" data-url-page="mutual_attractions.php" class="main_wrap" style="height:100%">
+<div id="main_wrap" data-cache-version="6" data-tmpl-active="impact_mobile" data-url-page="mutual_attractions.php?display=whom_you_like" class="main_wrap" style="height:100%">
 
 
 
@@ -306,98 +289,56 @@ if(/Chrome/i.test(navigator.userAgent))document.documentElement.classList.add('c
 <!-- header -->
 
 <div id="bl_header" class="header">
-        <div class="bl_icon_nav" onclick="clCommon.showHeaderMenu()">
-            <div class="icon_nav"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></div>
-            <div id="counter_events" class="icon_status_warning "></div>
-        </div>
-        <div class="bl_logo">
-            <a data-layer-loader="true" data-not-loader="true" data-url="profile_view" class="go_to_page" href="profile_view">
-                <img style="height:19px;" src="../_frameworks/mobile/impact_mobile/images/logo_inner.svg?v=1585339752" alt="" />
-            </a>
-        </div>
-
-        <div id="bl_header_action" class="bl_icons_info">
-            <div class="icons_info">
-                <ul>
-                    <li class="icon_msg">
-                        <a class="go_to_page" data-type-loader="fade_btn" data-cl-loader="loader_filter"  href="./messages">
-                            <i class="fa fa-comment fa-1x" aria-hidden="true"></i>
-                            <span class="count counter_messages "><span></span></span>
-                        </a>
-                    </li>
-                    <li class="icon_notification">
-                        <a class="go_to_page" data-type-loader="fade_btn" data-cl-loader="loader_filter"  href="./users_viewed_me">
-                            <i class="fa fa-user" aria-hidden="true"></i>
-                            <i class="fa fa-user fa-user2" aria-hidden="true"></i>
-                            <span class="count counter_profile_visitors_header "><span></span></span>
-                        </a>
-                    </li>
-                    
-                    <li class="icon_like">
-                        <a class="go_to_page" data-type-loader="fade_btn" data-cl-loader="loader_filter"  href="./search_results">
-                            <i class="fa fa-heart" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+    <div class="bl_icon_nav" onclick="clCommon.showHeaderMenu()">
+        <div class="icon_nav">
+            <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
         </div>
     </div>
+    <div class="bl_logo">
+        <a data-layer-loader="true" data-not-loader="true" data-url="profile_view" class="go_to_page" href="profile_view">
+            <img style="height:19px;" src="../_frameworks/mobile/impact_mobile/images/logo_inner.svg?v=1585339752" alt="" />
+        </a>
+    </div>
+</div>
 
 
 <div id="main" class="main">
-
-<div id="wrapper" class="wrapper">
-    <div id="content" class="content">
-        <script id="script_replace_page">
-            urlPageHistory='mutual_likes';
-        </script>
-        <div class="bl_profile_wrap">
-            <script>
-                var clSearch = new CSearchResults();
-                clSearch.setData({
-                    display:'',
-                    uploadContentAjax:''*1
-                });
-            </script>
-            <div id="main_content_block" class="bl_profile target">
-                <div id="search_switch"  class="target">
-                    <div id="search_head" class="head filter_head">
-                        <div class="info">
-                            <div class="bl">Mutual likes</div>
+    <div id="wrapper" class="wrapper">
+        <div id="content" class="content">
+            <div class="bl_profile_wrap">
+                <script>
+                    var clSearch = new CSearchResults();
+                    clSearch.setData({
+                        display:'whom_you_like',
+                        uploadContentAjax:''*1
+                    });
+                </script>
+                <div id="main_content_block" class="bl_profile target">
+                    <div id="search_switch"  class="target">
+                        <div id="search_head" class="head filter_head">
+                            <div class="info">
+                                <div class="bl">Whom you like</div>
+                            </div>
+                            <div class="count"><span>0 TOTAL</span></div>
+                            <div class="cl"></div>
                         </div>
-                        <div class="count"><span>0 TOTAL</span></div>
-                        <div class="cl"></div>
+                        <div class="bl_list_photo">
+                            <div class="no_one_found to_hide"><span>No one here yet.</span>
+                            </div>
+                            <script>
+                                clSearch.showNoOneFound();
+                            </script>
+                        </div>
                     </div>
-                    <script>clSearch.prepareHeaderDataFilter();</script>
-                    <div class="bl_list_photo">
-                        <div class="no_one_found to_hide"><span>No one here yet.</span></div>
-                    <script>
-                        clSearch.showNoOneFound();
-                    </script>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<script>
-    clCommon.init();
+    <script>
+        clCommon.init();
     try {initServer()}catch(e){};
 </script>
 </div>
-
-</div><!-- /main_wrap -->
-
-
-
 </div>
-
-
-
-
-
-
-
-
-
 </body>
 </html>
